@@ -1,0 +1,90 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=20;
+TAXLABELS
+[1] 'chaerephon_plicatus'
+[2] 'hipposideros_abae'
+[3] 'hipposideros_caffer'
+[4] 'miniopterus_magnater'
+[5] 'miniopterus_pusillus'
+[6] 'miniopterus_schreibersii'
+[7] 'pipistrellus_abramus'
+[8] 'pipistrellus_pipistrellus'
+[9] 'rhinolophus_affinis'
+[10] 'rhinolophus_blasii'
+[11] 'rhinolophus_cornutus'
+[12] 'rhinolophus_ferrumequinum'
+[13] 'rhinolophus_macrotis'
+[14] 'rhinolophus_mehelyi'
+[15] 'rhinolophus_pearsonii'
+[16] 'rhinolophus_pusillus'
+[17] 'rhinolophus_sinicus'
+[18] 'rousettus_leschenaultii'
+[19] 'scotophilus_kuhlii'
+[20] 'tylonycteris_pachypus'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=20 nsplits=55;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 2 3,
+	100	 9,
+	100	 17,
+	58	 9 17,
+	100	 11,
+	100	 16,
+	100	 11 16,
+	100	 13,
+	100	 11 13 16,
+	99	 9 11 13 16 17,
+	100	 15,
+	99	 9 11 13 15 16 17,
+	100	 10,
+	100	 14,
+	88	 10 14,
+	100	 12,
+	97	 10 12 14,
+	100	 9 10 11 12 13 14 15 16 17,
+	100	 1 4 5 6 7 8 18 19 20,
+	100	 18,
+	98	 1 4 5 6 7 8 19 20,
+	100	 4,
+	100	 6,
+	97	 4 6,
+	100	 5,
+	100	 4 5 6,
+	87	 1 7 8 19 20,
+	100	 7,
+	100	 8,
+	100	 20,
+	99	 8 20,
+	100	 7 8 20,
+	100	 19,
+	100	 7 8 19 20,
+	100	 1,
+	42	 11 13 16 17,
+	2	 5 6,
+	10	 12 14,
+	9	 1 4 5 6,
+	4	 4 5 6 7 8 19 20,
+	2	 4 5 6 18,
+	2	 9 11 12 13 15 16 17,
+	0	 9 10 11 12 13 15 16 17,
+	1	 4 5,
+	1	 7 8,
+	1	 9 10 11 13 14 15 16 17,
+	2	 10 12,
+	0	 11 13 15 16,
+	0	 1 19,
+	1	 9 15,
+	1	 9 10 11 12 13 14 16 17,
+	0	 1 4 5 6 7 8 20,
+	0	 9 11 12 13 14 15 16 17,
+;
+END; [Splits]
+
