@@ -1,0 +1,96 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+simulate_network        2
+total                   3
+
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Sep  9 00:43:36 2025]
+localrule simulate_network:
+    input: angio_25tips_origin.phy, Nymphalini.phy
+    output: results/86/corrupt0/original_matrix.png, results/86/corrupt0/corrupted.png, results/86/corrupt0/flipped_matrix.png
+    log: logs/simulate_86_corrupt0.out, logs/simulate_86_corrupt0.err
+    jobid: 1
+    benchmark: benchmarks/simulate_86_corrupt0.txt
+    reason: Missing output files: results/86/corrupt0/flipped_matrix.png
+    wildcards: seed=86, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 00:43:36 2025]
+localrule simulate_network:
+    input: angio_25tips_origin.phy, Nymphalini.phy
+    output: results/86/corrupt50/original_matrix.png, results/86/corrupt50/corrupted.png, results/86/corrupt50/flipped_matrix.png
+    log: logs/simulate_86_corrupt50.out, logs/simulate_86_corrupt50.err
+    jobid: 2
+    benchmark: benchmarks/simulate_86_corrupt50.txt
+    reason: Missing output files: results/86/corrupt50/flipped_matrix.png
+    wildcards: seed=86, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 00:43:40 2025]
+Finished jobid: 1 (Rule: simulate_network)
+1 of 3 steps (33%) done
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 31:
+Command 'set -euo pipefail;  
+        mkdir -p results/86/corrupt50
+        mkdir -p logs benchmarks
+
+        python simulation.py             --seed 86             --host_tree angio_25tips_origin.phy             --virus_tree Nymphalini.phy             --corrupt 50             --lambda_param 0.7             > logs/simulate_86_corrupt50.out 2> logs/simulate_86_corrupt50.err
+
+        # Move outputs into unique result folder
+        mv experiments/original_matrix.png results/86/corrupt50/original_matrix.png
+        mv experiments/corrupted.png results/86/corrupt50/corrupted.png || true
+        mv experiments/flipped_matrix.png results/86/corrupt50/flipped_matrix.png' returned non-zero exit status 1.
+[Tue Sep  9 00:43:43 2025]
+Error in rule simulate_network:
+    message: None
+    jobid: 2
+    input: angio_25tips_origin.phy, Nymphalini.phy
+    output: results/86/corrupt50/original_matrix.png, results/86/corrupt50/corrupted.png, results/86/corrupt50/flipped_matrix.png
+    log: logs/simulate_86_corrupt50.out, logs/simulate_86_corrupt50.err (check log file(s) for error details)
+    shell:
+        
+        mkdir -p results/86/corrupt50
+        mkdir -p logs benchmarks
+
+        python simulation.py             --seed 86             --host_tree angio_25tips_origin.phy             --virus_tree Nymphalini.phy             --corrupt 50             --lambda_param 0.7             > logs/simulate_86_corrupt50.out 2> logs/simulate_86_corrupt50.err
+
+        # Move outputs into unique result folder
+        mv experiments/original_matrix.png results/86/corrupt50/original_matrix.png
+        mv experiments/corrupted.png results/86/corrupt50/corrupted.png || true
+        mv experiments/flipped_matrix.png results/86/corrupt50/flipped_matrix.png
+        
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Sep  9 00:43:43 2025]
+Error in rule simulate_network:
+    message: None
+    jobid: 2
+    input: angio_25tips_origin.phy, Nymphalini.phy
+    output: results/86/corrupt50/original_matrix.png, results/86/corrupt50/corrupted.png, results/86/corrupt50/flipped_matrix.png
+    log: logs/simulate_86_corrupt50.out, logs/simulate_86_corrupt50.err (check log file(s) for error details)
+    shell:
+        
+        mkdir -p results/86/corrupt50
+        mkdir -p logs benchmarks
+
+        python simulation.py             --seed 86             --host_tree angio_25tips_origin.phy             --virus_tree Nymphalini.phy             --corrupt 50             --lambda_param 0.7             > logs/simulate_86_corrupt50.out 2> logs/simulate_86_corrupt50.err
+
+        # Move outputs into unique result folder
+        mv experiments/original_matrix.png results/86/corrupt50/original_matrix.png
+        mv experiments/corrupted.png results/86/corrupt50/corrupted.png || true
+        mv experiments/flipped_matrix.png results/86/corrupt50/flipped_matrix.png
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-09T004336.010962.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

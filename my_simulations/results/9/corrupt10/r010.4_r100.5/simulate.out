@@ -1,0 +1,29 @@
+Matrix saved as ml_parsimony_matrices/seed9_ratio1.2485.png
+Matrix saved as results/9/corrupt10/r010.4_r100.5/original_matrix.png
+Matrix saved as results/9/corrupt10/r010.4_r100.5/corrupted.png
+[iter 0] λ=0.5000 → flips=32
+[iter 1] λ=0.2500 → flips=0
+[iter 2] λ=0.3750 → flips=18
+[iter 3] λ=0.3125 → flips=0
+[iter 4] λ=0.3438 → flips=0
+[iter 5] λ=0.3594 → flips=2
+[iter 6] λ=0.3672 → flips=7
+[iter 7] λ=0.3711 → flips=13
+[iter 8] λ=0.3691 → flips=10
+
+Best λ=0.3691 → flips=10, correct=6/10
+Number of flips performed: 10
+Cell (Vanessa_atalanta,Rhamnaceae): 0 -> 1
+Cell (Vanessa_indica,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_californica,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_californica,Urticaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Typhaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Malvaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Smilacaceae): 0 -> 1
+Cell (Polygonia_egea,Rhamnaceae): 0 -> 1
+Cell (Polygonia_oreas,Urticaceae): 0 -> 1
+Cell (Polygonia_gracilis,Typhaceae): 0 -> 1
+Matrix saved as results/9/corrupt10/r010.4_r100.5/flipped_matrix.png
+Metrics: {'precision': 0.6, 'recall': 0.6, 'f1': 0.6, 'TP': 6, 'FP': 4, 'FN': 4}
+[Elbow detection] λ ≈ 0.386 (cutoff=0.364)
+Elbow Metrics: {'precision': 0.38095238095238093, 'recall': 0.8, 'f1': 0.5161290322580645, 'TP': 8, 'FP': 13, 'FN': 2}

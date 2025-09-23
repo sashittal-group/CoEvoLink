@@ -1,0 +1,806 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate       60
+total          61
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep  3 22:11:31 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed23.done
+    jobid: 24
+    reason: Missing output files: results/ml_parsimony_matrices/seed23.done
+    wildcards: mode=ml, seed=23
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Touching output file results/ml_parsimony_matrices/seed23.done.
+[Wed Sep  3 22:11:32 2025]
+Finished jobid: 24 (Rule: simulate)
+1 of 61 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep  3 22:11:32 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed63.done
+    jobid: 64
+    reason: Missing output files: results/ml_parsimony_matrices/seed63.done
+    wildcards: mode=ml, seed=63
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed63.done.
+[Wed Sep  3 22:11:33 2025]
+Finished jobid: 64 (Rule: simulate)
+2 of 61 steps (3%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:33 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed93.done
+    jobid: 94
+    reason: Missing output files: results/ml_parsimony_matrices/seed93.done
+    wildcards: mode=ml, seed=93
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed93.done.
+[Wed Sep  3 22:11:35 2025]
+Finished jobid: 94 (Rule: simulate)
+3 of 61 steps (5%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:35 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed38.done
+    jobid: 39
+    reason: Missing output files: results/ml_parsimony_matrices/seed38.done
+    wildcards: mode=ml, seed=38
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed38.done.
+[Wed Sep  3 22:11:36 2025]
+Finished jobid: 39 (Rule: simulate)
+4 of 61 steps (7%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:36 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed78.done
+    jobid: 79
+    reason: Missing output files: results/ml_parsimony_matrices/seed78.done
+    wildcards: mode=ml, seed=78
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed78.done.
+[Wed Sep  3 22:11:37 2025]
+Finished jobid: 79 (Rule: simulate)
+5 of 61 steps (8%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:37 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed48.done
+    jobid: 49
+    reason: Missing output files: results/ml_parsimony_matrices/seed48.done
+    wildcards: mode=ml, seed=48
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed48.done.
+[Wed Sep  3 22:11:38 2025]
+Finished jobid: 49 (Rule: simulate)
+6 of 61 steps (10%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:38 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed68.done
+    jobid: 69
+    reason: Missing output files: results/ml_parsimony_matrices/seed68.done
+    wildcards: mode=ml, seed=68
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed68.done.
+[Wed Sep  3 22:11:39 2025]
+Finished jobid: 69 (Rule: simulate)
+7 of 61 steps (11%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:39 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed58.done
+    jobid: 59
+    reason: Missing output files: results/ml_parsimony_matrices/seed58.done
+    wildcards: mode=ml, seed=58
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed58.done.
+[Wed Sep  3 22:11:39 2025]
+Finished jobid: 59 (Rule: simulate)
+8 of 61 steps (13%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:39 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed8.done
+    jobid: 9
+    reason: Missing output files: results/ml_parsimony_matrices/seed8.done
+    wildcards: mode=ml, seed=8
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed8.done.
+[Wed Sep  3 22:11:40 2025]
+Finished jobid: 9 (Rule: simulate)
+9 of 61 steps (15%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:40 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed18.done
+    jobid: 19
+    reason: Missing output files: results/ml_parsimony_matrices/seed18.done
+    wildcards: mode=ml, seed=18
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed18.done.
+[Wed Sep  3 22:11:41 2025]
+Finished jobid: 19 (Rule: simulate)
+10 of 61 steps (16%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:41 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed88.done
+    jobid: 89
+    reason: Missing output files: results/ml_parsimony_matrices/seed88.done
+    wildcards: mode=ml, seed=88
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed88.done.
+[Wed Sep  3 22:11:42 2025]
+Finished jobid: 89 (Rule: simulate)
+11 of 61 steps (18%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:42 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed98.done
+    jobid: 99
+    reason: Missing output files: results/ml_parsimony_matrices/seed98.done
+    wildcards: mode=ml, seed=98
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed98.done.
+[Wed Sep  3 22:11:43 2025]
+Finished jobid: 99 (Rule: simulate)
+12 of 61 steps (20%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:43 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed90.done
+    jobid: 91
+    reason: Missing output files: results/ml_parsimony_matrices/seed90.done
+    wildcards: mode=ml, seed=90
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed90.done.
+[Wed Sep  3 22:11:45 2025]
+Finished jobid: 91 (Rule: simulate)
+13 of 61 steps (21%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:45 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed35.done
+    jobid: 36
+    reason: Missing output files: results/ml_parsimony_matrices/seed35.done
+    wildcards: mode=ml, seed=35
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed35.done.
+[Wed Sep  3 22:11:47 2025]
+Finished jobid: 36 (Rule: simulate)
+14 of 61 steps (23%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:47 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed95.done
+    jobid: 96
+    reason: Missing output files: results/ml_parsimony_matrices/seed95.done
+    wildcards: mode=ml, seed=95
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed95.done.
+[Wed Sep  3 22:11:48 2025]
+Finished jobid: 96 (Rule: simulate)
+15 of 61 steps (25%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:48 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed2.done
+    jobid: 3
+    reason: Missing output files: results/ml_parsimony_matrices/seed2.done
+    wildcards: mode=ml, seed=2
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed2.done.
+[Wed Sep  3 22:11:49 2025]
+Finished jobid: 3 (Rule: simulate)
+16 of 61 steps (26%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:49 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed12.done
+    jobid: 13
+    reason: Missing output files: results/ml_parsimony_matrices/seed12.done
+    wildcards: mode=ml, seed=12
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed12.done.
+[Wed Sep  3 22:11:51 2025]
+Finished jobid: 13 (Rule: simulate)
+17 of 61 steps (28%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:51 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed42.done
+    jobid: 43
+    reason: Missing output files: results/ml_parsimony_matrices/seed42.done
+    wildcards: mode=ml, seed=42
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed42.done.
+[Wed Sep  3 22:11:52 2025]
+Finished jobid: 43 (Rule: simulate)
+18 of 61 steps (30%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:52 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed52.done
+    jobid: 53
+    reason: Missing output files: results/ml_parsimony_matrices/seed52.done
+    wildcards: mode=ml, seed=52
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed52.done.
+[Wed Sep  3 22:11:53 2025]
+Finished jobid: 53 (Rule: simulate)
+19 of 61 steps (31%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:53 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed62.done
+    jobid: 63
+    reason: Missing output files: results/ml_parsimony_matrices/seed62.done
+    wildcards: mode=ml, seed=62
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed62.done.
+[Wed Sep  3 22:11:54 2025]
+Finished jobid: 63 (Rule: simulate)
+20 of 61 steps (33%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:54 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed72.done
+    jobid: 73
+    reason: Missing output files: results/ml_parsimony_matrices/seed72.done
+    wildcards: mode=ml, seed=72
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed72.done.
+[Wed Sep  3 22:11:55 2025]
+Finished jobid: 73 (Rule: simulate)
+21 of 61 steps (34%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:55 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed67.done
+    jobid: 68
+    reason: Missing output files: results/ml_parsimony_matrices/seed67.done
+    wildcards: mode=ml, seed=67
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed67.done.
+[Wed Sep  3 22:11:56 2025]
+Finished jobid: 68 (Rule: simulate)
+22 of 61 steps (36%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:56 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed85.done
+    jobid: 86
+    reason: Missing output files: results/ml_parsimony_matrices/seed85.done
+    wildcards: mode=ml, seed=85
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed85.done.
+[Wed Sep  3 22:11:56 2025]
+Finished jobid: 86 (Rule: simulate)
+23 of 61 steps (38%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:56 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed5.done
+    jobid: 6
+    reason: Missing output files: results/ml_parsimony_matrices/seed5.done
+    wildcards: mode=ml, seed=5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed5.done.
+[Wed Sep  3 22:11:57 2025]
+Finished jobid: 6 (Rule: simulate)
+24 of 61 steps (39%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:57 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed96.done
+    jobid: 97
+    reason: Missing output files: results/ml_parsimony_matrices/seed96.done
+    wildcards: mode=ml, seed=96
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed96.done.
+[Wed Sep  3 22:11:58 2025]
+Finished jobid: 97 (Rule: simulate)
+25 of 61 steps (41%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:58 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed16.done
+    jobid: 17
+    reason: Missing output files: results/ml_parsimony_matrices/seed16.done
+    wildcards: mode=ml, seed=16
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed16.done.
+[Wed Sep  3 22:11:59 2025]
+Finished jobid: 17 (Rule: simulate)
+26 of 61 steps (43%) done
+Execute 1 jobs...
+[Wed Sep  3 22:11:59 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed26.done
+    jobid: 27
+    reason: Missing output files: results/ml_parsimony_matrices/seed26.done
+    wildcards: mode=ml, seed=26
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed26.done.
+[Wed Sep  3 22:12:00 2025]
+Finished jobid: 27 (Rule: simulate)
+27 of 61 steps (44%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:00 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed6.done
+    jobid: 7
+    reason: Missing output files: results/ml_parsimony_matrices/seed6.done
+    wildcards: mode=ml, seed=6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed6.done.
+[Wed Sep  3 22:12:01 2025]
+Finished jobid: 7 (Rule: simulate)
+28 of 61 steps (46%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:01 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed76.done
+    jobid: 77
+    reason: Missing output files: results/ml_parsimony_matrices/seed76.done
+    wildcards: mode=ml, seed=76
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed76.done.
+[Wed Sep  3 22:12:02 2025]
+Finished jobid: 77 (Rule: simulate)
+29 of 61 steps (48%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:02 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed66.done
+    jobid: 67
+    reason: Missing output files: results/ml_parsimony_matrices/seed66.done
+    wildcards: mode=ml, seed=66
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed66.done.
+[Wed Sep  3 22:12:03 2025]
+Finished jobid: 67 (Rule: simulate)
+30 of 61 steps (49%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:03 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed46.done
+    jobid: 47
+    reason: Missing output files: results/ml_parsimony_matrices/seed46.done
+    wildcards: mode=ml, seed=46
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed46.done.
+[Wed Sep  3 22:12:04 2025]
+Finished jobid: 47 (Rule: simulate)
+31 of 61 steps (51%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:04 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed91.done
+    jobid: 92
+    reason: Missing output files: results/ml_parsimony_matrices/seed91.done
+    wildcards: mode=ml, seed=91
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed91.done.
+[Wed Sep  3 22:12:05 2025]
+Finished jobid: 92 (Rule: simulate)
+32 of 61 steps (52%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:05 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed11.done
+    jobid: 12
+    reason: Missing output files: results/ml_parsimony_matrices/seed11.done
+    wildcards: mode=ml, seed=11
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed11.done.
+[Wed Sep  3 22:12:06 2025]
+Finished jobid: 12 (Rule: simulate)
+33 of 61 steps (54%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:06 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed21.done
+    jobid: 22
+    reason: Missing output files: results/ml_parsimony_matrices/seed21.done
+    wildcards: mode=ml, seed=21
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed21.done.
+[Wed Sep  3 22:12:07 2025]
+Finished jobid: 22 (Rule: simulate)
+34 of 61 steps (56%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:07 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed31.done
+    jobid: 32
+    reason: Missing output files: results/ml_parsimony_matrices/seed31.done
+    wildcards: mode=ml, seed=31
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed31.done.
+[Wed Sep  3 22:12:08 2025]
+Finished jobid: 32 (Rule: simulate)
+35 of 61 steps (57%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:08 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed1.done
+    jobid: 2
+    reason: Missing output files: results/ml_parsimony_matrices/seed1.done
+    wildcards: mode=ml, seed=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed1.done.
+[Wed Sep  3 22:12:08 2025]
+Finished jobid: 2 (Rule: simulate)
+36 of 61 steps (59%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:08 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed44.done
+    jobid: 45
+    reason: Missing output files: results/ml_parsimony_matrices/seed44.done
+    wildcards: mode=ml, seed=44
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed44.done.
+[Wed Sep  3 22:12:09 2025]
+Finished jobid: 45 (Rule: simulate)
+37 of 61 steps (61%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:09 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed34.done
+    jobid: 35
+    reason: Missing output files: results/ml_parsimony_matrices/seed34.done
+    wildcards: mode=ml, seed=34
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed34.done.
+[Wed Sep  3 22:12:10 2025]
+Finished jobid: 35 (Rule: simulate)
+38 of 61 steps (62%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:10 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed51.done
+    jobid: 52
+    reason: Missing output files: results/ml_parsimony_matrices/seed51.done
+    wildcards: mode=ml, seed=51
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed51.done.
+[Wed Sep  3 22:12:11 2025]
+Finished jobid: 52 (Rule: simulate)
+39 of 61 steps (64%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:11 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed61.done
+    jobid: 62
+    reason: Missing output files: results/ml_parsimony_matrices/seed61.done
+    wildcards: mode=ml, seed=61
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed61.done.
+[Wed Sep  3 22:12:13 2025]
+Finished jobid: 62 (Rule: simulate)
+40 of 61 steps (66%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:13 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed71.done
+    jobid: 72
+    reason: Missing output files: results/ml_parsimony_matrices/seed71.done
+    wildcards: mode=ml, seed=71
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed71.done.
+[Wed Sep  3 22:12:14 2025]
+Finished jobid: 72 (Rule: simulate)
+41 of 61 steps (67%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:14 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed41.done
+    jobid: 42
+    reason: Missing output files: results/ml_parsimony_matrices/seed41.done
+    wildcards: mode=ml, seed=41
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed41.done.
+[Wed Sep  3 22:12:15 2025]
+Finished jobid: 42 (Rule: simulate)
+42 of 61 steps (69%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:15 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed69.done
+    jobid: 70
+    reason: Missing output files: results/ml_parsimony_matrices/seed69.done
+    wildcards: mode=ml, seed=69
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed69.done.
+[Wed Sep  3 22:12:16 2025]
+Finished jobid: 70 (Rule: simulate)
+43 of 61 steps (70%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:16 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed49.done
+    jobid: 50
+    reason: Missing output files: results/ml_parsimony_matrices/seed49.done
+    wildcards: mode=ml, seed=49
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed49.done.
+[Wed Sep  3 22:12:17 2025]
+Finished jobid: 50 (Rule: simulate)
+44 of 61 steps (72%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:17 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed39.done
+    jobid: 40
+    reason: Missing output files: results/ml_parsimony_matrices/seed39.done
+    wildcards: mode=ml, seed=39
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed39.done.
+[Wed Sep  3 22:12:18 2025]
+Finished jobid: 40 (Rule: simulate)
+45 of 61 steps (74%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:18 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed40.done
+    jobid: 41
+    reason: Missing output files: results/ml_parsimony_matrices/seed40.done
+    wildcards: mode=ml, seed=40
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed40.done.
+[Wed Sep  3 22:12:19 2025]
+Finished jobid: 41 (Rule: simulate)
+46 of 61 steps (75%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:19 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed60.done
+    jobid: 61
+    reason: Missing output files: results/ml_parsimony_matrices/seed60.done
+    wildcards: mode=ml, seed=60
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed60.done.
+[Wed Sep  3 22:12:20 2025]
+Finished jobid: 61 (Rule: simulate)
+47 of 61 steps (77%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:20 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed25.done
+    jobid: 26
+    reason: Missing output files: results/ml_parsimony_matrices/seed25.done
+    wildcards: mode=ml, seed=25
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed25.done.
+[Wed Sep  3 22:12:22 2025]
+Finished jobid: 26 (Rule: simulate)
+48 of 61 steps (79%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:22 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed75.done
+    jobid: 76
+    reason: Missing output files: results/ml_parsimony_matrices/seed75.done
+    wildcards: mode=ml, seed=75
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed75.done.
+[Wed Sep  3 22:12:23 2025]
+Finished jobid: 76 (Rule: simulate)
+49 of 61 steps (80%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:23 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed10.done
+    jobid: 11
+    reason: Missing output files: results/ml_parsimony_matrices/seed10.done
+    wildcards: mode=ml, seed=10
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed10.done.
+[Wed Sep  3 22:12:24 2025]
+Finished jobid: 11 (Rule: simulate)
+50 of 61 steps (82%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:24 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed20.done
+    jobid: 21
+    reason: Missing output files: results/ml_parsimony_matrices/seed20.done
+    wildcards: mode=ml, seed=20
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed20.done.
+[Wed Sep  3 22:12:26 2025]
+Finished jobid: 21 (Rule: simulate)
+51 of 61 steps (84%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:26 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed0.done
+    jobid: 1
+    reason: Missing output files: results/ml_parsimony_matrices/seed0.done
+    wildcards: mode=ml, seed=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed0.done.
+[Wed Sep  3 22:12:27 2025]
+Finished jobid: 1 (Rule: simulate)
+52 of 61 steps (85%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:27 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed70.done
+    jobid: 71
+    reason: Missing output files: results/ml_parsimony_matrices/seed70.done
+    wildcards: mode=ml, seed=70
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed70.done.
+[Wed Sep  3 22:12:27 2025]
+Finished jobid: 71 (Rule: simulate)
+53 of 61 steps (87%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:28 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed45.done
+    jobid: 46
+    reason: Missing output files: results/ml_parsimony_matrices/seed45.done
+    wildcards: mode=ml, seed=45
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed45.done.
+[Wed Sep  3 22:12:28 2025]
+Finished jobid: 46 (Rule: simulate)
+54 of 61 steps (89%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:28 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed65.done
+    jobid: 66
+    reason: Missing output files: results/ml_parsimony_matrices/seed65.done
+    wildcards: mode=ml, seed=65
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed65.done.
+[Wed Sep  3 22:12:29 2025]
+Finished jobid: 66 (Rule: simulate)
+55 of 61 steps (90%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:29 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed15.done
+    jobid: 16
+    reason: Missing output files: results/ml_parsimony_matrices/seed15.done
+    wildcards: mode=ml, seed=15
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed15.done.
+[Wed Sep  3 22:12:30 2025]
+Finished jobid: 16 (Rule: simulate)
+56 of 61 steps (92%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:30 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed79.done
+    jobid: 80
+    reason: Missing output files: results/ml_parsimony_matrices/seed79.done
+    wildcards: mode=ml, seed=79
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed79.done.
+[Wed Sep  3 22:12:31 2025]
+Finished jobid: 80 (Rule: simulate)
+57 of 61 steps (93%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:31 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed89.done
+    jobid: 90
+    reason: Missing output files: results/ml_parsimony_matrices/seed89.done
+    wildcards: mode=ml, seed=89
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed89.done.
+[Wed Sep  3 22:12:33 2025]
+Finished jobid: 90 (Rule: simulate)
+58 of 61 steps (95%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:33 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed94.done
+    jobid: 95
+    reason: Missing output files: results/ml_parsimony_matrices/seed94.done
+    wildcards: mode=ml, seed=94
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Touching output file results/ml_parsimony_matrices/seed94.done.
+[Wed Sep  3 22:12:34 2025]
+Finished jobid: 95 (Rule: simulate)
+59 of 61 steps (97%) done
+Execute 1 jobs...
+[Wed Sep  3 22:12:34 2025]
+localrule simulate:
+    output: results/ml_parsimony_matrices/seed84.done
+    jobid: 85
+    reason: Missing output files: results/ml_parsimony_matrices/seed84.done
+    wildcards: mode=ml, seed=84
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Touching output file results/ml_parsimony_matrices/seed84.done.
+[Wed Sep  3 22:12:35 2025]
+Finished jobid: 85 (Rule: simulate)
+60 of 61 steps (98%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep  3 22:12:35 2025]
+localrule all:
+    input: results/ml_parsimony_matrices/seed0.done, results/ml_parsimony_matrices/seed1.done, results/ml_parsimony_matrices/seed2.done, results/ml_parsimony_matrices/seed3.done, results/ml_parsimony_matrices/seed4.done, results/ml_parsimony_matrices/seed5.done, results/ml_parsimony_matrices/seed6.done, results/ml_parsimony_matrices/seed7.done, results/ml_parsimony_matrices/seed8.done, results/ml_parsimony_matrices/seed9.done, results/ml_parsimony_matrices/seed10.done, results/ml_parsimony_matrices/seed11.done, results/ml_parsimony_matrices/seed12.done, results/ml_parsimony_matrices/seed13.done, results/ml_parsimony_matrices/seed14.done, results/ml_parsimony_matrices/seed15.done, results/ml_parsimony_matrices/seed16.done, results/ml_parsimony_matrices/seed17.done, results/ml_parsimony_matrices/seed18.done, results/ml_parsimony_matrices/seed19.done, results/ml_parsimony_matrices/seed20.done, results/ml_parsimony_matrices/seed21.done, results/ml_parsimony_matrices/seed22.done, results/ml_parsimony_matrices/seed23.done, results/ml_parsimony_matrices/seed24.done, results/ml_parsimony_matrices/seed25.done, results/ml_parsimony_matrices/seed26.done, results/ml_parsimony_matrices/seed27.done, results/ml_parsimony_matrices/seed28.done, results/ml_parsimony_matrices/seed29.done, results/ml_parsimony_matrices/seed30.done, results/ml_parsimony_matrices/seed31.done, results/ml_parsimony_matrices/seed32.done, results/ml_parsimony_matrices/seed33.done, results/ml_parsimony_matrices/seed34.done, results/ml_parsimony_matrices/seed35.done, results/ml_parsimony_matrices/seed36.done, results/ml_parsimony_matrices/seed37.done, results/ml_parsimony_matrices/seed38.done, results/ml_parsimony_matrices/seed39.done, results/ml_parsimony_matrices/seed40.done, results/ml_parsimony_matrices/seed41.done, results/ml_parsimony_matrices/seed42.done, results/ml_parsimony_matrices/seed43.done, results/ml_parsimony_matrices/seed44.done, results/ml_parsimony_matrices/seed45.done, results/ml_parsimony_matrices/seed46.done, results/ml_parsimony_matrices/seed47.done, results/ml_parsimony_matrices/seed48.done, results/ml_parsimony_matrices/seed49.done, results/ml_parsimony_matrices/seed50.done, results/ml_parsimony_matrices/seed51.done, results/ml_parsimony_matrices/seed52.done, results/ml_parsimony_matrices/seed53.done, results/ml_parsimony_matrices/seed54.done, results/ml_parsimony_matrices/seed55.done, results/ml_parsimony_matrices/seed56.done, results/ml_parsimony_matrices/seed57.done, results/ml_parsimony_matrices/seed58.done, results/ml_parsimony_matrices/seed59.done, results/ml_parsimony_matrices/seed60.done, results/ml_parsimony_matrices/seed61.done, results/ml_parsimony_matrices/seed62.done, results/ml_parsimony_matrices/seed63.done, results/ml_parsimony_matrices/seed64.done, results/ml_parsimony_matrices/seed65.done, results/ml_parsimony_matrices/seed66.done, results/ml_parsimony_matrices/seed67.done, results/ml_parsimony_matrices/seed68.done, results/ml_parsimony_matrices/seed69.done, results/ml_parsimony_matrices/seed70.done, results/ml_parsimony_matrices/seed71.done, results/ml_parsimony_matrices/seed72.done, results/ml_parsimony_matrices/seed73.done, results/ml_parsimony_matrices/seed74.done, results/ml_parsimony_matrices/seed75.done, results/ml_parsimony_matrices/seed76.done, results/ml_parsimony_matrices/seed77.done, results/ml_parsimony_matrices/seed78.done, results/ml_parsimony_matrices/seed79.done, results/ml_parsimony_matrices/seed80.done, results/ml_parsimony_matrices/seed81.done, results/ml_parsimony_matrices/seed82.done, results/ml_parsimony_matrices/seed83.done, results/ml_parsimony_matrices/seed84.done, results/ml_parsimony_matrices/seed85.done, results/ml_parsimony_matrices/seed86.done, results/ml_parsimony_matrices/seed87.done, results/ml_parsimony_matrices/seed88.done, results/ml_parsimony_matrices/seed89.done, results/ml_parsimony_matrices/seed90.done, results/ml_parsimony_matrices/seed91.done, results/ml_parsimony_matrices/seed92.done, results/ml_parsimony_matrices/seed93.done, results/ml_parsimony_matrices/seed94.done, results/ml_parsimony_matrices/seed95.done, results/ml_parsimony_matrices/seed96.done, results/ml_parsimony_matrices/seed97.done, results/ml_parsimony_matrices/seed98.done, results/ml_parsimony_matrices/seed99.done
+    jobid: 0
+    reason: Input files updated by another job: results/ml_parsimony_matrices/seed72.done, results/ml_parsimony_matrices/seed62.done, results/ml_parsimony_matrices/seed5.done, results/ml_parsimony_matrices/seed70.done, results/ml_parsimony_matrices/seed45.done, results/ml_parsimony_matrices/seed85.done, results/ml_parsimony_matrices/seed88.done, results/ml_parsimony_matrices/seed68.done, results/ml_parsimony_matrices/seed65.done, results/ml_parsimony_matrices/seed95.done, results/ml_parsimony_matrices/seed98.done, results/ml_parsimony_matrices/seed35.done, results/ml_parsimony_matrices/seed11.done, results/ml_parsimony_matrices/seed12.done, results/ml_parsimony_matrices/seed60.done, results/ml_parsimony_matrices/seed26.done, results/ml_parsimony_matrices/seed90.done, results/ml_parsimony_matrices/seed91.done, results/ml_parsimony_matrices/seed49.done, results/ml_parsimony_matrices/seed0.done, results/ml_parsimony_matrices/seed44.done, results/ml_parsimony_matrices/seed1.done, results/ml_parsimony_matrices/seed79.done, results/ml_parsimony_matrices/seed31.done, results/ml_parsimony_matrices/seed67.done, results/ml_parsimony_matrices/seed84.done, results/ml_parsimony_matrices/seed94.done, results/ml_parsimony_matrices/seed40.done, results/ml_parsimony_matrices/seed16.done, results/ml_parsimony_matrices/seed2.done, results/ml_parsimony_matrices/seed51.done, results/ml_parsimony_matrices/seed69.done, results/ml_parsimony_matrices/seed78.done, results/ml_parsimony_matrices/seed34.done, results/ml_parsimony_matrices/seed23.done, results/ml_parsimony_matrices/seed66.done, results/ml_parsimony_matrices/seed75.done, results/ml_parsimony_matrices/seed38.done, results/ml_parsimony_matrices/seed15.done, results/ml_parsimony_matrices/seed39.done, results/ml_parsimony_matrices/seed61.done, results/ml_parsimony_matrices/seed41.done, results/ml_parsimony_matrices/seed18.done, results/ml_parsimony_matrices/seed6.done, results/ml_parsimony_matrices/seed10.done, results/ml_parsimony_matrices/seed46.done, results/ml_parsimony_matrices/seed52.done, results/ml_parsimony_matrices/seed76.done, results/ml_parsimony_matrices/seed20.done, results/ml_parsimony_matrices/seed93.done, results/ml_parsimony_matrices/seed21.done, results/ml_parsimony_matrices/seed63.done, results/ml_parsimony_matrices/seed8.done, results/ml_parsimony_matrices/seed89.done, results/ml_parsimony_matrices/seed58.done, results/ml_parsimony_matrices/seed71.done, results/ml_parsimony_matrices/seed48.done, results/ml_parsimony_matrices/seed96.done, results/ml_parsimony_matrices/seed42.done, results/ml_parsimony_matrices/seed25.done
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep  3 22:12:35 2025]
+Finished jobid: 0 (Rule: all)
+61 of 61 steps (100%) done
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-03T221131.570387.snakemake.log

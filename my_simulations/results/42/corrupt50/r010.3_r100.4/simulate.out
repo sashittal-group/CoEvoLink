@@ -1,0 +1,30 @@
+Matrix saved as ml_parsimony_matrices/seed42_ratio1.8162.png
+Matrix saved as results/42/corrupt50/r010.3_r100.4/original_matrix.png
+Matrix saved as results/42/corrupt50/r010.3_r100.4/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=0
+[iter 2] λ=0.8750 → flips=0
+[iter 3] λ=0.9375 → flips=0
+[iter 4] λ=0.9688 → flips=0
+[iter 5] λ=0.9844 → flips=0
+[iter 6] λ=0.9922 → flips=0
+[iter 7] λ=0.9961 → flips=0
+[iter 8] λ=0.9980 → flips=849
+[iter 9] λ=0.9971 → flips=0
+[iter 10] λ=0.9976 → flips=0
+[iter 11] λ=0.9978 → flips=0
+[iter 12] λ=0.9979 → flips=0
+[iter 13] λ=0.9980 → flips=849
+[iter 14] λ=0.9980 → flips=849
+[iter 15] λ=0.9979 → flips=0
+[iter 16] λ=0.9979 → flips=0
+[iter 17] λ=0.9980 → flips=849
+[iter 18] λ=0.9979 → flips=849
+[iter 19] λ=0.9979 → flips=0
+
+Best λ=0.5000 → flips=0, correct=0/6
+Number of flips performed: 0
+Matrix saved as results/42/corrupt50/r010.3_r100.4/flipped_matrix.png
+Metrics: {'precision': 0, 'recall': 0.0, 'f1': 0, 'TP': 0, 'FP': 0, 'FN': 6}
+[Elbow detection] λ ≈ 0.539 (cutoff=0.539)
+Elbow Metrics: {'precision': 0, 'recall': 0.0, 'f1': 0, 'TP': 0, 'FP': 0, 'FN': 6}

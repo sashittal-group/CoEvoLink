@@ -1,0 +1,68 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate        3
+total           4
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:12:33 2025]
+localrule simulate:
+    output: results/86/corrupt100/original_matrix.png, results/86/corrupt100/flipped_matrix.png
+    log: logs/86_corrupt100.out, logs/86_corrupt100.err
+    jobid: 3
+    benchmark: benchmarks/86_corrupt100.tsv
+    reason: Missing output files: results/86/corrupt100/flipped_matrix.png
+    wildcards: seed=86, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:12:41 2025]
+Finished jobid: 3 (Rule: simulate)
+1 of 4 steps (25%) done
+Execute 1 jobs...
+[Tue Sep  9 01:12:41 2025]
+localrule simulate:
+    output: results/86/corrupt0/original_matrix.png, results/86/corrupt0/flipped_matrix.png
+    log: logs/86_corrupt0.out, logs/86_corrupt0.err
+    jobid: 1
+    benchmark: benchmarks/86_corrupt0.tsv
+    reason: Missing output files: results/86/corrupt0/flipped_matrix.png; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: '86',0.7,'0' now: 'results/86/corrupt0' 
+    wildcards: seed=86, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:12:46 2025]
+Finished jobid: 1 (Rule: simulate)
+2 of 4 steps (50%) done
+Execute 1 jobs...
+[Tue Sep  9 01:12:46 2025]
+localrule simulate:
+    output: results/86/corrupt50/original_matrix.png, results/86/corrupt50/flipped_matrix.png
+    log: logs/86_corrupt50.out, logs/86_corrupt50.err
+    jobid: 2
+    benchmark: benchmarks/86_corrupt50.tsv
+    reason: Missing output files: results/86/corrupt50/flipped_matrix.png
+    wildcards: seed=86, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:12:54 2025]
+Finished jobid: 2 (Rule: simulate)
+3 of 4 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:12:54 2025]
+localrule all:
+    input: results/86/corrupt0/flipped_matrix.png, results/86/corrupt50/flipped_matrix.png, results/86/corrupt100/flipped_matrix.png
+    jobid: 0
+    reason: Input files updated by another job: results/86/corrupt50/flipped_matrix.png, results/86/corrupt0/flipped_matrix.png, results/86/corrupt100/flipped_matrix.png
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:12:54 2025]
+Finished jobid: 0 (Rule: all)
+4 of 4 steps (100%) done
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-09T011233.831265.snakemake.log

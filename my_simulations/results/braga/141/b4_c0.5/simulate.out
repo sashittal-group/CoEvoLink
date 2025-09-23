@@ -1,0 +1,53 @@
+Matrix saved as results/braga/141/b4_c0.5/original_matrix.png
+Matrix saved as results/braga/141/b4_c0.5/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=21
+[iter 2] λ=0.8750 → flips=725
+[iter 3] λ=0.8125 → flips=725
+[iter 4] λ=0.7812 → flips=725
+[iter 5] λ=0.7656 → flips=24
+[iter 6] λ=0.7734 → flips=725
+[iter 7] λ=0.7695 → flips=24
+[iter 8] λ=0.7715 → flips=725
+[iter 9] λ=0.7705 → flips=24
+[iter 10] λ=0.7710 → flips=24
+[iter 11] λ=0.7712 → flips=725
+[iter 12] λ=0.7711 → flips=725
+[iter 13] λ=0.7711 → flips=24
+[iter 14] λ=0.7711 → flips=24
+[iter 15] λ=0.7711 → flips=24
+[iter 16] λ=0.7711 → flips=24
+[iter 17] λ=0.7711 → flips=24
+[iter 18] λ=0.7711 → flips=24
+[iter 19] λ=0.7711 → flips=725
+
+Best λ=0.7656 → flips=24, correct=12/242
+Number of flips performed: 24
+Cell (Hypanartia_lethe,Typhaceae): 0 -> 1
+Cell (Hypanartia_bella,Typhaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Ulmaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Cannabaceae): 0 -> 1
+Cell (Nymphalis_californica,Nymphaeaceae): 0 -> 1
+Cell (Nymphalis_californica,Ulmaceae): 0 -> 1
+Cell (Nymphalis_californica,Cannabaceae): 0 -> 1
+Cell (Nymphalis_californica,Urticaceae): 0 -> 1
+Cell (Nymphalis_californica,Betulaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Amborellaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Schisandraceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Rosaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Ulmaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Urticaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Betulaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Schisandraceae): 0 -> 1
+Cell (Nymphalis_antiopa,Fabaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Ulmaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Cannabaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Betulaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Urticaceae): 0 -> 1
+Cell (Polygonia_comma,Urticaceae): 0 -> 1
+Matrix saved as results/braga/141/b4_c0.5/flipped_matrix.png
+Metrics: {'precision': 0.5, 'recall': 0.049586776859504134, 'f1': 0.09022556390977443, 'TP': 12, 'FP': 12, 'FN': 230}
+[Elbow detection] λ ≈ 0.771 (cutoff=0.760)
+Elbow Metrics: {'precision': 0.33379310344827584, 'recall': 1.0, 'f1': 0.500517063081696, 'TP': 242, 'FP': 483, 'FN': 0}

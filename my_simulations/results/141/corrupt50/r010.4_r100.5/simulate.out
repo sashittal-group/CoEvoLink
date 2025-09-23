@@ -1,0 +1,61 @@
+Matrix saved as ml_parsimony_matrices/seed141_ratio1.8527.png
+Matrix saved as results/141/corrupt50/r010.4_r100.5/original_matrix.png
+Matrix saved as results/141/corrupt50/r010.4_r100.5/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=1
+[iter 2] λ=0.8750 → flips=9
+[iter 3] λ=0.9375 → flips=31
+[iter 4] λ=0.9688 → flips=815
+[iter 5] λ=0.9531 → flips=815
+[iter 6] λ=0.9453 → flips=815
+[iter 7] λ=0.9414 → flips=815
+[iter 8] λ=0.9395 → flips=815
+[iter 9] λ=0.9385 → flips=815
+[iter 10] λ=0.9380 → flips=31
+[iter 11] λ=0.9382 → flips=815
+[iter 12] λ=0.9381 → flips=815
+[iter 13] λ=0.9380 → flips=815
+[iter 14] λ=0.9380 → flips=815
+[iter 15] λ=0.9380 → flips=31
+[iter 16] λ=0.9380 → flips=31
+[iter 17] λ=0.9380 → flips=815
+[iter 18] λ=0.9380 → flips=31
+[iter 19] λ=0.9380 → flips=31
+
+Best λ=0.9375 → flips=31, correct=16/50
+Number of flips performed: 31
+Cell (Hypanartia_lethe,Siparunaceae): 0 -> 1
+Cell (Hypanartia_lethe,Typhaceae): 0 -> 1
+Cell (Hypanartia_lethe,Potamogetonaceae): 0 -> 1
+Cell (Hypanartia_lethe,Acoraceae): 0 -> 1
+Cell (Hypanartia_lethe,Fabaceae): 0 -> 1
+Cell (Hypanartia_lethe,Rosaceae): 0 -> 1
+Cell (Hypanartia_lethe,Ulmaceae): 0 -> 1
+Cell (Hypanartia_lethe,Betulaceae): 0 -> 1
+Cell (Hypanartia_lethe,Malvaceae): 0 -> 1
+Cell (Hypanartia_lethe,Ericaceae): 0 -> 1
+Cell (Hypanartia_lethe,Asteraceae): 0 -> 1
+Cell (Hypanartia_bella,Aristolochiaceae): 0 -> 1
+Cell (Hypanartia_bella,Chloranthaceae): 0 -> 1
+Cell (Hypanartia_bella,Smilacaceae): 0 -> 1
+Cell (Hypanartia_bella,Acoraceae): 0 -> 1
+Cell (Hypanartia_bella,Ceratophyllaceae): 0 -> 1
+Cell (Hypanartia_bella,Rosaceae): 0 -> 1
+Cell (Hypanartia_bella,Ulmaceae): 0 -> 1
+Cell (Hypanartia_bella,Cannabaceae): 0 -> 1
+Cell (Hypanartia_bella,Betulaceae): 0 -> 1
+Cell (Hypanartia_bella,Salicaceae): 0 -> 1
+Cell (Hypanartia_bella,Malvaceae): 0 -> 1
+Cell (Hypanartia_bella,Grossulariaceae): 0 -> 1
+Cell (Hypanartia_bella,Ericaceae): 0 -> 1
+Cell (Hypanartia_bella,Asteraceae): 0 -> 1
+Cell (Hypanartia_bella,Plantaginaceae): 0 -> 1
+Cell (Hypanartia_bella,Boraginaceae): 0 -> 1
+Cell (Vanessa_itea,Ulmaceae): 0 -> 1
+Cell (Vanessa_itea,Cannabaceae): 0 -> 1
+Cell (Vanessa_dimorphica,Ulmaceae): 0 -> 1
+Cell (Vanessa_cardui,Rhamnaceae): 0 -> 1
+Matrix saved as results/141/corrupt50/r010.4_r100.5/flipped_matrix.png
+Metrics: {'precision': 0.5161290322580645, 'recall': 0.32, 'f1': 0.3950617283950617, 'TP': 16, 'FP': 15, 'FN': 34}
+[Elbow detection] λ ≈ 0.943 (cutoff=0.932)
+Elbow Metrics: {'precision': 0.06134969325153374, 'recall': 1.0, 'f1': 0.11560693641618495, 'TP': 50, 'FP': 765, 'FN': 0}

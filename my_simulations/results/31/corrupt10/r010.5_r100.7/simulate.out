@@ -1,0 +1,33 @@
+Matrix saved as ml_parsimony_matrices/seed31_ratio1.3521.png
+Matrix saved as results/31/corrupt10/r010.5_r100.7/original_matrix.png
+Matrix saved as results/31/corrupt10/r010.5_r100.7/corrupted.png
+[iter 0] λ=0.5000 → flips=134
+[iter 1] λ=0.2500 → flips=0
+[iter 2] λ=0.3750 → flips=15
+[iter 3] λ=0.3125 → flips=0
+[iter 4] λ=0.3438 → flips=0
+[iter 5] λ=0.3594 → flips=0
+[iter 6] λ=0.3672 → flips=5
+[iter 7] λ=0.3711 → flips=7
+[iter 8] λ=0.3730 → flips=9
+[iter 9] λ=0.3740 → flips=11
+[iter 10] λ=0.3735 → flips=11
+[iter 11] λ=0.3733 → flips=9
+[iter 12] λ=0.3734 → flips=10
+
+Best λ=0.3734 → flips=10, correct=3/10
+Number of flips performed: 10
+Cell (Vanessa_hippomene,Ulmaceae): 0 -> 1
+Cell (Vanessa_tameamea,Plantaginaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Asteraceae): 0 -> 1
+Cell (Polygonia_faunus,Rosaceae): 0 -> 1
+Cell (Polygonia_faunus,Plantaginaceae): 0 -> 1
+Cell (Polygonia_c_album,Boraginaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Cannabaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Boraginaceae): 0 -> 1
+Cell (Polygonia_oreas,Typhaceae): 0 -> 1
+Cell (Polygonia_oreas,Boraginaceae): 0 -> 1
+Matrix saved as results/31/corrupt10/r010.5_r100.7/flipped_matrix.png
+Metrics: {'precision': 0.3, 'recall': 0.3, 'f1': 0.3, 'TP': 3, 'FP': 7, 'FN': 7}
+[Elbow detection] λ ≈ 0.390 (cutoff=0.379)
+Elbow Metrics: {'precision': 0.1282051282051282, 'recall': 1.0, 'f1': 0.22727272727272727, 'TP': 10, 'FP': 68, 'FN': 0}

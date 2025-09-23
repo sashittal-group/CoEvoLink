@@ -1,0 +1,53 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate        1
+total           2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep  3 23:35:04 2025]
+localrule simulate:
+    output: results/default_parsimony_matrices/seed646.done
+    jobid: 1
+    reason: Missing output files: results/default_parsimony_matrices/seed646.done
+    wildcards: mode=default, seed=646
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        python simulation.py             --seed 646             --mode default             --host_tree angio_25tips_origin.phy \ 
+            --virus_tree Nymphalini.phy' returned non-zero exit status 2.
+[Wed Sep  3 23:35:04 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1
+    output: results/default_parsimony_matrices/seed646.done
+    shell:
+        
+        python simulation.py             --seed 646             --mode default             --host_tree angio_25tips_origin.phy \ 
+            --virus_tree Nymphalini.phy         
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Wed Sep  3 23:35:04 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1
+    output: results/default_parsimony_matrices/seed646.done
+    shell:
+        
+        python simulation.py             --seed 646             --mode default             --host_tree angio_25tips_origin.phy \ 
+            --virus_tree Nymphalini.phy         
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-03T233504.753900.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

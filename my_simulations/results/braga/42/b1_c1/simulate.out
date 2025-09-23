@@ -1,0 +1,42 @@
+Matrix saved as results/braga/42/b1_c1/original_matrix.png
+Matrix saved as results/braga/42/b1_c1/corrupted.png
+[iter 0] λ=0.5000 → flips=31
+[iter 1] λ=0.2500 → flips=0
+[iter 2] λ=0.3750 → flips=4
+[iter 3] λ=0.4375 → flips=24
+[iter 4] λ=0.4062 → flips=24
+[iter 5] λ=0.3906 → flips=22
+[iter 6] λ=0.3984 → flips=24
+[iter 7] λ=0.3945 → flips=24
+[iter 8] λ=0.3926 → flips=24
+[iter 9] λ=0.3916 → flips=23
+
+Best λ=0.3916 → flips=23, correct=20/23
+Number of flips performed: 23
+Cell (Vanessa_dimorphica,Fabaceae): 0 -> 1
+Cell (Vanessa_cardui,Typhaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Nymphaeaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Ceratophyllaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Rosaceae): 0 -> 1
+Cell (Vanessa_abyssinica,Fabaceae): 0 -> 1
+Cell (Vanessa_atalanta,Urticaceae): 0 -> 1
+Cell (Vanessa_tameamea,Amborellaceae): 0 -> 1
+Cell (Aglais_io,Smilacaceae): 0 -> 1
+Cell (Aglais_milberti,Urticaceae): 0 -> 1
+Cell (Aglais_milberti,Salicaceae): 0 -> 1
+Cell (Aglais_urticae,Siparunaceae): 0 -> 1
+Cell (Aglais_urticae,Smilacaceae): 0 -> 1
+Cell (Aglais_urticae,Acoraceae): 0 -> 1
+Cell (Kaniska_canace,Asteraceae): 0 -> 1
+Cell (Nymphalis_l_album,Aristolochiaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Amborellaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Typhaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Schisandraceae): 0 -> 1
+Cell (Polygonia_egea,Fabaceae): 0 -> 1
+Cell (Polygonia_faunus,Fabaceae): 0 -> 1
+Cell (Polygonia_satyrus,Rhamnaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Cannabaceae): 0 -> 1
+Matrix saved as results/braga/42/b1_c1/flipped_matrix.png
+Metrics: {'precision': 0.8695652173913043, 'recall': 0.8695652173913043, 'f1': 0.8695652173913043, 'TP': 20, 'FP': 3, 'FN': 3}
+[Elbow detection] λ ≈ 0.397 (cutoff=0.386)
+Elbow Metrics: {'precision': 0.875, 'recall': 0.9130434782608695, 'f1': 0.8936170212765957, 'TP': 21, 'FP': 3, 'FN': 2}

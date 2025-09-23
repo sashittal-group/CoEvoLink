@@ -1,0 +1,41 @@
+Matrix saved as ml_parsimony_matrices/seed42_ratio1.5321.png
+Matrix saved as results/42/corrupt50/r010.4_r100.3/original_matrix.png
+Matrix saved as results/42/corrupt50/r010.4_r100.3/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=3
+[iter 2] λ=0.8750 → flips=11
+[iter 3] λ=0.9375 → flips=11
+[iter 4] λ=0.9688 → flips=11
+[iter 5] λ=0.9844 → flips=833
+[iter 6] λ=0.9766 → flips=833
+[iter 7] λ=0.9727 → flips=833
+[iter 8] λ=0.9707 → flips=833
+[iter 9] λ=0.9697 → flips=833
+[iter 10] λ=0.9692 → flips=11
+[iter 11] λ=0.9695 → flips=833
+[iter 12] λ=0.9694 → flips=833
+[iter 13] λ=0.9693 → flips=11
+[iter 14] λ=0.9693 → flips=833
+[iter 15] λ=0.9693 → flips=11
+[iter 16] λ=0.9693 → flips=11
+[iter 17] λ=0.9693 → flips=833
+[iter 18] λ=0.9693 → flips=11
+[iter 19] λ=0.9693 → flips=833
+
+Best λ=0.8750 → flips=11, correct=11/50
+Number of flips performed: 11
+Cell (Polygonia_faunus,Nymphaeaceae): 0 -> 1
+Cell (Polygonia_faunus,Siparunaceae): 0 -> 1
+Cell (Polygonia_faunus,Chloranthaceae): 0 -> 1
+Cell (Polygonia_faunus,Typhaceae): 0 -> 1
+Cell (Polygonia_faunus,Potamogetonaceae): 0 -> 1
+Cell (Polygonia_c_album,Amborellaceae): 0 -> 1
+Cell (Polygonia_c_album,Nymphaeaceae): 0 -> 1
+Cell (Polygonia_c_album,Schisandraceae): 0 -> 1
+Cell (Polygonia_c_album,Aristolochiaceae): 0 -> 1
+Cell (Polygonia_c_album,Typhaceae): 0 -> 1
+Cell (Polygonia_c_album,Smilacaceae): 0 -> 1
+Matrix saved as results/42/corrupt50/r010.4_r100.3/flipped_matrix.png
+Metrics: {'precision': 1.0, 'recall': 0.22, 'f1': 0.36065573770491804, 'TP': 11, 'FP': 0, 'FN': 39}
+[Elbow detection] λ ≈ 0.836 (cutoff=0.825)
+Elbow Metrics: {'precision': 1.0, 'recall': 0.22, 'f1': 0.36065573770491804, 'TP': 11, 'FP': 0, 'FN': 39}

@@ -1,0 +1,7 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+WildcardError in rule all in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 15:
+Wildcards in input files cannot be determined from output files: (rule all, line 15, /Users/PSLabMonisha/Desktop/braga_data/Snakefile)
+'seed'

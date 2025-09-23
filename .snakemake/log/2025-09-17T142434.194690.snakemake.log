@@ -1,0 +1,2207 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+braga_pipeline             135
+braga_simulator            135
+plot_braga_simulation        1
+plot_my_simulation           1
+simulate                  1125
+total                     1398
+
+Select jobs to execute...
+Execute 10 jobs...
+[Wed Sep 17 14:24:36 2025]
+localrule braga_simulator:
+    output: results/braga/97/sim97-b4-c1.nex, results/braga/97/sim97-b4-c1.settings.txt
+    jobid: 1288
+    reason: Missing output files: results/braga/97/sim97-b4-c1.nex, results/braga/97/sim97-b4-c1.settings.txt
+    wildcards: seed=97, beta=4, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/86/corrupt10/r010.5_r100.6/original_matrix.png, results/86/corrupt10/r010.5_r100.6/flipped_matrix.png, results/86/corrupt10/r010.5_r100.6/metrics.json, results/86/corrupt10/r010.5_r100.6/elbow_metrics.json, results/86/corrupt10/r010.5_r100.6/simulate.out, results/86/corrupt10/r010.5_r100.6/simulate.err
+    jobid: 540
+    reason: Missing output files: results/86/corrupt10/r010.5_r100.6/elbow_metrics.json, results/86/corrupt10/r010.5_r100.6/metrics.json
+    wildcards: seed=86, corrupt=10, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/141/corrupt100/r010.7_r100.5/original_matrix.png, results/141/corrupt100/r010.7_r100.5/flipped_matrix.png, results/141/corrupt100/r010.7_r100.5/metrics.json, results/141/corrupt100/r010.7_r100.5/elbow_metrics.json, results/141/corrupt100/r010.7_r100.5/simulate.out, results/141/corrupt100/r010.7_r100.5/simulate.err
+    jobid: 974
+    reason: Missing output files: results/141/corrupt100/r010.7_r100.5/elbow_metrics.json, results/141/corrupt100/r010.7_r100.5/metrics.json
+    wildcards: seed=141, corrupt=100, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/97/corrupt100/r010.3_r100.4/original_matrix.png, results/97/corrupt100/r010.3_r100.4/flipped_matrix.png, results/97/corrupt100/r010.3_r100.4/metrics.json, results/97/corrupt100/r010.3_r100.4/elbow_metrics.json, results/97/corrupt100/r010.3_r100.4/simulate.out, results/97/corrupt100/r010.3_r100.4/simulate.err
+    jobid: 653
+    reason: Missing output files: results/97/corrupt100/r010.3_r100.4/elbow_metrics.json, results/97/corrupt100/r010.3_r100.4/metrics.json
+    wildcards: seed=97, corrupt=100, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule braga_simulator:
+    output: results/braga/152/sim152-b0-c0.1.nex, results/braga/152/sim152-b0-c0.1.settings.txt
+    jobid: 1362
+    reason: Missing output files: results/braga/152/sim152-b0-c0.1.settings.txt, results/braga/152/sim152-b0-c0.1.nex
+    wildcards: seed=152, beta=0, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.4_r100.7/original_matrix.png, results/42/corrupt10/r010.4_r100.7/flipped_matrix.png, results/42/corrupt10/r010.4_r100.7/metrics.json, results/42/corrupt10/r010.4_r100.7/elbow_metrics.json, results/42/corrupt10/r010.4_r100.7/simulate.out, results/42/corrupt10/r010.4_r100.7/simulate.err
+    jobid: 236
+    reason: Missing output files: results/42/corrupt10/r010.4_r100.7/elbow_metrics.json, results/42/corrupt10/r010.4_r100.7/metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/152/corrupt50/r010.5_r100.7/original_matrix.png, results/152/corrupt50/r010.5_r100.7/flipped_matrix.png, results/152/corrupt50/r010.5_r100.7/metrics.json, results/152/corrupt50/r010.5_r100.7/elbow_metrics.json, results/152/corrupt50/r010.5_r100.7/simulate.out, results/152/corrupt50/r010.5_r100.7/simulate.err
+    jobid: 1016
+    reason: Missing output files: results/152/corrupt50/r010.5_r100.7/elbow_metrics.json, results/152/corrupt50/r010.5_r100.7/metrics.json
+    wildcards: seed=152, corrupt=50, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/97/corrupt100/r010.3_r100.7/original_matrix.png, results/97/corrupt100/r010.3_r100.7/flipped_matrix.png, results/97/corrupt100/r010.3_r100.7/metrics.json, results/97/corrupt100/r010.3_r100.7/elbow_metrics.json, results/97/corrupt100/r010.3_r100.7/simulate.out, results/97/corrupt100/r010.3_r100.7/simulate.err
+    jobid: 656
+    reason: Missing output files: results/97/corrupt100/r010.3_r100.7/elbow_metrics.json, results/97/corrupt100/r010.3_r100.7/metrics.json
+    wildcards: seed=97, corrupt=100, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/42/corrupt100/r010.6_r100.7/original_matrix.png, results/42/corrupt100/r010.6_r100.7/flipped_matrix.png, results/42/corrupt100/r010.6_r100.7/metrics.json, results/42/corrupt100/r010.6_r100.7/elbow_metrics.json, results/42/corrupt100/r010.6_r100.7/simulate.out, results/42/corrupt100/r010.6_r100.7/simulate.err
+    jobid: 296
+    reason: Missing output files: results/42/corrupt100/r010.6_r100.7/elbow_metrics.json, results/42/corrupt100/r010.6_r100.7/metrics.json
+    wildcards: seed=42, corrupt=100, r01=0.6, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/86/corrupt100/r010.6_r100.7/original_matrix.png, results/86/corrupt100/r010.6_r100.7/flipped_matrix.png, results/86/corrupt100/r010.6_r100.7/metrics.json, results/86/corrupt100/r010.6_r100.7/elbow_metrics.json, results/86/corrupt100/r010.6_r100.7/simulate.out, results/86/corrupt100/r010.6_r100.7/simulate.err
+    jobid: 596
+    reason: Missing output files: results/86/corrupt100/r010.6_r100.7/elbow_metrics.json, results/86/corrupt100/r010.6_r100.7/metrics.json
+    wildcards: seed=86, corrupt=100, r01=0.6, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+Finished jobid: 1362 (Rule: braga_simulator)
+1 of 1398 steps (0.1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:24:36 2025]
+localrule braga_simulator:
+    output: results/braga/163/sim163-b1-c0.5.nex, results/braga/163/sim163-b1-c0.5.settings.txt
+    jobid: 1388
+    reason: Missing output files: results/braga/163/sim163-b1-c0.5.nex, results/braga/163/sim163-b1-c0.5.settings.txt
+    wildcards: seed=163, beta=1, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+Finished jobid: 1288 (Rule: braga_simulator)
+2 of 1398 steps (0.1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/119/corrupt100/r010.6_r100.3/original_matrix.png, results/119/corrupt100/r010.6_r100.3/flipped_matrix.png, results/119/corrupt100/r010.6_r100.3/metrics.json, results/119/corrupt100/r010.6_r100.3/elbow_metrics.json, results/119/corrupt100/r010.6_r100.3/simulate.out, results/119/corrupt100/r010.6_r100.3/simulate.err
+    jobid: 817
+    reason: Missing output files: results/119/corrupt100/r010.6_r100.3/metrics.json, results/119/corrupt100/r010.6_r100.3/elbow_metrics.json
+    wildcards: seed=119, corrupt=100, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:36 2025]
+Finished jobid: 1388 (Rule: braga_simulator)
+3 of 1398 steps (0.2%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:24:36 2025]
+localrule simulate:
+    output: results/119/corrupt10/r010.6_r100.4/original_matrix.png, results/119/corrupt10/r010.6_r100.4/flipped_matrix.png, results/119/corrupt10/r010.6_r100.4/metrics.json, results/119/corrupt10/r010.6_r100.4/elbow_metrics.json, results/119/corrupt10/r010.6_r100.4/simulate.out, results/119/corrupt10/r010.6_r100.4/simulate.err
+    jobid: 768
+    reason: Missing output files: results/119/corrupt10/r010.6_r100.4/elbow_metrics.json, results/119/corrupt10/r010.6_r100.4/metrics.json
+    wildcards: seed=119, corrupt=10, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:24:51 2025]
+Finished jobid: 1016 (Rule: simulate)
+4 of 1398 steps (0.3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:24:51 2025]
+localrule simulate:
+    output: results/130/corrupt10/r010.5_r100.5/original_matrix.png, results/130/corrupt10/r010.5_r100.5/flipped_matrix.png, results/130/corrupt10/r010.5_r100.5/metrics.json, results/130/corrupt10/r010.5_r100.5/elbow_metrics.json, results/130/corrupt10/r010.5_r100.5/simulate.out, results/130/corrupt10/r010.5_r100.5/simulate.err
+    jobid: 839
+    reason: Missing output files: results/130/corrupt10/r010.5_r100.5/elbow_metrics.json, results/130/corrupt10/r010.5_r100.5/metrics.json
+    wildcards: seed=130, corrupt=10, r01=0.5, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:51 2025]
+Finished jobid: 768 (Rule: simulate)
+5 of 1398 steps (0.4%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:24:52 2025]
+localrule simulate:
+    output: results/64/corrupt100/r010.3_r100.6/original_matrix.png, results/64/corrupt100/r010.3_r100.6/flipped_matrix.png, results/64/corrupt100/r010.3_r100.6/metrics.json, results/64/corrupt100/r010.3_r100.6/elbow_metrics.json, results/64/corrupt100/r010.3_r100.6/simulate.out, results/64/corrupt100/r010.3_r100.6/simulate.err
+    jobid: 430
+    reason: Missing output files: results/64/corrupt100/r010.3_r100.6/metrics.json, results/64/corrupt100/r010.3_r100.6/elbow_metrics.json
+    wildcards: seed=64, corrupt=100, r01=0.3, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:52 2025]
+Finished jobid: 817 (Rule: simulate)
+6 of 1398 steps (0.4%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:24:52 2025]
+localrule simulate:
+    output: results/75/corrupt50/r010.5_r100.6/original_matrix.png, results/75/corrupt50/r010.5_r100.6/flipped_matrix.png, results/75/corrupt50/r010.5_r100.6/metrics.json, results/75/corrupt50/r010.5_r100.6/elbow_metrics.json, results/75/corrupt50/r010.5_r100.6/simulate.out, results/75/corrupt50/r010.5_r100.6/simulate.err
+    jobid: 490
+    reason: Missing output files: results/75/corrupt50/r010.5_r100.6/metrics.json, results/75/corrupt50/r010.5_r100.6/elbow_metrics.json
+    wildcards: seed=75, corrupt=50, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:24:52 2025]
+Finished jobid: 236 (Rule: simulate)
+7 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:24:52 2025]
+localrule simulate:
+    output: results/9/corrupt10/r010.6_r100.7/original_matrix.png, results/9/corrupt10/r010.6_r100.7/flipped_matrix.png, results/9/corrupt10/r010.6_r100.7/metrics.json, results/9/corrupt10/r010.6_r100.7/elbow_metrics.json, results/9/corrupt10/r010.6_r100.7/simulate.out, results/9/corrupt10/r010.6_r100.7/simulate.err
+    jobid: 21
+    reason: Missing output files: results/9/corrupt10/r010.6_r100.7/metrics.json, results/9/corrupt10/r010.6_r100.7/elbow_metrics.json
+    wildcards: seed=9, corrupt=10, r01=0.6, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:24:53 2025]
+Finished jobid: 296 (Rule: simulate)
+8 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:24:53 2025]
+localrule simulate:
+    output: results/20/corrupt10/r010.3_r100.7/original_matrix.png, results/20/corrupt10/r010.3_r100.7/flipped_matrix.png, results/20/corrupt10/r010.3_r100.7/metrics.json, results/20/corrupt10/r010.3_r100.7/elbow_metrics.json, results/20/corrupt10/r010.3_r100.7/simulate.out, results/20/corrupt10/r010.3_r100.7/simulate.err
+    jobid: 81
+    reason: Missing output files: results/20/corrupt10/r010.3_r100.7/metrics.json, results/20/corrupt10/r010.3_r100.7/elbow_metrics.json
+    wildcards: seed=20, corrupt=10, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:54 2025]
+Finished jobid: 540 (Rule: simulate)
+9 of 1398 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:24:54 2025]
+localrule simulate:
+    output: results/86/corrupt50/r010.7_r100.5/original_matrix.png, results/86/corrupt50/r010.7_r100.5/flipped_matrix.png, results/86/corrupt50/r010.7_r100.5/metrics.json, results/86/corrupt50/r010.7_r100.5/elbow_metrics.json, results/86/corrupt50/r010.7_r100.5/simulate.out, results/86/corrupt50/r010.7_r100.5/simulate.err
+    jobid: 574
+    reason: Missing output files: results/86/corrupt50/r010.7_r100.5/elbow_metrics.json, results/86/corrupt50/r010.7_r100.5/metrics.json
+    wildcards: seed=86, corrupt=50, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:24:54 2025]
+Finished jobid: 656 (Rule: simulate)
+10 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:24:54 2025]
+localrule simulate:
+    output: results/119/corrupt10/r010.3_r100.5/original_matrix.png, results/119/corrupt10/r010.3_r100.5/flipped_matrix.png, results/119/corrupt10/r010.3_r100.5/metrics.json, results/119/corrupt10/r010.3_r100.5/elbow_metrics.json, results/119/corrupt10/r010.3_r100.5/simulate.out, results/119/corrupt10/r010.3_r100.5/simulate.err
+    jobid: 754
+    reason: Missing output files: results/119/corrupt10/r010.3_r100.5/elbow_metrics.json, results/119/corrupt10/r010.3_r100.5/metrics.json
+    wildcards: seed=119, corrupt=10, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:24:54 2025]
+Finished jobid: 653 (Rule: simulate)
+11 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:24:54 2025]
+localrule simulate:
+    output: results/86/corrupt50/r010.7_r100.3/original_matrix.png, results/86/corrupt50/r010.7_r100.3/flipped_matrix.png, results/86/corrupt50/r010.7_r100.3/metrics.json, results/86/corrupt50/r010.7_r100.3/elbow_metrics.json, results/86/corrupt50/r010.7_r100.3/simulate.out, results/86/corrupt50/r010.7_r100.3/simulate.err
+    jobid: 572
+    reason: Missing output files: results/86/corrupt50/r010.7_r100.3/elbow_metrics.json, results/86/corrupt50/r010.7_r100.3/metrics.json
+    wildcards: seed=86, corrupt=50, r01=0.7, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:24:54 2025]
+Finished jobid: 974 (Rule: simulate)
+12 of 1398 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:24:54 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.7_r100.4/original_matrix.png, results/75/corrupt100/r010.7_r100.4/flipped_matrix.png, results/75/corrupt100/r010.7_r100.4/metrics.json, results/75/corrupt100/r010.7_r100.4/elbow_metrics.json, results/75/corrupt100/r010.7_r100.4/simulate.out, results/75/corrupt100/r010.7_r100.4/simulate.err
+    jobid: 523
+    reason: Missing output files: results/75/corrupt100/r010.7_r100.4/elbow_metrics.json, results/75/corrupt100/r010.7_r100.4/metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.7, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:24:55 2025]
+Finished jobid: 596 (Rule: simulate)
+13 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:24:55 2025]
+localrule simulate:
+    output: results/97/corrupt50/r010.6_r100.4/original_matrix.png, results/97/corrupt50/r010.6_r100.4/flipped_matrix.png, results/97/corrupt50/r010.6_r100.4/metrics.json, results/97/corrupt50/r010.6_r100.4/elbow_metrics.json, results/97/corrupt50/r010.6_r100.4/simulate.out, results/97/corrupt50/r010.6_r100.4/simulate.err
+    jobid: 643
+    reason: Missing output files: results/97/corrupt50/r010.6_r100.4/metrics.json, results/97/corrupt50/r010.6_r100.4/elbow_metrics.json
+    wildcards: seed=97, corrupt=50, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:06 2025]
+Finished jobid: 839 (Rule: simulate)
+14 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:06 2025]
+localrule simulate:
+    output: results/20/corrupt50/r010.5_r100.5/original_matrix.png, results/20/corrupt50/r010.5_r100.5/flipped_matrix.png, results/20/corrupt50/r010.5_r100.5/metrics.json, results/20/corrupt50/r010.5_r100.5/elbow_metrics.json, results/20/corrupt50/r010.5_r100.5/simulate.out, results/20/corrupt50/r010.5_r100.5/simulate.err
+    jobid: 114
+    reason: Missing output files: results/20/corrupt50/r010.5_r100.5/elbow_metrics.json, results/20/corrupt50/r010.5_r100.5/metrics.json
+    wildcards: seed=20, corrupt=50, r01=0.5, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:06 2025]
+Finished jobid: 490 (Rule: simulate)
+15 of 1398 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:25:06 2025]
+localrule simulate:
+    output: results/97/corrupt100/r010.3_r100.5/original_matrix.png, results/97/corrupt100/r010.3_r100.5/flipped_matrix.png, results/97/corrupt100/r010.3_r100.5/metrics.json, results/97/corrupt100/r010.3_r100.5/elbow_metrics.json, results/97/corrupt100/r010.3_r100.5/simulate.out, results/97/corrupt100/r010.3_r100.5/simulate.err
+    jobid: 654
+    reason: Missing output files: results/97/corrupt100/r010.3_r100.5/elbow_metrics.json, results/97/corrupt100/r010.3_r100.5/metrics.json
+    wildcards: seed=97, corrupt=100, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:06 2025]
+Finished jobid: 430 (Rule: simulate)
+16 of 1398 steps (1%) done
+[Wed Sep 17 14:25:06 2025]
+Finished jobid: 21 (Rule: simulate)
+17 of 1398 steps (1%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Wed Sep 17 14:25:07 2025]
+localrule simulate:
+    output: results/141/corrupt50/r010.5_r100.4/original_matrix.png, results/141/corrupt50/r010.5_r100.4/flipped_matrix.png, results/141/corrupt50/r010.5_r100.4/metrics.json, results/141/corrupt50/r010.5_r100.4/elbow_metrics.json, results/141/corrupt50/r010.5_r100.4/simulate.out, results/141/corrupt50/r010.5_r100.4/simulate.err
+    jobid: 938
+    reason: Missing output files: results/141/corrupt50/r010.5_r100.4/elbow_metrics.json, results/141/corrupt50/r010.5_r100.4/metrics.json
+    wildcards: seed=141, corrupt=50, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:07 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.4_r100.5/original_matrix.png, results/42/corrupt10/r010.4_r100.5/flipped_matrix.png, results/42/corrupt10/r010.4_r100.5/metrics.json, results/42/corrupt10/r010.4_r100.5/elbow_metrics.json, results/42/corrupt10/r010.4_r100.5/simulate.out, results/42/corrupt10/r010.4_r100.5/simulate.err
+    jobid: 234
+    reason: Missing output files: results/42/corrupt10/r010.4_r100.5/metrics.json, results/42/corrupt10/r010.4_r100.5/elbow_metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.4, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:08 2025]
+Finished jobid: 754 (Rule: simulate)
+18 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:08 2025]
+localrule simulate:
+    output: results/152/corrupt50/r010.7_r100.6/original_matrix.png, results/152/corrupt50/r010.7_r100.6/flipped_matrix.png, results/152/corrupt50/r010.7_r100.6/metrics.json, results/152/corrupt50/r010.7_r100.6/elbow_metrics.json, results/152/corrupt50/r010.7_r100.6/simulate.out, results/152/corrupt50/r010.7_r100.6/simulate.err
+    jobid: 1025
+    reason: Missing output files: results/152/corrupt50/r010.7_r100.6/elbow_metrics.json, results/152/corrupt50/r010.7_r100.6/metrics.json
+    wildcards: seed=152, corrupt=50, r01=0.7, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:09 2025]
+Finished jobid: 81 (Rule: simulate)
+19 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:09 2025]
+localrule simulate:
+    output: results/9/corrupt50/r010.3_r100.3/original_matrix.png, results/9/corrupt50/r010.3_r100.3/flipped_matrix.png, results/9/corrupt50/r010.3_r100.3/metrics.json, results/9/corrupt50/r010.3_r100.3/elbow_metrics.json, results/9/corrupt50/r010.3_r100.3/simulate.out, results/9/corrupt50/r010.3_r100.3/simulate.err
+    jobid: 27
+    reason: Missing output files: results/9/corrupt50/r010.3_r100.3/elbow_metrics.json, results/9/corrupt50/r010.3_r100.3/metrics.json
+    wildcards: seed=9, corrupt=50, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:09 2025]
+Finished jobid: 523 (Rule: simulate)
+20 of 1398 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:09 2025]
+localrule simulate:
+    output: results/97/corrupt50/r010.3_r100.3/original_matrix.png, results/97/corrupt50/r010.3_r100.3/flipped_matrix.png, results/97/corrupt50/r010.3_r100.3/metrics.json, results/97/corrupt50/r010.3_r100.3/elbow_metrics.json, results/97/corrupt50/r010.3_r100.3/simulate.out, results/97/corrupt50/r010.3_r100.3/simulate.err
+    jobid: 627
+    reason: Missing output files: results/97/corrupt50/r010.3_r100.3/elbow_metrics.json, results/97/corrupt50/r010.3_r100.3/metrics.json
+    wildcards: seed=97, corrupt=50, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:10 2025]
+Finished jobid: 574 (Rule: simulate)
+21 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:10 2025]
+localrule braga_simulator:
+    output: results/braga/31/sim31-b0-c1.nex, results/braga/31/sim31-b0-c1.settings.txt
+    jobid: 1168
+    reason: Missing output files: results/braga/31/sim31-b0-c1.settings.txt, results/braga/31/sim31-b0-c1.nex
+    wildcards: seed=31, beta=0, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:11 2025]
+Finished jobid: 643 (Rule: simulate)
+22 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:11 2025]
+localrule simulate:
+    output: results/163/corrupt10/r010.4_r100.4/original_matrix.png, results/163/corrupt10/r010.4_r100.4/flipped_matrix.png, results/163/corrupt10/r010.4_r100.4/metrics.json, results/163/corrupt10/r010.4_r100.4/elbow_metrics.json, results/163/corrupt10/r010.4_r100.4/simulate.out, results/163/corrupt10/r010.4_r100.4/simulate.err
+    jobid: 1058
+    reason: Missing output files: results/163/corrupt10/r010.4_r100.4/metrics.json, results/163/corrupt10/r010.4_r100.4/elbow_metrics.json
+    wildcards: seed=163, corrupt=10, r01=0.4, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:11 2025]
+Finished jobid: 1168 (Rule: braga_simulator)
+23 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:11 2025]
+localrule simulate:
+    output: results/31/corrupt10/r010.4_r100.4/original_matrix.png, results/31/corrupt10/r010.4_r100.4/flipped_matrix.png, results/31/corrupt10/r010.4_r100.4/metrics.json, results/31/corrupt10/r010.4_r100.4/elbow_metrics.json, results/31/corrupt10/r010.4_r100.4/simulate.out, results/31/corrupt10/r010.4_r100.4/simulate.err
+    jobid: 158
+    reason: Missing output files: results/31/corrupt10/r010.4_r100.4/elbow_metrics.json, results/31/corrupt10/r010.4_r100.4/metrics.json
+    wildcards: seed=31, corrupt=10, r01=0.4, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:12 2025]
+Finished jobid: 572 (Rule: simulate)
+24 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:12 2025]
+localrule simulate:
+    output: results/108/corrupt10/r010.7_r100.4/original_matrix.png, results/108/corrupt10/r010.7_r100.4/flipped_matrix.png, results/108/corrupt10/r010.7_r100.4/metrics.json, results/108/corrupt10/r010.7_r100.4/elbow_metrics.json, results/108/corrupt10/r010.7_r100.4/simulate.out, results/108/corrupt10/r010.7_r100.4/simulate.err
+    jobid: 698
+    reason: Missing output files: results/108/corrupt10/r010.7_r100.4/elbow_metrics.json, results/108/corrupt10/r010.7_r100.4/metrics.json
+    wildcards: seed=108, corrupt=10, r01=0.7, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:22 2025]
+Finished jobid: 1025 (Rule: simulate)
+25 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:22 2025]
+localrule simulate:
+    output: results/163/corrupt10/r010.6_r100.5/original_matrix.png, results/163/corrupt10/r010.6_r100.5/flipped_matrix.png, results/163/corrupt10/r010.6_r100.5/metrics.json, results/163/corrupt10/r010.6_r100.5/elbow_metrics.json, results/163/corrupt10/r010.6_r100.5/simulate.out, results/163/corrupt10/r010.6_r100.5/simulate.err
+    jobid: 1069
+    reason: Missing output files: results/163/corrupt10/r010.6_r100.5/metrics.json, results/163/corrupt10/r010.6_r100.5/elbow_metrics.json
+    wildcards: seed=163, corrupt=10, r01=0.6, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:23 2025]
+Finished jobid: 114 (Rule: simulate)
+26 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:23 2025]
+localrule simulate:
+    output: results/97/corrupt100/r010.4_r100.6/original_matrix.png, results/97/corrupt100/r010.4_r100.6/flipped_matrix.png, results/97/corrupt100/r010.4_r100.6/metrics.json, results/97/corrupt100/r010.4_r100.6/elbow_metrics.json, results/97/corrupt100/r010.4_r100.6/simulate.out, results/97/corrupt100/r010.4_r100.6/simulate.err
+    jobid: 660
+    reason: Missing output files: results/97/corrupt100/r010.4_r100.6/elbow_metrics.json, results/97/corrupt100/r010.4_r100.6/metrics.json
+    wildcards: seed=97, corrupt=100, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:23 2025]
+Finished jobid: 234 (Rule: simulate)
+27 of 1398 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:25:23 2025]
+localrule simulate:
+    output: results/119/corrupt50/r010.7_r100.6/original_matrix.png, results/119/corrupt50/r010.7_r100.6/flipped_matrix.png, results/119/corrupt50/r010.7_r100.6/metrics.json, results/119/corrupt50/r010.7_r100.6/elbow_metrics.json, results/119/corrupt50/r010.7_r100.6/simulate.out, results/119/corrupt50/r010.7_r100.6/simulate.err
+    jobid: 800
+    reason: Missing output files: results/119/corrupt50/r010.7_r100.6/metrics.json, results/119/corrupt50/r010.7_r100.6/elbow_metrics.json
+    wildcards: seed=119, corrupt=50, r01=0.7, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:24 2025]
+Finished jobid: 27 (Rule: simulate)
+28 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:24 2025]
+localrule simulate:
+    output: results/64/corrupt100/r010.7_r100.7/original_matrix.png, results/64/corrupt100/r010.7_r100.7/flipped_matrix.png, results/64/corrupt100/r010.7_r100.7/metrics.json, results/64/corrupt100/r010.7_r100.7/elbow_metrics.json, results/64/corrupt100/r010.7_r100.7/simulate.out, results/64/corrupt100/r010.7_r100.7/simulate.err
+    jobid: 451
+    reason: Missing output files: results/64/corrupt100/r010.7_r100.7/elbow_metrics.json, results/64/corrupt100/r010.7_r100.7/metrics.json
+    wildcards: seed=64, corrupt=100, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:25 2025]
+Finished jobid: 938 (Rule: simulate)
+29 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:25 2025]
+localrule simulate:
+    output: results/20/corrupt100/r010.7_r100.7/original_matrix.png, results/20/corrupt100/r010.7_r100.7/flipped_matrix.png, results/20/corrupt100/r010.7_r100.7/metrics.json, results/20/corrupt100/r010.7_r100.7/elbow_metrics.json, results/20/corrupt100/r010.7_r100.7/simulate.out, results/20/corrupt100/r010.7_r100.7/simulate.err
+    jobid: 151
+    reason: Missing output files: results/20/corrupt100/r010.7_r100.7/metrics.json, results/20/corrupt100/r010.7_r100.7/elbow_metrics.json
+    wildcards: seed=20, corrupt=100, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:25 2025]
+Finished jobid: 1058 (Rule: simulate)
+30 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:25 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.4_r100.7/original_matrix.png, results/75/corrupt100/r010.4_r100.7/flipped_matrix.png, results/75/corrupt100/r010.4_r100.7/metrics.json, results/75/corrupt100/r010.4_r100.7/elbow_metrics.json, results/75/corrupt100/r010.4_r100.7/simulate.out, results/75/corrupt100/r010.4_r100.7/simulate.err
+    jobid: 511
+    reason: Missing output files: results/75/corrupt100/r010.4_r100.7/metrics.json, results/75/corrupt100/r010.4_r100.7/elbow_metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:25 2025]
+Finished jobid: 654 (Rule: simulate)
+31 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:25 2025]
+localrule simulate:
+    output: results/86/corrupt50/r010.6_r100.7/original_matrix.png, results/86/corrupt50/r010.6_r100.7/flipped_matrix.png, results/86/corrupt50/r010.6_r100.7/metrics.json, results/86/corrupt50/r010.6_r100.7/elbow_metrics.json, results/86/corrupt50/r010.6_r100.7/simulate.out, results/86/corrupt50/r010.6_r100.7/simulate.err
+    jobid: 571
+    reason: Missing output files: results/86/corrupt50/r010.6_r100.7/elbow_metrics.json, results/86/corrupt50/r010.6_r100.7/metrics.json
+    wildcards: seed=86, corrupt=50, r01=0.6, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:26 2025]
+Finished jobid: 158 (Rule: simulate)
+32 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:26 2025]
+localrule simulate:
+    output: results/152/corrupt100/r010.3_r100.7/original_matrix.png, results/152/corrupt100/r010.3_r100.7/flipped_matrix.png, results/152/corrupt100/r010.3_r100.7/metrics.json, results/152/corrupt100/r010.3_r100.7/elbow_metrics.json, results/152/corrupt100/r010.3_r100.7/simulate.out, results/152/corrupt100/r010.3_r100.7/simulate.err
+    jobid: 1031
+    reason: Missing output files: results/152/corrupt100/r010.3_r100.7/elbow_metrics.json, results/152/corrupt100/r010.3_r100.7/metrics.json
+    wildcards: seed=152, corrupt=100, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:27 2025]
+Finished jobid: 627 (Rule: simulate)
+33 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:27 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.7_r100.7/original_matrix.png, results/42/corrupt10/r010.7_r100.7/flipped_matrix.png, results/42/corrupt10/r010.7_r100.7/metrics.json, results/42/corrupt10/r010.7_r100.7/elbow_metrics.json, results/42/corrupt10/r010.7_r100.7/simulate.out, results/42/corrupt10/r010.7_r100.7/simulate.err
+    jobid: 251
+    reason: Missing output files: results/42/corrupt10/r010.7_r100.7/elbow_metrics.json, results/42/corrupt10/r010.7_r100.7/metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:28 2025]
+Finished jobid: 698 (Rule: simulate)
+34 of 1398 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:29 2025]
+localrule simulate:
+    output: results/108/corrupt10/r010.5_r100.7/original_matrix.png, results/108/corrupt10/r010.5_r100.7/flipped_matrix.png, results/108/corrupt10/r010.5_r100.7/metrics.json, results/108/corrupt10/r010.5_r100.7/elbow_metrics.json, results/108/corrupt10/r010.5_r100.7/simulate.out, results/108/corrupt10/r010.5_r100.7/simulate.err
+    jobid: 691
+    reason: Missing output files: results/108/corrupt10/r010.5_r100.7/elbow_metrics.json, results/108/corrupt10/r010.5_r100.7/metrics.json
+    wildcards: seed=108, corrupt=10, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:36 2025]
+Finished jobid: 1069 (Rule: simulate)
+35 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:36 2025]
+localrule simulate:
+    output: results/152/corrupt100/r010.7_r100.7/original_matrix.png, results/152/corrupt100/r010.7_r100.7/flipped_matrix.png, results/152/corrupt100/r010.7_r100.7/metrics.json, results/152/corrupt100/r010.7_r100.7/elbow_metrics.json, results/152/corrupt100/r010.7_r100.7/simulate.out, results/152/corrupt100/r010.7_r100.7/simulate.err
+    jobid: 1051
+    reason: Missing output files: results/152/corrupt100/r010.7_r100.7/metrics.json, results/152/corrupt100/r010.7_r100.7/elbow_metrics.json
+    wildcards: seed=152, corrupt=100, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:37 2025]
+Finished jobid: 800 (Rule: simulate)
+36 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:38 2025]
+localrule simulate:
+    output: results/163/corrupt100/r010.4_r100.7/original_matrix.png, results/163/corrupt100/r010.4_r100.7/flipped_matrix.png, results/163/corrupt100/r010.4_r100.7/metrics.json, results/163/corrupt100/r010.4_r100.7/elbow_metrics.json, results/163/corrupt100/r010.4_r100.7/simulate.out, results/163/corrupt100/r010.4_r100.7/simulate.err
+    jobid: 1111
+    reason: Missing output files: results/163/corrupt100/r010.4_r100.7/elbow_metrics.json, results/163/corrupt100/r010.4_r100.7/metrics.json
+    wildcards: seed=163, corrupt=100, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:39 2025]
+Finished jobid: 451 (Rule: simulate)
+37 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:39 2025]
+localrule simulate:
+    output: results/108/corrupt100/r010.7_r100.7/original_matrix.png, results/108/corrupt100/r010.7_r100.7/flipped_matrix.png, results/108/corrupt100/r010.7_r100.7/metrics.json, results/108/corrupt100/r010.7_r100.7/elbow_metrics.json, results/108/corrupt100/r010.7_r100.7/simulate.out, results/108/corrupt100/r010.7_r100.7/simulate.err
+    jobid: 751
+    reason: Missing output files: results/108/corrupt100/r010.7_r100.7/metrics.json, results/108/corrupt100/r010.7_r100.7/elbow_metrics.json
+    wildcards: seed=108, corrupt=100, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:39 2025]
+Finished jobid: 511 (Rule: simulate)
+38 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:39 2025]
+localrule simulate:
+    output: results/108/corrupt50/r010.3_r100.6/original_matrix.png, results/108/corrupt50/r010.3_r100.6/flipped_matrix.png, results/108/corrupt50/r010.3_r100.6/metrics.json, results/108/corrupt50/r010.3_r100.6/elbow_metrics.json, results/108/corrupt50/r010.3_r100.6/simulate.out, results/108/corrupt50/r010.3_r100.6/simulate.err
+    jobid: 705
+    reason: Missing output files: results/108/corrupt50/r010.3_r100.6/elbow_metrics.json, results/108/corrupt50/r010.3_r100.6/metrics.json
+    wildcards: seed=108, corrupt=50, r01=0.3, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:40 2025]
+Finished jobid: 660 (Rule: simulate)
+39 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:40 2025]
+localrule simulate:
+    output: results/75/corrupt10/r010.5_r100.3/original_matrix.png, results/75/corrupt10/r010.5_r100.3/flipped_matrix.png, results/75/corrupt10/r010.5_r100.3/metrics.json, results/75/corrupt10/r010.5_r100.3/elbow_metrics.json, results/75/corrupt10/r010.5_r100.3/simulate.out, results/75/corrupt10/r010.5_r100.3/simulate.err
+    jobid: 462
+    reason: Missing output files: results/75/corrupt10/r010.5_r100.3/metrics.json, results/75/corrupt10/r010.5_r100.3/elbow_metrics.json
+    wildcards: seed=75, corrupt=10, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:40 2025]
+Finished jobid: 1031 (Rule: simulate)
+40 of 1398 steps (3%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:25:40 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.7_r100.3/original_matrix.png, results/75/corrupt100/r010.7_r100.3/flipped_matrix.png, results/75/corrupt100/r010.7_r100.3/metrics.json, results/75/corrupt100/r010.7_r100.3/elbow_metrics.json, results/75/corrupt100/r010.7_r100.3/simulate.out, results/75/corrupt100/r010.7_r100.3/simulate.err
+    jobid: 522
+    reason: Missing output files: results/75/corrupt100/r010.7_r100.3/metrics.json, results/75/corrupt100/r010.7_r100.3/elbow_metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.7, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:40 2025]
+Finished jobid: 151 (Rule: simulate)
+41 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:41 2025]
+localrule simulate:
+    output: results/86/corrupt100/r010.4_r100.3/original_matrix.png, results/86/corrupt100/r010.4_r100.3/flipped_matrix.png, results/86/corrupt100/r010.4_r100.3/metrics.json, results/86/corrupt100/r010.4_r100.3/elbow_metrics.json, results/86/corrupt100/r010.4_r100.3/simulate.out, results/86/corrupt100/r010.4_r100.3/simulate.err
+    jobid: 582
+    reason: Missing output files: results/86/corrupt100/r010.4_r100.3/metrics.json, results/86/corrupt100/r010.4_r100.3/elbow_metrics.json
+    wildcards: seed=86, corrupt=100, r01=0.4, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:42 2025]
+Finished jobid: 251 (Rule: simulate)
+42 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:42 2025]
+localrule simulate:
+    output: results/119/corrupt10/r010.5_r100.3/original_matrix.png, results/119/corrupt10/r010.5_r100.3/flipped_matrix.png, results/119/corrupt10/r010.5_r100.3/metrics.json, results/119/corrupt10/r010.5_r100.3/elbow_metrics.json, results/119/corrupt10/r010.5_r100.3/simulate.out, results/119/corrupt10/r010.5_r100.3/simulate.err
+    jobid: 762
+    reason: Missing output files: results/119/corrupt10/r010.5_r100.3/elbow_metrics.json, results/119/corrupt10/r010.5_r100.3/metrics.json
+    wildcards: seed=119, corrupt=10, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:42 2025]
+Finished jobid: 571 (Rule: simulate)
+43 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:42 2025]
+localrule braga_simulator:
+    output: results/braga/119/sim119-b1-c1.nex, results/braga/119/sim119-b1-c1.settings.txt
+    jobid: 1318
+    reason: Missing output files: results/braga/119/sim119-b1-c1.nex, results/braga/119/sim119-b1-c1.settings.txt
+    wildcards: seed=119, beta=1, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:43 2025]
+Finished jobid: 1318 (Rule: braga_simulator)
+44 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:43 2025]
+localrule braga_simulator:
+    output: results/braga/42/sim42-b4-c1.nex, results/braga/42/sim42-b4-c1.settings.txt
+    jobid: 1198
+    reason: Missing output files: results/braga/42/sim42-b4-c1.settings.txt, results/braga/42/sim42-b4-c1.nex
+    wildcards: seed=42, beta=4, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:43 2025]
+Finished jobid: 1198 (Rule: braga_simulator)
+45 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:44 2025]
+localrule simulate:
+    output: results/97/corrupt50/r010.6_r100.3/original_matrix.png, results/97/corrupt50/r010.6_r100.3/flipped_matrix.png, results/97/corrupt50/r010.6_r100.3/metrics.json, results/97/corrupt50/r010.6_r100.3/elbow_metrics.json, results/97/corrupt50/r010.6_r100.3/simulate.out, results/97/corrupt50/r010.6_r100.3/simulate.err
+    jobid: 642
+    reason: Missing output files: results/97/corrupt50/r010.6_r100.3/elbow_metrics.json, results/97/corrupt50/r010.6_r100.3/metrics.json
+    wildcards: seed=97, corrupt=50, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:45 2025]
+Finished jobid: 691 (Rule: simulate)
+46 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:45 2025]
+localrule simulate:
+    output: results/64/corrupt10/r010.3_r100.7/original_matrix.png, results/64/corrupt10/r010.3_r100.7/flipped_matrix.png, results/64/corrupt10/r010.3_r100.7/metrics.json, results/64/corrupt10/r010.3_r100.7/elbow_metrics.json, results/64/corrupt10/r010.3_r100.7/simulate.out, results/64/corrupt10/r010.3_r100.7/simulate.err
+    jobid: 381
+    reason: Missing output files: results/64/corrupt10/r010.3_r100.7/elbow_metrics.json, results/64/corrupt10/r010.3_r100.7/metrics.json
+    wildcards: seed=64, corrupt=10, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:50 2025]
+Finished jobid: 1051 (Rule: simulate)
+47 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:50 2025]
+localrule simulate:
+    output: results/130/corrupt100/r010.6_r100.4/original_matrix.png, results/130/corrupt100/r010.6_r100.4/flipped_matrix.png, results/130/corrupt100/r010.6_r100.4/metrics.json, results/130/corrupt100/r010.6_r100.4/elbow_metrics.json, results/130/corrupt100/r010.6_r100.4/simulate.out, results/130/corrupt100/r010.6_r100.4/simulate.err
+    jobid: 893
+    reason: Missing output files: results/130/corrupt100/r010.6_r100.4/metrics.json, results/130/corrupt100/r010.6_r100.4/elbow_metrics.json
+    wildcards: seed=130, corrupt=100, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:52 2025]
+Finished jobid: 1111 (Rule: simulate)
+48 of 1398 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:52 2025]
+localrule simulate:
+    output: results/20/corrupt50/r010.5_r100.4/original_matrix.png, results/20/corrupt50/r010.5_r100.4/flipped_matrix.png, results/20/corrupt50/r010.5_r100.4/metrics.json, results/20/corrupt50/r010.5_r100.4/elbow_metrics.json, results/20/corrupt50/r010.5_r100.4/simulate.out, results/20/corrupt50/r010.5_r100.4/simulate.err
+    jobid: 113
+    reason: Missing output files: results/20/corrupt50/r010.5_r100.4/metrics.json, results/20/corrupt50/r010.5_r100.4/elbow_metrics.json
+    wildcards: seed=20, corrupt=50, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:55 2025]
+Finished jobid: 462 (Rule: simulate)
+49 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:55 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.4_r100.4/original_matrix.png, results/42/corrupt10/r010.4_r100.4/flipped_matrix.png, results/42/corrupt10/r010.4_r100.4/metrics.json, results/42/corrupt10/r010.4_r100.4/elbow_metrics.json, results/42/corrupt10/r010.4_r100.4/simulate.out, results/42/corrupt10/r010.4_r100.4/simulate.err
+    jobid: 233
+    reason: Missing output files: results/42/corrupt10/r010.4_r100.4/metrics.json, results/42/corrupt10/r010.4_r100.4/elbow_metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.4, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:55 2025]
+Finished jobid: 751 (Rule: simulate)
+50 of 1398 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:25:55 2025]
+localrule simulate:
+    output: results/42/corrupt100/r010.6_r100.4/original_matrix.png, results/42/corrupt100/r010.6_r100.4/flipped_matrix.png, results/42/corrupt100/r010.6_r100.4/metrics.json, results/42/corrupt100/r010.6_r100.4/elbow_metrics.json, results/42/corrupt100/r010.6_r100.4/simulate.out, results/42/corrupt100/r010.6_r100.4/simulate.err
+    jobid: 293
+    reason: Missing output files: results/42/corrupt100/r010.6_r100.4/elbow_metrics.json, results/42/corrupt100/r010.6_r100.4/metrics.json
+    wildcards: seed=42, corrupt=100, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:55 2025]
+Finished jobid: 705 (Rule: simulate)
+51 of 1398 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:25:55 2025]
+localrule simulate:
+    output: results/53/corrupt100/r010.3_r100.4/original_matrix.png, results/53/corrupt100/r010.3_r100.4/flipped_matrix.png, results/53/corrupt100/r010.3_r100.4/metrics.json, results/53/corrupt100/r010.3_r100.4/elbow_metrics.json, results/53/corrupt100/r010.3_r100.4/simulate.out, results/53/corrupt100/r010.3_r100.4/simulate.err
+    jobid: 353
+    reason: Missing output files: results/53/corrupt100/r010.3_r100.4/elbow_metrics.json, results/53/corrupt100/r010.3_r100.4/metrics.json
+    wildcards: seed=53, corrupt=100, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:25:55 2025]
+Finished jobid: 522 (Rule: simulate)
+52 of 1398 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:25:56 2025]
+localrule simulate:
+    output: results/64/corrupt50/r010.5_r100.4/original_matrix.png, results/64/corrupt50/r010.5_r100.4/flipped_matrix.png, results/64/corrupt50/r010.5_r100.4/metrics.json, results/64/corrupt50/r010.5_r100.4/elbow_metrics.json, results/64/corrupt50/r010.5_r100.4/simulate.out, results/64/corrupt50/r010.5_r100.4/simulate.err
+    jobid: 413
+    reason: Missing output files: results/64/corrupt50/r010.5_r100.4/elbow_metrics.json, results/64/corrupt50/r010.5_r100.4/metrics.json
+    wildcards: seed=64, corrupt=50, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:56 2025]
+Finished jobid: 762 (Rule: simulate)
+53 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:56 2025]
+localrule simulate:
+    output: results/75/corrupt10/r010.7_r100.4/original_matrix.png, results/75/corrupt10/r010.7_r100.4/flipped_matrix.png, results/75/corrupt10/r010.7_r100.4/metrics.json, results/75/corrupt10/r010.7_r100.4/elbow_metrics.json, results/75/corrupt10/r010.7_r100.4/simulate.out, results/75/corrupt10/r010.7_r100.4/simulate.err
+    jobid: 473
+    reason: Missing output files: results/75/corrupt10/r010.7_r100.4/metrics.json, results/75/corrupt10/r010.7_r100.4/elbow_metrics.json
+    wildcards: seed=75, corrupt=10, r01=0.7, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:58 2025]
+Finished jobid: 582 (Rule: simulate)
+54 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:58 2025]
+localrule simulate:
+    output: results/141/corrupt100/r010.5_r100.5/original_matrix.png, results/141/corrupt100/r010.5_r100.5/flipped_matrix.png, results/141/corrupt100/r010.5_r100.5/metrics.json, results/141/corrupt100/r010.5_r100.5/elbow_metrics.json, results/141/corrupt100/r010.5_r100.5/simulate.out, results/141/corrupt100/r010.5_r100.5/simulate.err
+    jobid: 964
+    reason: Missing output files: results/141/corrupt100/r010.5_r100.5/elbow_metrics.json, results/141/corrupt100/r010.5_r100.5/metrics.json
+    wildcards: seed=141, corrupt=100, r01=0.5, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:59 2025]
+Finished jobid: 381 (Rule: simulate)
+55 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:25:59 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.6_r100.5/original_matrix.png, results/42/corrupt10/r010.6_r100.5/flipped_matrix.png, results/42/corrupt10/r010.6_r100.5/metrics.json, results/42/corrupt10/r010.6_r100.5/elbow_metrics.json, results/42/corrupt10/r010.6_r100.5/simulate.out, results/42/corrupt10/r010.6_r100.5/simulate.err
+    jobid: 244
+    reason: Missing output files: results/42/corrupt10/r010.6_r100.5/metrics.json, results/42/corrupt10/r010.6_r100.5/elbow_metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.6, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:25:59 2025]
+Finished jobid: 642 (Rule: simulate)
+56 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:00 2025]
+localrule simulate:
+    output: results/64/corrupt100/r010.3_r100.7/original_matrix.png, results/64/corrupt100/r010.3_r100.7/flipped_matrix.png, results/64/corrupt100/r010.3_r100.7/metrics.json, results/64/corrupt100/r010.3_r100.7/elbow_metrics.json, results/64/corrupt100/r010.3_r100.7/simulate.out, results/64/corrupt100/r010.3_r100.7/simulate.err
+    jobid: 431
+    reason: Missing output files: results/64/corrupt100/r010.3_r100.7/elbow_metrics.json, results/64/corrupt100/r010.3_r100.7/metrics.json
+    wildcards: seed=64, corrupt=100, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:06 2025]
+Finished jobid: 893 (Rule: simulate)
+57 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:07 2025]
+localrule braga_simulator:
+    output: results/braga/97/sim97-b0-c0.1.nex, results/braga/97/sim97-b0-c0.1.settings.txt
+    jobid: 1272
+    reason: Missing output files: results/braga/97/sim97-b0-c0.1.nex, results/braga/97/sim97-b0-c0.1.settings.txt
+    wildcards: seed=97, beta=0, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:08 2025]
+Finished jobid: 1272 (Rule: braga_simulator)
+58 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:08 2025]
+localrule simulate:
+    output: results/9/corrupt10/r010.4_r100.7/original_matrix.png, results/9/corrupt10/r010.4_r100.7/flipped_matrix.png, results/9/corrupt10/r010.4_r100.7/metrics.json, results/9/corrupt10/r010.4_r100.7/elbow_metrics.json, results/9/corrupt10/r010.4_r100.7/simulate.out, results/9/corrupt10/r010.4_r100.7/simulate.err
+    jobid: 11
+    reason: Missing output files: results/9/corrupt10/r010.4_r100.7/elbow_metrics.json, results/9/corrupt10/r010.4_r100.7/metrics.json
+    wildcards: seed=9, corrupt=10, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:09 2025]
+Finished jobid: 113 (Rule: simulate)
+59 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:10 2025]
+localrule simulate:
+    output: results/53/corrupt100/r010.5_r100.5/original_matrix.png, results/53/corrupt100/r010.5_r100.5/flipped_matrix.png, results/53/corrupt100/r010.5_r100.5/metrics.json, results/53/corrupt100/r010.5_r100.5/elbow_metrics.json, results/53/corrupt100/r010.5_r100.5/simulate.out, results/53/corrupt100/r010.5_r100.5/simulate.err
+    jobid: 364
+    reason: Missing output files: results/53/corrupt100/r010.5_r100.5/elbow_metrics.json, results/53/corrupt100/r010.5_r100.5/metrics.json
+    wildcards: seed=53, corrupt=100, r01=0.5, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:10 2025]
+Finished jobid: 293 (Rule: simulate)
+60 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:10 2025]
+localrule simulate:
+    output: results/141/corrupt10/r010.3_r100.5/original_matrix.png, results/141/corrupt10/r010.3_r100.5/flipped_matrix.png, results/141/corrupt10/r010.3_r100.5/metrics.json, results/141/corrupt10/r010.3_r100.5/elbow_metrics.json, results/141/corrupt10/r010.3_r100.5/simulate.out, results/141/corrupt10/r010.3_r100.5/simulate.err
+    jobid: 904
+    reason: Missing output files: results/141/corrupt10/r010.3_r100.5/elbow_metrics.json, results/141/corrupt10/r010.3_r100.5/metrics.json
+    wildcards: seed=141, corrupt=10, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:10 2025]
+Finished jobid: 413 (Rule: simulate)
+61 of 1398 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:10 2025]
+localrule braga_simulator:
+    output: results/braga/152/sim152-b1-c0.5.nex, results/braga/152/sim152-b1-c0.5.settings.txt
+    jobid: 1370
+    reason: Missing output files: results/braga/152/sim152-b1-c0.5.nex, results/braga/152/sim152-b1-c0.5.settings.txt
+    wildcards: seed=152, beta=1, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:10 2025]
+Finished jobid: 473 (Rule: simulate)
+62 of 1398 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:26:11 2025]
+localrule simulate:
+    output: results/130/corrupt10/r010.6_r100.5/original_matrix.png, results/130/corrupt10/r010.6_r100.5/flipped_matrix.png, results/130/corrupt10/r010.6_r100.5/metrics.json, results/130/corrupt10/r010.6_r100.5/elbow_metrics.json, results/130/corrupt10/r010.6_r100.5/simulate.out, results/130/corrupt10/r010.6_r100.5/simulate.err
+    jobid: 844
+    reason: Missing output files: results/130/corrupt10/r010.6_r100.5/metrics.json, results/130/corrupt10/r010.6_r100.5/elbow_metrics.json
+    wildcards: seed=130, corrupt=10, r01=0.6, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:11 2025]
+Finished jobid: 1370 (Rule: braga_simulator)
+63 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:11 2025]
+localrule simulate:
+    output: results/9/corrupt100/r010.5_r100.5/original_matrix.png, results/9/corrupt100/r010.5_r100.5/flipped_matrix.png, results/9/corrupt100/r010.5_r100.5/metrics.json, results/9/corrupt100/r010.5_r100.5/elbow_metrics.json, results/9/corrupt100/r010.5_r100.5/simulate.out, results/9/corrupt100/r010.5_r100.5/simulate.err
+    jobid: 64
+    reason: Missing output files: results/9/corrupt100/r010.5_r100.5/metrics.json, results/9/corrupt100/r010.5_r100.5/elbow_metrics.json
+    wildcards: seed=9, corrupt=100, r01=0.5, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:12 2025]
+Finished jobid: 353 (Rule: simulate)
+64 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:12 2025]
+localrule simulate:
+    output: results/163/corrupt100/r010.4_r100.5/original_matrix.png, results/163/corrupt100/r010.4_r100.5/flipped_matrix.png, results/163/corrupt100/r010.4_r100.5/metrics.json, results/163/corrupt100/r010.4_r100.5/elbow_metrics.json, results/163/corrupt100/r010.4_r100.5/simulate.out, results/163/corrupt100/r010.4_r100.5/simulate.err
+    jobid: 1109
+    reason: Missing output files: results/163/corrupt100/r010.4_r100.5/metrics.json, results/163/corrupt100/r010.4_r100.5/elbow_metrics.json
+    wildcards: seed=163, corrupt=100, r01=0.4, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:12 2025]
+Finished jobid: 233 (Rule: simulate)
+65 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:12 2025]
+localrule simulate:
+    output: results/97/corrupt10/r010.5_r100.6/original_matrix.png, results/97/corrupt10/r010.5_r100.6/flipped_matrix.png, results/97/corrupt10/r010.5_r100.6/metrics.json, results/97/corrupt10/r010.5_r100.6/elbow_metrics.json, results/97/corrupt10/r010.5_r100.6/simulate.out, results/97/corrupt10/r010.5_r100.6/simulate.err
+    jobid: 615
+    reason: Missing output files: results/97/corrupt10/r010.5_r100.6/elbow_metrics.json, results/97/corrupt10/r010.5_r100.6/metrics.json
+    wildcards: seed=97, corrupt=10, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:14 2025]
+Finished jobid: 244 (Rule: simulate)
+66 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:14 2025]
+localrule simulate:
+    output: results/141/corrupt10/r010.5_r100.6/original_matrix.png, results/141/corrupt10/r010.5_r100.6/flipped_matrix.png, results/141/corrupt10/r010.5_r100.6/metrics.json, results/141/corrupt10/r010.5_r100.6/elbow_metrics.json, results/141/corrupt10/r010.5_r100.6/simulate.out, results/141/corrupt10/r010.5_r100.6/simulate.err
+    jobid: 915
+    reason: Missing output files: results/141/corrupt10/r010.5_r100.6/metrics.json, results/141/corrupt10/r010.5_r100.6/elbow_metrics.json
+    wildcards: seed=141, corrupt=10, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:14 2025]
+Finished jobid: 431 (Rule: simulate)
+67 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:14 2025]
+localrule simulate:
+    output: results/141/corrupt100/r010.7_r100.6/original_matrix.png, results/141/corrupt100/r010.7_r100.6/flipped_matrix.png, results/141/corrupt100/r010.7_r100.6/metrics.json, results/141/corrupt100/r010.7_r100.6/elbow_metrics.json, results/141/corrupt100/r010.7_r100.6/simulate.out, results/141/corrupt100/r010.7_r100.6/simulate.err
+    jobid: 975
+    reason: Missing output files: results/141/corrupt100/r010.7_r100.6/elbow_metrics.json, results/141/corrupt100/r010.7_r100.6/metrics.json
+    wildcards: seed=141, corrupt=100, r01=0.7, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:15 2025]
+Finished jobid: 964 (Rule: simulate)
+68 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:16 2025]
+localrule simulate:
+    output: results/42/corrupt50/r010.3_r100.6/original_matrix.png, results/42/corrupt50/r010.3_r100.6/flipped_matrix.png, results/42/corrupt50/r010.3_r100.6/metrics.json, results/42/corrupt50/r010.3_r100.6/elbow_metrics.json, results/42/corrupt50/r010.3_r100.6/simulate.out, results/42/corrupt50/r010.3_r100.6/simulate.err
+    jobid: 255
+    reason: Missing output files: results/42/corrupt50/r010.3_r100.6/elbow_metrics.json, results/42/corrupt50/r010.3_r100.6/metrics.json
+    wildcards: seed=42, corrupt=50, r01=0.3, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:23 2025]
+Finished jobid: 11 (Rule: simulate)
+69 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:23 2025]
+localrule simulate:
+    output: results/53/corrupt100/r010.7_r100.6/original_matrix.png, results/53/corrupt100/r010.7_r100.6/flipped_matrix.png, results/53/corrupt100/r010.7_r100.6/metrics.json, results/53/corrupt100/r010.7_r100.6/elbow_metrics.json, results/53/corrupt100/r010.7_r100.6/simulate.out, results/53/corrupt100/r010.7_r100.6/simulate.err
+    jobid: 375
+    reason: Missing output files: results/53/corrupt100/r010.7_r100.6/metrics.json, results/53/corrupt100/r010.7_r100.6/elbow_metrics.json
+    wildcards: seed=53, corrupt=100, r01=0.7, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:25 2025]
+Finished jobid: 364 (Rule: simulate)
+70 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:26 2025]
+localrule simulate:
+    output: results/9/corrupt10/r010.5_r100.6/original_matrix.png, results/9/corrupt10/r010.5_r100.6/flipped_matrix.png, results/9/corrupt10/r010.5_r100.6/metrics.json, results/9/corrupt10/r010.5_r100.6/elbow_metrics.json, results/9/corrupt10/r010.5_r100.6/simulate.out, results/9/corrupt10/r010.5_r100.6/simulate.err
+    jobid: 15
+    reason: Missing output files: results/9/corrupt10/r010.5_r100.6/elbow_metrics.json, results/9/corrupt10/r010.5_r100.6/metrics.json
+    wildcards: seed=9, corrupt=10, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:26 2025]
+Finished jobid: 904 (Rule: simulate)
+71 of 1398 steps (5%) done
+[Wed Sep 17 14:26:26 2025]
+Finished jobid: 844 (Rule: simulate)
+72 of 1398 steps (5%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Wed Sep 17 14:26:26 2025]
+localrule simulate:
+    output: results/64/corrupt100/r010.5_r100.7/original_matrix.png, results/64/corrupt100/r010.5_r100.7/flipped_matrix.png, results/64/corrupt100/r010.5_r100.7/metrics.json, results/64/corrupt100/r010.5_r100.7/elbow_metrics.json, results/64/corrupt100/r010.5_r100.7/simulate.out, results/64/corrupt100/r010.5_r100.7/simulate.err
+    jobid: 441
+    reason: Missing output files: results/64/corrupt100/r010.5_r100.7/metrics.json, results/64/corrupt100/r010.5_r100.7/elbow_metrics.json
+    wildcards: seed=64, corrupt=100, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:26 2025]
+localrule simulate:
+    output: results/64/corrupt100/r010.4_r100.6/original_matrix.png, results/64/corrupt100/r010.4_r100.6/flipped_matrix.png, results/64/corrupt100/r010.4_r100.6/metrics.json, results/64/corrupt100/r010.4_r100.6/elbow_metrics.json, results/64/corrupt100/r010.4_r100.6/simulate.out, results/64/corrupt100/r010.4_r100.6/simulate.err
+    jobid: 435
+    reason: Missing output files: results/64/corrupt100/r010.4_r100.6/metrics.json, results/64/corrupt100/r010.4_r100.6/elbow_metrics.json
+    wildcards: seed=64, corrupt=100, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:26 2025]
+Finished jobid: 1109 (Rule: simulate)
+73 of 1398 steps (5%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:26:26 2025]
+localrule simulate:
+    output: results/53/corrupt10/r010.7_r100.7/original_matrix.png, results/53/corrupt10/r010.7_r100.7/flipped_matrix.png, results/53/corrupt10/r010.7_r100.7/metrics.json, results/53/corrupt10/r010.7_r100.7/elbow_metrics.json, results/53/corrupt10/r010.7_r100.7/simulate.out, results/53/corrupt10/r010.7_r100.7/simulate.err
+    jobid: 326
+    reason: Missing output files: results/53/corrupt10/r010.7_r100.7/metrics.json, results/53/corrupt10/r010.7_r100.7/elbow_metrics.json
+    wildcards: seed=53, corrupt=10, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:26 2025]
+Finished jobid: 64 (Rule: simulate)
+74 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:26 2025]
+localrule simulate:
+    output: results/108/corrupt100/r010.6_r100.7/original_matrix.png, results/108/corrupt100/r010.6_r100.7/flipped_matrix.png, results/108/corrupt100/r010.6_r100.7/metrics.json, results/108/corrupt100/r010.6_r100.7/elbow_metrics.json, results/108/corrupt100/r010.6_r100.7/simulate.out, results/108/corrupt100/r010.6_r100.7/simulate.err
+    jobid: 746
+    reason: Missing output files: results/108/corrupt100/r010.6_r100.7/metrics.json, results/108/corrupt100/r010.6_r100.7/elbow_metrics.json
+    wildcards: seed=108, corrupt=100, r01=0.6, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:28 2025]
+Finished jobid: 615 (Rule: simulate)
+75 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:28 2025]
+localrule simulate:
+    output: results/119/corrupt100/r010.3_r100.7/original_matrix.png, results/119/corrupt100/r010.3_r100.7/flipped_matrix.png, results/119/corrupt100/r010.3_r100.7/metrics.json, results/119/corrupt100/r010.3_r100.7/elbow_metrics.json, results/119/corrupt100/r010.3_r100.7/simulate.out, results/119/corrupt100/r010.3_r100.7/simulate.err
+    jobid: 806
+    reason: Missing output files: results/119/corrupt100/r010.3_r100.7/elbow_metrics.json, results/119/corrupt100/r010.3_r100.7/metrics.json
+    wildcards: seed=119, corrupt=100, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:29 2025]
+Finished jobid: 915 (Rule: simulate)
+76 of 1398 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:29 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.3_r100.7/original_matrix.png, results/75/corrupt100/r010.3_r100.7/flipped_matrix.png, results/75/corrupt100/r010.3_r100.7/metrics.json, results/75/corrupt100/r010.3_r100.7/elbow_metrics.json, results/75/corrupt100/r010.3_r100.7/simulate.out, results/75/corrupt100/r010.3_r100.7/simulate.err
+    jobid: 506
+    reason: Missing output files: results/75/corrupt100/r010.3_r100.7/metrics.json, results/75/corrupt100/r010.3_r100.7/elbow_metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:31 2025]
+Finished jobid: 975 (Rule: simulate)
+77 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:31 2025]
+localrule simulate:
+    output: results/86/corrupt50/r010.5_r100.7/original_matrix.png, results/86/corrupt50/r010.5_r100.7/flipped_matrix.png, results/86/corrupt50/r010.5_r100.7/metrics.json, results/86/corrupt50/r010.5_r100.7/elbow_metrics.json, results/86/corrupt50/r010.5_r100.7/simulate.out, results/86/corrupt50/r010.5_r100.7/simulate.err
+    jobid: 566
+    reason: Missing output files: results/86/corrupt50/r010.5_r100.7/elbow_metrics.json, results/86/corrupt50/r010.5_r100.7/metrics.json
+    wildcards: seed=86, corrupt=50, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:32 2025]
+Finished jobid: 255 (Rule: simulate)
+78 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:32 2025]
+localrule simulate:
+    output: results/119/corrupt10/r010.4_r100.3/original_matrix.png, results/119/corrupt10/r010.4_r100.3/flipped_matrix.png, results/119/corrupt10/r010.4_r100.3/metrics.json, results/119/corrupt10/r010.4_r100.3/elbow_metrics.json, results/119/corrupt10/r010.4_r100.3/simulate.out, results/119/corrupt10/r010.4_r100.3/simulate.err
+    jobid: 757
+    reason: Missing output files: results/119/corrupt10/r010.4_r100.3/elbow_metrics.json, results/119/corrupt10/r010.4_r100.3/metrics.json
+    wildcards: seed=119, corrupt=10, r01=0.4, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:39 2025]
+Finished jobid: 15 (Rule: simulate)
+79 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:39 2025]
+localrule simulate:
+    output: results/86/corrupt100/r010.3_r100.3/original_matrix.png, results/86/corrupt100/r010.3_r100.3/flipped_matrix.png, results/86/corrupt100/r010.3_r100.3/metrics.json, results/86/corrupt100/r010.3_r100.3/elbow_metrics.json, results/86/corrupt100/r010.3_r100.3/simulate.out, results/86/corrupt100/r010.3_r100.3/simulate.err
+    jobid: 577
+    reason: Missing output files: results/86/corrupt100/r010.3_r100.3/elbow_metrics.json, results/86/corrupt100/r010.3_r100.3/metrics.json
+    wildcards: seed=86, corrupt=100, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:40 2025]
+Finished jobid: 435 (Rule: simulate)
+80 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:40 2025]
+localrule simulate:
+    output: results/163/corrupt50/r010.5_r100.4/original_matrix.png, results/163/corrupt50/r010.5_r100.4/flipped_matrix.png, results/163/corrupt50/r010.5_r100.4/metrics.json, results/163/corrupt50/r010.5_r100.4/elbow_metrics.json, results/163/corrupt50/r010.5_r100.4/simulate.out, results/163/corrupt50/r010.5_r100.4/simulate.err
+    jobid: 1088
+    reason: Missing output files: results/163/corrupt50/r010.5_r100.4/elbow_metrics.json, results/163/corrupt50/r010.5_r100.4/metrics.json
+    wildcards: seed=163, corrupt=50, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:40 2025]
+Finished jobid: 326 (Rule: simulate)
+81 of 1398 steps (6%) done
+[Wed Sep 17 14:26:40 2025]
+Finished jobid: 375 (Rule: simulate)
+82 of 1398 steps (6%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Wed Sep 17 14:26:41 2025]
+localrule simulate:
+    output: results/64/corrupt100/r010.7_r100.3/original_matrix.png, results/64/corrupt100/r010.7_r100.3/flipped_matrix.png, results/64/corrupt100/r010.7_r100.3/metrics.json, results/64/corrupt100/r010.7_r100.3/elbow_metrics.json, results/64/corrupt100/r010.7_r100.3/simulate.out, results/64/corrupt100/r010.7_r100.3/simulate.err
+    jobid: 447
+    reason: Missing output files: results/64/corrupt100/r010.7_r100.3/metrics.json, results/64/corrupt100/r010.7_r100.3/elbow_metrics.json
+    wildcards: seed=64, corrupt=100, r01=0.7, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:41 2025]
+localrule simulate:
+    output: results/163/corrupt100/r010.6_r100.3/original_matrix.png, results/163/corrupt100/r010.6_r100.3/flipped_matrix.png, results/163/corrupt100/r010.6_r100.3/metrics.json, results/163/corrupt100/r010.6_r100.3/elbow_metrics.json, results/163/corrupt100/r010.6_r100.3/simulate.out, results/163/corrupt100/r010.6_r100.3/simulate.err
+    jobid: 1117
+    reason: Missing output files: results/163/corrupt100/r010.6_r100.3/metrics.json, results/163/corrupt100/r010.6_r100.3/elbow_metrics.json
+    wildcards: seed=163, corrupt=100, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:41 2025]
+Finished jobid: 441 (Rule: simulate)
+83 of 1398 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:26:41 2025]
+localrule simulate:
+    output: results/20/corrupt10/r010.7_r100.3/original_matrix.png, results/20/corrupt10/r010.7_r100.3/flipped_matrix.png, results/20/corrupt10/r010.7_r100.3/metrics.json, results/20/corrupt10/r010.7_r100.3/elbow_metrics.json, results/20/corrupt10/r010.7_r100.3/simulate.out, results/20/corrupt10/r010.7_r100.3/simulate.err
+    jobid: 97
+    reason: Missing output files: results/20/corrupt10/r010.7_r100.3/metrics.json, results/20/corrupt10/r010.7_r100.3/elbow_metrics.json
+    wildcards: seed=20, corrupt=10, r01=0.7, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:42 2025]
+Finished jobid: 746 (Rule: simulate)
+84 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:42 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.6_r100.3/original_matrix.png, results/75/corrupt100/r010.6_r100.3/flipped_matrix.png, results/75/corrupt100/r010.6_r100.3/metrics.json, results/75/corrupt100/r010.6_r100.3/elbow_metrics.json, results/75/corrupt100/r010.6_r100.3/simulate.out, results/75/corrupt100/r010.6_r100.3/simulate.err
+    jobid: 517
+    reason: Missing output files: results/75/corrupt100/r010.6_r100.3/elbow_metrics.json, results/75/corrupt100/r010.6_r100.3/metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:43 2025]
+Finished jobid: 806 (Rule: simulate)
+85 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:43 2025]
+localrule simulate:
+    output: results/97/corrupt50/r010.5_r100.3/original_matrix.png, results/97/corrupt50/r010.5_r100.3/flipped_matrix.png, results/97/corrupt50/r010.5_r100.3/metrics.json, results/97/corrupt50/r010.5_r100.3/elbow_metrics.json, results/97/corrupt50/r010.5_r100.3/simulate.out, results/97/corrupt50/r010.5_r100.3/simulate.err
+    jobid: 637
+    reason: Missing output files: results/97/corrupt50/r010.5_r100.3/metrics.json, results/97/corrupt50/r010.5_r100.3/elbow_metrics.json
+    wildcards: seed=97, corrupt=50, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:44 2025]
+Finished jobid: 506 (Rule: simulate)
+86 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:44 2025]
+localrule simulate:
+    output: results/9/corrupt50/r010.7_r100.4/original_matrix.png, results/9/corrupt50/r010.7_r100.4/flipped_matrix.png, results/9/corrupt50/r010.7_r100.4/metrics.json, results/9/corrupt50/r010.7_r100.4/elbow_metrics.json, results/9/corrupt50/r010.7_r100.4/simulate.out, results/9/corrupt50/r010.7_r100.4/simulate.err
+    jobid: 48
+    reason: Missing output files: results/9/corrupt50/r010.7_r100.4/elbow_metrics.json, results/9/corrupt50/r010.7_r100.4/metrics.json
+    wildcards: seed=9, corrupt=50, r01=0.7, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:46 2025]
+Finished jobid: 757 (Rule: simulate)
+87 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:46 2025]
+localrule simulate:
+    output: results/86/corrupt10/r010.3_r100.4/original_matrix.png, results/86/corrupt10/r010.3_r100.4/flipped_matrix.png, results/86/corrupt10/r010.3_r100.4/metrics.json, results/86/corrupt10/r010.3_r100.4/elbow_metrics.json, results/86/corrupt10/r010.3_r100.4/simulate.out, results/86/corrupt10/r010.3_r100.4/simulate.err
+    jobid: 528
+    reason: Missing output files: results/86/corrupt10/r010.3_r100.4/elbow_metrics.json, results/86/corrupt10/r010.3_r100.4/metrics.json
+    wildcards: seed=86, corrupt=10, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:47 2025]
+Finished jobid: 566 (Rule: simulate)
+88 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:47 2025]
+localrule simulate:
+    output: results/20/corrupt50/r010.4_r100.4/original_matrix.png, results/20/corrupt50/r010.4_r100.4/flipped_matrix.png, results/20/corrupt50/r010.4_r100.4/metrics.json, results/20/corrupt50/r010.4_r100.4/elbow_metrics.json, results/20/corrupt50/r010.4_r100.4/simulate.out, results/20/corrupt50/r010.4_r100.4/simulate.err
+    jobid: 108
+    reason: Missing output files: results/20/corrupt50/r010.4_r100.4/elbow_metrics.json, results/20/corrupt50/r010.4_r100.4/metrics.json
+    wildcards: seed=20, corrupt=50, r01=0.4, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:54 2025]
+Finished jobid: 1117 (Rule: simulate)
+89 of 1398 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:55 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.3_r100.4/original_matrix.png, results/42/corrupt10/r010.3_r100.4/flipped_matrix.png, results/42/corrupt10/r010.3_r100.4/metrics.json, results/42/corrupt10/r010.3_r100.4/elbow_metrics.json, results/42/corrupt10/r010.3_r100.4/simulate.out, results/42/corrupt10/r010.3_r100.4/simulate.err
+    jobid: 228
+    reason: Missing output files: results/42/corrupt10/r010.3_r100.4/elbow_metrics.json, results/42/corrupt10/r010.3_r100.4/metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:55 2025]
+Finished jobid: 1088 (Rule: simulate)
+90 of 1398 steps (6%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:26:55 2025]
+localrule simulate:
+    output: results/75/corrupt50/r010.3_r100.5/original_matrix.png, results/75/corrupt50/r010.3_r100.5/flipped_matrix.png, results/75/corrupt50/r010.3_r100.5/metrics.json, results/75/corrupt50/r010.3_r100.5/elbow_metrics.json, results/75/corrupt50/r010.3_r100.5/simulate.out, results/75/corrupt50/r010.3_r100.5/simulate.err
+    jobid: 479
+    reason: Missing output files: results/75/corrupt50/r010.3_r100.5/metrics.json, results/75/corrupt50/r010.3_r100.5/elbow_metrics.json
+    wildcards: seed=75, corrupt=50, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:55 2025]
+Finished jobid: 447 (Rule: simulate)
+91 of 1398 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:26:55 2025]
+localrule simulate:
+    output: results/108/corrupt50/r010.6_r100.5/original_matrix.png, results/108/corrupt50/r010.6_r100.5/flipped_matrix.png, results/108/corrupt50/r010.6_r100.5/metrics.json, results/108/corrupt50/r010.6_r100.5/elbow_metrics.json, results/108/corrupt50/r010.6_r100.5/simulate.out, results/108/corrupt50/r010.6_r100.5/simulate.err
+    jobid: 719
+    reason: Missing output files: results/108/corrupt50/r010.6_r100.5/metrics.json, results/108/corrupt50/r010.6_r100.5/elbow_metrics.json
+    wildcards: seed=108, corrupt=50, r01=0.6, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:56 2025]
+Finished jobid: 517 (Rule: simulate)
+92 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:56 2025]
+localrule simulate:
+    output: results/9/corrupt100/r010.4_r100.5/original_matrix.png, results/9/corrupt100/r010.4_r100.5/flipped_matrix.png, results/9/corrupt100/r010.4_r100.5/metrics.json, results/9/corrupt100/r010.4_r100.5/elbow_metrics.json, results/9/corrupt100/r010.4_r100.5/simulate.out, results/9/corrupt100/r010.4_r100.5/simulate.err
+    jobid: 59
+    reason: Missing output files: results/9/corrupt100/r010.4_r100.5/metrics.json, results/9/corrupt100/r010.4_r100.5/elbow_metrics.json
+    wildcards: seed=9, corrupt=100, r01=0.4, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:56 2025]
+Finished jobid: 577 (Rule: simulate)
+93 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:57 2025]
+localrule simulate:
+    output: results/20/corrupt50/r010.6_r100.5/original_matrix.png, results/20/corrupt50/r010.6_r100.5/flipped_matrix.png, results/20/corrupt50/r010.6_r100.5/metrics.json, results/20/corrupt50/r010.6_r100.5/elbow_metrics.json, results/20/corrupt50/r010.6_r100.5/simulate.out, results/20/corrupt50/r010.6_r100.5/simulate.err
+    jobid: 119
+    reason: Missing output files: results/20/corrupt50/r010.6_r100.5/elbow_metrics.json, results/20/corrupt50/r010.6_r100.5/metrics.json
+    wildcards: seed=20, corrupt=50, r01=0.6, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:58 2025]
+Finished jobid: 637 (Rule: simulate)
+94 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:58 2025]
+localrule braga_simulator:
+    output: results/braga/119/sim119-b4-c0.1.nex, results/braga/119/sim119-b4-c0.1.settings.txt
+    jobid: 1320
+    reason: Missing output files: results/braga/119/sim119-b4-c0.1.nex, results/braga/119/sim119-b4-c0.1.settings.txt
+    wildcards: seed=119, beta=4, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:58 2025]
+Finished jobid: 97 (Rule: simulate)
+95 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:58 2025]
+localrule simulate:
+    output: results/86/corrupt100/r010.7_r100.5/original_matrix.png, results/86/corrupt100/r010.7_r100.5/flipped_matrix.png, results/86/corrupt100/r010.7_r100.5/metrics.json, results/86/corrupt100/r010.7_r100.5/elbow_metrics.json, results/86/corrupt100/r010.7_r100.5/simulate.out, results/86/corrupt100/r010.7_r100.5/simulate.err
+    jobid: 599
+    reason: Missing output files: results/86/corrupt100/r010.7_r100.5/metrics.json, results/86/corrupt100/r010.7_r100.5/elbow_metrics.json
+    wildcards: seed=86, corrupt=100, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:26:58 2025]
+Finished jobid: 1320 (Rule: braga_simulator)
+96 of 1398 steps (7%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:26:58 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.5_r100.5/original_matrix.png, results/42/corrupt10/r010.5_r100.5/flipped_matrix.png, results/42/corrupt10/r010.5_r100.5/metrics.json, results/42/corrupt10/r010.5_r100.5/elbow_metrics.json, results/42/corrupt10/r010.5_r100.5/simulate.out, results/42/corrupt10/r010.5_r100.5/simulate.err
+    jobid: 239
+    reason: Missing output files: results/42/corrupt10/r010.5_r100.5/metrics.json, results/42/corrupt10/r010.5_r100.5/elbow_metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.5, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:26:59 2025]
+Finished jobid: 48 (Rule: simulate)
+97 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:26:59 2025]
+localrule simulate:
+    output: results/97/corrupt100/r010.4_r100.5/original_matrix.png, results/97/corrupt100/r010.4_r100.5/flipped_matrix.png, results/97/corrupt100/r010.4_r100.5/metrics.json, results/97/corrupt100/r010.4_r100.5/elbow_metrics.json, results/97/corrupt100/r010.4_r100.5/simulate.out, results/97/corrupt100/r010.4_r100.5/simulate.err
+    jobid: 659
+    reason: Missing output files: results/97/corrupt100/r010.4_r100.5/metrics.json, results/97/corrupt100/r010.4_r100.5/elbow_metrics.json
+    wildcards: seed=97, corrupt=100, r01=0.4, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:02 2025]
+Finished jobid: 528 (Rule: simulate)
+98 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:02 2025]
+localrule simulate:
+    output: results/42/corrupt100/r010.7_r100.5/original_matrix.png, results/42/corrupt100/r010.7_r100.5/flipped_matrix.png, results/42/corrupt100/r010.7_r100.5/metrics.json, results/42/corrupt100/r010.7_r100.5/elbow_metrics.json, results/42/corrupt100/r010.7_r100.5/simulate.out, results/42/corrupt100/r010.7_r100.5/simulate.err
+    jobid: 299
+    reason: Missing output files: results/42/corrupt100/r010.7_r100.5/metrics.json, results/42/corrupt100/r010.7_r100.5/elbow_metrics.json
+    wildcards: seed=42, corrupt=100, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:03 2025]
+Finished jobid: 108 (Rule: simulate)
+99 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:03 2025]
+localrule simulate:
+    output: results/42/corrupt10/r010.4_r100.6/original_matrix.png, results/42/corrupt10/r010.4_r100.6/flipped_matrix.png, results/42/corrupt10/r010.4_r100.6/metrics.json, results/42/corrupt10/r010.4_r100.6/elbow_metrics.json, results/42/corrupt10/r010.4_r100.6/simulate.out, results/42/corrupt10/r010.4_r100.6/simulate.err
+    jobid: 235
+    reason: Missing output files: results/42/corrupt10/r010.4_r100.6/elbow_metrics.json, results/42/corrupt10/r010.4_r100.6/metrics.json
+    wildcards: seed=42, corrupt=10, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:09 2025]
+Finished jobid: 479 (Rule: simulate)
+100 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:09 2025]
+localrule simulate:
+    output: results/119/corrupt50/r010.5_r100.6/original_matrix.png, results/119/corrupt50/r010.5_r100.6/flipped_matrix.png, results/119/corrupt50/r010.5_r100.6/metrics.json, results/119/corrupt50/r010.5_r100.6/elbow_metrics.json, results/119/corrupt50/r010.5_r100.6/simulate.out, results/119/corrupt50/r010.5_r100.6/simulate.err
+    jobid: 790
+    reason: Missing output files: results/119/corrupt50/r010.5_r100.6/metrics.json, results/119/corrupt50/r010.5_r100.6/elbow_metrics.json
+    wildcards: seed=119, corrupt=50, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:11 2025]
+Finished jobid: 719 (Rule: simulate)
+101 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:11 2025]
+localrule simulate:
+    output: results/86/corrupt10/r010.7_r100.6/original_matrix.png, results/86/corrupt10/r010.7_r100.6/flipped_matrix.png, results/86/corrupt10/r010.7_r100.6/metrics.json, results/86/corrupt10/r010.7_r100.6/elbow_metrics.json, results/86/corrupt10/r010.7_r100.6/simulate.out, results/86/corrupt10/r010.7_r100.6/simulate.err
+    jobid: 550
+    reason: Missing output files: results/86/corrupt10/r010.7_r100.6/metrics.json, results/86/corrupt10/r010.7_r100.6/elbow_metrics.json
+    wildcards: seed=86, corrupt=10, r01=0.7, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:27:11 2025]
+Finished jobid: 59 (Rule: simulate)
+102 of 1398 steps (7%) done
+[Wed Sep 17 14:27:11 2025]
+Finished jobid: 228 (Rule: simulate)
+103 of 1398 steps (7%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Wed Sep 17 14:27:11 2025]
+localrule simulate:
+    output: results/20/corrupt10/r010.5_r100.3/original_matrix.png, results/20/corrupt10/r010.5_r100.3/flipped_matrix.png, results/20/corrupt10/r010.5_r100.3/metrics.json, results/20/corrupt10/r010.5_r100.3/elbow_metrics.json, results/20/corrupt10/r010.5_r100.3/simulate.out, results/20/corrupt10/r010.5_r100.3/simulate.err
+    jobid: 87
+    reason: Missing output files: results/20/corrupt10/r010.5_r100.3/metrics.json, results/20/corrupt10/r010.5_r100.3/elbow_metrics.json
+    wildcards: seed=20, corrupt=10, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:27:11 2025]
+localrule simulate:
+    output: results/9/corrupt10/r010.4_r100.6/original_matrix.png, results/9/corrupt10/r010.4_r100.6/flipped_matrix.png, results/9/corrupt10/r010.4_r100.6/metrics.json, results/9/corrupt10/r010.4_r100.6/elbow_metrics.json, results/9/corrupt10/r010.4_r100.6/simulate.out, results/9/corrupt10/r010.4_r100.6/simulate.err
+    jobid: 10
+    reason: Missing output files: results/9/corrupt10/r010.4_r100.6/metrics.json, results/9/corrupt10/r010.4_r100.6/elbow_metrics.json
+    wildcards: seed=9, corrupt=10, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:13 2025]
+Finished jobid: 119 (Rule: simulate)
+104 of 1398 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:13 2025]
+localrule simulate:
+    output: results/64/corrupt10/r010.4_r100.3/original_matrix.png, results/64/corrupt10/r010.4_r100.3/flipped_matrix.png, results/64/corrupt10/r010.4_r100.3/metrics.json, results/64/corrupt10/r010.4_r100.3/elbow_metrics.json, results/64/corrupt10/r010.4_r100.3/simulate.out, results/64/corrupt10/r010.4_r100.3/simulate.err
+    jobid: 382
+    reason: Missing output files: results/64/corrupt10/r010.4_r100.3/elbow_metrics.json, results/64/corrupt10/r010.4_r100.3/metrics.json
+    wildcards: seed=64, corrupt=10, r01=0.4, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:15 2025]
+Finished jobid: 239 (Rule: simulate)
+105 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:16 2025]
+localrule simulate:
+    output: results/97/corrupt100/r010.6_r100.6/original_matrix.png, results/97/corrupt100/r010.6_r100.6/flipped_matrix.png, results/97/corrupt100/r010.6_r100.6/metrics.json, results/97/corrupt100/r010.6_r100.6/elbow_metrics.json, results/97/corrupt100/r010.6_r100.6/simulate.out, results/97/corrupt100/r010.6_r100.6/simulate.err
+    jobid: 670
+    reason: Missing output files: results/97/corrupt100/r010.6_r100.6/metrics.json, results/97/corrupt100/r010.6_r100.6/elbow_metrics.json
+    wildcards: seed=97, corrupt=100, r01=0.6, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:16 2025]
+Finished jobid: 599 (Rule: simulate)
+106 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:16 2025]
+localrule simulate:
+    output: results/108/corrupt100/r010.3_r100.6/original_matrix.png, results/108/corrupt100/r010.3_r100.6/flipped_matrix.png, results/108/corrupt100/r010.3_r100.6/metrics.json, results/108/corrupt100/r010.3_r100.6/elbow_metrics.json, results/108/corrupt100/r010.3_r100.6/simulate.out, results/108/corrupt100/r010.3_r100.6/simulate.err
+    jobid: 730
+    reason: Missing output files: results/108/corrupt100/r010.3_r100.6/elbow_metrics.json, results/108/corrupt100/r010.3_r100.6/metrics.json
+    wildcards: seed=108, corrupt=100, r01=0.3, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:18 2025]
+Finished jobid: 659 (Rule: simulate)
+107 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:18 2025]
+localrule simulate:
+    output: results/42/corrupt50/r010.4_r100.7/original_matrix.png, results/42/corrupt50/r010.4_r100.7/flipped_matrix.png, results/42/corrupt50/r010.4_r100.7/metrics.json, results/42/corrupt50/r010.4_r100.7/elbow_metrics.json, results/42/corrupt50/r010.4_r100.7/simulate.out, results/42/corrupt50/r010.4_r100.7/simulate.err
+    jobid: 261
+    reason: Missing output files: results/42/corrupt50/r010.4_r100.7/metrics.json, results/42/corrupt50/r010.4_r100.7/elbow_metrics.json
+    wildcards: seed=42, corrupt=50, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:18 2025]
+Finished jobid: 299 (Rule: simulate)
+108 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:18 2025]
+localrule simulate:
+    output: results/20/corrupt100/r010.5_r100.7/original_matrix.png, results/20/corrupt100/r010.5_r100.7/flipped_matrix.png, results/20/corrupt100/r010.5_r100.7/metrics.json, results/20/corrupt100/r010.5_r100.7/elbow_metrics.json, results/20/corrupt100/r010.5_r100.7/simulate.out, results/20/corrupt100/r010.5_r100.7/simulate.err
+    jobid: 141
+    reason: Missing output files: results/20/corrupt100/r010.5_r100.7/metrics.json, results/20/corrupt100/r010.5_r100.7/elbow_metrics.json
+    wildcards: seed=20, corrupt=100, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:19 2025]
+Finished jobid: 235 (Rule: simulate)
+109 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:19 2025]
+localrule simulate:
+    output: results/53/corrupt10/r010.6_r100.7/original_matrix.png, results/53/corrupt10/r010.6_r100.7/flipped_matrix.png, results/53/corrupt10/r010.6_r100.7/metrics.json, results/53/corrupt10/r010.6_r100.7/elbow_metrics.json, results/53/corrupt10/r010.6_r100.7/simulate.out, results/53/corrupt10/r010.6_r100.7/simulate.err
+    jobid: 321
+    reason: Missing output files: results/53/corrupt10/r010.6_r100.7/elbow_metrics.json, results/53/corrupt10/r010.6_r100.7/metrics.json
+    wildcards: seed=53, corrupt=10, r01=0.6, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:23 2025]
+Finished jobid: 790 (Rule: simulate)
+110 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:23 2025]
+localrule simulate:
+    output: results/119/corrupt50/r010.7_r100.7/original_matrix.png, results/119/corrupt50/r010.7_r100.7/flipped_matrix.png, results/119/corrupt50/r010.7_r100.7/metrics.json, results/119/corrupt50/r010.7_r100.7/elbow_metrics.json, results/119/corrupt50/r010.7_r100.7/simulate.out, results/119/corrupt50/r010.7_r100.7/simulate.err
+    jobid: 801
+    reason: Missing output files: results/119/corrupt50/r010.7_r100.7/metrics.json, results/119/corrupt50/r010.7_r100.7/elbow_metrics.json
+    wildcards: seed=119, corrupt=50, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:24 2025]
+Finished jobid: 10 (Rule: simulate)
+111 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:25 2025]
+localrule braga_simulator:
+    output: results/braga/152/sim152-b1-c1.nex, results/braga/152/sim152-b1-c1.settings.txt
+    jobid: 1372
+    reason: Missing output files: results/braga/152/sim152-b1-c1.settings.txt, results/braga/152/sim152-b1-c1.nex
+    wildcards: seed=152, beta=1, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:25 2025]
+Finished jobid: 550 (Rule: simulate)
+112 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:26 2025]
+localrule simulate:
+    output: results/119/corrupt50/r010.4_r100.4/original_matrix.png, results/119/corrupt50/r010.4_r100.4/flipped_matrix.png, results/119/corrupt50/r010.4_r100.4/metrics.json, results/119/corrupt50/r010.4_r100.4/elbow_metrics.json, results/119/corrupt50/r010.4_r100.4/simulate.out, results/119/corrupt50/r010.4_r100.4/simulate.err
+    jobid: 783
+    reason: Missing output files: results/119/corrupt50/r010.4_r100.4/metrics.json, results/119/corrupt50/r010.4_r100.4/elbow_metrics.json
+    wildcards: seed=119, corrupt=50, r01=0.4, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:27:26 2025]
+Finished jobid: 1372 (Rule: braga_simulator)
+113 of 1398 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:27:26 2025]
+localrule simulate:
+    output: results/9/corrupt50/r010.5_r100.6/original_matrix.png, results/9/corrupt50/r010.5_r100.6/flipped_matrix.png, results/9/corrupt50/r010.5_r100.6/metrics.json, results/9/corrupt50/r010.5_r100.6/elbow_metrics.json, results/9/corrupt50/r010.5_r100.6/simulate.out, results/9/corrupt50/r010.5_r100.6/simulate.err
+    jobid: 40
+    reason: Missing output files: results/9/corrupt50/r010.5_r100.6/metrics.json, results/9/corrupt50/r010.5_r100.6/elbow_metrics.json
+    wildcards: seed=9, corrupt=50, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:27 2025]
+Finished jobid: 382 (Rule: simulate)
+114 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:27 2025]
+localrule simulate:
+    output: results/64/corrupt10/r010.3_r100.5/original_matrix.png, results/64/corrupt10/r010.3_r100.5/flipped_matrix.png, results/64/corrupt10/r010.3_r100.5/metrics.json, results/64/corrupt10/r010.3_r100.5/elbow_metrics.json, results/64/corrupt10/r010.3_r100.5/simulate.out, results/64/corrupt10/r010.3_r100.5/simulate.err
+    jobid: 379
+    reason: Missing output files: results/64/corrupt10/r010.3_r100.5/elbow_metrics.json, results/64/corrupt10/r010.3_r100.5/metrics.json
+    wildcards: seed=64, corrupt=10, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:27 2025]
+Finished jobid: 87 (Rule: simulate)
+115 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:27 2025]
+localrule simulate:
+    output: results/75/corrupt10/r010.3_r100.3/original_matrix.png, results/75/corrupt10/r010.3_r100.3/flipped_matrix.png, results/75/corrupt10/r010.3_r100.3/metrics.json, results/75/corrupt10/r010.3_r100.3/elbow_metrics.json, results/75/corrupt10/r010.3_r100.3/simulate.out, results/75/corrupt10/r010.3_r100.3/simulate.err
+    jobid: 452
+    reason: Missing output files: results/75/corrupt10/r010.3_r100.3/metrics.json, results/75/corrupt10/r010.3_r100.3/elbow_metrics.json
+    wildcards: seed=75, corrupt=10, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:32 2025]
+Finished jobid: 730 (Rule: simulate)
+116 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:33 2025]
+localrule simulate:
+    output: results/31/corrupt10/r010.3_r100.3/original_matrix.png, results/31/corrupt10/r010.3_r100.3/flipped_matrix.png, results/31/corrupt10/r010.3_r100.3/metrics.json, results/31/corrupt10/r010.3_r100.3/elbow_metrics.json, results/31/corrupt10/r010.3_r100.3/simulate.out, results/31/corrupt10/r010.3_r100.3/simulate.err
+    jobid: 152
+    reason: Missing output files: results/31/corrupt10/r010.3_r100.3/metrics.json, results/31/corrupt10/r010.3_r100.3/elbow_metrics.json
+    wildcards: seed=31, corrupt=10, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:27:33 2025]
+Finished jobid: 321 (Rule: simulate)
+117 of 1398 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:27:33 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.5_r100.3/original_matrix.png, results/75/corrupt100/r010.5_r100.3/flipped_matrix.png, results/75/corrupt100/r010.5_r100.3/metrics.json, results/75/corrupt100/r010.5_r100.3/elbow_metrics.json, results/75/corrupt100/r010.5_r100.3/simulate.out, results/75/corrupt100/r010.5_r100.3/simulate.err
+    jobid: 512
+    reason: Missing output files: results/75/corrupt100/r010.5_r100.3/metrics.json, results/75/corrupt100/r010.5_r100.3/elbow_metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:34 2025]
+Finished jobid: 670 (Rule: simulate)
+118 of 1398 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:34 2025]
+localrule simulate:
+    output: results/108/corrupt10/r010.6_r100.3/original_matrix.png, results/108/corrupt10/r010.6_r100.3/flipped_matrix.png, results/108/corrupt10/r010.6_r100.3/metrics.json, results/108/corrupt10/r010.6_r100.3/elbow_metrics.json, results/108/corrupt10/r010.6_r100.3/simulate.out, results/108/corrupt10/r010.6_r100.3/simulate.err
+    jobid: 692
+    reason: Missing output files: results/108/corrupt10/r010.6_r100.3/elbow_metrics.json, results/108/corrupt10/r010.6_r100.3/metrics.json
+    wildcards: seed=108, corrupt=10, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:34 2025]
+Finished jobid: 261 (Rule: simulate)
+119 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:34 2025]
+localrule simulate:
+    output: results/163/corrupt10/r010.3_r100.3/original_matrix.png, results/163/corrupt10/r010.3_r100.3/flipped_matrix.png, results/163/corrupt10/r010.3_r100.3/metrics.json, results/163/corrupt10/r010.3_r100.3/elbow_metrics.json, results/163/corrupt10/r010.3_r100.3/simulate.out, results/163/corrupt10/r010.3_r100.3/simulate.err
+    jobid: 1052
+    reason: Missing output files: results/163/corrupt10/r010.3_r100.3/elbow_metrics.json, results/163/corrupt10/r010.3_r100.3/metrics.json
+    wildcards: seed=163, corrupt=10, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:34 2025]
+Finished jobid: 141 (Rule: simulate)
+120 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:34 2025]
+localrule simulate:
+    output: results/163/corrupt100/r010.5_r100.3/original_matrix.png, results/163/corrupt100/r010.5_r100.3/flipped_matrix.png, results/163/corrupt100/r010.5_r100.3/metrics.json, results/163/corrupt100/r010.5_r100.3/elbow_metrics.json, results/163/corrupt100/r010.5_r100.3/simulate.out, results/163/corrupt100/r010.5_r100.3/simulate.err
+    jobid: 1112
+    reason: Missing output files: results/163/corrupt100/r010.5_r100.3/elbow_metrics.json, results/163/corrupt100/r010.5_r100.3/metrics.json
+    wildcards: seed=163, corrupt=100, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:37 2025]
+Finished jobid: 801 (Rule: simulate)
+121 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:37 2025]
+localrule simulate:
+    output: results/31/corrupt100/r010.6_r100.3/original_matrix.png, results/31/corrupt100/r010.6_r100.3/flipped_matrix.png, results/31/corrupt100/r010.6_r100.3/metrics.json, results/31/corrupt100/r010.6_r100.3/elbow_metrics.json, results/31/corrupt100/r010.6_r100.3/simulate.out, results/31/corrupt100/r010.6_r100.3/simulate.err
+    jobid: 217
+    reason: Missing output files: results/31/corrupt100/r010.6_r100.3/metrics.json, results/31/corrupt100/r010.6_r100.3/elbow_metrics.json
+    wildcards: seed=31, corrupt=100, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:39 2025]
+Finished jobid: 783 (Rule: simulate)
+122 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:40 2025]
+localrule simulate:
+    output: results/75/corrupt10/r010.5_r100.4/original_matrix.png, results/75/corrupt10/r010.5_r100.4/flipped_matrix.png, results/75/corrupt10/r010.5_r100.4/metrics.json, results/75/corrupt10/r010.5_r100.4/elbow_metrics.json, results/75/corrupt10/r010.5_r100.4/simulate.out, results/75/corrupt10/r010.5_r100.4/simulate.err
+    jobid: 463
+    reason: Missing output files: results/75/corrupt10/r010.5_r100.4/metrics.json, results/75/corrupt10/r010.5_r100.4/elbow_metrics.json
+    wildcards: seed=75, corrupt=10, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:40 2025]
+Finished jobid: 40 (Rule: simulate)
+123 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:40 2025]
+localrule simulate:
+    output: results/141/corrupt50/r010.6_r100.4/original_matrix.png, results/141/corrupt50/r010.6_r100.4/flipped_matrix.png, results/141/corrupt50/r010.6_r100.4/metrics.json, results/141/corrupt50/r010.6_r100.4/elbow_metrics.json, results/141/corrupt50/r010.6_r100.4/simulate.out, results/141/corrupt50/r010.6_r100.4/simulate.err
+    jobid: 943
+    reason: Missing output files: results/141/corrupt50/r010.6_r100.4/elbow_metrics.json, results/141/corrupt50/r010.6_r100.4/metrics.json
+    wildcards: seed=141, corrupt=50, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:27:40 2025]
+Finished jobid: 379 (Rule: simulate)
+124 of 1398 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:27:40 2025]
+localrule simulate:
+    output: results/86/corrupt100/r010.4_r100.4/original_matrix.png, results/86/corrupt100/r010.4_r100.4/flipped_matrix.png, results/86/corrupt100/r010.4_r100.4/metrics.json, results/86/corrupt100/r010.4_r100.4/elbow_metrics.json, results/86/corrupt100/r010.4_r100.4/simulate.out, results/86/corrupt100/r010.4_r100.4/simulate.err
+    jobid: 583
+    reason: Missing output files: results/86/corrupt100/r010.4_r100.4/elbow_metrics.json, results/86/corrupt100/r010.4_r100.4/metrics.json
+    wildcards: seed=86, corrupt=100, r01=0.4, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:41 2025]
+Finished jobid: 452 (Rule: simulate)
+125 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:41 2025]
+localrule simulate:
+    output: results/119/corrupt10/r010.5_r100.4/original_matrix.png, results/119/corrupt10/r010.5_r100.4/flipped_matrix.png, results/119/corrupt10/r010.5_r100.4/metrics.json, results/119/corrupt10/r010.5_r100.4/elbow_metrics.json, results/119/corrupt10/r010.5_r100.4/simulate.out, results/119/corrupt10/r010.5_r100.4/simulate.err
+    jobid: 763
+    reason: Missing output files: results/119/corrupt10/r010.5_r100.4/metrics.json, results/119/corrupt10/r010.5_r100.4/elbow_metrics.json
+    wildcards: seed=119, corrupt=10, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:47 2025]
+Finished jobid: 512 (Rule: simulate)
+126 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:47 2025]
+localrule simulate:
+    output: results/9/corrupt10/r010.7_r100.3/original_matrix.png, results/9/corrupt10/r010.7_r100.3/flipped_matrix.png, results/9/corrupt10/r010.7_r100.3/metrics.json, results/9/corrupt10/r010.7_r100.3/elbow_metrics.json, results/9/corrupt10/r010.7_r100.3/simulate.out, results/9/corrupt10/r010.7_r100.3/simulate.err
+    jobid: 22
+    reason: Missing output files: results/9/corrupt10/r010.7_r100.3/elbow_metrics.json, results/9/corrupt10/r010.7_r100.3/metrics.json
+    wildcards: seed=9, corrupt=10, r01=0.7, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:47 2025]
+Finished jobid: 152 (Rule: simulate)
+127 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:48 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.3_r100.3/original_matrix.png, results/75/corrupt100/r010.3_r100.3/flipped_matrix.png, results/75/corrupt100/r010.3_r100.3/metrics.json, results/75/corrupt100/r010.3_r100.3/elbow_metrics.json, results/75/corrupt100/r010.3_r100.3/simulate.out, results/75/corrupt100/r010.3_r100.3/simulate.err
+    jobid: 502
+    reason: Missing output files: results/75/corrupt100/r010.3_r100.3/elbow_metrics.json, results/75/corrupt100/r010.3_r100.3/metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:48 2025]
+Finished jobid: 1052 (Rule: simulate)
+128 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:48 2025]
+localrule braga_simulator:
+    output: results/braga/86/sim86-b4-c1.nex, results/braga/86/sim86-b4-c1.settings.txt
+    jobid: 1270
+    reason: Missing output files: results/braga/86/sim86-b4-c1.settings.txt, results/braga/86/sim86-b4-c1.nex
+    wildcards: seed=86, beta=4, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:27:48 2025]
+Finished jobid: 1112 (Rule: simulate)
+129 of 1398 steps (9%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:27:48 2025]
+localrule simulate:
+    output: results/108/corrupt50/r010.5_r100.5/original_matrix.png, results/108/corrupt50/r010.5_r100.5/flipped_matrix.png, results/108/corrupt50/r010.5_r100.5/metrics.json, results/108/corrupt50/r010.5_r100.5/elbow_metrics.json, results/108/corrupt50/r010.5_r100.5/simulate.out, results/108/corrupt50/r010.5_r100.5/simulate.err
+    jobid: 714
+    reason: Missing output files: results/108/corrupt50/r010.5_r100.5/metrics.json, results/108/corrupt50/r010.5_r100.5/elbow_metrics.json
+    wildcards: seed=108, corrupt=50, r01=0.5, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:49 2025]
+Finished jobid: 1270 (Rule: braga_simulator)
+130 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:49 2025]
+localrule braga_simulator:
+    output: results/braga/163/sim163-b1-c1.nex, results/braga/163/sim163-b1-c1.settings.txt
+    jobid: 1390
+    reason: Missing output files: results/braga/163/sim163-b1-c1.settings.txt, results/braga/163/sim163-b1-c1.nex
+    wildcards: seed=163, beta=1, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:49 2025]
+Finished jobid: 1390 (Rule: braga_simulator)
+131 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:49 2025]
+localrule simulate:
+    output: results/130/corrupt100/r010.6_r100.5/original_matrix.png, results/130/corrupt100/r010.6_r100.5/flipped_matrix.png, results/130/corrupt100/r010.6_r100.5/metrics.json, results/130/corrupt100/r010.6_r100.5/elbow_metrics.json, results/130/corrupt100/r010.6_r100.5/simulate.out, results/130/corrupt100/r010.6_r100.5/simulate.err
+    jobid: 894
+    reason: Missing output files: results/130/corrupt100/r010.6_r100.5/metrics.json, results/130/corrupt100/r010.6_r100.5/elbow_metrics.json
+    wildcards: seed=130, corrupt=100, r01=0.6, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:50 2025]
+Finished jobid: 692 (Rule: simulate)
+132 of 1398 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:50 2025]
+localrule simulate:
+    output: results/53/corrupt100/r010.3_r100.5/original_matrix.png, results/53/corrupt100/r010.3_r100.5/flipped_matrix.png, results/53/corrupt100/r010.3_r100.5/metrics.json, results/53/corrupt100/r010.3_r100.5/elbow_metrics.json, results/53/corrupt100/r010.3_r100.5/simulate.out, results/53/corrupt100/r010.3_r100.5/simulate.err
+    jobid: 354
+    reason: Missing output files: results/53/corrupt100/r010.3_r100.5/metrics.json, results/53/corrupt100/r010.3_r100.5/elbow_metrics.json
+    wildcards: seed=53, corrupt=100, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:52 2025]
+Finished jobid: 217 (Rule: simulate)
+133 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:52 2025]
+localrule simulate:
+    output: results/119/corrupt10/r010.7_r100.5/original_matrix.png, results/119/corrupt10/r010.7_r100.5/flipped_matrix.png, results/119/corrupt10/r010.7_r100.5/metrics.json, results/119/corrupt10/r010.7_r100.5/elbow_metrics.json, results/119/corrupt10/r010.7_r100.5/simulate.out, results/119/corrupt10/r010.7_r100.5/simulate.err
+    jobid: 774
+    reason: Missing output files: results/119/corrupt10/r010.7_r100.5/elbow_metrics.json, results/119/corrupt10/r010.7_r100.5/metrics.json
+    wildcards: seed=119, corrupt=10, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:53 2025]
+Finished jobid: 463 (Rule: simulate)
+134 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:53 2025]
+localrule simulate:
+    output: results/75/corrupt10/r010.7_r100.5/original_matrix.png, results/75/corrupt10/r010.7_r100.5/flipped_matrix.png, results/75/corrupt10/r010.7_r100.5/metrics.json, results/75/corrupt10/r010.7_r100.5/elbow_metrics.json, results/75/corrupt10/r010.7_r100.5/simulate.out, results/75/corrupt10/r010.7_r100.5/simulate.err
+    jobid: 474
+    reason: Missing output files: results/75/corrupt10/r010.7_r100.5/elbow_metrics.json, results/75/corrupt10/r010.7_r100.5/metrics.json
+    wildcards: seed=75, corrupt=10, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:55 2025]
+Finished jobid: 763 (Rule: simulate)
+135 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:55 2025]
+localrule simulate:
+    output: results/141/corrupt100/r010.5_r100.6/original_matrix.png, results/141/corrupt100/r010.5_r100.6/flipped_matrix.png, results/141/corrupt100/r010.5_r100.6/metrics.json, results/141/corrupt100/r010.5_r100.6/elbow_metrics.json, results/141/corrupt100/r010.5_r100.6/simulate.out, results/141/corrupt100/r010.5_r100.6/simulate.err
+    jobid: 965
+    reason: Missing output files: results/141/corrupt100/r010.5_r100.6/metrics.json, results/141/corrupt100/r010.5_r100.6/elbow_metrics.json
+    wildcards: seed=141, corrupt=100, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:56 2025]
+Finished jobid: 943 (Rule: simulate)
+136 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:56 2025]
+localrule simulate:
+    output: results/86/corrupt10/r010.6_r100.6/original_matrix.png, results/86/corrupt10/r010.6_r100.6/flipped_matrix.png, results/86/corrupt10/r010.6_r100.6/metrics.json, results/86/corrupt10/r010.6_r100.6/elbow_metrics.json, results/86/corrupt10/r010.6_r100.6/simulate.out, results/86/corrupt10/r010.6_r100.6/simulate.err
+    jobid: 545
+    reason: Missing output files: results/86/corrupt10/r010.6_r100.6/metrics.json, results/86/corrupt10/r010.6_r100.6/elbow_metrics.json
+    wildcards: seed=86, corrupt=10, r01=0.6, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:27:58 2025]
+Finished jobid: 583 (Rule: simulate)
+137 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:27:58 2025]
+localrule simulate:
+    output: results/108/corrupt50/r010.7_r100.6/original_matrix.png, results/108/corrupt50/r010.7_r100.6/flipped_matrix.png, results/108/corrupt50/r010.7_r100.6/metrics.json, results/108/corrupt50/r010.7_r100.6/elbow_metrics.json, results/108/corrupt50/r010.7_r100.6/simulate.out, results/108/corrupt50/r010.7_r100.6/simulate.err
+    jobid: 725
+    reason: Missing output files: results/108/corrupt50/r010.7_r100.6/elbow_metrics.json, results/108/corrupt50/r010.7_r100.6/metrics.json
+    wildcards: seed=108, corrupt=50, r01=0.7, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:02 2025]
+Finished jobid: 22 (Rule: simulate)
+138 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:02 2025]
+localrule simulate:
+    output: results/53/corrupt100/r010.5_r100.6/original_matrix.png, results/53/corrupt100/r010.5_r100.6/flipped_matrix.png, results/53/corrupt100/r010.5_r100.6/metrics.json, results/53/corrupt100/r010.5_r100.6/elbow_metrics.json, results/53/corrupt100/r010.5_r100.6/simulate.out, results/53/corrupt100/r010.5_r100.6/simulate.err
+    jobid: 365
+    reason: Missing output files: results/53/corrupt100/r010.5_r100.6/elbow_metrics.json, results/53/corrupt100/r010.5_r100.6/metrics.json
+    wildcards: seed=53, corrupt=100, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:02 2025]
+Finished jobid: 502 (Rule: simulate)
+139 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:03 2025]
+localrule simulate:
+    output: results/119/corrupt50/r010.4_r100.6/original_matrix.png, results/119/corrupt50/r010.4_r100.6/flipped_matrix.png, results/119/corrupt50/r010.4_r100.6/metrics.json, results/119/corrupt50/r010.4_r100.6/elbow_metrics.json, results/119/corrupt50/r010.4_r100.6/simulate.out, results/119/corrupt50/r010.4_r100.6/simulate.err
+    jobid: 785
+    reason: Missing output files: results/119/corrupt50/r010.4_r100.6/elbow_metrics.json, results/119/corrupt50/r010.4_r100.6/metrics.json
+    wildcards: seed=119, corrupt=50, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:04 2025]
+Finished jobid: 894 (Rule: simulate)
+140 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:04 2025]
+localrule braga_simulator:
+    output: results/braga/141/sim141-b4-c0.1.nex, results/braga/141/sim141-b4-c0.1.settings.txt
+    jobid: 1356
+    reason: Missing output files: results/braga/141/sim141-b4-c0.1.nex, results/braga/141/sim141-b4-c0.1.settings.txt
+    wildcards: seed=141, beta=4, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:28:04 2025]
+Finished jobid: 714 (Rule: simulate)
+141 of 1398 steps (10%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:28:05 2025]
+localrule simulate:
+    output: results/130/corrupt10/r010.6_r100.6/original_matrix.png, results/130/corrupt10/r010.6_r100.6/flipped_matrix.png, results/130/corrupt10/r010.6_r100.6/metrics.json, results/130/corrupt10/r010.6_r100.6/elbow_metrics.json, results/130/corrupt10/r010.6_r100.6/simulate.out, results/130/corrupt10/r010.6_r100.6/simulate.err
+    jobid: 845
+    reason: Missing output files: results/130/corrupt10/r010.6_r100.6/elbow_metrics.json, results/130/corrupt10/r010.6_r100.6/metrics.json
+    wildcards: seed=130, corrupt=10, r01=0.6, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:05 2025]
+Finished jobid: 1356 (Rule: braga_simulator)
+142 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:05 2025]
+localrule simulate:
+    output: results/163/corrupt50/r010.4_r100.6/original_matrix.png, results/163/corrupt50/r010.4_r100.6/flipped_matrix.png, results/163/corrupt50/r010.4_r100.6/metrics.json, results/163/corrupt50/r010.4_r100.6/elbow_metrics.json, results/163/corrupt50/r010.4_r100.6/simulate.out, results/163/corrupt50/r010.4_r100.6/simulate.err
+    jobid: 1085
+    reason: Missing output files: results/163/corrupt50/r010.4_r100.6/elbow_metrics.json, results/163/corrupt50/r010.4_r100.6/metrics.json
+    wildcards: seed=163, corrupt=50, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:06 2025]
+Finished jobid: 774 (Rule: simulate)
+143 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:06 2025]
+localrule simulate:
+    output: results/141/corrupt10/r010.3_r100.6/original_matrix.png, results/141/corrupt10/r010.3_r100.6/flipped_matrix.png, results/141/corrupt10/r010.3_r100.6/metrics.json, results/141/corrupt10/r010.3_r100.6/elbow_metrics.json, results/141/corrupt10/r010.3_r100.6/simulate.out, results/141/corrupt10/r010.3_r100.6/simulate.err
+    jobid: 905
+    reason: Missing output files: results/141/corrupt10/r010.3_r100.6/metrics.json, results/141/corrupt10/r010.3_r100.6/elbow_metrics.json
+    wildcards: seed=141, corrupt=10, r01=0.3, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:07 2025]
+Finished jobid: 354 (Rule: simulate)
+144 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:07 2025]
+localrule simulate:
+    output: results/97/corrupt10/r010.5_r100.7/original_matrix.png, results/97/corrupt10/r010.5_r100.7/flipped_matrix.png, results/97/corrupt10/r010.5_r100.7/metrics.json, results/97/corrupt10/r010.5_r100.7/elbow_metrics.json, results/97/corrupt10/r010.5_r100.7/simulate.out, results/97/corrupt10/r010.5_r100.7/simulate.err
+    jobid: 616
+    reason: Missing output files: results/97/corrupt10/r010.5_r100.7/metrics.json, results/97/corrupt10/r010.5_r100.7/elbow_metrics.json
+    wildcards: seed=97, corrupt=10, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:07 2025]
+Finished jobid: 474 (Rule: simulate)
+145 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:07 2025]
+localrule simulate:
+    output: results/141/corrupt100/r010.7_r100.7/original_matrix.png, results/141/corrupt100/r010.7_r100.7/flipped_matrix.png, results/141/corrupt100/r010.7_r100.7/metrics.json, results/141/corrupt100/r010.7_r100.7/elbow_metrics.json, results/141/corrupt100/r010.7_r100.7/simulate.out, results/141/corrupt100/r010.7_r100.7/simulate.err
+    jobid: 976
+    reason: Missing output files: results/141/corrupt100/r010.7_r100.7/elbow_metrics.json, results/141/corrupt100/r010.7_r100.7/metrics.json
+    wildcards: seed=141, corrupt=100, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:11 2025]
+Finished jobid: 545 (Rule: simulate)
+146 of 1398 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:11 2025]
+localrule simulate:
+    output: results/152/corrupt100/r010.4_r100.7/original_matrix.png, results/152/corrupt100/r010.4_r100.7/flipped_matrix.png, results/152/corrupt100/r010.4_r100.7/metrics.json, results/152/corrupt100/r010.4_r100.7/elbow_metrics.json, results/152/corrupt100/r010.4_r100.7/simulate.out, results/152/corrupt100/r010.4_r100.7/simulate.err
+    jobid: 1036
+    reason: Missing output files: results/152/corrupt100/r010.4_r100.7/elbow_metrics.json, results/152/corrupt100/r010.4_r100.7/metrics.json
+    wildcards: seed=152, corrupt=100, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:28:11 2025]
+Finished jobid: 965 (Rule: simulate)
+147 of 1398 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:28:12 2025]
+localrule simulate:
+    output: results/53/corrupt100/r010.7_r100.7/original_matrix.png, results/53/corrupt100/r010.7_r100.7/flipped_matrix.png, results/53/corrupt100/r010.7_r100.7/metrics.json, results/53/corrupt100/r010.7_r100.7/elbow_metrics.json, results/53/corrupt100/r010.7_r100.7/simulate.out, results/53/corrupt100/r010.7_r100.7/simulate.err
+    jobid: 376
+    reason: Missing output files: results/53/corrupt100/r010.7_r100.7/metrics.json, results/53/corrupt100/r010.7_r100.7/elbow_metrics.json
+    wildcards: seed=53, corrupt=100, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:14 2025]
+Finished jobid: 725 (Rule: simulate)
+148 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:14 2025]
+localrule simulate:
+    output: results/64/corrupt100/r010.4_r100.7/original_matrix.png, results/64/corrupt100/r010.4_r100.7/flipped_matrix.png, results/64/corrupt100/r010.4_r100.7/metrics.json, results/64/corrupt100/r010.4_r100.7/elbow_metrics.json, results/64/corrupt100/r010.4_r100.7/simulate.out, results/64/corrupt100/r010.4_r100.7/simulate.err
+    jobid: 436
+    reason: Missing output files: results/64/corrupt100/r010.4_r100.7/metrics.json, results/64/corrupt100/r010.4_r100.7/elbow_metrics.json
+    wildcards: seed=64, corrupt=100, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:16 2025]
+Finished jobid: 365 (Rule: simulate)
+149 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:16 2025]
+localrule braga_simulator:
+    output: results/braga/53/sim53-b0-c0.5.nex, results/braga/53/sim53-b0-c0.5.settings.txt
+    jobid: 1202
+    reason: Missing output files: results/braga/53/sim53-b0-c0.5.nex, results/braga/53/sim53-b0-c0.5.settings.txt
+    wildcards: seed=53, beta=0, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:17 2025]
+Finished jobid: 785 (Rule: simulate)
+150 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:17 2025]
+localrule simulate:
+    output: results/9/corrupt10/r010.5_r100.7/original_matrix.png, results/9/corrupt10/r010.5_r100.7/flipped_matrix.png, results/9/corrupt10/r010.5_r100.7/metrics.json, results/9/corrupt10/r010.5_r100.7/elbow_metrics.json, results/9/corrupt10/r010.5_r100.7/simulate.out, results/9/corrupt10/r010.5_r100.7/simulate.err
+    jobid: 16
+    reason: Missing output files: results/9/corrupt10/r010.5_r100.7/metrics.json, results/9/corrupt10/r010.5_r100.7/elbow_metrics.json
+    wildcards: seed=9, corrupt=10, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:28:17 2025]
+Finished jobid: 1202 (Rule: braga_simulator)
+151 of 1398 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:28:17 2025]
+localrule simulate:
+    output: results/86/corrupt50/r010.3_r100.7/original_matrix.png, results/86/corrupt50/r010.3_r100.7/flipped_matrix.png, results/86/corrupt50/r010.3_r100.7/metrics.json, results/86/corrupt50/r010.3_r100.7/elbow_metrics.json, results/86/corrupt50/r010.3_r100.7/simulate.out, results/86/corrupt50/r010.3_r100.7/simulate.err
+    jobid: 556
+    reason: Missing output files: results/86/corrupt50/r010.3_r100.7/elbow_metrics.json, results/86/corrupt50/r010.3_r100.7/metrics.json
+    wildcards: seed=86, corrupt=50, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:18 2025]
+Finished jobid: 1085 (Rule: simulate)
+152 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:19 2025]
+localrule simulate:
+    output: results/108/corrupt10/r010.5_r100.3/original_matrix.png, results/108/corrupt10/r010.5_r100.3/flipped_matrix.png, results/108/corrupt10/r010.5_r100.3/metrics.json, results/108/corrupt10/r010.5_r100.3/elbow_metrics.json, results/108/corrupt10/r010.5_r100.3/simulate.out, results/108/corrupt10/r010.5_r100.3/simulate.err
+    jobid: 687
+    reason: Missing output files: results/108/corrupt10/r010.5_r100.3/elbow_metrics.json, results/108/corrupt10/r010.5_r100.3/metrics.json
+    wildcards: seed=108, corrupt=10, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:28:19 2025]
+Finished jobid: 845 (Rule: simulate)
+153 of 1398 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 17 14:28:19 2025]
+localrule simulate:
+    output: results/152/corrupt100/r010.7_r100.3/original_matrix.png, results/152/corrupt100/r010.7_r100.3/flipped_matrix.png, results/152/corrupt100/r010.7_r100.3/metrics.json, results/152/corrupt100/r010.7_r100.3/elbow_metrics.json, results/152/corrupt100/r010.7_r100.3/simulate.out, results/152/corrupt100/r010.7_r100.3/simulate.err
+    jobid: 1047
+    reason: Missing output files: results/152/corrupt100/r010.7_r100.3/elbow_metrics.json, results/152/corrupt100/r010.7_r100.3/metrics.json
+    wildcards: seed=152, corrupt=100, r01=0.7, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:21 2025]
+Finished jobid: 616 (Rule: simulate)
+154 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:21 2025]
+localrule simulate:
+    output: results/152/corrupt50/r010.3_r100.7/original_matrix.png, results/152/corrupt50/r010.3_r100.7/flipped_matrix.png, results/152/corrupt50/r010.3_r100.7/metrics.json, results/152/corrupt50/r010.3_r100.7/elbow_metrics.json, results/152/corrupt50/r010.3_r100.7/simulate.out, results/152/corrupt50/r010.3_r100.7/simulate.err
+    jobid: 1006
+    reason: Missing output files: results/152/corrupt50/r010.3_r100.7/metrics.json, results/152/corrupt50/r010.3_r100.7/elbow_metrics.json
+    wildcards: seed=152, corrupt=50, r01=0.3, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:24 2025]
+Finished jobid: 976 (Rule: simulate)
+155 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:24 2025]
+localrule simulate:
+    output: results/31/corrupt10/r010.5_r100.7/original_matrix.png, results/31/corrupt10/r010.5_r100.7/flipped_matrix.png, results/31/corrupt10/r010.5_r100.7/metrics.json, results/31/corrupt10/r010.5_r100.7/elbow_metrics.json, results/31/corrupt10/r010.5_r100.7/simulate.out, results/31/corrupt10/r010.5_r100.7/simulate.err
+    jobid: 166
+    reason: Missing output files: results/31/corrupt10/r010.5_r100.7/metrics.json, results/31/corrupt10/r010.5_r100.7/elbow_metrics.json
+    wildcards: seed=31, corrupt=10, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:25 2025]
+Finished jobid: 905 (Rule: simulate)
+156 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:25 2025]
+localrule simulate:
+    output: results/42/corrupt50/r010.6_r100.3/original_matrix.png, results/42/corrupt50/r010.6_r100.3/flipped_matrix.png, results/42/corrupt50/r010.6_r100.3/metrics.json, results/42/corrupt50/r010.6_r100.3/elbow_metrics.json, results/42/corrupt50/r010.6_r100.3/simulate.out, results/42/corrupt50/r010.6_r100.3/simulate.err
+    jobid: 267
+    reason: Missing output files: results/42/corrupt50/r010.6_r100.3/elbow_metrics.json, results/42/corrupt50/r010.6_r100.3/metrics.json
+    wildcards: seed=42, corrupt=50, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:26 2025]
+Finished jobid: 1036 (Rule: simulate)
+157 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:26 2025]
+localrule simulate:
+    output: results/53/corrupt50/r010.3_r100.3/original_matrix.png, results/53/corrupt50/r010.3_r100.3/flipped_matrix.png, results/53/corrupt50/r010.3_r100.3/metrics.json, results/53/corrupt50/r010.3_r100.3/elbow_metrics.json, results/53/corrupt50/r010.3_r100.3/simulate.out, results/53/corrupt50/r010.3_r100.3/simulate.err
+    jobid: 327
+    reason: Missing output files: results/53/corrupt50/r010.3_r100.3/metrics.json, results/53/corrupt50/r010.3_r100.3/elbow_metrics.json
+    wildcards: seed=53, corrupt=50, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:28 2025]
+Finished jobid: 376 (Rule: simulate)
+158 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:28 2025]
+localrule simulate:
+    output: results/119/corrupt100/r010.4_r100.3/original_matrix.png, results/119/corrupt100/r010.4_r100.3/flipped_matrix.png, results/119/corrupt100/r010.4_r100.3/metrics.json, results/119/corrupt100/r010.4_r100.3/elbow_metrics.json, results/119/corrupt100/r010.4_r100.3/simulate.out, results/119/corrupt100/r010.4_r100.3/simulate.err
+    jobid: 807
+    reason: Missing output files: results/119/corrupt100/r010.4_r100.3/metrics.json, results/119/corrupt100/r010.4_r100.3/elbow_metrics.json
+    wildcards: seed=119, corrupt=100, r01=0.4, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:29 2025]
+Finished jobid: 436 (Rule: simulate)
+159 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:29 2025]
+localrule simulate:
+    output: results/130/corrupt50/r010.6_r100.3/original_matrix.png, results/130/corrupt50/r010.6_r100.3/flipped_matrix.png, results/130/corrupt50/r010.6_r100.3/metrics.json, results/130/corrupt50/r010.6_r100.3/elbow_metrics.json, results/130/corrupt50/r010.6_r100.3/simulate.out, results/130/corrupt50/r010.6_r100.3/simulate.err
+    jobid: 867
+    reason: Missing output files: results/130/corrupt50/r010.6_r100.3/elbow_metrics.json, results/130/corrupt50/r010.6_r100.3/metrics.json
+    wildcards: seed=130, corrupt=50, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:30 2025]
+Finished jobid: 16 (Rule: simulate)
+160 of 1398 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:31 2025]
+localrule simulate:
+    output: results/31/corrupt100/r010.6_r100.4/original_matrix.png, results/31/corrupt100/r010.6_r100.4/flipped_matrix.png, results/31/corrupt100/r010.6_r100.4/metrics.json, results/31/corrupt100/r010.6_r100.4/elbow_metrics.json, results/31/corrupt100/r010.6_r100.4/simulate.out, results/31/corrupt100/r010.6_r100.4/simulate.err
+    jobid: 218
+    reason: Missing output files: results/31/corrupt100/r010.6_r100.4/metrics.json, results/31/corrupt100/r010.6_r100.4/elbow_metrics.json
+    wildcards: seed=31, corrupt=100, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:32 2025]
+Finished jobid: 1047 (Rule: simulate)
+161 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:32 2025]
+localrule simulate:
+    output: results/42/corrupt100/r010.3_r100.4/original_matrix.png, results/42/corrupt100/r010.3_r100.4/flipped_matrix.png, results/42/corrupt100/r010.3_r100.4/metrics.json, results/42/corrupt100/r010.3_r100.4/elbow_metrics.json, results/42/corrupt100/r010.3_r100.4/simulate.out, results/42/corrupt100/r010.3_r100.4/simulate.err
+    jobid: 278
+    reason: Missing output files: results/42/corrupt100/r010.3_r100.4/metrics.json, results/42/corrupt100/r010.3_r100.4/elbow_metrics.json
+    wildcards: seed=42, corrupt=100, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:35 2025]
+Finished jobid: 687 (Rule: simulate)
+162 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:35 2025]
+localrule simulate:
+    output: results/163/corrupt100/r010.6_r100.4/original_matrix.png, results/163/corrupt100/r010.6_r100.4/flipped_matrix.png, results/163/corrupt100/r010.6_r100.4/metrics.json, results/163/corrupt100/r010.6_r100.4/elbow_metrics.json, results/163/corrupt100/r010.6_r100.4/simulate.out, results/163/corrupt100/r010.6_r100.4/simulate.err
+    jobid: 1118
+    reason: Missing output files: results/163/corrupt100/r010.6_r100.4/metrics.json, results/163/corrupt100/r010.6_r100.4/elbow_metrics.json
+    wildcards: seed=163, corrupt=100, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:35 2025]
+Finished jobid: 1006 (Rule: simulate)
+163 of 1398 steps (12%) done
+[Wed Sep 17 14:28:35 2025]
+Finished jobid: 556 (Rule: simulate)
+164 of 1398 steps (12%) done
+Execute 2 jobs...
+[Wed Sep 17 14:28:36 2025]
+localrule simulate:
+    output: results/20/corrupt100/r010.7_r100.3/original_matrix.png, results/20/corrupt100/r010.7_r100.3/flipped_matrix.png, results/20/corrupt100/r010.7_r100.3/metrics.json, results/20/corrupt100/r010.7_r100.3/elbow_metrics.json, results/20/corrupt100/r010.7_r100.3/simulate.out, results/20/corrupt100/r010.7_r100.3/simulate.err
+    jobid: 147
+    reason: Missing output files: results/20/corrupt100/r010.7_r100.3/elbow_metrics.json, results/20/corrupt100/r010.7_r100.3/metrics.json
+    wildcards: seed=20, corrupt=100, r01=0.7, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:28:36 2025]
+localrule braga_simulator:
+    output: results/braga/9/sim9-b1-c0.1.nex, results/braga/9/sim9-b1-c0.1.settings.txt
+    jobid: 1134
+    reason: Missing output files: results/braga/9/sim9-b1-c0.1.nex, results/braga/9/sim9-b1-c0.1.settings.txt
+    wildcards: seed=9, beta=1, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:36 2025]
+Finished jobid: 1134 (Rule: braga_simulator)
+165 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:36 2025]
+localrule simulate:
+    output: results/20/corrupt10/r010.7_r100.4/original_matrix.png, results/20/corrupt10/r010.7_r100.4/flipped_matrix.png, results/20/corrupt10/r010.7_r100.4/metrics.json, results/20/corrupt10/r010.7_r100.4/elbow_metrics.json, results/20/corrupt10/r010.7_r100.4/simulate.out, results/20/corrupt10/r010.7_r100.4/simulate.err
+    jobid: 98
+    reason: Missing output files: results/20/corrupt10/r010.7_r100.4/metrics.json, results/20/corrupt10/r010.7_r100.4/elbow_metrics.json
+    wildcards: seed=20, corrupt=10, r01=0.7, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:38 2025]
+Finished jobid: 166 (Rule: simulate)
+166 of 1398 steps (12%) done
+[Wed Sep 17 14:28:38 2025]
+Finished jobid: 267 (Rule: simulate)
+167 of 1398 steps (12%) done
+Execute 2 jobs...
+[Wed Sep 17 14:28:39 2025]
+localrule simulate:
+    output: results/75/corrupt100/r010.4_r100.3/original_matrix.png, results/75/corrupt100/r010.4_r100.3/flipped_matrix.png, results/75/corrupt100/r010.4_r100.3/metrics.json, results/75/corrupt100/r010.4_r100.3/elbow_metrics.json, results/75/corrupt100/r010.4_r100.3/simulate.out, results/75/corrupt100/r010.4_r100.3/simulate.err
+    jobid: 507
+    reason: Missing output files: results/75/corrupt100/r010.4_r100.3/metrics.json, results/75/corrupt100/r010.4_r100.3/elbow_metrics.json
+    wildcards: seed=75, corrupt=100, r01=0.4, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 17 14:28:39 2025]
+localrule simulate:
+    output: results/31/corrupt10/r010.6_r100.3/original_matrix.png, results/31/corrupt10/r010.6_r100.3/flipped_matrix.png, results/31/corrupt10/r010.6_r100.3/metrics.json, results/31/corrupt10/r010.6_r100.3/elbow_metrics.json, results/31/corrupt10/r010.6_r100.3/simulate.out, results/31/corrupt10/r010.6_r100.3/simulate.err
+    jobid: 167
+    reason: Missing output files: results/31/corrupt10/r010.6_r100.3/elbow_metrics.json, results/31/corrupt10/r010.6_r100.3/metrics.json
+    wildcards: seed=31, corrupt=10, r01=0.6, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:41 2025]
+Finished jobid: 807 (Rule: simulate)
+168 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:41 2025]
+localrule simulate:
+    output: results/119/corrupt100/r010.6_r100.4/original_matrix.png, results/119/corrupt100/r010.6_r100.4/flipped_matrix.png, results/119/corrupt100/r010.6_r100.4/metrics.json, results/119/corrupt100/r010.6_r100.4/elbow_metrics.json, results/119/corrupt100/r010.6_r100.4/simulate.out, results/119/corrupt100/r010.6_r100.4/simulate.err
+    jobid: 818
+    reason: Missing output files: results/119/corrupt100/r010.6_r100.4/elbow_metrics.json, results/119/corrupt100/r010.6_r100.4/metrics.json
+    wildcards: seed=119, corrupt=100, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:41 2025]
+Finished jobid: 327 (Rule: simulate)
+169 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:42 2025]
+localrule simulate:
+    output: results/9/corrupt50/r010.7_r100.5/original_matrix.png, results/9/corrupt50/r010.7_r100.5/flipped_matrix.png, results/9/corrupt50/r010.7_r100.5/metrics.json, results/9/corrupt50/r010.7_r100.5/elbow_metrics.json, results/9/corrupt50/r010.7_r100.5/simulate.out, results/9/corrupt50/r010.7_r100.5/simulate.err
+    jobid: 49
+    reason: Missing output files: results/9/corrupt50/r010.7_r100.5/elbow_metrics.json, results/9/corrupt50/r010.7_r100.5/metrics.json
+    wildcards: seed=9, corrupt=50, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:42 2025]
+Finished jobid: 867 (Rule: simulate)
+170 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:43 2025]
+localrule simulate:
+    output: results/31/corrupt10/r010.6_r100.5/original_matrix.png, results/31/corrupt10/r010.6_r100.5/flipped_matrix.png, results/31/corrupt10/r010.6_r100.5/metrics.json, results/31/corrupt10/r010.6_r100.5/elbow_metrics.json, results/31/corrupt10/r010.6_r100.5/simulate.out, results/31/corrupt10/r010.6_r100.5/simulate.err
+    jobid: 169
+    reason: Missing output files: results/31/corrupt10/r010.6_r100.5/elbow_metrics.json, results/31/corrupt10/r010.6_r100.5/metrics.json
+    wildcards: seed=31, corrupt=10, r01=0.6, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:44 2025]
+Finished jobid: 218 (Rule: simulate)
+171 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:44 2025]
+localrule braga_simulator:
+    output: results/braga/64/sim64-b0-c0.5.nex, results/braga/64/sim64-b0-c0.5.settings.txt
+    jobid: 1220
+    reason: Missing output files: results/braga/64/sim64-b0-c0.5.nex, results/braga/64/sim64-b0-c0.5.settings.txt
+    wildcards: seed=64, beta=0, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 17 14:28:44 2025]
+Finished jobid: 1220 (Rule: braga_simulator)
+172 of 1398 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 17 14:28:44 2025]
+localrule braga_pipeline:
+    input: results/braga/119/sim119-b1-c1.nex, results/braga/119/sim119-b1-c1.settings.txt
+    output: results/braga/119/b1_c1/original_matrix.png, results/braga/119/b1_c1/flipped_matrix.png, results/braga/119/b1_c1/metrics.json, results/braga/119/b1_c1/simulate.out, results/braga/119/b1_c1/simulate.err
+    jobid: 1317
+    reason: Missing output files: results/braga/119/b1_c1/metrics.json; Input files updated by another job: results/braga/119/sim119-b1-c1.nex, results/braga/119/sim119-b1-c1.settings.txt
+    wildcards: seed=119, beta=1, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 94:
+Command 'set -euo pipefail;  
+        mkdir -p results/braga/119/b1_c1
+        python simulation.py             --seed 119             --host_tree angio_25tips_origin.phy             --virus_tree Nymphalini.phy             --nexus_file results/braga/119/sim119-b1-c1.nex             --braga results/braga/119/sim119-b1-c1.settings.txt             --outdir results/braga/119/b1_c1             --metrics results/braga/119/b1_c1/metrics.json             > results/braga/119/b1_c1/simulate.out 2> results/braga/119/b1_c1/simulate.err' returned non-zero exit status 2.
+[Wed Sep 17 14:28:47 2025]
+Error in rule braga_pipeline:
+    message: None
+    jobid: 1317
+    input: results/braga/119/sim119-b1-c1.nex, results/braga/119/sim119-b1-c1.settings.txt
+    output: results/braga/119/b1_c1/original_matrix.png, results/braga/119/b1_c1/flipped_matrix.png, results/braga/119/b1_c1/metrics.json, results/braga/119/b1_c1/simulate.out, results/braga/119/b1_c1/simulate.err
+    shell:
+        
+        mkdir -p results/braga/119/b1_c1
+        python simulation.py             --seed 119             --host_tree angio_25tips_origin.phy             --virus_tree Nymphalini.phy             --nexus_file results/braga/119/sim119-b1-c1.nex             --braga results/braga/119/sim119-b1-c1.settings.txt             --outdir results/braga/119/b1_c1             --metrics results/braga/119/b1_c1/metrics.json             > results/braga/119/b1_c1/simulate.out 2> results/braga/119/b1_c1/simulate.err
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job braga_pipeline since they might be corrupted:
+results/braga/119/b1_c1/simulate.out, results/braga/119/b1_c1/simulate.err
+[Wed Sep 17 14:28:48 2025]
+Finished jobid: 278 (Rule: simulate)
+173 of 1398 steps (12%) done
+[Wed Sep 17 14:28:48 2025]
+Finished jobid: 1118 (Rule: simulate)
+174 of 1398 steps (12%) done
+[Wed Sep 17 14:28:51 2025]
+Finished jobid: 147 (Rule: simulate)
+175 of 1398 steps (13%) done
+[Wed Sep 17 14:28:52 2025]
+Finished jobid: 507 (Rule: simulate)
+176 of 1398 steps (13%) done
+[Wed Sep 17 14:28:52 2025]
+Finished jobid: 167 (Rule: simulate)
+177 of 1398 steps (13%) done
+[Wed Sep 17 14:28:52 2025]
+Finished jobid: 98 (Rule: simulate)
+178 of 1398 steps (13%) done
+[Wed Sep 17 14:28:54 2025]
+Finished jobid: 818 (Rule: simulate)
+179 of 1398 steps (13%) done
+[Wed Sep 17 14:28:54 2025]
+Finished jobid: 49 (Rule: simulate)
+180 of 1398 steps (13%) done
+[Wed Sep 17 14:28:55 2025]
+Finished jobid: 169 (Rule: simulate)
+181 of 1398 steps (13%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Wed Sep 17 14:28:55 2025]
+Error in rule braga_pipeline:
+    message: None
+    jobid: 1317
+    input: results/braga/119/sim119-b1-c1.nex, results/braga/119/sim119-b1-c1.settings.txt
+    output: results/braga/119/b1_c1/original_matrix.png, results/braga/119/b1_c1/flipped_matrix.png, results/braga/119/b1_c1/metrics.json, results/braga/119/b1_c1/simulate.out, results/braga/119/b1_c1/simulate.err
+    shell:
+        
+        mkdir -p results/braga/119/b1_c1
+        python simulation.py             --seed 119             --host_tree angio_25tips_origin.phy             --virus_tree Nymphalini.phy             --nexus_file results/braga/119/sim119-b1-c1.nex             --braga results/braga/119/sim119-b1-c1.settings.txt             --outdir results/braga/119/b1_c1             --metrics results/braga/119/b1_c1/metrics.json             > results/braga/119/b1_c1/simulate.out 2> results/braga/119/b1_c1/simulate.err
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-17T142434.194690.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

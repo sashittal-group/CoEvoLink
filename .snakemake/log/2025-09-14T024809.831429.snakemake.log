@@ -1,0 +1,272 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+braga_pipeline       135
+braga_simulator      135
+total                271
+
+Select jobs to execute...
+Execute 10 jobs...
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/86/sim86-b1-c1.nex, results/86/sim86-b1-c1.settings.txt
+    jobid: 1264
+    reason: Missing output files: results/86/sim86-b1-c1.nex, results/86/sim86-b1-c1.settings.txt
+    wildcards: seed=86, beta=1, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/119/sim119-b1-c0.5.nex, results/119/sim119-b1-c0.5.settings.txt
+    jobid: 1316
+    reason: Missing output files: results/119/sim119-b1-c0.5.nex, results/119/sim119-b1-c0.5.settings.txt
+    wildcards: seed=119, beta=1, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/141/sim141-b1-c0.5.nex, results/141/sim141-b1-c0.5.settings.txt
+    jobid: 1352
+    reason: Missing output files: results/141/sim141-b1-c0.5.settings.txt, results/141/sim141-b1-c0.5.nex
+    wildcards: seed=141, beta=1, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/75/sim75-b0-c0.1.nex, results/75/sim75-b0-c0.1.settings.txt
+    jobid: 1236
+    reason: Missing output files: results/75/sim75-b0-c0.1.settings.txt, results/75/sim75-b0-c0.1.nex
+    wildcards: seed=75, beta=0, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/141/sim141-b4-c0.1.nex, results/141/sim141-b4-c0.1.settings.txt
+    jobid: 1356
+    reason: Missing output files: results/141/sim141-b4-c0.1.settings.txt, results/141/sim141-b4-c0.1.nex
+    wildcards: seed=141, beta=4, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/31/sim31-b4-c0.1.nex, results/31/sim31-b4-c0.1.settings.txt
+    jobid: 1176
+    reason: Missing output files: results/31/sim31-b4-c0.1.settings.txt, results/31/sim31-b4-c0.1.nex
+    wildcards: seed=31, beta=4, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/108/sim108-b1-c0.1.nex, results/108/sim108-b1-c0.1.settings.txt
+    jobid: 1296
+    reason: Missing output files: results/108/sim108-b1-c0.1.nex, results/108/sim108-b1-c0.1.settings.txt
+    wildcards: seed=108, beta=1, clock=0.1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/53/sim53-b0-c0.5.nex, results/53/sim53-b0-c0.5.settings.txt
+    jobid: 1202
+    reason: Missing output files: results/53/sim53-b0-c0.5.nex, results/53/sim53-b0-c0.5.settings.txt
+    wildcards: seed=53, beta=0, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/119/sim119-b4-c0.5.nex, results/119/sim119-b4-c0.5.settings.txt
+    jobid: 1322
+    reason: Missing output files: results/119/sim119-b4-c0.5.settings.txt, results/119/sim119-b4-c0.5.nex
+    wildcards: seed=119, beta=4, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 14 02:48:10 2025]
+localrule braga_simulator:
+    output: results/9/sim9-b4-c0.5.nex, results/9/sim9-b4-c0.5.settings.txt
+    jobid: 1142
+    reason: Missing output files: results/9/sim9-b4-c0.5.settings.txt, results/9/sim9-b4-c0.5.nex
+    wildcards: seed=9, beta=4, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Waiting at most 5 seconds for missing files:
+results/75/sim75-b0-c0.1.nex (missing locally)
+results/75/sim75-b0-c0.1.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1236  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/75/sim75-b0-c0.1.nex (missing locally, parent dir contents: braga_75_b0_c0.1.log, corrupt100, corrupt10, corrupt50)
+results/75/sim75-b0-c0.1.settings.txt (missing locally, parent dir contents: braga_75_b0_c0.1.log, corrupt100, corrupt10, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/141/sim141-b1-c0.5.nex (missing locally)
+results/141/sim141-b1-c0.5.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1352  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/141/sim141-b1-c0.5.nex (missing locally, parent dir contents: corrupt100, braga_141_b1_c0.5.log, corrupt10, braga_141_b4_c0.1.log, corrupt50)
+results/141/sim141-b1-c0.5.settings.txt (missing locally, parent dir contents: corrupt100, braga_141_b1_c0.5.log, corrupt10, braga_141_b4_c0.1.log, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/141/sim141-b4-c0.1.nex (missing locally)
+results/141/sim141-b4-c0.1.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1356  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/141/sim141-b4-c0.1.nex (missing locally, parent dir contents: corrupt100, braga_141_b1_c0.5.log, corrupt10, braga_141_b4_c0.1.log, corrupt50)
+results/141/sim141-b4-c0.1.settings.txt (missing locally, parent dir contents: corrupt100, braga_141_b1_c0.5.log, corrupt10, braga_141_b4_c0.1.log, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/31/sim31-b4-c0.1.nex (missing locally)
+results/31/sim31-b4-c0.1.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1176  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/31/sim31-b4-c0.1.nex (missing locally, parent dir contents: corrupt100, corrupt10, braga_31_b4_c0.1.log, corrupt50)
+results/31/sim31-b4-c0.1.settings.txt (missing locally, parent dir contents: corrupt100, corrupt10, braga_31_b4_c0.1.log, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/108/sim108-b1-c0.1.nex (missing locally)
+results/108/sim108-b1-c0.1.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1296  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/108/sim108-b1-c0.1.nex (missing locally, parent dir contents: corrupt100, corrupt10, braga_108_b1_c0.1.log, corrupt50)
+results/108/sim108-b1-c0.1.settings.txt (missing locally, parent dir contents: corrupt100, corrupt10, braga_108_b1_c0.1.log, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/119/sim119-b1-c0.5.nex (missing locally)
+results/119/sim119-b1-c0.5.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1316  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/119/sim119-b1-c0.5.nex (missing locally, parent dir contents: braga_119_b1_c0.5.log, corrupt100, corrupt10, braga_119_b4_c0.5.log, corrupt50)
+results/119/sim119-b1-c0.5.settings.txt (missing locally, parent dir contents: braga_119_b1_c0.5.log, corrupt100, corrupt10, braga_119_b4_c0.5.log, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/9/sim9-b4-c0.5.nex (missing locally)
+results/9/sim9-b4-c0.5.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1142  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/9/sim9-b4-c0.5.nex (missing locally, parent dir contents: braga_9_b4_c0.5.log, corrupt100, corrupt10, corrupt50)
+results/9/sim9-b4-c0.5.settings.txt (missing locally, parent dir contents: braga_9_b4_c0.5.log, corrupt100, corrupt10, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/86/sim86-b1-c1.nex (missing locally)
+results/86/sim86-b1-c1.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1264  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/86/sim86-b1-c1.nex (missing locally, parent dir contents: corrupt100, corrupt10, braga_86_b1_c1.log, corrupt50)
+results/86/sim86-b1-c1.settings.txt (missing locally, parent dir contents: corrupt100, corrupt10, braga_86_b1_c1.log, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/53/sim53-b0-c0.5.nex (missing locally)
+results/53/sim53-b0-c0.5.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1202  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/53/sim53-b0-c0.5.nex (missing locally, parent dir contents: corrupt100, corrupt10, braga_53_b0_c0.5.log, corrupt50)
+results/53/sim53-b0-c0.5.settings.txt (missing locally, parent dir contents: corrupt100, corrupt10, braga_53_b0_c0.5.log, corrupt50)
+Waiting at most 5 seconds for missing files:
+results/119/sim119-b4-c0.5.nex (missing locally)
+results/119/sim119-b4-c0.5.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1322  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/119/sim119-b4-c0.5.nex (missing locally, parent dir contents: braga_119_b1_c0.5.log, corrupt100, corrupt10, braga_119_b4_c0.5.log, corrupt50)
+results/119/sim119-b4-c0.5.settings.txt (missing locally, parent dir contents: braga_119_b1_c0.5.log, corrupt100, corrupt10, braga_119_b4_c0.5.log, corrupt50)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1264
+    output: results/86/sim86-b1-c1.nex, results/86/sim86-b1-c1.settings.txt
+    shell:
+        
+        mkdir -p results/86
+        rb Simulate.Rev             --args 86 1 1             > results/86/braga_86_b1_c1.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1316
+    output: results/119/sim119-b1-c0.5.nex, results/119/sim119-b1-c0.5.settings.txt
+    shell:
+        
+        mkdir -p results/119
+        rb Simulate.Rev             --args 119 1 0.5             > results/119/braga_119_b1_c0.5.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1202
+    output: results/53/sim53-b0-c0.5.nex, results/53/sim53-b0-c0.5.settings.txt
+    shell:
+        
+        mkdir -p results/53
+        rb Simulate.Rev             --args 53 0 0.5             > results/53/braga_53_b0_c0.5.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1352
+    output: results/141/sim141-b1-c0.5.nex, results/141/sim141-b1-c0.5.settings.txt
+    shell:
+        
+        mkdir -p results/141
+        rb Simulate.Rev             --args 141 1 0.5             > results/141/braga_141_b1_c0.5.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1142
+    output: results/9/sim9-b4-c0.5.nex, results/9/sim9-b4-c0.5.settings.txt
+    shell:
+        
+        mkdir -p results/9
+        rb Simulate.Rev             --args 9 4 0.5             > results/9/braga_9_b4_c0.5.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1322
+    output: results/119/sim119-b4-c0.5.nex, results/119/sim119-b4-c0.5.settings.txt
+    shell:
+        
+        mkdir -p results/119
+        rb Simulate.Rev             --args 119 4 0.5             > results/119/braga_119_b4_c0.5.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1356
+    output: results/141/sim141-b4-c0.1.nex, results/141/sim141-b4-c0.1.settings.txt
+    shell:
+        
+        mkdir -p results/141
+        rb Simulate.Rev             --args 141 4 0.1             > results/141/braga_141_b4_c0.1.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1296
+    output: results/108/sim108-b1-c0.1.nex, results/108/sim108-b1-c0.1.settings.txt
+    shell:
+        
+        mkdir -p results/108
+        rb Simulate.Rev             --args 108 1 0.1             > results/108/braga_108_b1_c0.1.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1236
+    output: results/75/sim75-b0-c0.1.nex, results/75/sim75-b0-c0.1.settings.txt
+    shell:
+        
+        mkdir -p results/75
+        rb Simulate.Rev             --args 75 0 0.1             > results/75/braga_75_b0_c0.1.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 14 02:49:01 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1176
+    output: results/31/sim31-b4-c0.1.nex, results/31/sim31-b4-c0.1.settings.txt
+    shell:
+        
+        mkdir -p results/31
+        rb Simulate.Rev             --args 31 4 0.1             > results/31/braga_31_b4_c0.1.log 2>&1
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-14T024809.831429.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

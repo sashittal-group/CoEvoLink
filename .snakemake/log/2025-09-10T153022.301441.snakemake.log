@@ -1,0 +1,3926 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate      300
+total         301
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 10 15:30:22 2025]
+localrule simulate:
+    output: results/22/corrupt0/original_matrix.png, results/22/corrupt0/flipped_matrix.png, results/22/corrupt0/simulate.out, results/22/corrupt0/simulate.err
+    jobid: 67
+    benchmark: results/22/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=22, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:30:27 2025]
+Finished jobid: 67 (Rule: simulate)
+1 of 301 steps (0.3%) done
+Execute 1 jobs...
+[Wed Sep 10 15:30:27 2025]
+localrule simulate:
+    output: results/68/corrupt0/original_matrix.png, results/68/corrupt0/flipped_matrix.png, results/68/corrupt0/simulate.out, results/68/corrupt0/simulate.err
+    jobid: 205
+    benchmark: results/68/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=68, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:30:31 2025]
+Finished jobid: 205 (Rule: simulate)
+2 of 301 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 10 15:30:31 2025]
+localrule simulate:
+    output: results/98/corrupt50/original_matrix.png, results/98/corrupt50/flipped_matrix.png, results/98/corrupt50/simulate.out, results/98/corrupt50/simulate.err
+    jobid: 296
+    benchmark: results/98/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=98, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:30:37 2025]
+Finished jobid: 296 (Rule: simulate)
+3 of 301 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 10 15:30:37 2025]
+localrule simulate:
+    output: results/86/corrupt0/original_matrix.png, results/86/corrupt0/flipped_matrix.png, results/86/corrupt0/simulate.out, results/86/corrupt0/simulate.err
+    jobid: 259
+    benchmark: results/86/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=86, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:30:42 2025]
+Finished jobid: 259 (Rule: simulate)
+4 of 301 steps (1%) done
+Execute 1 jobs...
+[Wed Sep 10 15:30:42 2025]
+localrule simulate:
+    output: results/88/corrupt50/original_matrix.png, results/88/corrupt50/flipped_matrix.png, results/88/corrupt50/simulate.out, results/88/corrupt50/simulate.err
+    jobid: 266
+    benchmark: results/88/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=88, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:30:48 2025]
+Finished jobid: 266 (Rule: simulate)
+5 of 301 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 10 15:30:48 2025]
+localrule simulate:
+    output: results/18/corrupt100/original_matrix.png, results/18/corrupt100/flipped_matrix.png, results/18/corrupt100/simulate.out, results/18/corrupt100/simulate.err
+    jobid: 57
+    benchmark: results/18/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=18, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:30:55 2025]
+Finished jobid: 57 (Rule: simulate)
+6 of 301 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 10 15:30:55 2025]
+localrule simulate:
+    output: results/36/corrupt100/original_matrix.png, results/36/corrupt100/flipped_matrix.png, results/36/corrupt100/simulate.out, results/36/corrupt100/simulate.err
+    jobid: 111
+    benchmark: results/36/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=36, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:01 2025]
+Finished jobid: 111 (Rule: simulate)
+7 of 301 steps (2%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:01 2025]
+localrule simulate:
+    output: results/54/corrupt100/original_matrix.png, results/54/corrupt100/flipped_matrix.png, results/54/corrupt100/simulate.out, results/54/corrupt100/simulate.err
+    jobid: 165
+    benchmark: results/54/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=54, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:08 2025]
+Finished jobid: 165 (Rule: simulate)
+8 of 301 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:08 2025]
+localrule simulate:
+    output: results/85/corrupt0/original_matrix.png, results/85/corrupt0/flipped_matrix.png, results/85/corrupt0/simulate.out, results/85/corrupt0/simulate.err
+    jobid: 256
+    benchmark: results/85/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=85, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:13 2025]
+Finished jobid: 256 (Rule: simulate)
+9 of 301 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:13 2025]
+localrule simulate:
+    output: results/72/corrupt100/original_matrix.png, results/72/corrupt100/flipped_matrix.png, results/72/corrupt100/simulate.out, results/72/corrupt100/simulate.err
+    jobid: 219
+    benchmark: results/72/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=72, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:20 2025]
+Finished jobid: 219 (Rule: simulate)
+10 of 301 steps (3%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:20 2025]
+localrule simulate:
+    output: results/64/corrupt50/original_matrix.png, results/64/corrupt50/flipped_matrix.png, results/64/corrupt50/simulate.out, results/64/corrupt50/simulate.err
+    jobid: 194
+    benchmark: results/64/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=64, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:26 2025]
+Finished jobid: 194 (Rule: simulate)
+11 of 301 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:26 2025]
+localrule simulate:
+    output: results/25/corrupt0/original_matrix.png, results/25/corrupt0/flipped_matrix.png, results/25/corrupt0/simulate.out, results/25/corrupt0/simulate.err
+    jobid: 76
+    benchmark: results/25/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=25, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:30 2025]
+Finished jobid: 76 (Rule: simulate)
+12 of 301 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:30 2025]
+localrule simulate:
+    output: results/62/corrupt100/original_matrix.png, results/62/corrupt100/flipped_matrix.png, results/62/corrupt100/simulate.out, results/62/corrupt100/simulate.err
+    jobid: 189
+    benchmark: results/62/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=62, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:38 2025]
+Finished jobid: 189 (Rule: simulate)
+13 of 301 steps (4%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:38 2025]
+localrule simulate:
+    output: results/37/corrupt100/original_matrix.png, results/37/corrupt100/flipped_matrix.png, results/37/corrupt100/simulate.out, results/37/corrupt100/simulate.err
+    jobid: 114
+    benchmark: results/37/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=37, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:45 2025]
+Finished jobid: 114 (Rule: simulate)
+14 of 301 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:45 2025]
+localrule simulate:
+    output: results/90/corrupt100/original_matrix.png, results/90/corrupt100/flipped_matrix.png, results/90/corrupt100/simulate.out, results/90/corrupt100/simulate.err
+    jobid: 273
+    benchmark: results/90/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=90, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:51 2025]
+Finished jobid: 273 (Rule: simulate)
+15 of 301 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:51 2025]
+localrule simulate:
+    output: results/55/corrupt100/original_matrix.png, results/55/corrupt100/flipped_matrix.png, results/55/corrupt100/simulate.out, results/55/corrupt100/simulate.err
+    jobid: 168
+    benchmark: results/55/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=55, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:31:58 2025]
+Finished jobid: 168 (Rule: simulate)
+16 of 301 steps (5%) done
+Execute 1 jobs...
+[Wed Sep 10 15:31:58 2025]
+localrule simulate:
+    output: results/67/corrupt0/original_matrix.png, results/67/corrupt0/flipped_matrix.png, results/67/corrupt0/simulate.out, results/67/corrupt0/simulate.err
+    jobid: 202
+    benchmark: results/67/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=67, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:03 2025]
+Finished jobid: 202 (Rule: simulate)
+17 of 301 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:03 2025]
+localrule simulate:
+    output: results/73/corrupt100/original_matrix.png, results/73/corrupt100/flipped_matrix.png, results/73/corrupt100/simulate.out, results/73/corrupt100/simulate.err
+    jobid: 222
+    benchmark: results/73/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=73, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:09 2025]
+Finished jobid: 222 (Rule: simulate)
+18 of 301 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:09 2025]
+localrule simulate:
+    output: results/21/corrupt0/original_matrix.png, results/21/corrupt0/flipped_matrix.png, results/21/corrupt0/simulate.out, results/21/corrupt0/simulate.err
+    jobid: 64
+    benchmark: results/21/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=21, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:14 2025]
+Finished jobid: 64 (Rule: simulate)
+19 of 301 steps (6%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:14 2025]
+localrule simulate:
+    output: results/91/corrupt100/original_matrix.png, results/91/corrupt100/flipped_matrix.png, results/91/corrupt100/simulate.out, results/91/corrupt100/simulate.err
+    jobid: 276
+    benchmark: results/91/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=91, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:21 2025]
+Finished jobid: 276 (Rule: simulate)
+20 of 301 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:21 2025]
+localrule simulate:
+    output: results/62/corrupt50/original_matrix.png, results/62/corrupt50/flipped_matrix.png, results/62/corrupt50/simulate.out, results/62/corrupt50/simulate.err
+    jobid: 188
+    benchmark: results/62/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=62, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:28 2025]
+Finished jobid: 188 (Rule: simulate)
+21 of 301 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:28 2025]
+localrule simulate:
+    output: results/7/corrupt50/original_matrix.png, results/7/corrupt50/flipped_matrix.png, results/7/corrupt50/simulate.out, results/7/corrupt50/simulate.err
+    jobid: 23
+    benchmark: results/7/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=7, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:34 2025]
+Finished jobid: 23 (Rule: simulate)
+22 of 301 steps (7%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:34 2025]
+localrule simulate:
+    output: results/52/corrupt50/original_matrix.png, results/52/corrupt50/flipped_matrix.png, results/52/corrupt50/simulate.out, results/52/corrupt50/simulate.err
+    jobid: 158
+    benchmark: results/52/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=52, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:40 2025]
+Finished jobid: 158 (Rule: simulate)
+23 of 301 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:40 2025]
+localrule simulate:
+    output: results/43/corrupt50/original_matrix.png, results/43/corrupt50/flipped_matrix.png, results/43/corrupt50/simulate.out, results/43/corrupt50/simulate.err
+    jobid: 131
+    benchmark: results/43/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=43, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:46 2025]
+Finished jobid: 131 (Rule: simulate)
+24 of 301 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:46 2025]
+localrule simulate:
+    output: results/26/corrupt50/original_matrix.png, results/26/corrupt50/flipped_matrix.png, results/26/corrupt50/simulate.out, results/26/corrupt50/simulate.err
+    jobid: 80
+    benchmark: results/26/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=26, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:32:53 2025]
+Finished jobid: 80 (Rule: simulate)
+25 of 301 steps (8%) done
+Execute 1 jobs...
+[Wed Sep 10 15:32:53 2025]
+localrule simulate:
+    output: results/79/corrupt50/original_matrix.png, results/79/corrupt50/flipped_matrix.png, results/79/corrupt50/simulate.out, results/79/corrupt50/simulate.err
+    jobid: 239
+    benchmark: results/79/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=79, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:01 2025]
+Finished jobid: 239 (Rule: simulate)
+26 of 301 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:01 2025]
+localrule simulate:
+    output: results/97/corrupt50/original_matrix.png, results/97/corrupt50/flipped_matrix.png, results/97/corrupt50/simulate.out, results/97/corrupt50/simulate.err
+    jobid: 293
+    benchmark: results/97/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=97, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:09 2025]
+Finished jobid: 293 (Rule: simulate)
+27 of 301 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:09 2025]
+localrule simulate:
+    output: results/93/corrupt0/original_matrix.png, results/93/corrupt0/flipped_matrix.png, results/93/corrupt0/simulate.out, results/93/corrupt0/simulate.err
+    jobid: 280
+    benchmark: results/93/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=93, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:13 2025]
+Finished jobid: 280 (Rule: simulate)
+28 of 301 steps (9%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:13 2025]
+localrule simulate:
+    output: results/87/corrupt50/original_matrix.png, results/87/corrupt50/flipped_matrix.png, results/87/corrupt50/simulate.out, results/87/corrupt50/simulate.err
+    jobid: 263
+    benchmark: results/87/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=87, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:20 2025]
+Finished jobid: 263 (Rule: simulate)
+29 of 301 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:20 2025]
+localrule simulate:
+    output: results/8/corrupt50/original_matrix.png, results/8/corrupt50/flipped_matrix.png, results/8/corrupt50/simulate.out, results/8/corrupt50/simulate.err
+    jobid: 26
+    benchmark: results/8/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=8, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:28 2025]
+Finished jobid: 26 (Rule: simulate)
+30 of 301 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:28 2025]
+localrule simulate:
+    output: results/61/corrupt50/original_matrix.png, results/61/corrupt50/flipped_matrix.png, results/61/corrupt50/simulate.out, results/61/corrupt50/simulate.err
+    jobid: 185
+    benchmark: results/61/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=61, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:34 2025]
+Finished jobid: 185 (Rule: simulate)
+31 of 301 steps (10%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:34 2025]
+localrule simulate:
+    output: results/44/corrupt50/original_matrix.png, results/44/corrupt50/flipped_matrix.png, results/44/corrupt50/simulate.out, results/44/corrupt50/simulate.err
+    jobid: 134
+    benchmark: results/44/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=44, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:40 2025]
+Finished jobid: 134 (Rule: simulate)
+32 of 301 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:40 2025]
+localrule simulate:
+    output: results/46/corrupt50/original_matrix.png, results/46/corrupt50/flipped_matrix.png, results/46/corrupt50/simulate.out, results/46/corrupt50/simulate.err
+    jobid: 140
+    benchmark: results/46/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=46, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:47 2025]
+Finished jobid: 140 (Rule: simulate)
+33 of 301 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:47 2025]
+localrule simulate:
+    output: results/51/corrupt0/original_matrix.png, results/51/corrupt0/flipped_matrix.png, results/51/corrupt0/simulate.out, results/51/corrupt0/simulate.err
+    jobid: 154
+    benchmark: results/51/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=51, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:52 2025]
+Finished jobid: 154 (Rule: simulate)
+34 of 301 steps (11%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:52 2025]
+localrule simulate:
+    output: results/80/corrupt50/original_matrix.png, results/80/corrupt50/flipped_matrix.png, results/80/corrupt50/simulate.out, results/80/corrupt50/simulate.err
+    jobid: 242
+    benchmark: results/80/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=80, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:33:58 2025]
+Finished jobid: 242 (Rule: simulate)
+35 of 301 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 10 15:33:58 2025]
+localrule simulate:
+    output: results/3/corrupt0/original_matrix.png, results/3/corrupt0/flipped_matrix.png, results/3/corrupt0/simulate.out, results/3/corrupt0/simulate.err
+    jobid: 10
+    benchmark: results/3/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=3, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:03 2025]
+Finished jobid: 10 (Rule: simulate)
+36 of 301 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:03 2025]
+localrule simulate:
+    output: results/51/corrupt50/original_matrix.png, results/51/corrupt50/flipped_matrix.png, results/51/corrupt50/simulate.out, results/51/corrupt50/simulate.err
+    jobid: 155
+    benchmark: results/51/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=51, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:10 2025]
+Finished jobid: 155 (Rule: simulate)
+37 of 301 steps (12%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:10 2025]
+localrule simulate:
+    output: results/4/corrupt0/original_matrix.png, results/4/corrupt0/flipped_matrix.png, results/4/corrupt0/simulate.out, results/4/corrupt0/simulate.err
+    jobid: 13
+    benchmark: results/4/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=4, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:15 2025]
+Finished jobid: 13 (Rule: simulate)
+38 of 301 steps (13%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:15 2025]
+localrule simulate:
+    output: results/25/corrupt50/original_matrix.png, results/25/corrupt50/flipped_matrix.png, results/25/corrupt50/simulate.out, results/25/corrupt50/simulate.err
+    jobid: 77
+    benchmark: results/25/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=25, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:21 2025]
+Finished jobid: 77 (Rule: simulate)
+39 of 301 steps (13%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:21 2025]
+localrule simulate:
+    output: results/0/corrupt100/original_matrix.png, results/0/corrupt100/flipped_matrix.png, results/0/corrupt100/simulate.out, results/0/corrupt100/simulate.err
+    jobid: 3
+    benchmark: results/0/corrupt100/benchmark.tsv
+    reason: Missing output files: results/0/corrupt100/flipped_matrix.png; Code has changed since last execution
+    wildcards: seed=0, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:27 2025]
+Finished jobid: 3 (Rule: simulate)
+40 of 301 steps (13%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:27 2025]
+localrule simulate:
+    output: results/63/corrupt100/original_matrix.png, results/63/corrupt100/flipped_matrix.png, results/63/corrupt100/simulate.out, results/63/corrupt100/simulate.err
+    jobid: 192
+    benchmark: results/63/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=63, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:33 2025]
+Finished jobid: 192 (Rule: simulate)
+41 of 301 steps (14%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:33 2025]
+localrule simulate:
+    output: results/28/corrupt100/original_matrix.png, results/28/corrupt100/flipped_matrix.png, results/28/corrupt100/simulate.out, results/28/corrupt100/simulate.err
+    jobid: 87
+    benchmark: results/28/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=28, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:40 2025]
+Finished jobid: 87 (Rule: simulate)
+42 of 301 steps (14%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:40 2025]
+localrule simulate:
+    output: results/58/corrupt0/original_matrix.png, results/58/corrupt0/flipped_matrix.png, results/58/corrupt0/simulate.out, results/58/corrupt0/simulate.err
+    jobid: 175
+    benchmark: results/58/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=58, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:45 2025]
+Finished jobid: 175 (Rule: simulate)
+43 of 301 steps (14%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:45 2025]
+localrule simulate:
+    output: results/46/corrupt100/original_matrix.png, results/46/corrupt100/flipped_matrix.png, results/46/corrupt100/simulate.out, results/46/corrupt100/simulate.err
+    jobid: 141
+    benchmark: results/46/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=46, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:51 2025]
+Finished jobid: 141 (Rule: simulate)
+44 of 301 steps (15%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:51 2025]
+localrule simulate:
+    output: results/45/corrupt100/original_matrix.png, results/45/corrupt100/flipped_matrix.png, results/45/corrupt100/simulate.out, results/45/corrupt100/simulate.err
+    jobid: 138
+    benchmark: results/45/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=45, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:34:57 2025]
+Finished jobid: 138 (Rule: simulate)
+45 of 301 steps (15%) done
+Execute 1 jobs...
+[Wed Sep 10 15:34:57 2025]
+localrule simulate:
+    output: results/82/corrupt100/original_matrix.png, results/82/corrupt100/flipped_matrix.png, results/82/corrupt100/simulate.out, results/82/corrupt100/simulate.err
+    jobid: 249
+    benchmark: results/82/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=82, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:05 2025]
+Finished jobid: 249 (Rule: simulate)
+46 of 301 steps (15%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:05 2025]
+localrule simulate:
+    output: results/44/corrupt100/original_matrix.png, results/44/corrupt100/flipped_matrix.png, results/44/corrupt100/simulate.out, results/44/corrupt100/simulate.err
+    jobid: 135
+    benchmark: results/44/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=44, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:11 2025]
+Finished jobid: 135 (Rule: simulate)
+47 of 301 steps (16%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:11 2025]
+localrule simulate:
+    output: results/29/corrupt100/original_matrix.png, results/29/corrupt100/flipped_matrix.png, results/29/corrupt100/simulate.out, results/29/corrupt100/simulate.err
+    jobid: 90
+    benchmark: results/29/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=29, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:17 2025]
+Finished jobid: 90 (Rule: simulate)
+48 of 301 steps (16%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:17 2025]
+localrule simulate:
+    output: results/27/corrupt100/original_matrix.png, results/27/corrupt100/flipped_matrix.png, results/27/corrupt100/simulate.out, results/27/corrupt100/simulate.err
+    jobid: 84
+    benchmark: results/27/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=27, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:24 2025]
+Finished jobid: 84 (Rule: simulate)
+49 of 301 steps (16%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:24 2025]
+localrule simulate:
+    output: results/47/corrupt100/original_matrix.png, results/47/corrupt100/flipped_matrix.png, results/47/corrupt100/simulate.out, results/47/corrupt100/simulate.err
+    jobid: 144
+    benchmark: results/47/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=47, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:30 2025]
+Finished jobid: 144 (Rule: simulate)
+50 of 301 steps (17%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:30 2025]
+localrule simulate:
+    output: results/26/corrupt100/original_matrix.png, results/26/corrupt100/flipped_matrix.png, results/26/corrupt100/simulate.out, results/26/corrupt100/simulate.err
+    jobid: 81
+    benchmark: results/26/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=26, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:37 2025]
+Finished jobid: 81 (Rule: simulate)
+51 of 301 steps (17%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:37 2025]
+localrule simulate:
+    output: results/83/corrupt100/original_matrix.png, results/83/corrupt100/flipped_matrix.png, results/83/corrupt100/simulate.out, results/83/corrupt100/simulate.err
+    jobid: 252
+    benchmark: results/83/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=83, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:43 2025]
+Finished jobid: 252 (Rule: simulate)
+52 of 301 steps (17%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:43 2025]
+localrule simulate:
+    output: results/9/corrupt100/original_matrix.png, results/9/corrupt100/flipped_matrix.png, results/9/corrupt100/simulate.out, results/9/corrupt100/simulate.err
+    jobid: 30
+    benchmark: results/9/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=9, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:50 2025]
+Finished jobid: 30 (Rule: simulate)
+53 of 301 steps (18%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:50 2025]
+localrule simulate:
+    output: results/94/corrupt0/original_matrix.png, results/94/corrupt0/flipped_matrix.png, results/94/corrupt0/simulate.out, results/94/corrupt0/simulate.err
+    jobid: 283
+    benchmark: results/94/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=94, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:35:55 2025]
+Finished jobid: 283 (Rule: simulate)
+54 of 301 steps (18%) done
+Execute 1 jobs...
+[Wed Sep 10 15:35:55 2025]
+localrule simulate:
+    output: results/28/corrupt50/original_matrix.png, results/28/corrupt50/flipped_matrix.png, results/28/corrupt50/simulate.out, results/28/corrupt50/simulate.err
+    jobid: 86
+    benchmark: results/28/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=28, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:01 2025]
+Finished jobid: 86 (Rule: simulate)
+55 of 301 steps (18%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:01 2025]
+localrule simulate:
+    output: results/0/corrupt50/original_matrix.png, results/0/corrupt50/flipped_matrix.png, results/0/corrupt50/simulate.out, results/0/corrupt50/simulate.err
+    jobid: 2
+    benchmark: results/0/corrupt50/benchmark.tsv
+    reason: Missing output files: results/0/corrupt50/flipped_matrix.png; Code has changed since last execution
+    wildcards: seed=0, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:07 2025]
+Finished jobid: 2 (Rule: simulate)
+56 of 301 steps (19%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:07 2025]
+localrule simulate:
+    output: results/18/corrupt50/original_matrix.png, results/18/corrupt50/flipped_matrix.png, results/18/corrupt50/simulate.out, results/18/corrupt50/simulate.err
+    jobid: 56
+    benchmark: results/18/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=18, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:14 2025]
+Finished jobid: 56 (Rule: simulate)
+57 of 301 steps (19%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:14 2025]
+localrule simulate:
+    output: results/13/corrupt50/original_matrix.png, results/13/corrupt50/flipped_matrix.png, results/13/corrupt50/simulate.out, results/13/corrupt50/simulate.err
+    jobid: 41
+    benchmark: results/13/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=13, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:21 2025]
+Finished jobid: 41 (Rule: simulate)
+58 of 301 steps (19%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:21 2025]
+localrule simulate:
+    output: results/17/corrupt50/original_matrix.png, results/17/corrupt50/flipped_matrix.png, results/17/corrupt50/simulate.out, results/17/corrupt50/simulate.err
+    jobid: 53
+    benchmark: results/17/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=17, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:28 2025]
+Finished jobid: 53 (Rule: simulate)
+59 of 301 steps (20%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:28 2025]
+localrule simulate:
+    output: results/23/corrupt0/original_matrix.png, results/23/corrupt0/flipped_matrix.png, results/23/corrupt0/simulate.out, results/23/corrupt0/simulate.err
+    jobid: 70
+    benchmark: results/23/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=23, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:33 2025]
+Finished jobid: 70 (Rule: simulate)
+60 of 301 steps (20%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:33 2025]
+localrule simulate:
+    output: results/8/corrupt100/original_matrix.png, results/8/corrupt100/flipped_matrix.png, results/8/corrupt100/simulate.out, results/8/corrupt100/simulate.err
+    jobid: 27
+    benchmark: results/8/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=8, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:41 2025]
+Finished jobid: 27 (Rule: simulate)
+61 of 301 steps (20%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:41 2025]
+localrule simulate:
+    output: results/41/corrupt0/original_matrix.png, results/41/corrupt0/flipped_matrix.png, results/41/corrupt0/simulate.out, results/41/corrupt0/simulate.err
+    jobid: 124
+    benchmark: results/41/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=41, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:45 2025]
+Finished jobid: 124 (Rule: simulate)
+62 of 301 steps (21%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:45 2025]
+localrule simulate:
+    output: results/32/corrupt0/original_matrix.png, results/32/corrupt0/flipped_matrix.png, results/32/corrupt0/simulate.out, results/32/corrupt0/simulate.err
+    jobid: 97
+    benchmark: results/32/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=32, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:50 2025]
+Finished jobid: 97 (Rule: simulate)
+63 of 301 steps (21%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:50 2025]
+localrule simulate:
+    output: results/49/corrupt0/original_matrix.png, results/49/corrupt0/flipped_matrix.png, results/49/corrupt0/simulate.out, results/49/corrupt0/simulate.err
+    jobid: 148
+    benchmark: results/49/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=49, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:36:55 2025]
+Finished jobid: 148 (Rule: simulate)
+64 of 301 steps (21%) done
+Execute 1 jobs...
+[Wed Sep 10 15:36:55 2025]
+localrule simulate:
+    output: results/14/corrupt0/original_matrix.png, results/14/corrupt0/flipped_matrix.png, results/14/corrupt0/simulate.out, results/14/corrupt0/simulate.err
+    jobid: 43
+    benchmark: results/14/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=14, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:00 2025]
+Finished jobid: 43 (Rule: simulate)
+65 of 301 steps (22%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:00 2025]
+localrule simulate:
+    output: results/59/corrupt0/original_matrix.png, results/59/corrupt0/flipped_matrix.png, results/59/corrupt0/simulate.out, results/59/corrupt0/simulate.err
+    jobid: 178
+    benchmark: results/59/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=59, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:05 2025]
+Finished jobid: 178 (Rule: simulate)
+66 of 301 steps (22%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:05 2025]
+localrule simulate:
+    output: results/40/corrupt0/original_matrix.png, results/40/corrupt0/flipped_matrix.png, results/40/corrupt0/simulate.out, results/40/corrupt0/simulate.err
+    jobid: 121
+    benchmark: results/40/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=40, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:09 2025]
+Finished jobid: 121 (Rule: simulate)
+67 of 301 steps (22%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:09 2025]
+localrule simulate:
+    output: results/77/corrupt0/original_matrix.png, results/77/corrupt0/flipped_matrix.png, results/77/corrupt0/simulate.out, results/77/corrupt0/simulate.err
+    jobid: 232
+    benchmark: results/77/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=77, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:14 2025]
+Finished jobid: 232 (Rule: simulate)
+68 of 301 steps (23%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:14 2025]
+localrule simulate:
+    output: results/27/corrupt50/original_matrix.png, results/27/corrupt50/flipped_matrix.png, results/27/corrupt50/simulate.out, results/27/corrupt50/simulate.err
+    jobid: 83
+    benchmark: results/27/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=27, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:20 2025]
+Finished jobid: 83 (Rule: simulate)
+69 of 301 steps (23%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:20 2025]
+localrule simulate:
+    output: results/24/corrupt0/original_matrix.png, results/24/corrupt0/flipped_matrix.png, results/24/corrupt0/simulate.out, results/24/corrupt0/simulate.err
+    jobid: 73
+    benchmark: results/24/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=24, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:25 2025]
+Finished jobid: 73 (Rule: simulate)
+70 of 301 steps (23%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:25 2025]
+localrule simulate:
+    output: results/37/corrupt50/original_matrix.png, results/37/corrupt50/flipped_matrix.png, results/37/corrupt50/simulate.out, results/37/corrupt50/simulate.err
+    jobid: 113
+    benchmark: results/37/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=37, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:33 2025]
+Finished jobid: 113 (Rule: simulate)
+71 of 301 steps (24%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:33 2025]
+localrule simulate:
+    output: results/42/corrupt0/original_matrix.png, results/42/corrupt0/flipped_matrix.png, results/42/corrupt0/simulate.out, results/42/corrupt0/simulate.err
+    jobid: 127
+    benchmark: results/42/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=42, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:38 2025]
+Finished jobid: 127 (Rule: simulate)
+72 of 301 steps (24%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:38 2025]
+localrule simulate:
+    output: results/55/corrupt50/original_matrix.png, results/55/corrupt50/flipped_matrix.png, results/55/corrupt50/simulate.out, results/55/corrupt50/simulate.err
+    jobid: 167
+    benchmark: results/55/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=55, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:45 2025]
+Finished jobid: 167 (Rule: simulate)
+73 of 301 steps (24%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:45 2025]
+localrule simulate:
+    output: results/50/corrupt0/original_matrix.png, results/50/corrupt0/flipped_matrix.png, results/50/corrupt0/simulate.out, results/50/corrupt0/simulate.err
+    jobid: 151
+    benchmark: results/50/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=50, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:49 2025]
+Finished jobid: 151 (Rule: simulate)
+74 of 301 steps (25%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:49 2025]
+localrule simulate:
+    output: results/73/corrupt50/original_matrix.png, results/73/corrupt50/flipped_matrix.png, results/73/corrupt50/simulate.out, results/73/corrupt50/simulate.err
+    jobid: 221
+    benchmark: results/73/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=73, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:37:56 2025]
+Finished jobid: 221 (Rule: simulate)
+75 of 301 steps (25%) done
+Execute 1 jobs...
+[Wed Sep 10 15:37:56 2025]
+localrule simulate:
+    output: results/60/corrupt0/original_matrix.png, results/60/corrupt0/flipped_matrix.png, results/60/corrupt0/simulate.out, results/60/corrupt0/simulate.err
+    jobid: 181
+    benchmark: results/60/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=60, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:00 2025]
+Finished jobid: 181 (Rule: simulate)
+76 of 301 steps (25%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:00 2025]
+localrule simulate:
+    output: results/61/corrupt0/original_matrix.png, results/61/corrupt0/flipped_matrix.png, results/61/corrupt0/simulate.out, results/61/corrupt0/simulate.err
+    jobid: 184
+    benchmark: results/61/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=61, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:05 2025]
+Finished jobid: 184 (Rule: simulate)
+77 of 301 steps (26%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:05 2025]
+localrule simulate:
+    output: results/87/corrupt0/original_matrix.png, results/87/corrupt0/flipped_matrix.png, results/87/corrupt0/simulate.out, results/87/corrupt0/simulate.err
+    jobid: 262
+    benchmark: results/87/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=87, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:10 2025]
+Finished jobid: 262 (Rule: simulate)
+78 of 301 steps (26%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:10 2025]
+localrule simulate:
+    output: results/16/corrupt0/original_matrix.png, results/16/corrupt0/flipped_matrix.png, results/16/corrupt0/simulate.out, results/16/corrupt0/simulate.err
+    jobid: 49
+    benchmark: results/16/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=16, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:15 2025]
+Finished jobid: 49 (Rule: simulate)
+79 of 301 steps (26%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:15 2025]
+localrule simulate:
+    output: results/34/corrupt0/original_matrix.png, results/34/corrupt0/flipped_matrix.png, results/34/corrupt0/simulate.out, results/34/corrupt0/simulate.err
+    jobid: 103
+    benchmark: results/34/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=34, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:19 2025]
+Finished jobid: 103 (Rule: simulate)
+80 of 301 steps (27%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:19 2025]
+localrule simulate:
+    output: results/11/corrupt100/original_matrix.png, results/11/corrupt100/flipped_matrix.png, results/11/corrupt100/simulate.out, results/11/corrupt100/simulate.err
+    jobid: 36
+    benchmark: results/11/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=11, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:26 2025]
+Finished jobid: 36 (Rule: simulate)
+81 of 301 steps (27%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:26 2025]
+localrule simulate:
+    output: results/65/corrupt100/original_matrix.png, results/65/corrupt100/flipped_matrix.png, results/65/corrupt100/simulate.out, results/65/corrupt100/simulate.err
+    jobid: 198
+    benchmark: results/65/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=65, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:32 2025]
+Finished jobid: 198 (Rule: simulate)
+82 of 301 steps (27%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:32 2025]
+localrule simulate:
+    output: results/64/corrupt100/original_matrix.png, results/64/corrupt100/flipped_matrix.png, results/64/corrupt100/simulate.out, results/64/corrupt100/simulate.err
+    jobid: 195
+    benchmark: results/64/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=64, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:39 2025]
+Finished jobid: 195 (Rule: simulate)
+83 of 301 steps (28%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:39 2025]
+localrule simulate:
+    output: results/35/corrupt50/original_matrix.png, results/35/corrupt50/flipped_matrix.png, results/35/corrupt50/simulate.out, results/35/corrupt50/simulate.err
+    jobid: 107
+    benchmark: results/35/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=35, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:46 2025]
+Finished jobid: 107 (Rule: simulate)
+84 of 301 steps (28%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:46 2025]
+localrule simulate:
+    output: results/10/corrupt100/original_matrix.png, results/10/corrupt100/flipped_matrix.png, results/10/corrupt100/simulate.out, results/10/corrupt100/simulate.err
+    jobid: 33
+    benchmark: results/10/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=10, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:38:53 2025]
+Finished jobid: 33 (Rule: simulate)
+85 of 301 steps (28%) done
+Execute 1 jobs...
+[Wed Sep 10 15:38:53 2025]
+localrule simulate:
+    output: results/53/corrupt50/original_matrix.png, results/53/corrupt50/flipped_matrix.png, results/53/corrupt50/simulate.out, results/53/corrupt50/simulate.err
+    jobid: 161
+    benchmark: results/53/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=53, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:00 2025]
+Finished jobid: 161 (Rule: simulate)
+86 of 301 steps (29%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:00 2025]
+localrule simulate:
+    output: results/78/corrupt0/original_matrix.png, results/78/corrupt0/flipped_matrix.png, results/78/corrupt0/simulate.out, results/78/corrupt0/simulate.err
+    jobid: 235
+    benchmark: results/78/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=78, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:05 2025]
+Finished jobid: 235 (Rule: simulate)
+87 of 301 steps (29%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:05 2025]
+localrule simulate:
+    output: results/71/corrupt50/original_matrix.png, results/71/corrupt50/flipped_matrix.png, results/71/corrupt50/simulate.out, results/71/corrupt50/simulate.err
+    jobid: 215
+    benchmark: results/71/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=71, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:11 2025]
+Finished jobid: 215 (Rule: simulate)
+88 of 301 steps (29%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:11 2025]
+localrule simulate:
+    output: results/83/corrupt50/original_matrix.png, results/83/corrupt50/flipped_matrix.png, results/83/corrupt50/simulate.out, results/83/corrupt50/simulate.err
+    jobid: 251
+    benchmark: results/83/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=83, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:18 2025]
+Finished jobid: 251 (Rule: simulate)
+89 of 301 steps (30%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:18 2025]
+localrule simulate:
+    output: results/89/corrupt50/original_matrix.png, results/89/corrupt50/flipped_matrix.png, results/89/corrupt50/simulate.out, results/89/corrupt50/simulate.err
+    jobid: 269
+    benchmark: results/89/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=89, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:25 2025]
+Finished jobid: 269 (Rule: simulate)
+90 of 301 steps (30%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:25 2025]
+localrule simulate:
+    output: results/65/corrupt50/original_matrix.png, results/65/corrupt50/flipped_matrix.png, results/65/corrupt50/simulate.out, results/65/corrupt50/simulate.err
+    jobid: 197
+    benchmark: results/65/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=65, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:32 2025]
+Finished jobid: 197 (Rule: simulate)
+91 of 301 steps (30%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:32 2025]
+localrule simulate:
+    output: results/14/corrupt50/original_matrix.png, results/14/corrupt50/flipped_matrix.png, results/14/corrupt50/simulate.out, results/14/corrupt50/simulate.err
+    jobid: 44
+    benchmark: results/14/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=14, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:39 2025]
+Finished jobid: 44 (Rule: simulate)
+92 of 301 steps (31%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:39 2025]
+localrule simulate:
+    output: results/67/corrupt50/original_matrix.png, results/67/corrupt50/flipped_matrix.png, results/67/corrupt50/simulate.out, results/67/corrupt50/simulate.err
+    jobid: 203
+    benchmark: results/67/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=67, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:46 2025]
+Finished jobid: 203 (Rule: simulate)
+93 of 301 steps (31%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:46 2025]
+localrule simulate:
+    output: results/31/corrupt50/original_matrix.png, results/31/corrupt50/flipped_matrix.png, results/31/corrupt50/simulate.out, results/31/corrupt50/simulate.err
+    jobid: 95
+    benchmark: results/31/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=31, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:39:53 2025]
+Finished jobid: 95 (Rule: simulate)
+94 of 301 steps (31%) done
+Execute 1 jobs...
+[Wed Sep 10 15:39:53 2025]
+localrule simulate:
+    output: results/85/corrupt50/original_matrix.png, results/85/corrupt50/flipped_matrix.png, results/85/corrupt50/simulate.out, results/85/corrupt50/simulate.err
+    jobid: 257
+    benchmark: results/85/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=85, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:00 2025]
+Finished jobid: 257 (Rule: simulate)
+95 of 301 steps (32%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:00 2025]
+localrule simulate:
+    output: results/36/corrupt50/original_matrix.png, results/36/corrupt50/flipped_matrix.png, results/36/corrupt50/simulate.out, results/36/corrupt50/simulate.err
+    jobid: 110
+    benchmark: results/36/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=36, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:06 2025]
+Finished jobid: 110 (Rule: simulate)
+96 of 301 steps (32%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:06 2025]
+localrule simulate:
+    output: results/21/corrupt50/original_matrix.png, results/21/corrupt50/flipped_matrix.png, results/21/corrupt50/simulate.out, results/21/corrupt50/simulate.err
+    jobid: 65
+    benchmark: results/21/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=21, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:13 2025]
+Finished jobid: 65 (Rule: simulate)
+97 of 301 steps (32%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:13 2025]
+localrule simulate:
+    output: results/54/corrupt50/original_matrix.png, results/54/corrupt50/flipped_matrix.png, results/54/corrupt50/simulate.out, results/54/corrupt50/simulate.err
+    jobid: 164
+    benchmark: results/54/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=54, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:21 2025]
+Finished jobid: 164 (Rule: simulate)
+98 of 301 steps (33%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:21 2025]
+localrule simulate:
+    output: results/3/corrupt50/original_matrix.png, results/3/corrupt50/flipped_matrix.png, results/3/corrupt50/simulate.out, results/3/corrupt50/simulate.err
+    jobid: 11
+    benchmark: results/3/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=3, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:28 2025]
+Finished jobid: 11 (Rule: simulate)
+99 of 301 steps (33%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:28 2025]
+localrule simulate:
+    output: results/72/corrupt50/original_matrix.png, results/72/corrupt50/flipped_matrix.png, results/72/corrupt50/simulate.out, results/72/corrupt50/simulate.err
+    jobid: 218
+    benchmark: results/72/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=72, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:36 2025]
+Finished jobid: 218 (Rule: simulate)
+100 of 301 steps (33%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:36 2025]
+localrule simulate:
+    output: results/62/corrupt0/original_matrix.png, results/62/corrupt0/flipped_matrix.png, results/62/corrupt0/simulate.out, results/62/corrupt0/simulate.err
+    jobid: 187
+    benchmark: results/62/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=62, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:41 2025]
+Finished jobid: 187 (Rule: simulate)
+101 of 301 steps (34%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:41 2025]
+localrule simulate:
+    output: results/88/corrupt0/original_matrix.png, results/88/corrupt0/flipped_matrix.png, results/88/corrupt0/simulate.out, results/88/corrupt0/simulate.err
+    jobid: 265
+    benchmark: results/88/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=88, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:45 2025]
+Finished jobid: 265 (Rule: simulate)
+102 of 301 steps (34%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:45 2025]
+localrule simulate:
+    output: results/5/corrupt0/original_matrix.png, results/5/corrupt0/flipped_matrix.png, results/5/corrupt0/simulate.out, results/5/corrupt0/simulate.err
+    jobid: 16
+    benchmark: results/5/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=5, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:50 2025]
+Finished jobid: 16 (Rule: simulate)
+103 of 301 steps (34%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:50 2025]
+localrule simulate:
+    output: results/95/corrupt0/original_matrix.png, results/95/corrupt0/flipped_matrix.png, results/95/corrupt0/simulate.out, results/95/corrupt0/simulate.err
+    jobid: 286
+    benchmark: results/95/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=95, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:40:55 2025]
+Finished jobid: 286 (Rule: simulate)
+104 of 301 steps (35%) done
+Execute 1 jobs...
+[Wed Sep 10 15:40:55 2025]
+localrule simulate:
+    output: results/90/corrupt50/original_matrix.png, results/90/corrupt50/flipped_matrix.png, results/90/corrupt50/simulate.out, results/90/corrupt50/simulate.err
+    jobid: 272
+    benchmark: results/90/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=90, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:01 2025]
+Finished jobid: 272 (Rule: simulate)
+105 of 301 steps (35%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:02 2025]
+localrule simulate:
+    output: results/9/corrupt0/original_matrix.png, results/9/corrupt0/flipped_matrix.png, results/9/corrupt0/simulate.out, results/9/corrupt0/simulate.err
+    jobid: 28
+    benchmark: results/9/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=9, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:06 2025]
+Finished jobid: 28 (Rule: simulate)
+106 of 301 steps (35%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:06 2025]
+localrule simulate:
+    output: results/41/corrupt50/original_matrix.png, results/41/corrupt50/flipped_matrix.png, results/41/corrupt50/simulate.out, results/41/corrupt50/simulate.err
+    jobid: 125
+    benchmark: results/41/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=41, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:12 2025]
+Finished jobid: 125 (Rule: simulate)
+107 of 301 steps (36%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:12 2025]
+localrule simulate:
+    output: results/6/corrupt0/original_matrix.png, results/6/corrupt0/flipped_matrix.png, results/6/corrupt0/simulate.out, results/6/corrupt0/simulate.err
+    jobid: 19
+    benchmark: results/6/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=6, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:17 2025]
+Finished jobid: 19 (Rule: simulate)
+108 of 301 steps (36%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:17 2025]
+localrule simulate:
+    output: results/49/corrupt50/original_matrix.png, results/49/corrupt50/flipped_matrix.png, results/49/corrupt50/simulate.out, results/49/corrupt50/simulate.err
+    jobid: 149
+    benchmark: results/49/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=49, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:25 2025]
+Finished jobid: 149 (Rule: simulate)
+109 of 301 steps (36%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:25 2025]
+localrule simulate:
+    output: results/96/corrupt0/original_matrix.png, results/96/corrupt0/flipped_matrix.png, results/96/corrupt0/simulate.out, results/96/corrupt0/simulate.err
+    jobid: 289
+    benchmark: results/96/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=96, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:30 2025]
+Finished jobid: 289 (Rule: simulate)
+110 of 301 steps (37%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:30 2025]
+localrule simulate:
+    output: results/59/corrupt50/original_matrix.png, results/59/corrupt50/flipped_matrix.png, results/59/corrupt50/simulate.out, results/59/corrupt50/simulate.err
+    jobid: 179
+    benchmark: results/59/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=59, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:37 2025]
+Finished jobid: 179 (Rule: simulate)
+111 of 301 steps (37%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:37 2025]
+localrule simulate:
+    output: results/74/corrupt100/original_matrix.png, results/74/corrupt100/flipped_matrix.png, results/74/corrupt100/simulate.out, results/74/corrupt100/simulate.err
+    jobid: 225
+    benchmark: results/74/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=74, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:44 2025]
+Finished jobid: 225 (Rule: simulate)
+112 of 301 steps (37%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:44 2025]
+localrule simulate:
+    output: results/77/corrupt50/original_matrix.png, results/77/corrupt50/flipped_matrix.png, results/77/corrupt50/simulate.out, results/77/corrupt50/simulate.err
+    jobid: 233
+    benchmark: results/77/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=77, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:51 2025]
+Finished jobid: 233 (Rule: simulate)
+113 of 301 steps (38%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:51 2025]
+localrule simulate:
+    output: results/39/corrupt50/original_matrix.png, results/39/corrupt50/flipped_matrix.png, results/39/corrupt50/simulate.out, results/39/corrupt50/simulate.err
+    jobid: 119
+    benchmark: results/39/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=39, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:41:58 2025]
+Finished jobid: 119 (Rule: simulate)
+114 of 301 steps (38%) done
+Execute 1 jobs...
+[Wed Sep 10 15:41:58 2025]
+localrule simulate:
+    output: results/23/corrupt50/original_matrix.png, results/23/corrupt50/flipped_matrix.png, results/23/corrupt50/simulate.out, results/23/corrupt50/simulate.err
+    jobid: 71
+    benchmark: results/23/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=23, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:04 2025]
+Finished jobid: 71 (Rule: simulate)
+115 of 301 steps (38%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:04 2025]
+localrule simulate:
+    output: results/75/corrupt100/original_matrix.png, results/75/corrupt100/flipped_matrix.png, results/75/corrupt100/simulate.out, results/75/corrupt100/simulate.err
+    jobid: 228
+    benchmark: results/75/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=75, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:11 2025]
+Finished jobid: 228 (Rule: simulate)
+116 of 301 steps (39%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:11 2025]
+localrule simulate:
+    output: results/5/corrupt50/original_matrix.png, results/5/corrupt50/flipped_matrix.png, results/5/corrupt50/simulate.out, results/5/corrupt50/simulate.err
+    jobid: 17
+    benchmark: results/5/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=5, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:17 2025]
+Finished jobid: 17 (Rule: simulate)
+117 of 301 steps (39%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:17 2025]
+localrule simulate:
+    output: results/81/corrupt50/original_matrix.png, results/81/corrupt50/flipped_matrix.png, results/81/corrupt50/simulate.out, results/81/corrupt50/simulate.err
+    jobid: 245
+    benchmark: results/81/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=81, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:23 2025]
+Finished jobid: 245 (Rule: simulate)
+118 of 301 steps (39%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:23 2025]
+localrule simulate:
+    output: results/95/corrupt50/original_matrix.png, results/95/corrupt50/flipped_matrix.png, results/95/corrupt50/simulate.out, results/95/corrupt50/simulate.err
+    jobid: 287
+    benchmark: results/95/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=95, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:30 2025]
+Finished jobid: 287 (Rule: simulate)
+119 of 301 steps (40%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:30 2025]
+localrule simulate:
+    output: results/98/corrupt0/original_matrix.png, results/98/corrupt0/flipped_matrix.png, results/98/corrupt0/simulate.out, results/98/corrupt0/simulate.err
+    jobid: 295
+    benchmark: results/98/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=98, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:35 2025]
+Finished jobid: 295 (Rule: simulate)
+120 of 301 steps (40%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:35 2025]
+localrule simulate:
+    output: results/26/corrupt0/original_matrix.png, results/26/corrupt0/flipped_matrix.png, results/26/corrupt0/simulate.out, results/26/corrupt0/simulate.err
+    jobid: 79
+    benchmark: results/26/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=26, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:40 2025]
+Finished jobid: 79 (Rule: simulate)
+121 of 301 steps (40%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:40 2025]
+localrule simulate:
+    output: results/95/corrupt100/original_matrix.png, results/95/corrupt100/flipped_matrix.png, results/95/corrupt100/simulate.out, results/95/corrupt100/simulate.err
+    jobid: 288
+    benchmark: results/95/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=95, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:47 2025]
+Finished jobid: 288 (Rule: simulate)
+122 of 301 steps (41%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:47 2025]
+localrule simulate:
+    output: results/19/corrupt100/original_matrix.png, results/19/corrupt100/flipped_matrix.png, results/19/corrupt100/simulate.out, results/19/corrupt100/simulate.err
+    jobid: 60
+    benchmark: results/19/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=19, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:42:54 2025]
+Finished jobid: 60 (Rule: simulate)
+123 of 301 steps (41%) done
+Execute 1 jobs...
+[Wed Sep 10 15:42:54 2025]
+localrule simulate:
+    output: results/67/corrupt100/original_matrix.png, results/67/corrupt100/flipped_matrix.png, results/67/corrupt100/simulate.out, results/67/corrupt100/simulate.err
+    jobid: 204
+    benchmark: results/67/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=67, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:01 2025]
+Finished jobid: 204 (Rule: simulate)
+124 of 301 steps (41%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:01 2025]
+localrule simulate:
+    output: results/91/corrupt50/original_matrix.png, results/91/corrupt50/flipped_matrix.png, results/91/corrupt50/simulate.out, results/91/corrupt50/simulate.err
+    jobid: 275
+    benchmark: results/91/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=91, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:08 2025]
+Finished jobid: 275 (Rule: simulate)
+125 of 301 steps (42%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:08 2025]
+localrule simulate:
+    output: results/92/corrupt50/original_matrix.png, results/92/corrupt50/flipped_matrix.png, results/92/corrupt50/simulate.out, results/92/corrupt50/simulate.err
+    jobid: 278
+    benchmark: results/92/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=92, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:15 2025]
+Finished jobid: 278 (Rule: simulate)
+126 of 301 steps (42%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:15 2025]
+localrule simulate:
+    output: results/20/corrupt50/original_matrix.png, results/20/corrupt50/flipped_matrix.png, results/20/corrupt50/simulate.out, results/20/corrupt50/simulate.err
+    jobid: 62
+    benchmark: results/20/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=20, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:22 2025]
+Finished jobid: 62 (Rule: simulate)
+127 of 301 steps (42%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:22 2025]
+localrule simulate:
+    output: results/74/corrupt50/original_matrix.png, results/74/corrupt50/flipped_matrix.png, results/74/corrupt50/simulate.out, results/74/corrupt50/simulate.err
+    jobid: 224
+    benchmark: results/74/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=74, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:29 2025]
+Finished jobid: 224 (Rule: simulate)
+128 of 301 steps (43%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:29 2025]
+localrule simulate:
+    output: results/66/corrupt100/original_matrix.png, results/66/corrupt100/flipped_matrix.png, results/66/corrupt100/simulate.out, results/66/corrupt100/simulate.err
+    jobid: 201
+    benchmark: results/66/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=66, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:36 2025]
+Finished jobid: 201 (Rule: simulate)
+129 of 301 steps (43%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:36 2025]
+localrule simulate:
+    output: results/85/corrupt100/original_matrix.png, results/85/corrupt100/flipped_matrix.png, results/85/corrupt100/simulate.out, results/85/corrupt100/simulate.err
+    jobid: 258
+    benchmark: results/85/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=85, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:42 2025]
+Finished jobid: 258 (Rule: simulate)
+130 of 301 steps (43%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:42 2025]
+localrule simulate:
+    output: results/19/corrupt50/original_matrix.png, results/19/corrupt50/flipped_matrix.png, results/19/corrupt50/simulate.out, results/19/corrupt50/simulate.err
+    jobid: 59
+    benchmark: results/19/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=19, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:49 2025]
+Finished jobid: 59 (Rule: simulate)
+131 of 301 steps (44%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:49 2025]
+localrule simulate:
+    output: results/43/corrupt0/original_matrix.png, results/43/corrupt0/flipped_matrix.png, results/43/corrupt0/simulate.out, results/43/corrupt0/simulate.err
+    jobid: 130
+    benchmark: results/43/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=43, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:54 2025]
+Finished jobid: 130 (Rule: simulate)
+132 of 301 steps (44%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:54 2025]
+localrule simulate:
+    output: results/79/corrupt0/original_matrix.png, results/79/corrupt0/flipped_matrix.png, results/79/corrupt0/simulate.out, results/79/corrupt0/simulate.err
+    jobid: 238
+    benchmark: results/79/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=79, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:43:59 2025]
+Finished jobid: 238 (Rule: simulate)
+133 of 301 steps (44%) done
+Execute 1 jobs...
+[Wed Sep 10 15:43:59 2025]
+localrule simulate:
+    output: results/44/corrupt0/original_matrix.png, results/44/corrupt0/flipped_matrix.png, results/44/corrupt0/simulate.out, results/44/corrupt0/simulate.err
+    jobid: 133
+    benchmark: results/44/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=44, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:04 2025]
+Finished jobid: 133 (Rule: simulate)
+134 of 301 steps (45%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:04 2025]
+localrule simulate:
+    output: results/80/corrupt0/original_matrix.png, results/80/corrupt0/flipped_matrix.png, results/80/corrupt0/simulate.out, results/80/corrupt0/simulate.err
+    jobid: 241
+    benchmark: results/80/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=80, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:08 2025]
+Finished jobid: 241 (Rule: simulate)
+135 of 301 steps (45%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:08 2025]
+localrule simulate:
+    output: results/3/corrupt100/original_matrix.png, results/3/corrupt100/flipped_matrix.png, results/3/corrupt100/simulate.out, results/3/corrupt100/simulate.err
+    jobid: 12
+    benchmark: results/3/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=3, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:15 2025]
+Finished jobid: 12 (Rule: simulate)
+136 of 301 steps (45%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:15 2025]
+localrule simulate:
+    output: results/29/corrupt50/original_matrix.png, results/29/corrupt50/flipped_matrix.png, results/29/corrupt50/simulate.out, results/29/corrupt50/simulate.err
+    jobid: 89
+    benchmark: results/29/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=29, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:22 2025]
+Finished jobid: 89 (Rule: simulate)
+137 of 301 steps (46%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:22 2025]
+localrule simulate:
+    output: results/47/corrupt50/original_matrix.png, results/47/corrupt50/flipped_matrix.png, results/47/corrupt50/simulate.out, results/47/corrupt50/simulate.err
+    jobid: 143
+    benchmark: results/47/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=47, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:28 2025]
+Finished jobid: 143 (Rule: simulate)
+138 of 301 steps (46%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:28 2025]
+localrule simulate:
+    output: results/1/corrupt50/original_matrix.png, results/1/corrupt50/flipped_matrix.png, results/1/corrupt50/simulate.out, results/1/corrupt50/simulate.err
+    jobid: 5
+    benchmark: results/1/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=1, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:36 2025]
+Finished jobid: 5 (Rule: simulate)
+139 of 301 steps (46%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:36 2025]
+localrule simulate:
+    output: results/30/corrupt50/original_matrix.png, results/30/corrupt50/flipped_matrix.png, results/30/corrupt50/simulate.out, results/30/corrupt50/simulate.err
+    jobid: 92
+    benchmark: results/30/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=30, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:42 2025]
+Finished jobid: 92 (Rule: simulate)
+140 of 301 steps (47%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:42 2025]
+localrule simulate:
+    output: results/48/corrupt50/original_matrix.png, results/48/corrupt50/flipped_matrix.png, results/48/corrupt50/simulate.out, results/48/corrupt50/simulate.err
+    jobid: 146
+    benchmark: results/48/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=48, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:48 2025]
+Finished jobid: 146 (Rule: simulate)
+141 of 301 steps (47%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:48 2025]
+localrule simulate:
+    output: results/17/corrupt0/original_matrix.png, results/17/corrupt0/flipped_matrix.png, results/17/corrupt0/simulate.out, results/17/corrupt0/simulate.err
+    jobid: 52
+    benchmark: results/17/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=17, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:53 2025]
+Finished jobid: 52 (Rule: simulate)
+142 of 301 steps (47%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:53 2025]
+localrule simulate:
+    output: results/18/corrupt0/original_matrix.png, results/18/corrupt0/flipped_matrix.png, results/18/corrupt0/simulate.out, results/18/corrupt0/simulate.err
+    jobid: 55
+    benchmark: results/18/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=18, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:44:58 2025]
+Finished jobid: 55 (Rule: simulate)
+143 of 301 steps (48%) done
+Execute 1 jobs...
+[Wed Sep 10 15:44:58 2025]
+localrule simulate:
+    output: results/69/corrupt0/original_matrix.png, results/69/corrupt0/flipped_matrix.png, results/69/corrupt0/simulate.out, results/69/corrupt0/simulate.err
+    jobid: 208
+    benchmark: results/69/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=69, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:03 2025]
+Finished jobid: 208 (Rule: simulate)
+144 of 301 steps (48%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:03 2025]
+localrule simulate:
+    output: results/40/corrupt50/original_matrix.png, results/40/corrupt50/flipped_matrix.png, results/40/corrupt50/simulate.out, results/40/corrupt50/simulate.err
+    jobid: 122
+    benchmark: results/40/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=40, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:09 2025]
+Finished jobid: 122 (Rule: simulate)
+145 of 301 steps (48%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:09 2025]
+localrule simulate:
+    output: results/23/corrupt100/original_matrix.png, results/23/corrupt100/flipped_matrix.png, results/23/corrupt100/simulate.out, results/23/corrupt100/simulate.err
+    jobid: 72
+    benchmark: results/23/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=23, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:15 2025]
+Finished jobid: 72 (Rule: simulate)
+146 of 301 steps (49%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:15 2025]
+localrule simulate:
+    output: results/41/corrupt100/original_matrix.png, results/41/corrupt100/flipped_matrix.png, results/41/corrupt100/simulate.out, results/41/corrupt100/simulate.err
+    jobid: 126
+    benchmark: results/41/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=41, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:21 2025]
+Finished jobid: 126 (Rule: simulate)
+147 of 301 steps (49%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:21 2025]
+localrule simulate:
+    output: results/59/corrupt100/original_matrix.png, results/59/corrupt100/flipped_matrix.png, results/59/corrupt100/simulate.out, results/59/corrupt100/simulate.err
+    jobid: 180
+    benchmark: results/59/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=59, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:28 2025]
+Finished jobid: 180 (Rule: simulate)
+148 of 301 steps (49%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:28 2025]
+localrule simulate:
+    output: results/77/corrupt100/original_matrix.png, results/77/corrupt100/flipped_matrix.png, results/77/corrupt100/simulate.out, results/77/corrupt100/simulate.err
+    jobid: 234
+    benchmark: results/77/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=77, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:34 2025]
+Finished jobid: 234 (Rule: simulate)
+149 of 301 steps (50%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:34 2025]
+localrule simulate:
+    output: results/11/corrupt50/original_matrix.png, results/11/corrupt50/flipped_matrix.png, results/11/corrupt50/simulate.out, results/11/corrupt50/simulate.err
+    jobid: 35
+    benchmark: results/11/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=11, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:40 2025]
+Finished jobid: 35 (Rule: simulate)
+150 of 301 steps (50%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:40 2025]
+localrule simulate:
+    output: results/66/corrupt50/original_matrix.png, results/66/corrupt50/flipped_matrix.png, results/66/corrupt50/simulate.out, results/66/corrupt50/simulate.err
+    jobid: 200
+    benchmark: results/66/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=66, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:47 2025]
+Finished jobid: 200 (Rule: simulate)
+151 of 301 steps (50%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:47 2025]
+localrule simulate:
+    output: results/35/corrupt0/original_matrix.png, results/35/corrupt0/flipped_matrix.png, results/35/corrupt0/simulate.out, results/35/corrupt0/simulate.err
+    jobid: 106
+    benchmark: results/35/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=35, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:52 2025]
+Finished jobid: 106 (Rule: simulate)
+152 of 301 steps (50%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:52 2025]
+localrule simulate:
+    output: results/13/corrupt100/original_matrix.png, results/13/corrupt100/flipped_matrix.png, results/13/corrupt100/simulate.out, results/13/corrupt100/simulate.err
+    jobid: 42
+    benchmark: results/13/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=13, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:45:59 2025]
+Finished jobid: 42 (Rule: simulate)
+153 of 301 steps (51%) done
+Execute 1 jobs...
+[Wed Sep 10 15:45:59 2025]
+localrule simulate:
+    output: results/53/corrupt0/original_matrix.png, results/53/corrupt0/flipped_matrix.png, results/53/corrupt0/simulate.out, results/53/corrupt0/simulate.err
+    jobid: 160
+    benchmark: results/53/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=53, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:04 2025]
+Finished jobid: 160 (Rule: simulate)
+154 of 301 steps (51%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:04 2025]
+localrule simulate:
+    output: results/71/corrupt0/original_matrix.png, results/71/corrupt0/flipped_matrix.png, results/71/corrupt0/simulate.out, results/71/corrupt0/simulate.err
+    jobid: 214
+    benchmark: results/71/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=71, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:08 2025]
+Finished jobid: 214 (Rule: simulate)
+155 of 301 steps (51%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:08 2025]
+localrule simulate:
+    output: results/89/corrupt0/original_matrix.png, results/89/corrupt0/flipped_matrix.png, results/89/corrupt0/simulate.out, results/89/corrupt0/simulate.err
+    jobid: 268
+    benchmark: results/89/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=89, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:13 2025]
+Finished jobid: 268 (Rule: simulate)
+156 of 301 steps (52%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:13 2025]
+localrule simulate:
+    output: results/54/corrupt0/original_matrix.png, results/54/corrupt0/flipped_matrix.png, results/54/corrupt0/simulate.out, results/54/corrupt0/simulate.err
+    jobid: 163
+    benchmark: results/54/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=54, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:18 2025]
+Finished jobid: 163 (Rule: simulate)
+157 of 301 steps (52%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:18 2025]
+localrule simulate:
+    output: results/90/corrupt0/original_matrix.png, results/90/corrupt0/flipped_matrix.png, results/90/corrupt0/simulate.out, results/90/corrupt0/simulate.err
+    jobid: 271
+    benchmark: results/90/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=90, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:23 2025]
+Finished jobid: 271 (Rule: simulate)
+158 of 301 steps (52%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:23 2025]
+localrule simulate:
+    output: results/5/corrupt100/original_matrix.png, results/5/corrupt100/flipped_matrix.png, results/5/corrupt100/simulate.out, results/5/corrupt100/simulate.err
+    jobid: 18
+    benchmark: results/5/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=5, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:29 2025]
+Finished jobid: 18 (Rule: simulate)
+159 of 301 steps (53%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:29 2025]
+localrule simulate:
+    output: results/81/corrupt0/original_matrix.png, results/81/corrupt0/flipped_matrix.png, results/81/corrupt0/simulate.out, results/81/corrupt0/simulate.err
+    jobid: 244
+    benchmark: results/81/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=81, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:33 2025]
+Finished jobid: 244 (Rule: simulate)
+160 of 301 steps (53%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:33 2025]
+localrule simulate:
+    output: results/39/corrupt100/original_matrix.png, results/39/corrupt100/flipped_matrix.png, results/39/corrupt100/simulate.out, results/39/corrupt100/simulate.err
+    jobid: 120
+    benchmark: results/39/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=39, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:40 2025]
+Finished jobid: 120 (Rule: simulate)
+161 of 301 steps (53%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:40 2025]
+localrule simulate:
+    output: results/14/corrupt100/original_matrix.png, results/14/corrupt100/flipped_matrix.png, results/14/corrupt100/simulate.out, results/14/corrupt100/simulate.err
+    jobid: 45
+    benchmark: results/14/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=14, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:48 2025]
+Finished jobid: 45 (Rule: simulate)
+162 of 301 steps (54%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:48 2025]
+localrule simulate:
+    output: results/32/corrupt100/original_matrix.png, results/32/corrupt100/flipped_matrix.png, results/32/corrupt100/simulate.out, results/32/corrupt100/simulate.err
+    jobid: 99
+    benchmark: results/32/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=32, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:46:56 2025]
+Finished jobid: 99 (Rule: simulate)
+163 of 301 steps (54%) done
+Execute 1 jobs...
+[Wed Sep 10 15:46:56 2025]
+localrule simulate:
+    output: results/33/corrupt100/original_matrix.png, results/33/corrupt100/flipped_matrix.png, results/33/corrupt100/simulate.out, results/33/corrupt100/simulate.err
+    jobid: 102
+    benchmark: results/33/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=33, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:03 2025]
+Finished jobid: 102 (Rule: simulate)
+164 of 301 steps (54%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:03 2025]
+localrule simulate:
+    output: results/68/corrupt100/original_matrix.png, results/68/corrupt100/flipped_matrix.png, results/68/corrupt100/simulate.out, results/68/corrupt100/simulate.err
+    jobid: 207
+    benchmark: results/68/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=68, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:09 2025]
+Finished jobid: 207 (Rule: simulate)
+165 of 301 steps (55%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:09 2025]
+localrule simulate:
+    output: results/31/corrupt100/original_matrix.png, results/31/corrupt100/flipped_matrix.png, results/31/corrupt100/simulate.out, results/31/corrupt100/simulate.err
+    jobid: 96
+    benchmark: results/31/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=31, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:16 2025]
+Finished jobid: 96 (Rule: simulate)
+166 of 301 steps (55%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:16 2025]
+localrule simulate:
+    output: results/15/corrupt100/original_matrix.png, results/15/corrupt100/flipped_matrix.png, results/15/corrupt100/simulate.out, results/15/corrupt100/simulate.err
+    jobid: 48
+    benchmark: results/15/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=15, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:23 2025]
+Finished jobid: 48 (Rule: simulate)
+167 of 301 steps (55%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:23 2025]
+localrule simulate:
+    output: results/2/corrupt0/original_matrix.png, results/2/corrupt0/flipped_matrix.png, results/2/corrupt0/simulate.out, results/2/corrupt0/simulate.err
+    jobid: 7
+    benchmark: results/2/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=2, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:28 2025]
+Finished jobid: 7 (Rule: simulate)
+168 of 301 steps (56%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:28 2025]
+localrule simulate:
+    output: results/70/corrupt0/original_matrix.png, results/70/corrupt0/flipped_matrix.png, results/70/corrupt0/simulate.out, results/70/corrupt0/simulate.err
+    jobid: 211
+    benchmark: results/70/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=70, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:33 2025]
+Finished jobid: 211 (Rule: simulate)
+169 of 301 steps (56%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:33 2025]
+localrule simulate:
+    output: results/83/corrupt0/original_matrix.png, results/83/corrupt0/flipped_matrix.png, results/83/corrupt0/simulate.out, results/83/corrupt0/simulate.err
+    jobid: 250
+    benchmark: results/83/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=83, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:38 2025]
+Finished jobid: 250 (Rule: simulate)
+170 of 301 steps (56%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:38 2025]
+localrule simulate:
+    output: results/11/corrupt0/original_matrix.png, results/11/corrupt0/flipped_matrix.png, results/11/corrupt0/simulate.out, results/11/corrupt0/simulate.err
+    jobid: 34
+    benchmark: results/11/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=11, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:42 2025]
+Finished jobid: 34 (Rule: simulate)
+171 of 301 steps (57%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:42 2025]
+localrule simulate:
+    output: results/30/corrupt100/original_matrix.png, results/30/corrupt100/flipped_matrix.png, results/30/corrupt100/simulate.out, results/30/corrupt100/simulate.err
+    jobid: 93
+    benchmark: results/30/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=30, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:49 2025]
+Finished jobid: 93 (Rule: simulate)
+172 of 301 steps (57%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:49 2025]
+localrule simulate:
+    output: results/94/corrupt100/original_matrix.png, results/94/corrupt100/flipped_matrix.png, results/94/corrupt100/simulate.out, results/94/corrupt100/simulate.err
+    jobid: 285
+    benchmark: results/94/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=94, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:47:55 2025]
+Finished jobid: 285 (Rule: simulate)
+173 of 301 steps (57%) done
+Execute 1 jobs...
+[Wed Sep 10 15:47:55 2025]
+localrule simulate:
+    output: results/92/corrupt100/original_matrix.png, results/92/corrupt100/flipped_matrix.png, results/92/corrupt100/simulate.out, results/92/corrupt100/simulate.err
+    jobid: 279
+    benchmark: results/92/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=92, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:03 2025]
+Finished jobid: 279 (Rule: simulate)
+174 of 301 steps (58%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:03 2025]
+localrule simulate:
+    output: results/38/corrupt100/original_matrix.png, results/38/corrupt100/flipped_matrix.png, results/38/corrupt100/simulate.out, results/38/corrupt100/simulate.err
+    jobid: 117
+    benchmark: results/38/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=38, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:09 2025]
+Finished jobid: 117 (Rule: simulate)
+175 of 301 steps (58%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:09 2025]
+localrule simulate:
+    output: results/58/corrupt100/original_matrix.png, results/58/corrupt100/flipped_matrix.png, results/58/corrupt100/simulate.out, results/58/corrupt100/simulate.err
+    jobid: 177
+    benchmark: results/58/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=58, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:17 2025]
+Finished jobid: 177 (Rule: simulate)
+176 of 301 steps (58%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:17 2025]
+localrule simulate:
+    output: results/22/corrupt100/original_matrix.png, results/22/corrupt100/flipped_matrix.png, results/22/corrupt100/simulate.out, results/22/corrupt100/simulate.err
+    jobid: 69
+    benchmark: results/22/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=22, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:24 2025]
+Finished jobid: 69 (Rule: simulate)
+177 of 301 steps (59%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:24 2025]
+localrule simulate:
+    output: results/40/corrupt100/original_matrix.png, results/40/corrupt100/flipped_matrix.png, results/40/corrupt100/simulate.out, results/40/corrupt100/simulate.err
+    jobid: 123
+    benchmark: results/40/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=40, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:30 2025]
+Finished jobid: 123 (Rule: simulate)
+178 of 301 steps (59%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:30 2025]
+localrule simulate:
+    output: results/56/corrupt100/original_matrix.png, results/56/corrupt100/flipped_matrix.png, results/56/corrupt100/simulate.out, results/56/corrupt100/simulate.err
+    jobid: 171
+    benchmark: results/56/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=56, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:38 2025]
+Finished jobid: 171 (Rule: simulate)
+179 of 301 steps (59%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:38 2025]
+localrule simulate:
+    output: results/4/corrupt100/original_matrix.png, results/4/corrupt100/flipped_matrix.png, results/4/corrupt100/simulate.out, results/4/corrupt100/simulate.err
+    jobid: 15
+    benchmark: results/4/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=4, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:46 2025]
+Finished jobid: 15 (Rule: simulate)
+180 of 301 steps (60%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:46 2025]
+localrule simulate:
+    output: results/76/corrupt100/original_matrix.png, results/76/corrupt100/flipped_matrix.png, results/76/corrupt100/simulate.out, results/76/corrupt100/simulate.err
+    jobid: 231
+    benchmark: results/76/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=76, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:52 2025]
+Finished jobid: 231 (Rule: simulate)
+181 of 301 steps (60%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:52 2025]
+localrule simulate:
+    output: results/24/corrupt100/original_matrix.png, results/24/corrupt100/flipped_matrix.png, results/24/corrupt100/simulate.out, results/24/corrupt100/simulate.err
+    jobid: 75
+    benchmark: results/24/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=24, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:48:58 2025]
+Finished jobid: 75 (Rule: simulate)
+182 of 301 steps (60%) done
+Execute 1 jobs...
+[Wed Sep 10 15:48:58 2025]
+localrule simulate:
+    output: results/60/corrupt100/original_matrix.png, results/60/corrupt100/flipped_matrix.png, results/60/corrupt100/simulate.out, results/60/corrupt100/simulate.err
+    jobid: 183
+    benchmark: results/60/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=60, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:05 2025]
+Finished jobid: 183 (Rule: simulate)
+183 of 301 steps (61%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:05 2025]
+localrule simulate:
+    output: results/57/corrupt100/original_matrix.png, results/57/corrupt100/flipped_matrix.png, results/57/corrupt100/simulate.out, results/57/corrupt100/simulate.err
+    jobid: 174
+    benchmark: results/57/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=57, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:12 2025]
+Finished jobid: 174 (Rule: simulate)
+184 of 301 steps (61%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:12 2025]
+localrule simulate:
+    output: results/87/corrupt100/original_matrix.png, results/87/corrupt100/flipped_matrix.png, results/87/corrupt100/simulate.out, results/87/corrupt100/simulate.err
+    jobid: 264
+    benchmark: results/87/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=87, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:18 2025]
+Finished jobid: 264 (Rule: simulate)
+185 of 301 steps (61%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:18 2025]
+localrule simulate:
+    output: results/42/corrupt100/original_matrix.png, results/42/corrupt100/flipped_matrix.png, results/42/corrupt100/simulate.out, results/42/corrupt100/simulate.err
+    jobid: 129
+    benchmark: results/42/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=42, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:25 2025]
+Finished jobid: 129 (Rule: simulate)
+186 of 301 steps (62%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:25 2025]
+localrule simulate:
+    output: results/78/corrupt100/original_matrix.png, results/78/corrupt100/flipped_matrix.png, results/78/corrupt100/simulate.out, results/78/corrupt100/simulate.err
+    jobid: 237
+    benchmark: results/78/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=78, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:33 2025]
+Finished jobid: 237 (Rule: simulate)
+187 of 301 steps (62%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:33 2025]
+localrule simulate:
+    output: results/93/corrupt100/original_matrix.png, results/93/corrupt100/flipped_matrix.png, results/93/corrupt100/simulate.out, results/93/corrupt100/simulate.err
+    jobid: 282
+    benchmark: results/93/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=93, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:40 2025]
+Finished jobid: 282 (Rule: simulate)
+188 of 301 steps (62%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:40 2025]
+localrule simulate:
+    output: results/17/corrupt100/original_matrix.png, results/17/corrupt100/flipped_matrix.png, results/17/corrupt100/simulate.out, results/17/corrupt100/simulate.err
+    jobid: 54
+    benchmark: results/17/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=17, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:46 2025]
+Finished jobid: 54 (Rule: simulate)
+189 of 301 steps (63%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:46 2025]
+localrule simulate:
+    output: results/6/corrupt100/original_matrix.png, results/6/corrupt100/flipped_matrix.png, results/6/corrupt100/simulate.out, results/6/corrupt100/simulate.err
+    jobid: 21
+    benchmark: results/6/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=6, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:49:53 2025]
+Finished jobid: 21 (Rule: simulate)
+190 of 301 steps (63%) done
+Execute 1 jobs...
+[Wed Sep 10 15:49:53 2025]
+localrule simulate:
+    output: results/35/corrupt100/original_matrix.png, results/35/corrupt100/flipped_matrix.png, results/35/corrupt100/simulate.out, results/35/corrupt100/simulate.err
+    jobid: 108
+    benchmark: results/35/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=35, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:01 2025]
+Finished jobid: 108 (Rule: simulate)
+191 of 301 steps (63%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:01 2025]
+localrule simulate:
+    output: results/53/corrupt100/original_matrix.png, results/53/corrupt100/flipped_matrix.png, results/53/corrupt100/simulate.out, results/53/corrupt100/simulate.err
+    jobid: 162
+    benchmark: results/53/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=53, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:07 2025]
+Finished jobid: 162 (Rule: simulate)
+192 of 301 steps (64%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:07 2025]
+localrule simulate:
+    output: results/71/corrupt100/original_matrix.png, results/71/corrupt100/flipped_matrix.png, results/71/corrupt100/simulate.out, results/71/corrupt100/simulate.err
+    jobid: 216
+    benchmark: results/71/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=71, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:13 2025]
+Finished jobid: 216 (Rule: simulate)
+193 of 301 steps (64%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:13 2025]
+localrule simulate:
+    output: results/89/corrupt100/original_matrix.png, results/89/corrupt100/flipped_matrix.png, results/89/corrupt100/simulate.out, results/89/corrupt100/simulate.err
+    jobid: 270
+    benchmark: results/89/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=89, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:20 2025]
+Finished jobid: 270 (Rule: simulate)
+194 of 301 steps (64%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:20 2025]
+localrule simulate:
+    output: results/80/corrupt100/original_matrix.png, results/80/corrupt100/flipped_matrix.png, results/80/corrupt100/simulate.out, results/80/corrupt100/simulate.err
+    jobid: 243
+    benchmark: results/80/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=80, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:26 2025]
+Finished jobid: 243 (Rule: simulate)
+195 of 301 steps (65%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:26 2025]
+localrule simulate:
+    output: results/98/corrupt100/original_matrix.png, results/98/corrupt100/flipped_matrix.png, results/98/corrupt100/simulate.out, results/98/corrupt100/simulate.err
+    jobid: 297
+    benchmark: results/98/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=98, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:33 2025]
+Finished jobid: 297 (Rule: simulate)
+196 of 301 steps (65%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:33 2025]
+localrule simulate:
+    output: results/1/corrupt100/original_matrix.png, results/1/corrupt100/flipped_matrix.png, results/1/corrupt100/simulate.out, results/1/corrupt100/simulate.err
+    jobid: 6
+    benchmark: results/1/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=1, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:40 2025]
+Finished jobid: 6 (Rule: simulate)
+197 of 301 steps (65%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:40 2025]
+localrule simulate:
+    output: results/21/corrupt100/original_matrix.png, results/21/corrupt100/flipped_matrix.png, results/21/corrupt100/simulate.out, results/21/corrupt100/simulate.err
+    jobid: 66
+    benchmark: results/21/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=21, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:47 2025]
+Finished jobid: 66 (Rule: simulate)
+198 of 301 steps (66%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:47 2025]
+localrule simulate:
+    output: results/49/corrupt100/original_matrix.png, results/49/corrupt100/flipped_matrix.png, results/49/corrupt100/simulate.out, results/49/corrupt100/simulate.err
+    jobid: 150
+    benchmark: results/49/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=49, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:50:56 2025]
+Finished jobid: 150 (Rule: simulate)
+199 of 301 steps (66%) done
+Execute 1 jobs...
+[Wed Sep 10 15:50:56 2025]
+localrule simulate:
+    output: results/48/corrupt100/original_matrix.png, results/48/corrupt100/flipped_matrix.png, results/48/corrupt100/simulate.out, results/48/corrupt100/simulate.err
+    jobid: 147
+    benchmark: results/48/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=48, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:02 2025]
+Finished jobid: 147 (Rule: simulate)
+200 of 301 steps (66%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:02 2025]
+localrule simulate:
+    output: results/86/corrupt100/original_matrix.png, results/86/corrupt100/flipped_matrix.png, results/86/corrupt100/simulate.out, results/86/corrupt100/simulate.err
+    jobid: 261
+    benchmark: results/86/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=86, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:10 2025]
+Finished jobid: 261 (Rule: simulate)
+201 of 301 steps (67%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:10 2025]
+localrule simulate:
+    output: results/96/corrupt100/original_matrix.png, results/96/corrupt100/flipped_matrix.png, results/96/corrupt100/simulate.out, results/96/corrupt100/simulate.err
+    jobid: 291
+    benchmark: results/96/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=96, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:18 2025]
+Finished jobid: 291 (Rule: simulate)
+202 of 301 steps (67%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:18 2025]
+localrule simulate:
+    output: results/50/corrupt100/original_matrix.png, results/50/corrupt100/flipped_matrix.png, results/50/corrupt100/simulate.out, results/50/corrupt100/simulate.err
+    jobid: 153
+    benchmark: results/50/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=50, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:26 2025]
+Finished jobid: 153 (Rule: simulate)
+203 of 301 steps (67%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:26 2025]
+localrule simulate:
+    output: results/25/corrupt100/original_matrix.png, results/25/corrupt100/flipped_matrix.png, results/25/corrupt100/simulate.out, results/25/corrupt100/simulate.err
+    jobid: 78
+    benchmark: results/25/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=25, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:32 2025]
+Finished jobid: 78 (Rule: simulate)
+204 of 301 steps (68%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:32 2025]
+localrule simulate:
+    output: results/61/corrupt100/original_matrix.png, results/61/corrupt100/flipped_matrix.png, results/61/corrupt100/simulate.out, results/61/corrupt100/simulate.err
+    jobid: 186
+    benchmark: results/61/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=61, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:38 2025]
+Finished jobid: 186 (Rule: simulate)
+205 of 301 steps (68%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:38 2025]
+localrule simulate:
+    output: results/97/corrupt100/original_matrix.png, results/97/corrupt100/flipped_matrix.png, results/97/corrupt100/simulate.out, results/97/corrupt100/simulate.err
+    jobid: 294
+    benchmark: results/97/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=97, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:45 2025]
+Finished jobid: 294 (Rule: simulate)
+206 of 301 steps (68%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:45 2025]
+localrule simulate:
+    output: results/7/corrupt100/original_matrix.png, results/7/corrupt100/flipped_matrix.png, results/7/corrupt100/simulate.out, results/7/corrupt100/simulate.err
+    jobid: 24
+    benchmark: results/7/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=7, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:51 2025]
+Finished jobid: 24 (Rule: simulate)
+207 of 301 steps (69%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:51 2025]
+localrule simulate:
+    output: results/43/corrupt100/original_matrix.png, results/43/corrupt100/flipped_matrix.png, results/43/corrupt100/simulate.out, results/43/corrupt100/simulate.err
+    jobid: 132
+    benchmark: results/43/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=43, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:51:59 2025]
+Finished jobid: 132 (Rule: simulate)
+208 of 301 steps (69%) done
+Execute 1 jobs...
+[Wed Sep 10 15:51:59 2025]
+localrule simulate:
+    output: results/16/corrupt100/original_matrix.png, results/16/corrupt100/flipped_matrix.png, results/16/corrupt100/simulate.out, results/16/corrupt100/simulate.err
+    jobid: 51
+    benchmark: results/16/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=16, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:06 2025]
+Finished jobid: 51 (Rule: simulate)
+209 of 301 steps (69%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:06 2025]
+localrule simulate:
+    output: results/34/corrupt100/original_matrix.png, results/34/corrupt100/flipped_matrix.png, results/34/corrupt100/simulate.out, results/34/corrupt100/simulate.err
+    jobid: 105
+    benchmark: results/34/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=34, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:13 2025]
+Finished jobid: 105 (Rule: simulate)
+210 of 301 steps (70%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:13 2025]
+localrule simulate:
+    output: results/52/corrupt100/original_matrix.png, results/52/corrupt100/flipped_matrix.png, results/52/corrupt100/simulate.out, results/52/corrupt100/simulate.err
+    jobid: 159
+    benchmark: results/52/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=52, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:19 2025]
+Finished jobid: 159 (Rule: simulate)
+211 of 301 steps (70%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:19 2025]
+localrule simulate:
+    output: results/70/corrupt100/original_matrix.png, results/70/corrupt100/flipped_matrix.png, results/70/corrupt100/simulate.out, results/70/corrupt100/simulate.err
+    jobid: 213
+    benchmark: results/70/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=70, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:26 2025]
+Finished jobid: 213 (Rule: simulate)
+212 of 301 steps (70%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:26 2025]
+localrule simulate:
+    output: results/88/corrupt100/original_matrix.png, results/88/corrupt100/flipped_matrix.png, results/88/corrupt100/simulate.out, results/88/corrupt100/simulate.err
+    jobid: 267
+    benchmark: results/88/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=88, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:32 2025]
+Finished jobid: 267 (Rule: simulate)
+213 of 301 steps (71%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:32 2025]
+localrule simulate:
+    output: results/81/corrupt100/original_matrix.png, results/81/corrupt100/flipped_matrix.png, results/81/corrupt100/simulate.out, results/81/corrupt100/simulate.err
+    jobid: 246
+    benchmark: results/81/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=81, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:38 2025]
+Finished jobid: 246 (Rule: simulate)
+214 of 301 steps (71%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:38 2025]
+localrule simulate:
+    output: results/99/corrupt100/original_matrix.png, results/99/corrupt100/flipped_matrix.png, results/99/corrupt100/simulate.out, results/99/corrupt100/simulate.err
+    jobid: 300
+    benchmark: results/99/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=99, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:45 2025]
+Finished jobid: 300 (Rule: simulate)
+215 of 301 steps (71%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:45 2025]
+localrule simulate:
+    output: results/45/corrupt50/original_matrix.png, results/45/corrupt50/flipped_matrix.png, results/45/corrupt50/simulate.out, results/45/corrupt50/simulate.err
+    jobid: 137
+    benchmark: results/45/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=45, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:51 2025]
+Finished jobid: 137 (Rule: simulate)
+216 of 301 steps (72%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:51 2025]
+localrule simulate:
+    output: results/63/corrupt50/original_matrix.png, results/63/corrupt50/flipped_matrix.png, results/63/corrupt50/simulate.out, results/63/corrupt50/simulate.err
+    jobid: 191
+    benchmark: results/63/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=63, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:52:57 2025]
+Finished jobid: 191 (Rule: simulate)
+217 of 301 steps (72%) done
+Execute 1 jobs...
+[Wed Sep 10 15:52:57 2025]
+localrule simulate:
+    output: results/10/corrupt50/original_matrix.png, results/10/corrupt50/flipped_matrix.png, results/10/corrupt50/simulate.out, results/10/corrupt50/simulate.err
+    jobid: 32
+    benchmark: results/10/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=10, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:04 2025]
+Finished jobid: 32 (Rule: simulate)
+218 of 301 steps (72%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:04 2025]
+localrule simulate:
+    output: results/97/corrupt0/original_matrix.png, results/97/corrupt0/flipped_matrix.png, results/97/corrupt0/simulate.out, results/97/corrupt0/simulate.err
+    jobid: 292
+    benchmark: results/97/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=97, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:08 2025]
+Finished jobid: 292 (Rule: simulate)
+219 of 301 steps (73%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:08 2025]
+localrule simulate:
+    output: results/58/corrupt50/original_matrix.png, results/58/corrupt50/flipped_matrix.png, results/58/corrupt50/simulate.out, results/58/corrupt50/simulate.err
+    jobid: 176
+    benchmark: results/58/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=58, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:16 2025]
+Finished jobid: 176 (Rule: simulate)
+220 of 301 steps (73%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:16 2025]
+localrule simulate:
+    output: results/56/corrupt50/original_matrix.png, results/56/corrupt50/flipped_matrix.png, results/56/corrupt50/simulate.out, results/56/corrupt50/simulate.err
+    jobid: 170
+    benchmark: results/56/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=56, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:24 2025]
+Finished jobid: 170 (Rule: simulate)
+221 of 301 steps (73%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:24 2025]
+localrule simulate:
+    output: results/38/corrupt50/original_matrix.png, results/38/corrupt50/flipped_matrix.png, results/38/corrupt50/simulate.out, results/38/corrupt50/simulate.err
+    jobid: 116
+    benchmark: results/38/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=38, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:30 2025]
+Finished jobid: 116 (Rule: simulate)
+222 of 301 steps (74%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:30 2025]
+localrule simulate:
+    output: results/7/corrupt0/original_matrix.png, results/7/corrupt0/flipped_matrix.png, results/7/corrupt0/simulate.out, results/7/corrupt0/simulate.err
+    jobid: 22
+    benchmark: results/7/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=7, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:35 2025]
+Finished jobid: 22 (Rule: simulate)
+223 of 301 steps (74%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:35 2025]
+localrule simulate:
+    output: results/8/corrupt0/original_matrix.png, results/8/corrupt0/flipped_matrix.png, results/8/corrupt0/simulate.out, results/8/corrupt0/simulate.err
+    jobid: 25
+    benchmark: results/8/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=8, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:40 2025]
+Finished jobid: 25 (Rule: simulate)
+224 of 301 steps (74%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:40 2025]
+localrule simulate:
+    output: results/69/corrupt100/original_matrix.png, results/69/corrupt100/flipped_matrix.png, results/69/corrupt100/simulate.out, results/69/corrupt100/simulate.err
+    jobid: 210
+    benchmark: results/69/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=69, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:46 2025]
+Finished jobid: 210 (Rule: simulate)
+225 of 301 steps (75%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:47 2025]
+localrule simulate:
+    output: results/57/corrupt50/original_matrix.png, results/57/corrupt50/flipped_matrix.png, results/57/corrupt50/simulate.out, results/57/corrupt50/simulate.err
+    jobid: 173
+    benchmark: results/57/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=57, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:53:53 2025]
+Finished jobid: 173 (Rule: simulate)
+226 of 301 steps (75%) done
+Execute 1 jobs...
+[Wed Sep 10 15:53:54 2025]
+localrule simulate:
+    output: results/79/corrupt100/original_matrix.png, results/79/corrupt100/flipped_matrix.png, results/79/corrupt100/simulate.out, results/79/corrupt100/simulate.err
+    jobid: 240
+    benchmark: results/79/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=79, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:00 2025]
+Finished jobid: 240 (Rule: simulate)
+227 of 301 steps (75%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:00 2025]
+localrule simulate:
+    output: results/20/corrupt100/original_matrix.png, results/20/corrupt100/flipped_matrix.png, results/20/corrupt100/simulate.out, results/20/corrupt100/simulate.err
+    jobid: 63
+    benchmark: results/20/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=20, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:07 2025]
+Finished jobid: 63 (Rule: simulate)
+228 of 301 steps (76%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:07 2025]
+localrule simulate:
+    output: results/84/corrupt100/original_matrix.png, results/84/corrupt100/flipped_matrix.png, results/84/corrupt100/simulate.out, results/84/corrupt100/simulate.err
+    jobid: 255
+    benchmark: results/84/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=84, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:13 2025]
+Finished jobid: 255 (Rule: simulate)
+229 of 301 steps (76%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:13 2025]
+localrule simulate:
+    output: results/51/corrupt100/original_matrix.png, results/51/corrupt100/flipped_matrix.png, results/51/corrupt100/simulate.out, results/51/corrupt100/simulate.err
+    jobid: 156
+    benchmark: results/51/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=51, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:20 2025]
+Finished jobid: 156 (Rule: simulate)
+230 of 301 steps (76%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:20 2025]
+localrule simulate:
+    output: results/12/corrupt100/original_matrix.png, results/12/corrupt100/flipped_matrix.png, results/12/corrupt100/simulate.out, results/12/corrupt100/simulate.err
+    jobid: 39
+    benchmark: results/12/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=12, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:27 2025]
+Finished jobid: 39 (Rule: simulate)
+231 of 301 steps (77%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:27 2025]
+localrule simulate:
+    output: results/2/corrupt100/original_matrix.png, results/2/corrupt100/flipped_matrix.png, results/2/corrupt100/simulate.out, results/2/corrupt100/simulate.err
+    jobid: 9
+    benchmark: results/2/corrupt100/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=2, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:34 2025]
+Finished jobid: 9 (Rule: simulate)
+232 of 301 steps (77%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:34 2025]
+localrule simulate:
+    output: results/19/corrupt0/original_matrix.png, results/19/corrupt0/flipped_matrix.png, results/19/corrupt0/simulate.out, results/19/corrupt0/simulate.err
+    jobid: 58
+    benchmark: results/19/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=19, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:39 2025]
+Finished jobid: 58 (Rule: simulate)
+233 of 301 steps (77%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:39 2025]
+localrule simulate:
+    output: results/91/corrupt0/original_matrix.png, results/91/corrupt0/flipped_matrix.png, results/91/corrupt0/simulate.out, results/91/corrupt0/simulate.err
+    jobid: 274
+    benchmark: results/91/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=91, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:43 2025]
+Finished jobid: 274 (Rule: simulate)
+234 of 301 steps (78%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:43 2025]
+localrule simulate:
+    output: results/50/corrupt50/original_matrix.png, results/50/corrupt50/flipped_matrix.png, results/50/corrupt50/simulate.out, results/50/corrupt50/simulate.err
+    jobid: 152
+    benchmark: results/50/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=50, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:50 2025]
+Finished jobid: 152 (Rule: simulate)
+235 of 301 steps (78%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:50 2025]
+localrule simulate:
+    output: results/76/corrupt50/original_matrix.png, results/76/corrupt50/flipped_matrix.png, results/76/corrupt50/simulate.out, results/76/corrupt50/simulate.err
+    jobid: 230
+    benchmark: results/76/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=76, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:54:56 2025]
+Finished jobid: 230 (Rule: simulate)
+236 of 301 steps (78%) done
+Execute 1 jobs...
+[Wed Sep 10 15:54:56 2025]
+localrule simulate:
+    output: results/34/corrupt50/original_matrix.png, results/34/corrupt50/flipped_matrix.png, results/34/corrupt50/simulate.out, results/34/corrupt50/simulate.err
+    jobid: 104
+    benchmark: results/34/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=34, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:03 2025]
+Finished jobid: 104 (Rule: simulate)
+237 of 301 steps (79%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:03 2025]
+localrule simulate:
+    output: results/82/corrupt0/original_matrix.png, results/82/corrupt0/flipped_matrix.png, results/82/corrupt0/simulate.out, results/82/corrupt0/simulate.err
+    jobid: 247
+    benchmark: results/82/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=82, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:08 2025]
+Finished jobid: 247 (Rule: simulate)
+238 of 301 steps (79%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:08 2025]
+localrule simulate:
+    output: results/52/corrupt0/original_matrix.png, results/52/corrupt0/flipped_matrix.png, results/52/corrupt0/simulate.out, results/52/corrupt0/simulate.err
+    jobid: 157
+    benchmark: results/52/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=52, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:12 2025]
+Finished jobid: 157 (Rule: simulate)
+239 of 301 steps (79%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:12 2025]
+localrule simulate:
+    output: results/12/corrupt0/original_matrix.png, results/12/corrupt0/flipped_matrix.png, results/12/corrupt0/simulate.out, results/12/corrupt0/simulate.err
+    jobid: 37
+    benchmark: results/12/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=12, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:17 2025]
+Finished jobid: 37 (Rule: simulate)
+240 of 301 steps (80%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:17 2025]
+localrule simulate:
+    output: results/66/corrupt0/original_matrix.png, results/66/corrupt0/flipped_matrix.png, results/66/corrupt0/simulate.out, results/66/corrupt0/simulate.err
+    jobid: 199
+    benchmark: results/66/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=66, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:22 2025]
+Finished jobid: 199 (Rule: simulate)
+241 of 301 steps (80%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:22 2025]
+localrule simulate:
+    output: results/31/corrupt0/original_matrix.png, results/31/corrupt0/flipped_matrix.png, results/31/corrupt0/simulate.out, results/31/corrupt0/simulate.err
+    jobid: 94
+    benchmark: results/31/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=31, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:27 2025]
+Finished jobid: 94 (Rule: simulate)
+242 of 301 steps (80%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:27 2025]
+localrule simulate:
+    output: results/39/corrupt0/original_matrix.png, results/39/corrupt0/flipped_matrix.png, results/39/corrupt0/simulate.out, results/39/corrupt0/simulate.err
+    jobid: 118
+    benchmark: results/39/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=39, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:32 2025]
+Finished jobid: 118 (Rule: simulate)
+243 of 301 steps (81%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:32 2025]
+localrule simulate:
+    output: results/37/corrupt0/original_matrix.png, results/37/corrupt0/flipped_matrix.png, results/37/corrupt0/simulate.out, results/37/corrupt0/simulate.err
+    jobid: 112
+    benchmark: results/37/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=37, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:36 2025]
+Finished jobid: 112 (Rule: simulate)
+244 of 301 steps (81%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:37 2025]
+localrule simulate:
+    output: results/20/corrupt0/original_matrix.png, results/20/corrupt0/flipped_matrix.png, results/20/corrupt0/simulate.out, results/20/corrupt0/simulate.err
+    jobid: 61
+    benchmark: results/20/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=20, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:41 2025]
+Finished jobid: 61 (Rule: simulate)
+245 of 301 steps (81%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:41 2025]
+localrule simulate:
+    output: results/56/corrupt0/original_matrix.png, results/56/corrupt0/flipped_matrix.png, results/56/corrupt0/simulate.out, results/56/corrupt0/simulate.err
+    jobid: 169
+    benchmark: results/56/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=56, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:46 2025]
+Finished jobid: 169 (Rule: simulate)
+246 of 301 steps (82%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:46 2025]
+localrule simulate:
+    output: results/74/corrupt0/original_matrix.png, results/74/corrupt0/flipped_matrix.png, results/74/corrupt0/simulate.out, results/74/corrupt0/simulate.err
+    jobid: 223
+    benchmark: results/74/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=74, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:51 2025]
+Finished jobid: 223 (Rule: simulate)
+247 of 301 steps (82%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:51 2025]
+localrule simulate:
+    output: results/99/corrupt0/original_matrix.png, results/99/corrupt0/flipped_matrix.png, results/99/corrupt0/simulate.out, results/99/corrupt0/simulate.err
+    jobid: 298
+    benchmark: results/99/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=99, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:55:56 2025]
+Finished jobid: 298 (Rule: simulate)
+248 of 301 steps (82%) done
+Execute 1 jobs...
+[Wed Sep 10 15:55:56 2025]
+localrule simulate:
+    output: results/15/corrupt0/original_matrix.png, results/15/corrupt0/flipped_matrix.png, results/15/corrupt0/simulate.out, results/15/corrupt0/simulate.err
+    jobid: 46
+    benchmark: results/15/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=15, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:01 2025]
+Finished jobid: 46 (Rule: simulate)
+249 of 301 steps (83%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:01 2025]
+localrule simulate:
+    output: results/63/corrupt0/original_matrix.png, results/63/corrupt0/flipped_matrix.png, results/63/corrupt0/simulate.out, results/63/corrupt0/simulate.err
+    jobid: 190
+    benchmark: results/63/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=63, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:05 2025]
+Finished jobid: 190 (Rule: simulate)
+250 of 301 steps (83%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:05 2025]
+localrule simulate:
+    output: results/45/corrupt0/original_matrix.png, results/45/corrupt0/flipped_matrix.png, results/45/corrupt0/simulate.out, results/45/corrupt0/simulate.err
+    jobid: 136
+    benchmark: results/45/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=45, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:10 2025]
+Finished jobid: 136 (Rule: simulate)
+251 of 301 steps (83%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:10 2025]
+localrule simulate:
+    output: results/27/corrupt0/original_matrix.png, results/27/corrupt0/flipped_matrix.png, results/27/corrupt0/simulate.out, results/27/corrupt0/simulate.err
+    jobid: 82
+    benchmark: results/27/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=27, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:15 2025]
+Finished jobid: 82 (Rule: simulate)
+252 of 301 steps (84%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:15 2025]
+localrule simulate:
+    output: results/29/corrupt0/original_matrix.png, results/29/corrupt0/flipped_matrix.png, results/29/corrupt0/simulate.out, results/29/corrupt0/simulate.err
+    jobid: 88
+    benchmark: results/29/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=29, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:20 2025]
+Finished jobid: 88 (Rule: simulate)
+253 of 301 steps (84%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:20 2025]
+localrule simulate:
+    output: results/65/corrupt0/original_matrix.png, results/65/corrupt0/flipped_matrix.png, results/65/corrupt0/simulate.out, results/65/corrupt0/simulate.err
+    jobid: 196
+    benchmark: results/65/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=65, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:24 2025]
+Finished jobid: 196 (Rule: simulate)
+254 of 301 steps (84%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:24 2025]
+localrule simulate:
+    output: results/76/corrupt0/original_matrix.png, results/76/corrupt0/flipped_matrix.png, results/76/corrupt0/simulate.out, results/76/corrupt0/simulate.err
+    jobid: 229
+    benchmark: results/76/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=76, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:29 2025]
+Finished jobid: 229 (Rule: simulate)
+255 of 301 steps (85%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:29 2025]
+localrule simulate:
+    output: results/38/corrupt0/original_matrix.png, results/38/corrupt0/flipped_matrix.png, results/38/corrupt0/simulate.out, results/38/corrupt0/simulate.err
+    jobid: 115
+    benchmark: results/38/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=38, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:34 2025]
+Finished jobid: 115 (Rule: simulate)
+256 of 301 steps (85%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:34 2025]
+localrule simulate:
+    output: results/33/corrupt0/original_matrix.png, results/33/corrupt0/flipped_matrix.png, results/33/corrupt0/simulate.out, results/33/corrupt0/simulate.err
+    jobid: 100
+    benchmark: results/33/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=33, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:39 2025]
+Finished jobid: 100 (Rule: simulate)
+257 of 301 steps (85%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:39 2025]
+localrule simulate:
+    output: results/46/corrupt0/original_matrix.png, results/46/corrupt0/flipped_matrix.png, results/46/corrupt0/simulate.out, results/46/corrupt0/simulate.err
+    jobid: 139
+    benchmark: results/46/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=46, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:44 2025]
+Finished jobid: 139 (Rule: simulate)
+258 of 301 steps (86%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:44 2025]
+localrule simulate:
+    output: results/36/corrupt0/original_matrix.png, results/36/corrupt0/flipped_matrix.png, results/36/corrupt0/simulate.out, results/36/corrupt0/simulate.err
+    jobid: 109
+    benchmark: results/36/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=36, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:48 2025]
+Finished jobid: 109 (Rule: simulate)
+259 of 301 steps (86%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:48 2025]
+localrule simulate:
+    output: results/64/corrupt0/original_matrix.png, results/64/corrupt0/flipped_matrix.png, results/64/corrupt0/simulate.out, results/64/corrupt0/simulate.err
+    jobid: 193
+    benchmark: results/64/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=64, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:53 2025]
+Finished jobid: 193 (Rule: simulate)
+260 of 301 steps (86%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:53 2025]
+localrule simulate:
+    output: results/10/corrupt0/original_matrix.png, results/10/corrupt0/flipped_matrix.png, results/10/corrupt0/simulate.out, results/10/corrupt0/simulate.err
+    jobid: 31
+    benchmark: results/10/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=10, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:56:58 2025]
+Finished jobid: 31 (Rule: simulate)
+261 of 301 steps (87%) done
+Execute 1 jobs...
+[Wed Sep 10 15:56:58 2025]
+localrule simulate:
+    output: results/28/corrupt0/original_matrix.png, results/28/corrupt0/flipped_matrix.png, results/28/corrupt0/simulate.out, results/28/corrupt0/simulate.err
+    jobid: 85
+    benchmark: results/28/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=28, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:03 2025]
+Finished jobid: 85 (Rule: simulate)
+262 of 301 steps (87%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:03 2025]
+localrule simulate:
+    output: results/6/corrupt50/original_matrix.png, results/6/corrupt50/flipped_matrix.png, results/6/corrupt50/simulate.out, results/6/corrupt50/simulate.err
+    jobid: 20
+    benchmark: results/6/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=6, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:09 2025]
+Finished jobid: 20 (Rule: simulate)
+263 of 301 steps (87%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:09 2025]
+localrule simulate:
+    output: results/1/corrupt0/original_matrix.png, results/1/corrupt0/flipped_matrix.png, results/1/corrupt0/simulate.out, results/1/corrupt0/simulate.err
+    jobid: 4
+    benchmark: results/1/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=1, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:14 2025]
+Finished jobid: 4 (Rule: simulate)
+264 of 301 steps (88%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:14 2025]
+localrule simulate:
+    output: results/48/corrupt0/original_matrix.png, results/48/corrupt0/flipped_matrix.png, results/48/corrupt0/simulate.out, results/48/corrupt0/simulate.err
+    jobid: 145
+    benchmark: results/48/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=48, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:19 2025]
+Finished jobid: 145 (Rule: simulate)
+265 of 301 steps (88%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:19 2025]
+localrule simulate:
+    output: results/84/corrupt0/original_matrix.png, results/84/corrupt0/flipped_matrix.png, results/84/corrupt0/simulate.out, results/84/corrupt0/simulate.err
+    jobid: 253
+    benchmark: results/84/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=84, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:23 2025]
+Finished jobid: 253 (Rule: simulate)
+266 of 301 steps (88%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:23 2025]
+localrule simulate:
+    output: results/75/corrupt0/original_matrix.png, results/75/corrupt0/flipped_matrix.png, results/75/corrupt0/simulate.out, results/75/corrupt0/simulate.err
+    jobid: 226
+    benchmark: results/75/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=75, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:28 2025]
+Finished jobid: 226 (Rule: simulate)
+267 of 301 steps (89%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:28 2025]
+localrule simulate:
+    output: results/57/corrupt0/original_matrix.png, results/57/corrupt0/flipped_matrix.png, results/57/corrupt0/simulate.out, results/57/corrupt0/simulate.err
+    jobid: 172
+    benchmark: results/57/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=57, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:33 2025]
+Finished jobid: 172 (Rule: simulate)
+268 of 301 steps (89%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:33 2025]
+localrule simulate:
+    output: results/32/corrupt50/original_matrix.png, results/32/corrupt50/flipped_matrix.png, results/32/corrupt50/simulate.out, results/32/corrupt50/simulate.err
+    jobid: 98
+    benchmark: results/32/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=32, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:40 2025]
+Finished jobid: 98 (Rule: simulate)
+269 of 301 steps (89%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:40 2025]
+localrule simulate:
+    output: results/15/corrupt50/original_matrix.png, results/15/corrupt50/flipped_matrix.png, results/15/corrupt50/simulate.out, results/15/corrupt50/simulate.err
+    jobid: 47
+    benchmark: results/15/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=15, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:49 2025]
+Finished jobid: 47 (Rule: simulate)
+270 of 301 steps (90%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:49 2025]
+localrule simulate:
+    output: results/33/corrupt50/original_matrix.png, results/33/corrupt50/flipped_matrix.png, results/33/corrupt50/simulate.out, results/33/corrupt50/simulate.err
+    jobid: 101
+    benchmark: results/33/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=33, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:57:56 2025]
+Finished jobid: 101 (Rule: simulate)
+271 of 301 steps (90%) done
+Execute 1 jobs...
+[Wed Sep 10 15:57:56 2025]
+localrule simulate:
+    output: results/30/corrupt0/original_matrix.png, results/30/corrupt0/flipped_matrix.png, results/30/corrupt0/simulate.out, results/30/corrupt0/simulate.err
+    jobid: 91
+    benchmark: results/30/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=30, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:01 2025]
+Finished jobid: 91 (Rule: simulate)
+272 of 301 steps (90%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:01 2025]
+localrule simulate:
+    output: results/86/corrupt50/original_matrix.png, results/86/corrupt50/flipped_matrix.png, results/86/corrupt50/simulate.out, results/86/corrupt50/simulate.err
+    jobid: 260
+    benchmark: results/86/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=86, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:09 2025]
+Finished jobid: 260 (Rule: simulate)
+273 of 301 steps (91%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:09 2025]
+localrule simulate:
+    output: results/16/corrupt50/original_matrix.png, results/16/corrupt50/flipped_matrix.png, results/16/corrupt50/simulate.out, results/16/corrupt50/simulate.err
+    jobid: 50
+    benchmark: results/16/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=16, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:15 2025]
+Finished jobid: 50 (Rule: simulate)
+274 of 301 steps (91%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:15 2025]
+localrule simulate:
+    output: results/70/corrupt50/original_matrix.png, results/70/corrupt50/flipped_matrix.png, results/70/corrupt50/simulate.out, results/70/corrupt50/simulate.err
+    jobid: 212
+    benchmark: results/70/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=70, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:23 2025]
+Finished jobid: 212 (Rule: simulate)
+275 of 301 steps (91%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:23 2025]
+localrule simulate:
+    output: results/2/corrupt50/original_matrix.png, results/2/corrupt50/flipped_matrix.png, results/2/corrupt50/simulate.out, results/2/corrupt50/simulate.err
+    jobid: 8
+    benchmark: results/2/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=2, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:30 2025]
+Finished jobid: 8 (Rule: simulate)
+276 of 301 steps (92%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:30 2025]
+localrule simulate:
+    output: results/82/corrupt50/original_matrix.png, results/82/corrupt50/flipped_matrix.png, results/82/corrupt50/simulate.out, results/82/corrupt50/simulate.err
+    jobid: 248
+    benchmark: results/82/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=82, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:37 2025]
+Finished jobid: 248 (Rule: simulate)
+277 of 301 steps (92%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:37 2025]
+localrule simulate:
+    output: results/12/corrupt50/original_matrix.png, results/12/corrupt50/flipped_matrix.png, results/12/corrupt50/simulate.out, results/12/corrupt50/simulate.err
+    jobid: 38
+    benchmark: results/12/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=12, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:44 2025]
+Finished jobid: 38 (Rule: simulate)
+278 of 301 steps (92%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:44 2025]
+localrule simulate:
+    output: results/68/corrupt50/original_matrix.png, results/68/corrupt50/flipped_matrix.png, results/68/corrupt50/simulate.out, results/68/corrupt50/simulate.err
+    jobid: 206
+    benchmark: results/68/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=68, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:50 2025]
+Finished jobid: 206 (Rule: simulate)
+279 of 301 steps (93%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:50 2025]
+localrule simulate:
+    output: results/22/corrupt50/original_matrix.png, results/22/corrupt50/flipped_matrix.png, results/22/corrupt50/simulate.out, results/22/corrupt50/simulate.err
+    jobid: 68
+    benchmark: results/22/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=22, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:58:57 2025]
+Finished jobid: 68 (Rule: simulate)
+280 of 301 steps (93%) done
+Execute 1 jobs...
+[Wed Sep 10 15:58:57 2025]
+localrule simulate:
+    output: results/4/corrupt50/original_matrix.png, results/4/corrupt50/flipped_matrix.png, results/4/corrupt50/simulate.out, results/4/corrupt50/simulate.err
+    jobid: 14
+    benchmark: results/4/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=4, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:05 2025]
+Finished jobid: 14 (Rule: simulate)
+281 of 301 steps (93%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:05 2025]
+localrule simulate:
+    output: results/42/corrupt50/original_matrix.png, results/42/corrupt50/flipped_matrix.png, results/42/corrupt50/simulate.out, results/42/corrupt50/simulate.err
+    jobid: 128
+    benchmark: results/42/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=42, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:12 2025]
+Finished jobid: 128 (Rule: simulate)
+282 of 301 steps (94%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:12 2025]
+localrule simulate:
+    output: results/0/corrupt0/original_matrix.png, results/0/corrupt0/flipped_matrix.png, results/0/corrupt0/simulate.out, results/0/corrupt0/simulate.err
+    jobid: 1
+    benchmark: results/0/corrupt0/benchmark.tsv
+    reason: Missing output files: results/0/corrupt0/flipped_matrix.png; Code has changed since last execution
+    wildcards: seed=0, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:17 2025]
+Finished jobid: 1 (Rule: simulate)
+283 of 301 steps (94%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:17 2025]
+localrule simulate:
+    output: results/24/corrupt50/original_matrix.png, results/24/corrupt50/flipped_matrix.png, results/24/corrupt50/simulate.out, results/24/corrupt50/simulate.err
+    jobid: 74
+    benchmark: results/24/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=24, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:23 2025]
+Finished jobid: 74 (Rule: simulate)
+284 of 301 steps (94%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:23 2025]
+localrule simulate:
+    output: results/96/corrupt50/original_matrix.png, results/96/corrupt50/flipped_matrix.png, results/96/corrupt50/simulate.out, results/96/corrupt50/simulate.err
+    jobid: 290
+    benchmark: results/96/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=96, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:31 2025]
+Finished jobid: 290 (Rule: simulate)
+285 of 301 steps (95%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:31 2025]
+localrule simulate:
+    output: results/75/corrupt50/original_matrix.png, results/75/corrupt50/flipped_matrix.png, results/75/corrupt50/simulate.out, results/75/corrupt50/simulate.err
+    jobid: 227
+    benchmark: results/75/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=75, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:37 2025]
+Finished jobid: 227 (Rule: simulate)
+286 of 301 steps (95%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:37 2025]
+localrule simulate:
+    output: results/99/corrupt50/original_matrix.png, results/99/corrupt50/flipped_matrix.png, results/99/corrupt50/simulate.out, results/99/corrupt50/simulate.err
+    jobid: 299
+    benchmark: results/99/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=99, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:43 2025]
+Finished jobid: 299 (Rule: simulate)
+287 of 301 steps (95%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:43 2025]
+localrule simulate:
+    output: results/69/corrupt50/original_matrix.png, results/69/corrupt50/flipped_matrix.png, results/69/corrupt50/simulate.out, results/69/corrupt50/simulate.err
+    jobid: 209
+    benchmark: results/69/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=69, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:50 2025]
+Finished jobid: 209 (Rule: simulate)
+288 of 301 steps (96%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:50 2025]
+localrule simulate:
+    output: results/72/corrupt0/original_matrix.png, results/72/corrupt0/flipped_matrix.png, results/72/corrupt0/simulate.out, results/72/corrupt0/simulate.err
+    jobid: 217
+    benchmark: results/72/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=72, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 15:59:55 2025]
+Finished jobid: 217 (Rule: simulate)
+289 of 301 steps (96%) done
+Execute 1 jobs...
+[Wed Sep 10 15:59:55 2025]
+localrule simulate:
+    output: results/84/corrupt50/original_matrix.png, results/84/corrupt50/flipped_matrix.png, results/84/corrupt50/simulate.out, results/84/corrupt50/simulate.err
+    jobid: 254
+    benchmark: results/84/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=84, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:01 2025]
+Finished jobid: 254 (Rule: simulate)
+290 of 301 steps (96%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:02 2025]
+localrule simulate:
+    output: results/92/corrupt0/original_matrix.png, results/92/corrupt0/flipped_matrix.png, results/92/corrupt0/simulate.out, results/92/corrupt0/simulate.err
+    jobid: 277
+    benchmark: results/92/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=92, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:06 2025]
+Finished jobid: 277 (Rule: simulate)
+291 of 301 steps (97%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:06 2025]
+localrule simulate:
+    output: results/9/corrupt50/original_matrix.png, results/9/corrupt50/flipped_matrix.png, results/9/corrupt50/simulate.out, results/9/corrupt50/simulate.err
+    jobid: 29
+    benchmark: results/9/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=9, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:12 2025]
+Finished jobid: 29 (Rule: simulate)
+292 of 301 steps (97%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:12 2025]
+localrule simulate:
+    output: results/78/corrupt50/original_matrix.png, results/78/corrupt50/flipped_matrix.png, results/78/corrupt50/simulate.out, results/78/corrupt50/simulate.err
+    jobid: 236
+    benchmark: results/78/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=78, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:19 2025]
+Finished jobid: 236 (Rule: simulate)
+293 of 301 steps (97%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:19 2025]
+localrule simulate:
+    output: results/93/corrupt50/original_matrix.png, results/93/corrupt50/flipped_matrix.png, results/93/corrupt50/simulate.out, results/93/corrupt50/simulate.err
+    jobid: 281
+    benchmark: results/93/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=93, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:25 2025]
+Finished jobid: 281 (Rule: simulate)
+294 of 301 steps (98%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:25 2025]
+localrule simulate:
+    output: results/60/corrupt50/original_matrix.png, results/60/corrupt50/flipped_matrix.png, results/60/corrupt50/simulate.out, results/60/corrupt50/simulate.err
+    jobid: 182
+    benchmark: results/60/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=60, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:31 2025]
+Finished jobid: 182 (Rule: simulate)
+295 of 301 steps (98%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:31 2025]
+localrule simulate:
+    output: results/94/corrupt50/original_matrix.png, results/94/corrupt50/flipped_matrix.png, results/94/corrupt50/simulate.out, results/94/corrupt50/simulate.err
+    jobid: 284
+    benchmark: results/94/corrupt50/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=94, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:38 2025]
+Finished jobid: 284 (Rule: simulate)
+296 of 301 steps (98%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:38 2025]
+localrule simulate:
+    output: results/13/corrupt0/original_matrix.png, results/13/corrupt0/flipped_matrix.png, results/13/corrupt0/simulate.out, results/13/corrupt0/simulate.err
+    jobid: 40
+    benchmark: results/13/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=13, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:43 2025]
+Finished jobid: 40 (Rule: simulate)
+297 of 301 steps (99%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:43 2025]
+localrule simulate:
+    output: results/55/corrupt0/original_matrix.png, results/55/corrupt0/flipped_matrix.png, results/55/corrupt0/simulate.out, results/55/corrupt0/simulate.err
+    jobid: 166
+    benchmark: results/55/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=55, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:48 2025]
+Finished jobid: 166 (Rule: simulate)
+298 of 301 steps (99%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:48 2025]
+localrule simulate:
+    output: results/47/corrupt0/original_matrix.png, results/47/corrupt0/flipped_matrix.png, results/47/corrupt0/simulate.out, results/47/corrupt0/simulate.err
+    jobid: 142
+    benchmark: results/47/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=47, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Wed Sep 10 16:00:52 2025]
+Finished jobid: 142 (Rule: simulate)
+299 of 301 steps (99%) done
+Execute 1 jobs...
+[Wed Sep 10 16:00:52 2025]
+localrule simulate:
+    output: results/73/corrupt0/original_matrix.png, results/73/corrupt0/flipped_matrix.png, results/73/corrupt0/simulate.out, results/73/corrupt0/simulate.err
+    jobid: 220
+    benchmark: results/73/corrupt0/benchmark.tsv
+    reason: Code has changed since last execution
+    wildcards: seed=73, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 10 16:00:57 2025]
+Finished jobid: 220 (Rule: simulate)
+300 of 301 steps (99.7%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 10 16:00:57 2025]
+localrule all:
+    input: results/0/corrupt0/flipped_matrix.png, results/0/corrupt50/flipped_matrix.png, results/0/corrupt100/flipped_matrix.png, results/1/corrupt0/flipped_matrix.png, results/1/corrupt50/flipped_matrix.png, results/1/corrupt100/flipped_matrix.png, results/2/corrupt0/flipped_matrix.png, results/2/corrupt50/flipped_matrix.png, results/2/corrupt100/flipped_matrix.png, results/3/corrupt0/flipped_matrix.png, results/3/corrupt50/flipped_matrix.png, results/3/corrupt100/flipped_matrix.png, results/4/corrupt0/flipped_matrix.png, results/4/corrupt50/flipped_matrix.png, results/4/corrupt100/flipped_matrix.png, results/5/corrupt0/flipped_matrix.png, results/5/corrupt50/flipped_matrix.png, results/5/corrupt100/flipped_matrix.png, results/6/corrupt0/flipped_matrix.png, results/6/corrupt50/flipped_matrix.png, results/6/corrupt100/flipped_matrix.png, results/7/corrupt0/flipped_matrix.png, results/7/corrupt50/flipped_matrix.png, results/7/corrupt100/flipped_matrix.png, results/8/corrupt0/flipped_matrix.png, results/8/corrupt50/flipped_matrix.png, results/8/corrupt100/flipped_matrix.png, results/9/corrupt0/flipped_matrix.png, results/9/corrupt50/flipped_matrix.png, results/9/corrupt100/flipped_matrix.png, results/10/corrupt0/flipped_matrix.png, results/10/corrupt50/flipped_matrix.png, results/10/corrupt100/flipped_matrix.png, results/11/corrupt0/flipped_matrix.png, results/11/corrupt50/flipped_matrix.png, results/11/corrupt100/flipped_matrix.png, results/12/corrupt0/flipped_matrix.png, results/12/corrupt50/flipped_matrix.png, results/12/corrupt100/flipped_matrix.png, results/13/corrupt0/flipped_matrix.png, results/13/corrupt50/flipped_matrix.png, results/13/corrupt100/flipped_matrix.png, results/14/corrupt0/flipped_matrix.png, results/14/corrupt50/flipped_matrix.png, results/14/corrupt100/flipped_matrix.png, results/15/corrupt0/flipped_matrix.png, results/15/corrupt50/flipped_matrix.png, results/15/corrupt100/flipped_matrix.png, results/16/corrupt0/flipped_matrix.png, results/16/corrupt50/flipped_matrix.png, results/16/corrupt100/flipped_matrix.png, results/17/corrupt0/flipped_matrix.png, results/17/corrupt50/flipped_matrix.png, results/17/corrupt100/flipped_matrix.png, results/18/corrupt0/flipped_matrix.png, results/18/corrupt50/flipped_matrix.png, results/18/corrupt100/flipped_matrix.png, results/19/corrupt0/flipped_matrix.png, results/19/corrupt50/flipped_matrix.png, results/19/corrupt100/flipped_matrix.png, results/20/corrupt0/flipped_matrix.png, results/20/corrupt50/flipped_matrix.png, results/20/corrupt100/flipped_matrix.png, results/21/corrupt0/flipped_matrix.png, results/21/corrupt50/flipped_matrix.png, results/21/corrupt100/flipped_matrix.png, results/22/corrupt0/flipped_matrix.png, results/22/corrupt50/flipped_matrix.png, results/22/corrupt100/flipped_matrix.png, results/23/corrupt0/flipped_matrix.png, results/23/corrupt50/flipped_matrix.png, results/23/corrupt100/flipped_matrix.png, results/24/corrupt0/flipped_matrix.png, results/24/corrupt50/flipped_matrix.png, results/24/corrupt100/flipped_matrix.png, results/25/corrupt0/flipped_matrix.png, results/25/corrupt50/flipped_matrix.png, results/25/corrupt100/flipped_matrix.png, results/26/corrupt0/flipped_matrix.png, results/26/corrupt50/flipped_matrix.png, results/26/corrupt100/flipped_matrix.png, results/27/corrupt0/flipped_matrix.png, results/27/corrupt50/flipped_matrix.png, results/27/corrupt100/flipped_matrix.png, results/28/corrupt0/flipped_matrix.png, results/28/corrupt50/flipped_matrix.png, results/28/corrupt100/flipped_matrix.png, results/29/corrupt0/flipped_matrix.png, results/29/corrupt50/flipped_matrix.png, results/29/corrupt100/flipped_matrix.png, results/30/corrupt0/flipped_matrix.png, results/30/corrupt50/flipped_matrix.png, results/30/corrupt100/flipped_matrix.png, results/31/corrupt0/flipped_matrix.png, results/31/corrupt50/flipped_matrix.png, results/31/corrupt100/flipped_matrix.png, results/32/corrupt0/flipped_matrix.png, results/32/corrupt50/flipped_matrix.png, results/32/corrupt100/flipped_matrix.png, results/33/corrupt0/flipped_matrix.png, results/33/corrupt50/flipped_matrix.png, results/33/corrupt100/flipped_matrix.png, results/34/corrupt0/flipped_matrix.png, results/34/corrupt50/flipped_matrix.png, results/34/corrupt100/flipped_matrix.png, results/35/corrupt0/flipped_matrix.png, results/35/corrupt50/flipped_matrix.png, results/35/corrupt100/flipped_matrix.png, results/36/corrupt0/flipped_matrix.png, results/36/corrupt50/flipped_matrix.png, results/36/corrupt100/flipped_matrix.png, results/37/corrupt0/flipped_matrix.png, results/37/corrupt50/flipped_matrix.png, results/37/corrupt100/flipped_matrix.png, results/38/corrupt0/flipped_matrix.png, results/38/corrupt50/flipped_matrix.png, results/38/corrupt100/flipped_matrix.png, results/39/corrupt0/flipped_matrix.png, results/39/corrupt50/flipped_matrix.png, results/39/corrupt100/flipped_matrix.png, results/40/corrupt0/flipped_matrix.png, results/40/corrupt50/flipped_matrix.png, results/40/corrupt100/flipped_matrix.png, results/41/corrupt0/flipped_matrix.png, results/41/corrupt50/flipped_matrix.png, results/41/corrupt100/flipped_matrix.png, results/42/corrupt0/flipped_matrix.png, results/42/corrupt50/flipped_matrix.png, results/42/corrupt100/flipped_matrix.png, results/43/corrupt0/flipped_matrix.png, results/43/corrupt50/flipped_matrix.png, results/43/corrupt100/flipped_matrix.png, results/44/corrupt0/flipped_matrix.png, results/44/corrupt50/flipped_matrix.png, results/44/corrupt100/flipped_matrix.png, results/45/corrupt0/flipped_matrix.png, results/45/corrupt50/flipped_matrix.png, results/45/corrupt100/flipped_matrix.png, results/46/corrupt0/flipped_matrix.png, results/46/corrupt50/flipped_matrix.png, results/46/corrupt100/flipped_matrix.png, results/47/corrupt0/flipped_matrix.png, results/47/corrupt50/flipped_matrix.png, results/47/corrupt100/flipped_matrix.png, results/48/corrupt0/flipped_matrix.png, results/48/corrupt50/flipped_matrix.png, results/48/corrupt100/flipped_matrix.png, results/49/corrupt0/flipped_matrix.png, results/49/corrupt50/flipped_matrix.png, results/49/corrupt100/flipped_matrix.png, results/50/corrupt0/flipped_matrix.png, results/50/corrupt50/flipped_matrix.png, results/50/corrupt100/flipped_matrix.png, results/51/corrupt0/flipped_matrix.png, results/51/corrupt50/flipped_matrix.png, results/51/corrupt100/flipped_matrix.png, results/52/corrupt0/flipped_matrix.png, results/52/corrupt50/flipped_matrix.png, results/52/corrupt100/flipped_matrix.png, results/53/corrupt0/flipped_matrix.png, results/53/corrupt50/flipped_matrix.png, results/53/corrupt100/flipped_matrix.png, results/54/corrupt0/flipped_matrix.png, results/54/corrupt50/flipped_matrix.png, results/54/corrupt100/flipped_matrix.png, results/55/corrupt0/flipped_matrix.png, results/55/corrupt50/flipped_matrix.png, results/55/corrupt100/flipped_matrix.png, results/56/corrupt0/flipped_matrix.png, results/56/corrupt50/flipped_matrix.png, results/56/corrupt100/flipped_matrix.png, results/57/corrupt0/flipped_matrix.png, results/57/corrupt50/flipped_matrix.png, results/57/corrupt100/flipped_matrix.png, results/58/corrupt0/flipped_matrix.png, results/58/corrupt50/flipped_matrix.png, results/58/corrupt100/flipped_matrix.png, results/59/corrupt0/flipped_matrix.png, results/59/corrupt50/flipped_matrix.png, results/59/corrupt100/flipped_matrix.png, results/60/corrupt0/flipped_matrix.png, results/60/corrupt50/flipped_matrix.png, results/60/corrupt100/flipped_matrix.png, results/61/corrupt0/flipped_matrix.png, results/61/corrupt50/flipped_matrix.png, results/61/corrupt100/flipped_matrix.png, results/62/corrupt0/flipped_matrix.png, results/62/corrupt50/flipped_matrix.png, results/62/corrupt100/flipped_matrix.png, results/63/corrupt0/flipped_matrix.png, results/63/corrupt50/flipped_matrix.png, results/63/corrupt100/flipped_matrix.png, results/64/corrupt0/flipped_matrix.png, results/64/corrupt50/flipped_matrix.png, results/64/corrupt100/flipped_matrix.png, results/65/corrupt0/flipped_matrix.png, results/65/corrupt50/flipped_matrix.png, results/65/corrupt100/flipped_matrix.png, results/66/corrupt0/flipped_matrix.png, results/66/corrupt50/flipped_matrix.png, results/66/corrupt100/flipped_matrix.png, results/67/corrupt0/flipped_matrix.png, results/67/corrupt50/flipped_matrix.png, results/67/corrupt100/flipped_matrix.png, results/68/corrupt0/flipped_matrix.png, results/68/corrupt50/flipped_matrix.png, results/68/corrupt100/flipped_matrix.png, results/69/corrupt0/flipped_matrix.png, results/69/corrupt50/flipped_matrix.png, results/69/corrupt100/flipped_matrix.png, results/70/corrupt0/flipped_matrix.png, results/70/corrupt50/flipped_matrix.png, results/70/corrupt100/flipped_matrix.png, results/71/corrupt0/flipped_matrix.png, results/71/corrupt50/flipped_matrix.png, results/71/corrupt100/flipped_matrix.png, results/72/corrupt0/flipped_matrix.png, results/72/corrupt50/flipped_matrix.png, results/72/corrupt100/flipped_matrix.png, results/73/corrupt0/flipped_matrix.png, results/73/corrupt50/flipped_matrix.png, results/73/corrupt100/flipped_matrix.png, results/74/corrupt0/flipped_matrix.png, results/74/corrupt50/flipped_matrix.png, results/74/corrupt100/flipped_matrix.png, results/75/corrupt0/flipped_matrix.png, results/75/corrupt50/flipped_matrix.png, results/75/corrupt100/flipped_matrix.png, results/76/corrupt0/flipped_matrix.png, results/76/corrupt50/flipped_matrix.png, results/76/corrupt100/flipped_matrix.png, results/77/corrupt0/flipped_matrix.png, results/77/corrupt50/flipped_matrix.png, results/77/corrupt100/flipped_matrix.png, results/78/corrupt0/flipped_matrix.png, results/78/corrupt50/flipped_matrix.png, results/78/corrupt100/flipped_matrix.png, results/79/corrupt0/flipped_matrix.png, results/79/corrupt50/flipped_matrix.png, results/79/corrupt100/flipped_matrix.png, results/80/corrupt0/flipped_matrix.png, results/80/corrupt50/flipped_matrix.png, results/80/corrupt100/flipped_matrix.png, results/81/corrupt0/flipped_matrix.png, results/81/corrupt50/flipped_matrix.png, results/81/corrupt100/flipped_matrix.png, results/82/corrupt0/flipped_matrix.png, results/82/corrupt50/flipped_matrix.png, results/82/corrupt100/flipped_matrix.png, results/83/corrupt0/flipped_matrix.png, results/83/corrupt50/flipped_matrix.png, results/83/corrupt100/flipped_matrix.png, results/84/corrupt0/flipped_matrix.png, results/84/corrupt50/flipped_matrix.png, results/84/corrupt100/flipped_matrix.png, results/85/corrupt0/flipped_matrix.png, results/85/corrupt50/flipped_matrix.png, results/85/corrupt100/flipped_matrix.png, results/86/corrupt0/flipped_matrix.png, results/86/corrupt50/flipped_matrix.png, results/86/corrupt100/flipped_matrix.png, results/87/corrupt0/flipped_matrix.png, results/87/corrupt50/flipped_matrix.png, results/87/corrupt100/flipped_matrix.png, results/88/corrupt0/flipped_matrix.png, results/88/corrupt50/flipped_matrix.png, results/88/corrupt100/flipped_matrix.png, results/89/corrupt0/flipped_matrix.png, results/89/corrupt50/flipped_matrix.png, results/89/corrupt100/flipped_matrix.png, results/90/corrupt0/flipped_matrix.png, results/90/corrupt50/flipped_matrix.png, results/90/corrupt100/flipped_matrix.png, results/91/corrupt0/flipped_matrix.png, results/91/corrupt50/flipped_matrix.png, results/91/corrupt100/flipped_matrix.png, results/92/corrupt0/flipped_matrix.png, results/92/corrupt50/flipped_matrix.png, results/92/corrupt100/flipped_matrix.png, results/93/corrupt0/flipped_matrix.png, results/93/corrupt50/flipped_matrix.png, results/93/corrupt100/flipped_matrix.png, results/94/corrupt0/flipped_matrix.png, results/94/corrupt50/flipped_matrix.png, results/94/corrupt100/flipped_matrix.png, results/95/corrupt0/flipped_matrix.png, results/95/corrupt50/flipped_matrix.png, results/95/corrupt100/flipped_matrix.png, results/96/corrupt0/flipped_matrix.png, results/96/corrupt50/flipped_matrix.png, results/96/corrupt100/flipped_matrix.png, results/97/corrupt0/flipped_matrix.png, results/97/corrupt50/flipped_matrix.png, results/97/corrupt100/flipped_matrix.png, results/98/corrupt0/flipped_matrix.png, results/98/corrupt50/flipped_matrix.png, results/98/corrupt100/flipped_matrix.png, results/99/corrupt0/flipped_matrix.png, results/99/corrupt50/flipped_matrix.png, results/99/corrupt100/flipped_matrix.png
+    jobid: 0
+    reason: Input files updated by another job: results/95/corrupt50/flipped_matrix.png, results/66/corrupt50/flipped_matrix.png, results/38/corrupt0/flipped_matrix.png, results/47/corrupt50/flipped_matrix.png, results/61/corrupt0/flipped_matrix.png, results/76/corrupt0/flipped_matrix.png, results/33/corrupt50/flipped_matrix.png, results/10/corrupt100/flipped_matrix.png, results/19/corrupt50/flipped_matrix.png, results/78/corrupt0/flipped_matrix.png, results/77/corrupt100/flipped_matrix.png, results/47/corrupt100/flipped_matrix.png, results/34/corrupt0/flipped_matrix.png, results/43/corrupt0/flipped_matrix.png, results/45/corrupt100/flipped_matrix.png, results/56/corrupt0/flipped_matrix.png, results/94/corrupt50/flipped_matrix.png, results/44/corrupt50/flipped_matrix.png, results/75/corrupt50/flipped_matrix.png, results/18/corrupt50/flipped_matrix.png, results/40/corrupt100/flipped_matrix.png, results/65/corrupt100/flipped_matrix.png, results/64/corrupt0/flipped_matrix.png, results/98/corrupt100/flipped_matrix.png, results/44/corrupt100/flipped_matrix.png, results/55/corrupt100/flipped_matrix.png, results/8/corrupt0/flipped_matrix.png, results/39/corrupt50/flipped_matrix.png, results/45/corrupt50/flipped_matrix.png, results/4/corrupt100/flipped_matrix.png, results/95/corrupt0/flipped_matrix.png, results/38/corrupt100/flipped_matrix.png, results/53/corrupt0/flipped_matrix.png, results/39/corrupt0/flipped_matrix.png, results/49/corrupt0/flipped_matrix.png, results/3/corrupt0/flipped_matrix.png, results/2/corrupt0/flipped_matrix.png, results/90/corrupt50/flipped_matrix.png, results/30/corrupt50/flipped_matrix.png, results/69/corrupt0/flipped_matrix.png, results/85/corrupt100/flipped_matrix.png, results/59/corrupt100/flipped_matrix.png, results/78/corrupt50/flipped_matrix.png, results/89/corrupt0/flipped_matrix.png, results/60/corrupt100/flipped_matrix.png, results/61/corrupt100/flipped_matrix.png, results/79/corrupt50/flipped_matrix.png, results/95/corrupt100/flipped_matrix.png, results/63/corrupt50/flipped_matrix.png, results/20/corrupt100/flipped_matrix.png, results/50/corrupt50/flipped_matrix.png, results/34/corrupt100/flipped_matrix.png, results/20/corrupt50/flipped_matrix.png, results/36/corrupt50/flipped_matrix.png, results/15/corrupt100/flipped_matrix.png, results/23/corrupt0/flipped_matrix.png, results/98/corrupt0/flipped_matrix.png, results/11/corrupt50/flipped_matrix.png, results/84/corrupt100/flipped_matrix.png, results/91/corrupt0/flipped_matrix.png, results/55/corrupt50/flipped_matrix.png, results/70/corrupt0/flipped_matrix.png, results/35/corrupt0/flipped_matrix.png, results/33/corrupt100/flipped_matrix.png, results/46/corrupt100/flipped_matrix.png, results/18/corrupt0/flipped_matrix.png, results/86/corrupt100/flipped_matrix.png, results/62/corrupt100/flipped_matrix.png, results/10/corrupt50/flipped_matrix.png, results/12/corrupt100/flipped_matrix.png, results/23/corrupt50/flipped_matrix.png, results/45/corrupt0/flipped_matrix.png, results/92/corrupt50/flipped_matrix.png, results/69/corrupt100/flipped_matrix.png, results/87/corrupt100/flipped_matrix.png, results/27/corrupt100/flipped_matrix.png, results/97/corrupt100/flipped_matrix.png, results/42/corrupt0/flipped_matrix.png, results/23/corrupt100/flipped_matrix.png, results/25/corrupt0/flipped_matrix.png, results/28/corrupt0/flipped_matrix.png, results/93/corrupt0/flipped_matrix.png, results/85/corrupt50/flipped_matrix.png, results/74/corrupt0/flipped_matrix.png, results/88/corrupt100/flipped_matrix.png, results/1/corrupt50/flipped_matrix.png, results/3/corrupt100/flipped_matrix.png, results/54/corrupt50/flipped_matrix.png, results/1/corrupt0/flipped_matrix.png, results/39/corrupt100/flipped_matrix.png, results/85/corrupt0/flipped_matrix.png, results/94/corrupt0/flipped_matrix.png, results/17/corrupt0/flipped_matrix.png, results/75/corrupt0/flipped_matrix.png, results/60/corrupt0/flipped_matrix.png, results/32/corrupt50/flipped_matrix.png, results/84/corrupt0/flipped_matrix.png, results/52/corrupt50/flipped_matrix.png, results/29/corrupt100/flipped_matrix.png, results/56/corrupt100/flipped_matrix.png, results/92/corrupt0/flipped_matrix.png, results/82/corrupt50/flipped_matrix.png, results/72/corrupt0/flipped_matrix.png, results/71/corrupt100/flipped_matrix.png, results/69/corrupt50/flipped_matrix.png, results/86/corrupt0/flipped_matrix.png, results/75/corrupt100/flipped_matrix.png, results/62/corrupt0/flipped_matrix.png, results/52/corrupt0/flipped_matrix.png, results/11/corrupt0/flipped_matrix.png, results/12/corrupt50/flipped_matrix.png, results/89/corrupt100/flipped_matrix.png, results/15/corrupt50/flipped_matrix.png, results/7/corrupt50/flipped_matrix.png, results/77/corrupt0/flipped_matrix.png, results/21/corrupt50/flipped_matrix.png, results/47/corrupt0/flipped_matrix.png, results/4/corrupt0/flipped_matrix.png, results/54/corrupt0/flipped_matrix.png, results/21/corrupt100/flipped_matrix.png, results/16/corrupt50/flipped_matrix.png, results/14/corrupt0/flipped_matrix.png, results/70/corrupt50/flipped_matrix.png, results/43/corrupt50/flipped_matrix.png, results/9/corrupt100/flipped_matrix.png, results/41/corrupt50/flipped_matrix.png, results/43/corrupt100/flipped_matrix.png, results/9/corrupt50/flipped_matrix.png, results/64/corrupt50/flipped_matrix.png, results/26/corrupt0/flipped_matrix.png, results/13/corrupt50/flipped_matrix.png, results/48/corrupt100/flipped_matrix.png, results/2/corrupt100/flipped_matrix.png, results/37/corrupt50/flipped_matrix.png, results/97/corrupt0/flipped_matrix.png, results/93/corrupt100/flipped_matrix.png, results/42/corrupt50/flipped_matrix.png, results/31/corrupt0/flipped_matrix.png, results/68/corrupt50/flipped_matrix.png, results/9/corrupt0/flipped_matrix.png, results/17/corrupt100/flipped_matrix.png, results/2/corrupt50/flipped_matrix.png, results/57/corrupt0/flipped_matrix.png, results/29/corrupt0/flipped_matrix.png, results/58/corrupt50/flipped_matrix.png, results/6/corrupt100/flipped_matrix.png, results/14/corrupt100/flipped_matrix.png, results/32/corrupt0/flipped_matrix.png, results/91/corrupt100/flipped_matrix.png, results/28/corrupt100/flipped_matrix.png, results/71/corrupt50/flipped_matrix.png, results/8/corrupt100/flipped_matrix.png, results/83/corrupt50/flipped_matrix.png, results/41/corrupt0/flipped_matrix.png, results/77/corrupt50/flipped_matrix.png, results/7/corrupt0/flipped_matrix.png, results/0/corrupt100/flipped_matrix.png, results/99/corrupt0/flipped_matrix.png, results/64/corrupt100/flipped_matrix.png, results/53/corrupt100/flipped_matrix.png, results/17/corrupt50/flipped_matrix.png, results/72/corrupt50/flipped_matrix.png, results/53/corrupt50/flipped_matrix.png, results/5/corrupt100/flipped_matrix.png, results/66/corrupt100/flipped_matrix.png, results/10/corrupt0/flipped_matrix.png, results/5/corrupt50/flipped_matrix.png, results/0/corrupt50/flipped_matrix.png, results/25/corrupt100/flipped_matrix.png, results/80/corrupt50/flipped_matrix.png, results/44/corrupt0/flipped_matrix.png, results/87/corrupt50/flipped_matrix.png, results/14/corrupt50/flipped_matrix.png, results/54/corrupt100/flipped_matrix.png, results/65/corrupt50/flipped_matrix.png, results/40/corrupt50/flipped_matrix.png, results/36/corrupt0/flipped_matrix.png, results/30/corrupt0/flipped_matrix.png, results/21/corrupt0/flipped_matrix.png, results/88/corrupt50/flipped_matrix.png, results/73/corrupt100/flipped_matrix.png, results/31/corrupt100/flipped_matrix.png, results/27/corrupt50/flipped_matrix.png, results/6/corrupt50/flipped_matrix.png, results/90/corrupt100/flipped_matrix.png, results/80/corrupt100/flipped_matrix.png, results/67/corrupt100/flipped_matrix.png, results/8/corrupt50/flipped_matrix.png, results/73/corrupt50/flipped_matrix.png, results/96/corrupt100/flipped_matrix.png, results/13/corrupt100/flipped_matrix.png, results/6/corrupt0/flipped_matrix.png, results/59/corrupt50/flipped_matrix.png, results/57/corrupt100/flipped_matrix.png, results/13/corrupt0/flipped_matrix.png, results/32/corrupt100/flipped_matrix.png, results/61/corrupt50/flipped_matrix.png, results/36/corrupt100/flipped_matrix.png, results/15/corrupt0/flipped_matrix.png, results/81/corrupt100/flipped_matrix.png, results/83/corrupt100/flipped_matrix.png, results/91/corrupt50/flipped_matrix.png, results/71/corrupt0/flipped_matrix.png, results/24/corrupt50/flipped_matrix.png, results/68/corrupt100/flipped_matrix.png, results/76/corrupt100/flipped_matrix.png, results/26/corrupt50/flipped_matrix.png, results/22/corrupt100/flipped_matrix.png, results/83/corrupt0/flipped_matrix.png, results/12/corrupt0/flipped_matrix.png, results/19/corrupt0/flipped_matrix.png, results/38/corrupt50/flipped_matrix.png, results/31/corrupt50/flipped_matrix.png, results/58/corrupt0/flipped_matrix.png, results/0/corrupt0/flipped_matrix.png, results/49/corrupt50/flipped_matrix.png, results/67/corrupt0/flipped_matrix.png, results/74/corrupt50/flipped_matrix.png, results/99/corrupt50/flipped_matrix.png, results/5/corrupt0/flipped_matrix.png, results/74/corrupt100/flipped_matrix.png, results/34/corrupt50/flipped_matrix.png, results/51/corrupt100/flipped_matrix.png, results/16/corrupt0/flipped_matrix.png, results/19/corrupt100/flipped_matrix.png, results/63/corrupt0/flipped_matrix.png, results/94/corrupt100/flipped_matrix.png, results/4/corrupt50/flipped_matrix.png, results/72/corrupt100/flipped_matrix.png, results/96/corrupt0/flipped_matrix.png, results/50/corrupt0/flipped_matrix.png, results/27/corrupt0/flipped_matrix.png, results/81/corrupt50/flipped_matrix.png, results/68/corrupt0/flipped_matrix.png, results/79/corrupt100/flipped_matrix.png, results/51/corrupt0/flipped_matrix.png, results/98/corrupt50/flipped_matrix.png, results/20/corrupt0/flipped_matrix.png, results/35/corrupt50/flipped_matrix.png, results/37/corrupt0/flipped_matrix.png, results/78/corrupt100/flipped_matrix.png, results/82/corrupt100/flipped_matrix.png, results/80/corrupt0/flipped_matrix.png, results/89/corrupt50/flipped_matrix.png, results/96/corrupt50/flipped_matrix.png, results/46/corrupt0/flipped_matrix.png, results/70/corrupt100/flipped_matrix.png, results/59/corrupt0/flipped_matrix.png, results/97/corrupt50/flipped_matrix.png, results/76/corrupt50/flipped_matrix.png, results/66/corrupt0/flipped_matrix.png, results/56/corrupt50/flipped_matrix.png, results/24/corrupt100/flipped_matrix.png, results/51/corrupt50/flipped_matrix.png, results/65/corrupt0/flipped_matrix.png, results/26/corrupt100/flipped_matrix.png, results/87/corrupt0/flipped_matrix.png, results/35/corrupt100/flipped_matrix.png, results/90/corrupt0/flipped_matrix.png, results/28/corrupt50/flipped_matrix.png, results/93/corrupt50/flipped_matrix.png, results/46/corrupt50/flipped_matrix.png, results/81/corrupt0/flipped_matrix.png, results/73/corrupt0/flipped_matrix.png, results/60/corrupt50/flipped_matrix.png, results/37/corrupt100/flipped_matrix.png, results/57/corrupt50/flipped_matrix.png, results/79/corrupt0/flipped_matrix.png, results/88/corrupt0/flipped_matrix.png, results/29/corrupt50/flipped_matrix.png, results/18/corrupt100/flipped_matrix.png, results/41/corrupt100/flipped_matrix.png, results/33/corrupt0/flipped_matrix.png, results/62/corrupt50/flipped_matrix.png, results/48/corrupt0/flipped_matrix.png, results/55/corrupt0/flipped_matrix.png, results/1/corrupt100/flipped_matrix.png, results/99/corrupt100/flipped_matrix.png, results/40/corrupt0/flipped_matrix.png, results/67/corrupt50/flipped_matrix.png, results/63/corrupt100/flipped_matrix.png, results/42/corrupt100/flipped_matrix.png, results/92/corrupt100/flipped_matrix.png, results/11/corrupt100/flipped_matrix.png, results/25/corrupt50/flipped_matrix.png, results/84/corrupt50/flipped_matrix.png, results/24/corrupt0/flipped_matrix.png, results/49/corrupt100/flipped_matrix.png, results/7/corrupt100/flipped_matrix.png, results/30/corrupt100/flipped_matrix.png, results/3/corrupt50/flipped_matrix.png, results/50/corrupt100/flipped_matrix.png, results/52/corrupt100/flipped_matrix.png, results/58/corrupt100/flipped_matrix.png, results/48/corrupt50/flipped_matrix.png, results/22/corrupt0/flipped_matrix.png, results/22/corrupt50/flipped_matrix.png, results/16/corrupt100/flipped_matrix.png, results/86/corrupt50/flipped_matrix.png, results/82/corrupt0/flipped_matrix.png
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep 10 16:00:57 2025]
+Finished jobid: 0 (Rule: all)
+301 of 301 steps (100%) done
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-10T153022.301441.snakemake.log

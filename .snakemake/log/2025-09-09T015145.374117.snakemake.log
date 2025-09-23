@@ -1,0 +1,441 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate      300
+total         301
+
+Select jobs to execute...
+Execute 10 jobs...
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/1/corrupt100/original_matrix.png, results/1/corrupt100/flipped_matrix.png, results/1/corrupt100/simulate.out, results/1/corrupt100/simulate.err, results/1/corrupt100/benchmark.tsv
+    jobid: 6
+    reason: Missing output files: results/1/corrupt100/flipped_matrix.png
+    wildcards: seed=1, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/22/corrupt100/original_matrix.png, results/22/corrupt100/flipped_matrix.png, results/22/corrupt100/simulate.out, results/22/corrupt100/simulate.err, results/22/corrupt100/benchmark.tsv
+    jobid: 69
+    reason: Missing output files: results/22/corrupt100/flipped_matrix.png
+    wildcards: seed=22, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/81/corrupt0/original_matrix.png, results/81/corrupt0/flipped_matrix.png, results/81/corrupt0/simulate.out, results/81/corrupt0/simulate.err, results/81/corrupt0/benchmark.tsv
+    jobid: 244
+    reason: Missing output files: results/81/corrupt0/flipped_matrix.png
+    wildcards: seed=81, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/1/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 1                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/1/corrupt100                 > results/1/corrupt100/simulate.out 2> results/1/corrupt100/simulate.err
+        } 2> results/1/corrupt100/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 6
+    output: results/1/corrupt100/original_matrix.png, results/1/corrupt100/flipped_matrix.png, results/1/corrupt100/simulate.out, results/1/corrupt100/simulate.err, results/1/corrupt100/benchmark.tsv
+    shell:
+        
+        mkdir -p results/1/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 1                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/1/corrupt100                 > results/1/corrupt100/simulate.out 2> results/1/corrupt100/simulate.err
+        } 2> results/1/corrupt100/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/22/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 22                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/22/corrupt100                 > results/22/corrupt100/simulate.out 2> results/22/corrupt100/simulate.err
+        } 2> results/22/corrupt100/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 69
+    output: results/22/corrupt100/original_matrix.png, results/22/corrupt100/flipped_matrix.png, results/22/corrupt100/simulate.out, results/22/corrupt100/simulate.err, results/22/corrupt100/benchmark.tsv
+    shell:
+        
+        mkdir -p results/22/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 22                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/22/corrupt100                 > results/22/corrupt100/simulate.out 2> results/22/corrupt100/simulate.err
+        } 2> results/22/corrupt100/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/11/corrupt0/original_matrix.png, results/11/corrupt0/flipped_matrix.png, results/11/corrupt0/simulate.out, results/11/corrupt0/simulate.err, results/11/corrupt0/benchmark.tsv
+    jobid: 34
+    reason: Missing output files: results/11/corrupt0/flipped_matrix.png
+    wildcards: seed=11, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/81/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 81                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/81/corrupt0                 > results/81/corrupt0/simulate.out 2> results/81/corrupt0/simulate.err
+        } 2> results/81/corrupt0/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 244
+    output: results/81/corrupt0/original_matrix.png, results/81/corrupt0/flipped_matrix.png, results/81/corrupt0/simulate.out, results/81/corrupt0/simulate.err, results/81/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/81/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 81                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/81/corrupt0                 > results/81/corrupt0/simulate.out 2> results/81/corrupt0/simulate.err
+        } 2> results/81/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/42/corrupt50/original_matrix.png, results/42/corrupt50/flipped_matrix.png, results/42/corrupt50/simulate.out, results/42/corrupt50/simulate.err, results/42/corrupt50/benchmark.tsv
+    jobid: 128
+    reason: Missing output files: results/42/corrupt50/flipped_matrix.png
+    wildcards: seed=42, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/11/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 11                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/11/corrupt0                 > results/11/corrupt0/simulate.out 2> results/11/corrupt0/simulate.err
+        } 2> results/11/corrupt0/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 34
+    output: results/11/corrupt0/original_matrix.png, results/11/corrupt0/flipped_matrix.png, results/11/corrupt0/simulate.out, results/11/corrupt0/simulate.err, results/11/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/11/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 11                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/11/corrupt0                 > results/11/corrupt0/simulate.out 2> results/11/corrupt0/simulate.err
+        } 2> results/11/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/12/corrupt0/original_matrix.png, results/12/corrupt0/flipped_matrix.png, results/12/corrupt0/simulate.out, results/12/corrupt0/simulate.err, results/12/corrupt0/benchmark.tsv
+    jobid: 37
+    reason: Missing output files: results/12/corrupt0/flipped_matrix.png
+    wildcards: seed=12, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/42/corrupt50
+        {
+            /usr/bin/time -v python simulation.py                 --seed 42                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --outdir results/42/corrupt50                 > results/42/corrupt50/simulate.out 2> results/42/corrupt50/simulate.err
+        } 2> results/42/corrupt50/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 128
+    output: results/42/corrupt50/original_matrix.png, results/42/corrupt50/flipped_matrix.png, results/42/corrupt50/simulate.out, results/42/corrupt50/simulate.err, results/42/corrupt50/benchmark.tsv
+    shell:
+        
+        mkdir -p results/42/corrupt50
+        {
+            /usr/bin/time -v python simulation.py                 --seed 42                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --outdir results/42/corrupt50                 > results/42/corrupt50/simulate.out 2> results/42/corrupt50/simulate.err
+        } 2> results/42/corrupt50/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/83/corrupt0/original_matrix.png, results/83/corrupt0/flipped_matrix.png, results/83/corrupt0/simulate.out, results/83/corrupt0/simulate.err, results/83/corrupt0/benchmark.tsv
+    jobid: 250
+    reason: Missing output files: results/83/corrupt0/flipped_matrix.png
+    wildcards: seed=83, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/12/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 12                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/12/corrupt0                 > results/12/corrupt0/simulate.out 2> results/12/corrupt0/simulate.err
+        } 2> results/12/corrupt0/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 37
+    output: results/12/corrupt0/original_matrix.png, results/12/corrupt0/flipped_matrix.png, results/12/corrupt0/simulate.out, results/12/corrupt0/simulate.err, results/12/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/12/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 12                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/12/corrupt0                 > results/12/corrupt0/simulate.out 2> results/12/corrupt0/simulate.err
+        } 2> results/12/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/84/corrupt0/original_matrix.png, results/84/corrupt0/flipped_matrix.png, results/84/corrupt0/simulate.out, results/84/corrupt0/simulate.err, results/84/corrupt0/benchmark.tsv
+    jobid: 253
+    reason: Missing output files: results/84/corrupt0/flipped_matrix.png
+    wildcards: seed=84, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/83/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 83                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/83/corrupt0                 > results/83/corrupt0/simulate.out 2> results/83/corrupt0/simulate.err
+        } 2> results/83/corrupt0/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 250
+    output: results/83/corrupt0/original_matrix.png, results/83/corrupt0/flipped_matrix.png, results/83/corrupt0/simulate.out, results/83/corrupt0/simulate.err, results/83/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/83/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 83                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/83/corrupt0                 > results/83/corrupt0/simulate.out 2> results/83/corrupt0/simulate.err
+        } 2> results/83/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/34/corrupt100/original_matrix.png, results/34/corrupt100/flipped_matrix.png, results/34/corrupt100/simulate.out, results/34/corrupt100/simulate.err, results/34/corrupt100/benchmark.tsv
+    jobid: 105
+    reason: Missing output files: results/34/corrupt100/flipped_matrix.png
+    wildcards: seed=34, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/84/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 84                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/84/corrupt0                 > results/84/corrupt0/simulate.out 2> results/84/corrupt0/simulate.err
+        } 2> results/84/corrupt0/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 253
+    output: results/84/corrupt0/original_matrix.png, results/84/corrupt0/flipped_matrix.png, results/84/corrupt0/simulate.out, results/84/corrupt0/simulate.err, results/84/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/84/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 84                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/84/corrupt0                 > results/84/corrupt0/simulate.out 2> results/84/corrupt0/simulate.err
+        } 2> results/84/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+localrule simulate:
+    output: results/27/corrupt50/original_matrix.png, results/27/corrupt50/flipped_matrix.png, results/27/corrupt50/simulate.out, results/27/corrupt50/simulate.err, results/27/corrupt50/benchmark.tsv
+    jobid: 83
+    reason: Missing output files: results/27/corrupt50/flipped_matrix.png
+    wildcards: seed=27, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/34/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 34                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/34/corrupt100                 > results/34/corrupt100/simulate.out 2> results/34/corrupt100/simulate.err
+        } 2> results/34/corrupt100/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 105
+    output: results/34/corrupt100/original_matrix.png, results/34/corrupt100/flipped_matrix.png, results/34/corrupt100/simulate.out, results/34/corrupt100/simulate.err, results/34/corrupt100/benchmark.tsv
+    shell:
+        
+        mkdir -p results/34/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 34                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/34/corrupt100                 > results/34/corrupt100/simulate.out 2> results/34/corrupt100/simulate.err
+        } 2> results/34/corrupt100/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job simulate since they might be corrupted:
+results/1/corrupt100/simulate.out, results/1/corrupt100/simulate.err, results/1/corrupt100/benchmark.tsv
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 22:
+Command 'set -euo pipefail;  
+        mkdir -p results/27/corrupt50
+        {
+            /usr/bin/time -v python simulation.py                 --seed 27                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --outdir results/27/corrupt50                 > results/27/corrupt50/simulate.out 2> results/27/corrupt50/simulate.err
+        } 2> results/27/corrupt50/benchmark.tsv' returned non-zero exit status 1.
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 83
+    output: results/27/corrupt50/original_matrix.png, results/27/corrupt50/flipped_matrix.png, results/27/corrupt50/simulate.out, results/27/corrupt50/simulate.err, results/27/corrupt50/benchmark.tsv
+    shell:
+        
+        mkdir -p results/27/corrupt50
+        {
+            /usr/bin/time -v python simulation.py                 --seed 27                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --outdir results/27/corrupt50                 > results/27/corrupt50/simulate.out 2> results/27/corrupt50/simulate.err
+        } 2> results/27/corrupt50/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job simulate since they might be corrupted:
+results/22/corrupt100/simulate.out, results/22/corrupt100/simulate.err, results/22/corrupt100/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/81/corrupt0/simulate.out, results/81/corrupt0/simulate.err, results/81/corrupt0/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/11/corrupt0/simulate.out, results/11/corrupt0/simulate.err, results/11/corrupt0/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/42/corrupt50/simulate.out, results/42/corrupt50/simulate.err, results/42/corrupt50/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/12/corrupt0/simulate.out, results/12/corrupt0/simulate.err, results/12/corrupt0/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/83/corrupt0/simulate.out, results/83/corrupt0/simulate.err, results/83/corrupt0/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/84/corrupt0/simulate.out, results/84/corrupt0/simulate.err, results/84/corrupt0/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/34/corrupt100/simulate.out, results/34/corrupt100/simulate.err, results/34/corrupt100/benchmark.tsv
+Removing output files of failed job simulate since they might be corrupted:
+results/27/corrupt50/simulate.out, results/27/corrupt50/simulate.err, results/27/corrupt50/benchmark.tsv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 244
+    output: results/81/corrupt0/original_matrix.png, results/81/corrupt0/flipped_matrix.png, results/81/corrupt0/simulate.out, results/81/corrupt0/simulate.err, results/81/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/81/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 81                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/81/corrupt0                 > results/81/corrupt0/simulate.out 2> results/81/corrupt0/simulate.err
+        } 2> results/81/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 34
+    output: results/11/corrupt0/original_matrix.png, results/11/corrupt0/flipped_matrix.png, results/11/corrupt0/simulate.out, results/11/corrupt0/simulate.err, results/11/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/11/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 11                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/11/corrupt0                 > results/11/corrupt0/simulate.out 2> results/11/corrupt0/simulate.err
+        } 2> results/11/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 250
+    output: results/83/corrupt0/original_matrix.png, results/83/corrupt0/flipped_matrix.png, results/83/corrupt0/simulate.out, results/83/corrupt0/simulate.err, results/83/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/83/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 83                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/83/corrupt0                 > results/83/corrupt0/simulate.out 2> results/83/corrupt0/simulate.err
+        } 2> results/83/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 128
+    output: results/42/corrupt50/original_matrix.png, results/42/corrupt50/flipped_matrix.png, results/42/corrupt50/simulate.out, results/42/corrupt50/simulate.err, results/42/corrupt50/benchmark.tsv
+    shell:
+        
+        mkdir -p results/42/corrupt50
+        {
+            /usr/bin/time -v python simulation.py                 --seed 42                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --outdir results/42/corrupt50                 > results/42/corrupt50/simulate.out 2> results/42/corrupt50/simulate.err
+        } 2> results/42/corrupt50/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 83
+    output: results/27/corrupt50/original_matrix.png, results/27/corrupt50/flipped_matrix.png, results/27/corrupt50/simulate.out, results/27/corrupt50/simulate.err, results/27/corrupt50/benchmark.tsv
+    shell:
+        
+        mkdir -p results/27/corrupt50
+        {
+            /usr/bin/time -v python simulation.py                 --seed 27                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --outdir results/27/corrupt50                 > results/27/corrupt50/simulate.out 2> results/27/corrupt50/simulate.err
+        } 2> results/27/corrupt50/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 253
+    output: results/84/corrupt0/original_matrix.png, results/84/corrupt0/flipped_matrix.png, results/84/corrupt0/simulate.out, results/84/corrupt0/simulate.err, results/84/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/84/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 84                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/84/corrupt0                 > results/84/corrupt0/simulate.out 2> results/84/corrupt0/simulate.err
+        } 2> results/84/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 6
+    output: results/1/corrupt100/original_matrix.png, results/1/corrupt100/flipped_matrix.png, results/1/corrupt100/simulate.out, results/1/corrupt100/simulate.err, results/1/corrupt100/benchmark.tsv
+    shell:
+        
+        mkdir -p results/1/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 1                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/1/corrupt100                 > results/1/corrupt100/simulate.out 2> results/1/corrupt100/simulate.err
+        } 2> results/1/corrupt100/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 69
+    output: results/22/corrupt100/original_matrix.png, results/22/corrupt100/flipped_matrix.png, results/22/corrupt100/simulate.out, results/22/corrupt100/simulate.err, results/22/corrupt100/benchmark.tsv
+    shell:
+        
+        mkdir -p results/22/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 22                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/22/corrupt100                 > results/22/corrupt100/simulate.out 2> results/22/corrupt100/simulate.err
+        } 2> results/22/corrupt100/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 105
+    output: results/34/corrupt100/original_matrix.png, results/34/corrupt100/flipped_matrix.png, results/34/corrupt100/simulate.out, results/34/corrupt100/simulate.err, results/34/corrupt100/benchmark.tsv
+    shell:
+        
+        mkdir -p results/34/corrupt100
+        {
+            /usr/bin/time -v python simulation.py                 --seed 34                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --outdir results/34/corrupt100                 > results/34/corrupt100/simulate.out 2> results/34/corrupt100/simulate.err
+        } 2> results/34/corrupt100/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+[Tue Sep  9 01:51:45 2025]
+Error in rule simulate:
+    message: None
+    jobid: 37
+    output: results/12/corrupt0/original_matrix.png, results/12/corrupt0/flipped_matrix.png, results/12/corrupt0/simulate.out, results/12/corrupt0/simulate.err, results/12/corrupt0/benchmark.tsv
+    shell:
+        
+        mkdir -p results/12/corrupt0
+        {
+            /usr/bin/time -v python simulation.py                 --seed 12                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 0                 --outdir results/12/corrupt0                 > results/12/corrupt0/simulate.out 2> results/12/corrupt0/simulate.err
+        } 2> results/12/corrupt0/benchmark.tsv
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-09T015145.374117.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

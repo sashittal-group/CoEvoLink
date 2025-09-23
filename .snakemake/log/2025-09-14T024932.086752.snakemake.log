@@ -1,0 +1,47 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+braga_pipeline       135
+braga_simulator      135
+total                271
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Sep 14 02:49:32 2025]
+localrule braga_simulator:
+    output: results/119/sim119-b4-c1.nex, results/119/sim119-b4-c1.settings.txt
+    jobid: 1324
+    reason: Missing output files: results/119/sim119-b4-c1.nex, results/119/sim119-b4-c1.settings.txt
+    wildcards: seed=119, beta=4, clock=1
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Waiting at most 5 seconds for missing files:
+results/119/sim119-b4-c1.nex (missing locally)
+results/119/sim119-b4-c1.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/braga_data/Snakefile", line 57:
+Job 1324  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/119/sim119-b4-c1.nex (missing locally, parent dir contents: braga_119_b1_c0.5.log, braga_119_b4_c1.log, corrupt100, corrupt10, braga_119_b4_c0.5.log, corrupt50)
+results/119/sim119-b4-c1.settings.txt (missing locally, parent dir contents: braga_119_b1_c0.5.log, braga_119_b4_c1.log, corrupt100, corrupt10, braga_119_b4_c0.5.log, corrupt50)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Sep 14 02:49:38 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1324
+    output: results/119/sim119-b4-c1.nex, results/119/sim119-b4-c1.settings.txt
+    shell:
+        
+        mkdir -p results/119
+        rb Simulate.Rev             --args 119 4 1             > results/119/braga_119_b4_c1.log 2>&1
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-14T024932.086752.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

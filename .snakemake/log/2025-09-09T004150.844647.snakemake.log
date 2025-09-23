@@ -1,0 +1,41 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+simulate_network        1
+total                   2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 00:41:50 2025]
+localrule simulate_network:
+    input: angio_25tips_origin.phy, Nymphalini.phy
+    output: results/86/corrupt100/original_matrix.png, results/86/corrupt100/corrupted.png, results/86/corrupt100/flipped_matrix.png
+    log: logs/simulate_86_corrupt100.out, logs/simulate_86_corrupt100.err
+    jobid: 1
+    benchmark: benchmarks/simulate_86_corrupt100.txt
+    reason: Missing output files: results/86/corrupt100/flipped_matrix.png
+    wildcards: seed=86, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 00:41:58 2025]
+Finished jobid: 1 (Rule: simulate_network)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 00:41:58 2025]
+localrule all:
+    input: results/86/corrupt100/flipped_matrix.png
+    jobid: 0
+    reason: Input files updated by another job: results/86/corrupt100/flipped_matrix.png
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 00:41:58 2025]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-09T004150.844647.snakemake.log

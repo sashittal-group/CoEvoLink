@@ -1,0 +1,60 @@
+Matrix saved as results/braga/9/b0_c1/original_matrix.png
+Matrix saved as results/braga/9/b0_c1/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=12
+[iter 2] λ=0.8750 → flips=735
+[iter 3] λ=0.8125 → flips=24
+[iter 4] λ=0.8438 → flips=31
+[iter 5] λ=0.8594 → flips=240
+[iter 6] λ=0.8516 → flips=239
+[iter 7] λ=0.8477 → flips=239
+[iter 8] λ=0.8457 → flips=239
+[iter 9] λ=0.8447 → flips=31
+[iter 10] λ=0.8452 → flips=31
+[iter 11] λ=0.8455 → flips=31
+[iter 12] λ=0.8456 → flips=239
+[iter 13] λ=0.8455 → flips=31
+[iter 14] λ=0.8456 → flips=31
+[iter 15] λ=0.8456 → flips=31
+[iter 16] λ=0.8456 → flips=31
+[iter 17] λ=0.8456 → flips=31
+[iter 18] λ=0.8456 → flips=31
+[iter 19] λ=0.8456 → flips=31
+
+Best λ=0.8438 → flips=31, correct=18/49
+Number of flips performed: 31
+Cell (Hypanartia_lethe,Cannabaceae): 0 -> 1
+Cell (Hypanartia_bella,Ceratophyllaceae): 0 -> 1
+Cell (Vanessa_itea,Urticaceae): 0 -> 1
+Cell (Vanessa_hippomene,Urticaceae): 0 -> 1
+Cell (Vanessa_dimorphica,Urticaceae): 0 -> 1
+Cell (Vanessa_kershawi,Urticaceae): 0 -> 1
+Cell (Vanessa_cardui,Ceratophyllaceae): 0 -> 1
+Cell (Vanessa_cardui,Urticaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Cannabaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Urticaceae): 0 -> 1
+Cell (Vanessa_atalanta,Urticaceae): 0 -> 1
+Cell (Antanartia_delius,Cannabaceae): 0 -> 1
+Cell (Antanartia_delius,Urticaceae): 0 -> 1
+Cell (Aglais_milberti,Ceratophyllaceae): 0 -> 1
+Cell (Aglais_milberti,Cannabaceae): 0 -> 1
+Cell (Aglais_milberti,Urticaceae): 0 -> 1
+Cell (Aglais_urticae,Urticaceae): 0 -> 1
+Cell (Kaniska_canace,Cannabaceae): 0 -> 1
+Cell (Nymphalis_l_album,Urticaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Cannabaceae): 0 -> 1
+Cell (Nymphalis_californica,Ceratophyllaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Urticaceae): 0 -> 1
+Cell (Polygonia_egea,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_egea,Betulaceae): 0 -> 1
+Cell (Polygonia_c_album,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_satyrus,Urticaceae): 0 -> 1
+Cell (Polygonia_satyrus,Betulaceae): 0 -> 1
+Cell (Polygonia_oreas,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_oreas,Urticaceae): 0 -> 1
+Cell (Polygonia_oreas,Betulaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Urticaceae): 0 -> 1
+Matrix saved as results/braga/9/b0_c1/flipped_matrix.png
+Metrics: {'precision': 0.5806451612903226, 'recall': 0.3673469387755102, 'f1': 0.45, 'TP': 18, 'FP': 13, 'FN': 31}
+[Elbow detection] λ ≈ 0.872 (cutoff=0.860)
+Elbow Metrics: {'precision': 0.06666666666666667, 'recall': 1.0, 'f1': 0.125, 'TP': 49, 'FP': 686, 'FN': 0}

@@ -1,0 +1,35 @@
+Matrix saved as ml_parsimony_matrices/seed141_ratio1.4886.png
+Matrix saved as results/141/corrupt100/r010.6_r100.5/original_matrix.png
+Matrix saved as results/141/corrupt100/r010.6_r100.5/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=0
+[iter 2] λ=0.8750 → flips=0
+[iter 3] λ=0.9375 → flips=5
+[iter 4] λ=0.9688 → flips=828
+[iter 5] λ=0.9531 → flips=5
+[iter 6] λ=0.9609 → flips=5
+[iter 7] λ=0.9648 → flips=828
+[iter 8] λ=0.9629 → flips=828
+[iter 9] λ=0.9619 → flips=828
+[iter 10] λ=0.9614 → flips=828
+[iter 11] λ=0.9612 → flips=828
+[iter 12] λ=0.9611 → flips=828
+[iter 13] λ=0.9610 → flips=5
+[iter 14] λ=0.9610 → flips=828
+[iter 15] λ=0.9610 → flips=5
+[iter 16] λ=0.9610 → flips=5
+[iter 17] λ=0.9610 → flips=5
+[iter 18] λ=0.9610 → flips=828
+[iter 19] λ=0.9610 → flips=828
+
+Best λ=0.9375 → flips=5, correct=4/100
+Number of flips performed: 5
+Cell (Hypanartia_lethe,Acoraceae): 0 -> 1
+Cell (Hypanartia_lethe,Ericaceae): 0 -> 1
+Cell (Hypanartia_lethe,Asteraceae): 0 -> 1
+Cell (Hypanartia_bella,Asteraceae): 0 -> 1
+Cell (Hypanartia_bella,Plantaginaceae): 0 -> 1
+Matrix saved as results/141/corrupt100/r010.6_r100.5/flipped_matrix.png
+Metrics: {'precision': 0.8, 'recall': 0.04, 'f1': 0.07619047619047618, 'TP': 4, 'FP': 1, 'FN': 96}
+[Elbow detection] λ ≈ 0.965 (cutoff=0.954)
+Elbow Metrics: {'precision': 0.12077294685990338, 'recall': 1.0, 'f1': 0.21551724137931033, 'TP': 100, 'FP': 728, 'FN': 0}

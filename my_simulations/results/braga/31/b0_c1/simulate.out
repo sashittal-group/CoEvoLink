@@ -1,0 +1,39 @@
+Matrix saved as results/braga/31/b0_c1/original_matrix.png
+Matrix saved as results/braga/31/b0_c1/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=7
+[iter 2] λ=0.8750 → flips=735
+[iter 3] λ=0.8125 → flips=9
+[iter 4] λ=0.8438 → flips=735
+[iter 5] λ=0.8281 → flips=10
+[iter 6] λ=0.8359 → flips=735
+[iter 7] λ=0.8320 → flips=735
+[iter 8] λ=0.8301 → flips=735
+[iter 9] λ=0.8291 → flips=735
+[iter 10] λ=0.8286 → flips=10
+[iter 11] λ=0.8289 → flips=735
+[iter 12] λ=0.8287 → flips=735
+[iter 13] λ=0.8287 → flips=735
+[iter 14] λ=0.8286 → flips=735
+[iter 15] λ=0.8286 → flips=10
+[iter 16] λ=0.8286 → flips=10
+[iter 17] λ=0.8286 → flips=735
+[iter 18] λ=0.8286 → flips=735
+[iter 19] λ=0.8286 → flips=10
+
+Best λ=0.8281 → flips=10, correct=7/298
+Number of flips performed: 10
+Cell (Vanessa_kershawi,Acoraceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Typhaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Siparunaceae): 0 -> 1
+Cell (Polygonia_faunus,Amborellaceae): 0 -> 1
+Cell (Polygonia_c_album,Smilacaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Amborellaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_comma,Urticaceae): 0 -> 1
+Cell (Polygonia_oreas,Amborellaceae): 0 -> 1
+Cell (Polygonia_gracilis,Amborellaceae): 0 -> 1
+Matrix saved as results/braga/31/b0_c1/flipped_matrix.png
+Metrics: {'precision': 0.7, 'recall': 0.02348993288590604, 'f1': 0.045454545454545456, 'TP': 7, 'FP': 3, 'FN': 291}
+[Elbow detection] λ ≈ 0.834 (cutoff=0.823)
+Elbow Metrics: {'precision': 0.4054421768707483, 'recall': 1.0, 'f1': 0.5769603097773475, 'TP': 298, 'FP': 437, 'FN': 0}

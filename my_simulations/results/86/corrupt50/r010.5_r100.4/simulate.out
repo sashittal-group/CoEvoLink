@@ -1,0 +1,69 @@
+Matrix saved as ml_parsimony_matrices/seed86_ratio1.1428.png
+Matrix saved as results/86/corrupt50/r010.5_r100.4/original_matrix.png
+Matrix saved as results/86/corrupt50/r010.5_r100.4/corrupted.png
+[iter 0] λ=0.5000 → flips=37
+[iter 1] λ=0.7500 → flips=63
+[iter 2] λ=0.6250 → flips=57
+[iter 3] λ=0.5625 → flips=40
+[iter 4] λ=0.5938 → flips=57
+[iter 5] λ=0.5781 → flips=44
+[iter 6] λ=0.5859 → flips=52
+[iter 7] λ=0.5820 → flips=51
+[iter 8] λ=0.5801 → flips=50
+
+Best λ=0.5801 → flips=50, correct=36/50
+Number of flips performed: 50
+Cell (Nymphalis_l_album,Fabaceae): 0 -> 1
+Cell (Nymphalis_l_album,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Rosaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Urticaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Salicaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Malvaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Ericaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Asteraceae): 0 -> 1
+Cell (Nymphalis_californica,Rosaceae): 0 -> 1
+Cell (Nymphalis_californica,Betulaceae): 0 -> 1
+Cell (Nymphalis_californica,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_californica,Asteraceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Nymphaeaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Cannabaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Urticaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Betulaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Salicaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Ericaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Asteraceae): 0 -> 1
+Cell (Nymphalis_antiopa,Chloranthaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Betulaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Salicaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Malvaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Boraginaceae): 0 -> 1
+Cell (Polygonia_oreas,Smilacaceae): 0 -> 1
+Cell (Polygonia_oreas,Rhamnaceae): 0 -> 1
+Cell (Polygonia_oreas,Malvaceae): 0 -> 1
+Cell (Polygonia_oreas,Asteraceae): 0 -> 1
+Cell (Polygonia_progne,Potamogetonaceae): 0 -> 1
+Cell (Polygonia_progne,Salicaceae): 0 -> 1
+Cell (Polygonia_progne,Boraginaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Nymphaeaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Chloranthaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Potamogetonaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Rhamnaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Ulmaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Cannabaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Betulaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Malvaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Ericaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Boraginaceae): 0 -> 1
+Cell (Polygonia_gracilis,Schisandraceae): 0 -> 1
+Cell (Polygonia_gracilis,Aristolochiaceae): 0 -> 1
+Cell (Polygonia_gracilis,Ulmaceae): 0 -> 1
+Cell (Polygonia_gracilis,Cannabaceae): 0 -> 1
+Cell (Polygonia_gracilis,Urticaceae): 0 -> 1
+Matrix saved as results/86/corrupt50/r010.5_r100.4/flipped_matrix.png
+Metrics: {'precision': 0.72, 'recall': 0.72, 'f1': 0.72, 'TP': 36, 'FP': 14, 'FN': 14}
+[Elbow detection] λ ≈ 0.597 (cutoff=0.575)
+Elbow Metrics: {'precision': 0.7192982456140351, 'recall': 0.82, 'f1': 0.7663551401869159, 'TP': 41, 'FP': 16, 'FN': 9}

@@ -1,0 +1,73 @@
+Matrix saved as results/braga/108/b4_c0.5/original_matrix.png
+Matrix saved as results/braga/108/b4_c0.5/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=11
+[iter 2] λ=0.8750 → flips=771
+[iter 3] λ=0.8125 → flips=11
+[iter 4] λ=0.8438 → flips=32
+[iter 5] λ=0.8594 → flips=44
+[iter 6] λ=0.8672 → flips=771
+[iter 7] λ=0.8633 → flips=771
+[iter 8] λ=0.8613 → flips=771
+[iter 9] λ=0.8604 → flips=771
+[iter 10] λ=0.8599 → flips=771
+[iter 11] λ=0.8596 → flips=44
+[iter 12] λ=0.8597 → flips=771
+[iter 13] λ=0.8597 → flips=771
+[iter 14] λ=0.8596 → flips=771
+[iter 15] λ=0.8596 → flips=44
+[iter 16] λ=0.8596 → flips=771
+[iter 17] λ=0.8596 → flips=771
+[iter 18] λ=0.8596 → flips=771
+[iter 19] λ=0.8596 → flips=44
+
+Best λ=0.8594 → flips=44, correct=7/141
+Number of flips performed: 44
+Cell (Polygonia_faunus,Rosaceae): 0 -> 1
+Cell (Polygonia_faunus,Rhamnaceae): 0 -> 1
+Cell (Polygonia_faunus,Ulmaceae): 0 -> 1
+Cell (Polygonia_faunus,Cannabaceae): 0 -> 1
+Cell (Polygonia_faunus,Urticaceae): 0 -> 1
+Cell (Polygonia_faunus,Betulaceae): 0 -> 1
+Cell (Polygonia_c_album,Rosaceae): 0 -> 1
+Cell (Polygonia_c_album,Rhamnaceae): 0 -> 1
+Cell (Polygonia_c_album,Ulmaceae): 0 -> 1
+Cell (Polygonia_c_album,Cannabaceae): 0 -> 1
+Cell (Polygonia_c_album,Urticaceae): 0 -> 1
+Cell (Polygonia_c_album,Betulaceae): 0 -> 1
+Cell (Polygonia_satyrus,Fabaceae): 0 -> 1
+Cell (Polygonia_satyrus,Ulmaceae): 0 -> 1
+Cell (Polygonia_satyrus,Cannabaceae): 0 -> 1
+Cell (Polygonia_satyrus,Urticaceae): 0 -> 1
+Cell (Polygonia_satyrus,Betulaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Fabaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Rhamnaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Ulmaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Cannabaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Urticaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Betulaceae): 0 -> 1
+Cell (Polygonia_comma,Ulmaceae): 0 -> 1
+Cell (Polygonia_comma,Cannabaceae): 0 -> 1
+Cell (Polygonia_comma,Urticaceae): 0 -> 1
+Cell (Polygonia_comma,Betulaceae): 0 -> 1
+Cell (Polygonia_oreas,Fabaceae): 0 -> 1
+Cell (Polygonia_oreas,Ulmaceae): 0 -> 1
+Cell (Polygonia_oreas,Cannabaceae): 0 -> 1
+Cell (Polygonia_oreas,Urticaceae): 0 -> 1
+Cell (Polygonia_oreas,Betulaceae): 0 -> 1
+Cell (Polygonia_progne,Ulmaceae): 0 -> 1
+Cell (Polygonia_progne,Cannabaceae): 0 -> 1
+Cell (Polygonia_progne,Urticaceae): 0 -> 1
+Cell (Polygonia_progne,Betulaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Ulmaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Cannabaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Urticaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Betulaceae): 0 -> 1
+Cell (Polygonia_gracilis,Ulmaceae): 0 -> 1
+Cell (Polygonia_gracilis,Cannabaceae): 0 -> 1
+Cell (Polygonia_gracilis,Urticaceae): 0 -> 1
+Cell (Polygonia_gracilis,Betulaceae): 0 -> 1
+Matrix saved as results/braga/108/b4_c0.5/flipped_matrix.png
+Metrics: {'precision': 0.1590909090909091, 'recall': 0.04964539007092199, 'f1': 0.07567567567567568, 'TP': 7, 'FP': 37, 'FN': 134}
+[Elbow detection] λ ≈ 0.865 (cutoff=0.854)
+Elbow Metrics: {'precision': 0.1828793774319066, 'recall': 1.0, 'f1': 0.30921052631578944, 'TP': 141, 'FP': 630, 'FN': 0}

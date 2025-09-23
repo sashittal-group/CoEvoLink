@@ -1,0 +1,4162 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate      297
+total         298
+
+Select jobs to execute...
+Execute 10 jobs...
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/21/corrupt100/original_matrix.png, results/21/corrupt100/flipped_matrix.png
+    log: logs/21_corrupt100.out, logs/21_corrupt100.err
+    jobid: 66
+    benchmark: benchmarks/21_corrupt100.tsv
+    reason: Missing output files: results/21/corrupt100/flipped_matrix.png
+    wildcards: seed=21, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/87/corrupt0/original_matrix.png, results/87/corrupt0/flipped_matrix.png
+    log: logs/87_corrupt0.out, logs/87_corrupt0.err
+    jobid: 262
+    benchmark: benchmarks/87_corrupt0.tsv
+    reason: Missing output files: results/87/corrupt0/flipped_matrix.png
+    wildcards: seed=87, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/13/corrupt50/original_matrix.png, results/13/corrupt50/flipped_matrix.png
+    log: logs/13_corrupt50.out, logs/13_corrupt50.err
+    jobid: 41
+    benchmark: benchmarks/13_corrupt50.tsv
+    reason: Missing output files: results/13/corrupt50/flipped_matrix.png
+    wildcards: seed=13, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/67/corrupt50/original_matrix.png, results/67/corrupt50/flipped_matrix.png
+    log: logs/67_corrupt50.out, logs/67_corrupt50.err
+    jobid: 203
+    benchmark: benchmarks/67_corrupt50.tsv
+    reason: Missing output files: results/67/corrupt50/flipped_matrix.png
+    wildcards: seed=67, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/85/corrupt50/original_matrix.png, results/85/corrupt50/flipped_matrix.png
+    log: logs/85_corrupt50.out, logs/85_corrupt50.err
+    jobid: 257
+    benchmark: benchmarks/85_corrupt50.tsv
+    reason: Missing output files: results/85/corrupt50/flipped_matrix.png
+    wildcards: seed=85, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/88/corrupt100/original_matrix.png, results/88/corrupt100/flipped_matrix.png
+    log: logs/88_corrupt100.out, logs/88_corrupt100.err
+    jobid: 267
+    benchmark: benchmarks/88_corrupt100.tsv
+    reason: Missing output files: results/88/corrupt100/flipped_matrix.png
+    wildcards: seed=88, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/3/corrupt50/original_matrix.png, results/3/corrupt50/flipped_matrix.png
+    log: logs/3_corrupt50.out, logs/3_corrupt50.err
+    jobid: 11
+    benchmark: benchmarks/3_corrupt50.tsv
+    reason: Missing output files: results/3/corrupt50/flipped_matrix.png
+    wildcards: seed=3, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/8/corrupt100/original_matrix.png, results/8/corrupt100/flipped_matrix.png
+    log: logs/8_corrupt100.out, logs/8_corrupt100.err
+    jobid: 27
+    benchmark: benchmarks/8_corrupt100.tsv
+    reason: Missing output files: results/8/corrupt100/flipped_matrix.png
+    wildcards: seed=8, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/4/corrupt50/original_matrix.png, results/4/corrupt50/flipped_matrix.png
+    log: logs/4_corrupt50.out, logs/4_corrupt50.err
+    jobid: 14
+    benchmark: benchmarks/4_corrupt50.tsv
+    reason: Missing output files: results/4/corrupt50/flipped_matrix.png
+    wildcards: seed=4, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:38 2025]
+localrule simulate:
+    output: results/82/corrupt100/original_matrix.png, results/82/corrupt100/flipped_matrix.png
+    log: logs/82_corrupt100.out, logs/82_corrupt100.err
+    jobid: 249
+    benchmark: benchmarks/82_corrupt100.tsv
+    reason: Missing output files: results/82/corrupt100/flipped_matrix.png
+    wildcards: seed=82, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:18:49 2025]
+Finished jobid: 262 (Rule: simulate)
+1 of 298 steps (0.3%) done
+Execute 1 jobs...
+[Tue Sep  9 01:18:49 2025]
+localrule simulate:
+    output: results/49/corrupt0/original_matrix.png, results/49/corrupt0/flipped_matrix.png
+    log: logs/49_corrupt0.out, logs/49_corrupt0.err
+    jobid: 148
+    benchmark: benchmarks/49_corrupt0.tsv
+    reason: Missing output files: results/49/corrupt0/flipped_matrix.png
+    wildcards: seed=49, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:18:52 2025]
+Finished jobid: 267 (Rule: simulate)
+2 of 298 steps (1%) done
+Execute 1 jobs...
+[Tue Sep  9 01:18:52 2025]
+localrule simulate:
+    output: results/31/corrupt0/original_matrix.png, results/31/corrupt0/flipped_matrix.png
+    log: logs/31_corrupt0.out, logs/31_corrupt0.err
+    jobid: 94
+    benchmark: benchmarks/31_corrupt0.tsv
+    reason: Missing output files: results/31/corrupt0/flipped_matrix.png
+    wildcards: seed=31, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:18:53 2025]
+Finished jobid: 41 (Rule: simulate)
+3 of 298 steps (1%) done
+Execute 1 jobs...
+[Tue Sep  9 01:18:53 2025]
+localrule simulate:
+    output: results/80/corrupt50/original_matrix.png, results/80/corrupt50/flipped_matrix.png
+    log: logs/80_corrupt50.out, logs/80_corrupt50.err
+    jobid: 242
+    benchmark: benchmarks/80_corrupt50.tsv
+    reason: Missing output files: results/80/corrupt50/flipped_matrix.png
+    wildcards: seed=80, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:53 2025]
+Finished jobid: 66 (Rule: simulate)
+4 of 298 steps (1%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:18:53 2025]
+localrule simulate:
+    output: results/62/corrupt50/original_matrix.png, results/62/corrupt50/flipped_matrix.png
+    log: logs/62_corrupt50.out, logs/62_corrupt50.err
+    jobid: 188
+    benchmark: benchmarks/62_corrupt50.tsv
+    reason: Missing output files: results/62/corrupt50/flipped_matrix.png
+    wildcards: seed=62, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:53 2025]
+Finished jobid: 257 (Rule: simulate)
+5 of 298 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:18:53 2025]
+localrule simulate:
+    output: results/93/corrupt0/original_matrix.png, results/93/corrupt0/flipped_matrix.png
+    log: logs/93_corrupt0.out, logs/93_corrupt0.err
+    jobid: 280
+    benchmark: benchmarks/93_corrupt0.tsv
+    reason: Missing output files: results/93/corrupt0/flipped_matrix.png
+    wildcards: seed=93, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:18:55 2025]
+Finished jobid: 203 (Rule: simulate)
+6 of 298 steps (2%) done
+Execute 1 jobs...
+[Tue Sep  9 01:18:55 2025]
+localrule simulate:
+    output: results/44/corrupt50/original_matrix.png, results/44/corrupt50/flipped_matrix.png
+    log: logs/44_corrupt50.out, logs/44_corrupt50.err
+    jobid: 134
+    benchmark: benchmarks/44_corrupt50.tsv
+    reason: Missing output files: results/44/corrupt50/flipped_matrix.png
+    wildcards: seed=44, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:55 2025]
+Finished jobid: 27 (Rule: simulate)
+7 of 298 steps (2%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:18:55 2025]
+localrule simulate:
+    output: results/98/corrupt50/original_matrix.png, results/98/corrupt50/flipped_matrix.png
+    log: logs/98_corrupt50.out, logs/98_corrupt50.err
+    jobid: 296
+    benchmark: benchmarks/98_corrupt50.tsv
+    reason: Missing output files: results/98/corrupt50/flipped_matrix.png
+    wildcards: seed=98, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:55 2025]
+Finished jobid: 249 (Rule: simulate)
+8 of 298 steps (3%) done
+[Tue Sep  9 01:18:55 2025]
+Finished jobid: 11 (Rule: simulate)
+9 of 298 steps (3%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Sep  9 01:18:55 2025]
+localrule simulate:
+    output: results/57/corrupt100/original_matrix.png, results/57/corrupt100/flipped_matrix.png
+    log: logs/57_corrupt100.out, logs/57_corrupt100.err
+    jobid: 174
+    benchmark: benchmarks/57_corrupt100.tsv
+    reason: Missing output files: results/57/corrupt100/flipped_matrix.png
+    wildcards: seed=57, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:18:55 2025]
+localrule simulate:
+    output: results/20/corrupt100/original_matrix.png, results/20/corrupt100/flipped_matrix.png
+    log: logs/20_corrupt100.out, logs/20_corrupt100.err
+    jobid: 63
+    benchmark: benchmarks/20_corrupt100.tsv
+    reason: Missing output files: results/20/corrupt100/flipped_matrix.png
+    wildcards: seed=20, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:18:56 2025]
+Finished jobid: 14 (Rule: simulate)
+10 of 298 steps (3%) done
+Execute 1 jobs...
+[Tue Sep  9 01:18:56 2025]
+localrule simulate:
+    output: results/32/corrupt0/original_matrix.png, results/32/corrupt0/flipped_matrix.png
+    log: logs/32_corrupt0.out, logs/32_corrupt0.err
+    jobid: 97
+    benchmark: benchmarks/32_corrupt0.tsv
+    reason: Missing output files: results/32/corrupt0/flipped_matrix.png
+    wildcards: seed=32, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:18:59 2025]
+Finished jobid: 148 (Rule: simulate)
+11 of 298 steps (4%) done
+Execute 1 jobs...
+[Tue Sep  9 01:18:59 2025]
+localrule simulate:
+    output: results/50/corrupt0/original_matrix.png, results/50/corrupt0/flipped_matrix.png
+    log: logs/50_corrupt0.out, logs/50_corrupt0.err
+    jobid: 151
+    benchmark: benchmarks/50_corrupt0.tsv
+    reason: Missing output files: results/50/corrupt0/flipped_matrix.png
+    wildcards: seed=50, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:01 2025]
+Finished jobid: 94 (Rule: simulate)
+12 of 298 steps (4%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:01 2025]
+localrule simulate:
+    output: results/16/corrupt50/original_matrix.png, results/16/corrupt50/flipped_matrix.png
+    log: logs/16_corrupt50.out, logs/16_corrupt50.err
+    jobid: 50
+    benchmark: benchmarks/16_corrupt50.tsv
+    reason: Missing output files: results/16/corrupt50/flipped_matrix.png
+    wildcards: seed=16, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:02 2025]
+Finished jobid: 280 (Rule: simulate)
+13 of 298 steps (4%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:02 2025]
+localrule simulate:
+    output: results/94/corrupt0/original_matrix.png, results/94/corrupt0/flipped_matrix.png
+    log: logs/94_corrupt0.out, logs/94_corrupt0.err
+    jobid: 283
+    benchmark: benchmarks/94_corrupt0.tsv
+    reason: Missing output files: results/94/corrupt0/flipped_matrix.png
+    wildcards: seed=94, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:05 2025]
+Finished jobid: 242 (Rule: simulate)
+14 of 298 steps (5%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:05 2025]
+localrule simulate:
+    output: results/97/corrupt50/original_matrix.png, results/97/corrupt50/flipped_matrix.png
+    log: logs/97_corrupt50.out, logs/97_corrupt50.err
+    jobid: 293
+    benchmark: benchmarks/97_corrupt50.tsv
+    reason: Missing output files: results/97/corrupt50/flipped_matrix.png
+    wildcards: seed=97, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:05 2025]
+Finished jobid: 97 (Rule: simulate)
+15 of 298 steps (5%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:05 2025]
+localrule simulate:
+    output: results/1/corrupt100/original_matrix.png, results/1/corrupt100/flipped_matrix.png
+    log: logs/1_corrupt100.out, logs/1_corrupt100.err
+    jobid: 6
+    benchmark: benchmarks/1_corrupt100.tsv
+    reason: Missing output files: results/1/corrupt100/flipped_matrix.png
+    wildcards: seed=1, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:06 2025]
+Finished jobid: 188 (Rule: simulate)
+16 of 298 steps (5%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:06 2025]
+localrule simulate:
+    output: results/79/corrupt50/original_matrix.png, results/79/corrupt50/flipped_matrix.png
+    log: logs/79_corrupt50.out, logs/79_corrupt50.err
+    jobid: 239
+    benchmark: benchmarks/79_corrupt50.tsv
+    reason: Missing output files: results/79/corrupt50/flipped_matrix.png
+    wildcards: seed=79, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:06 2025]
+Finished jobid: 134 (Rule: simulate)
+17 of 298 steps (6%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:06 2025]
+localrule simulate:
+    output: results/29/corrupt100/original_matrix.png, results/29/corrupt100/flipped_matrix.png
+    log: logs/29_corrupt100.out, logs/29_corrupt100.err
+    jobid: 90
+    benchmark: benchmarks/29_corrupt100.tsv
+    reason: Missing output files: results/29/corrupt100/flipped_matrix.png
+    wildcards: seed=29, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:07 2025]
+Finished jobid: 296 (Rule: simulate)
+18 of 298 steps (6%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:07 2025]
+localrule simulate:
+    output: results/61/corrupt50/original_matrix.png, results/61/corrupt50/flipped_matrix.png
+    log: logs/61_corrupt50.out, logs/61_corrupt50.err
+    jobid: 185
+    benchmark: benchmarks/61_corrupt50.tsv
+    reason: Missing output files: results/61/corrupt50/flipped_matrix.png
+    wildcards: seed=61, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:08 2025]
+Finished jobid: 151 (Rule: simulate)
+19 of 298 steps (6%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:08 2025]
+localrule simulate:
+    output: results/73/corrupt100/original_matrix.png, results/73/corrupt100/flipped_matrix.png
+    log: logs/73_corrupt100.out, logs/73_corrupt100.err
+    jobid: 222
+    benchmark: benchmarks/73_corrupt100.tsv
+    reason: Missing output files: results/73/corrupt100/flipped_matrix.png
+    wildcards: seed=73, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:09 2025]
+Finished jobid: 174 (Rule: simulate)
+20 of 298 steps (7%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:09 2025]
+localrule simulate:
+    output: results/14/corrupt100/original_matrix.png, results/14/corrupt100/flipped_matrix.png
+    log: logs/14_corrupt100.out, logs/14_corrupt100.err
+    jobid: 45
+    benchmark: benchmarks/14_corrupt100.tsv
+    reason: Missing output files: results/14/corrupt100/flipped_matrix.png
+    wildcards: seed=14, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:09 2025]
+Finished jobid: 63 (Rule: simulate)
+21 of 298 steps (7%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:09 2025]
+localrule simulate:
+    output: results/4/corrupt100/original_matrix.png, results/4/corrupt100/flipped_matrix.png
+    log: logs/4_corrupt100.out, logs/4_corrupt100.err
+    jobid: 15
+    benchmark: benchmarks/4_corrupt100.tsv
+    reason: Missing output files: results/4/corrupt100/flipped_matrix.png
+    wildcards: seed=4, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:11 2025]
+Finished jobid: 283 (Rule: simulate)
+22 of 298 steps (7%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:11 2025]
+localrule simulate:
+    output: results/2/corrupt100/original_matrix.png, results/2/corrupt100/flipped_matrix.png
+    log: logs/2_corrupt100.out, logs/2_corrupt100.err
+    jobid: 9
+    benchmark: benchmarks/2_corrupt100.tsv
+    reason: Missing output files: results/2/corrupt100/flipped_matrix.png
+    wildcards: seed=2, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:12 2025]
+Finished jobid: 50 (Rule: simulate)
+23 of 298 steps (8%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:12 2025]
+localrule simulate:
+    output: results/30/corrupt100/original_matrix.png, results/30/corrupt100/flipped_matrix.png
+    log: logs/30_corrupt100.out, logs/30_corrupt100.err
+    jobid: 93
+    benchmark: benchmarks/30_corrupt100.tsv
+    reason: Missing output files: results/30/corrupt100/flipped_matrix.png
+    wildcards: seed=30, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:19 2025]
+Finished jobid: 90 (Rule: simulate)
+24 of 298 steps (8%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:19 2025]
+localrule simulate:
+    output: results/91/corrupt100/original_matrix.png, results/91/corrupt100/flipped_matrix.png
+    log: logs/91_corrupt100.out, logs/91_corrupt100.err
+    jobid: 276
+    benchmark: benchmarks/91_corrupt100.tsv
+    reason: Missing output files: results/91/corrupt100/flipped_matrix.png
+    wildcards: seed=91, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:19 2025]
+Finished jobid: 185 (Rule: simulate)
+25 of 298 steps (8%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:19 2025]
+localrule simulate:
+    output: results/74/corrupt100/original_matrix.png, results/74/corrupt100/flipped_matrix.png
+    log: logs/74_corrupt100.out, logs/74_corrupt100.err
+    jobid: 225
+    benchmark: benchmarks/74_corrupt100.tsv
+    reason: Missing output files: results/74/corrupt100/flipped_matrix.png
+    wildcards: seed=74, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:19 2025]
+Finished jobid: 6 (Rule: simulate)
+26 of 298 steps (9%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:19 2025]
+localrule simulate:
+    output: results/43/corrupt50/original_matrix.png, results/43/corrupt50/flipped_matrix.png
+    log: logs/43_corrupt50.out, logs/43_corrupt50.err
+    jobid: 131
+    benchmark: benchmarks/43_corrupt50.tsv
+    reason: Missing output files: results/43/corrupt50/flipped_matrix.png
+    wildcards: seed=43, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:20 2025]
+Finished jobid: 293 (Rule: simulate)
+27 of 298 steps (9%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:20 2025]
+localrule simulate:
+    output: results/92/corrupt100/original_matrix.png, results/92/corrupt100/flipped_matrix.png
+    log: logs/92_corrupt100.out, logs/92_corrupt100.err
+    jobid: 279
+    benchmark: benchmarks/92_corrupt100.tsv
+    reason: Missing output files: results/92/corrupt100/flipped_matrix.png
+    wildcards: seed=92, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:20 2025]
+Finished jobid: 239 (Rule: simulate)
+28 of 298 steps (9%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:20 2025]
+localrule simulate:
+    output: results/15/corrupt50/original_matrix.png, results/15/corrupt50/flipped_matrix.png
+    log: logs/15_corrupt50.out, logs/15_corrupt50.err
+    jobid: 47
+    benchmark: benchmarks/15_corrupt50.tsv
+    reason: Missing output files: results/15/corrupt50/flipped_matrix.png
+    wildcards: seed=15, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:21 2025]
+Finished jobid: 222 (Rule: simulate)
+29 of 298 steps (10%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:21 2025]
+localrule simulate:
+    output: results/35/corrupt50/original_matrix.png, results/35/corrupt50/flipped_matrix.png
+    log: logs/35_corrupt50.out, logs/35_corrupt50.err
+    jobid: 107
+    benchmark: benchmarks/35_corrupt50.tsv
+    reason: Missing output files: results/35/corrupt50/flipped_matrix.png
+    wildcards: seed=35, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:24 2025]
+Finished jobid: 15 (Rule: simulate)
+30 of 298 steps (10%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:24 2025]
+localrule simulate:
+    output: results/64/corrupt100/original_matrix.png, results/64/corrupt100/flipped_matrix.png
+    log: logs/64_corrupt100.out, logs/64_corrupt100.err
+    jobid: 195
+    benchmark: benchmarks/64_corrupt100.tsv
+    reason: Missing output files: results/64/corrupt100/flipped_matrix.png
+    wildcards: seed=64, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:19:24 2025]
+Finished jobid: 93 (Rule: simulate)
+31 of 298 steps (10%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:19:24 2025]
+localrule simulate:
+    output: results/99/corrupt0/original_matrix.png, results/99/corrupt0/flipped_matrix.png
+    log: logs/99_corrupt0.out, logs/99_corrupt0.err
+    jobid: 298
+    benchmark: benchmarks/99_corrupt0.tsv
+    reason: Missing output files: results/99/corrupt0/flipped_matrix.png
+    wildcards: seed=99, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:24 2025]
+Finished jobid: 45 (Rule: simulate)
+32 of 298 steps (11%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:24 2025]
+localrule simulate:
+    output: results/38/corrupt100/original_matrix.png, results/38/corrupt100/flipped_matrix.png
+    log: logs/38_corrupt100.out, logs/38_corrupt100.err
+    jobid: 117
+    benchmark: benchmarks/38_corrupt100.tsv
+    reason: Missing output files: results/38/corrupt100/flipped_matrix.png
+    wildcards: seed=38, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:25 2025]
+Finished jobid: 9 (Rule: simulate)
+33 of 298 steps (11%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:25 2025]
+localrule simulate:
+    output: results/36/corrupt50/original_matrix.png, results/36/corrupt50/flipped_matrix.png
+    log: logs/36_corrupt50.out, logs/36_corrupt50.err
+    jobid: 110
+    benchmark: benchmarks/36_corrupt50.tsv
+    reason: Missing output files: results/36/corrupt50/flipped_matrix.png
+    wildcards: seed=36, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:31 2025]
+Finished jobid: 131 (Rule: simulate)
+34 of 298 steps (11%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:31 2025]
+localrule simulate:
+    output: results/56/corrupt100/original_matrix.png, results/56/corrupt100/flipped_matrix.png
+    log: logs/56_corrupt100.out, logs/56_corrupt100.err
+    jobid: 171
+    benchmark: benchmarks/56_corrupt100.tsv
+    reason: Missing output files: results/56/corrupt100/flipped_matrix.png; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: '100',0.7,'56' now: 'results/56/corrupt100' 
+    wildcards: seed=56, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:33 2025]
+Finished jobid: 276 (Rule: simulate)
+35 of 298 steps (12%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:33 2025]
+localrule simulate:
+    output: results/23/corrupt0/original_matrix.png, results/23/corrupt0/flipped_matrix.png
+    log: logs/23_corrupt0.out, logs/23_corrupt0.err
+    jobid: 70
+    benchmark: benchmarks/23_corrupt0.tsv
+    reason: Missing output files: results/23/corrupt0/flipped_matrix.png
+    wildcards: seed=23, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:33 2025]
+Finished jobid: 225 (Rule: simulate)
+36 of 298 steps (12%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:33 2025]
+localrule simulate:
+    output: results/19/corrupt100/original_matrix.png, results/19/corrupt100/flipped_matrix.png
+    log: logs/19_corrupt100.out, logs/19_corrupt100.err
+    jobid: 60
+    benchmark: benchmarks/19_corrupt100.tsv
+    reason: Missing output files: results/19/corrupt100/flipped_matrix.png
+    wildcards: seed=19, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:34 2025]
+Finished jobid: 298 (Rule: simulate)
+37 of 298 steps (12%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:34 2025]
+localrule simulate:
+    output: results/41/corrupt0/original_matrix.png, results/41/corrupt0/flipped_matrix.png
+    log: logs/41_corrupt0.out, logs/41_corrupt0.err
+    jobid: 124
+    benchmark: benchmarks/41_corrupt0.tsv
+    reason: Missing output files: results/41/corrupt0/flipped_matrix.png
+    wildcards: seed=41, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:34 2025]
+Finished jobid: 279 (Rule: simulate)
+38 of 298 steps (13%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:34 2025]
+localrule simulate:
+    output: results/81/corrupt100/original_matrix.png, results/81/corrupt100/flipped_matrix.png
+    log: logs/81_corrupt100.out, logs/81_corrupt100.err
+    jobid: 246
+    benchmark: benchmarks/81_corrupt100.tsv
+    reason: Missing output files: results/81/corrupt100/flipped_matrix.png
+    wildcards: seed=81, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:35 2025]
+Finished jobid: 107 (Rule: simulate)
+39 of 298 steps (13%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:35 2025]
+localrule simulate:
+    output: results/77/corrupt0/original_matrix.png, results/77/corrupt0/flipped_matrix.png
+    log: logs/77_corrupt0.out, logs/77_corrupt0.err
+    jobid: 232
+    benchmark: benchmarks/77_corrupt0.tsv
+    reason: Missing output files: results/77/corrupt0/flipped_matrix.png
+    wildcards: seed=77, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:36 2025]
+Finished jobid: 195 (Rule: simulate)
+40 of 298 steps (13%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:36 2025]
+localrule simulate:
+    output: results/63/corrupt100/original_matrix.png, results/63/corrupt100/flipped_matrix.png
+    log: logs/63_corrupt100.out, logs/63_corrupt100.err
+    jobid: 192
+    benchmark: benchmarks/63_corrupt100.tsv
+    reason: Missing output files: results/63/corrupt100/flipped_matrix.png
+    wildcards: seed=63, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:37 2025]
+Finished jobid: 110 (Rule: simulate)
+41 of 298 steps (14%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:37 2025]
+localrule simulate:
+    output: results/24/corrupt0/original_matrix.png, results/24/corrupt0/flipped_matrix.png
+    log: logs/24_corrupt0.out, logs/24_corrupt0.err
+    jobid: 73
+    benchmark: benchmarks/24_corrupt0.tsv
+    reason: Missing output files: results/24/corrupt0/flipped_matrix.png
+    wildcards: seed=24, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:38 2025]
+Finished jobid: 117 (Rule: simulate)
+42 of 298 steps (14%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:38 2025]
+localrule simulate:
+    output: results/46/corrupt50/original_matrix.png, results/46/corrupt50/flipped_matrix.png
+    log: logs/46_corrupt50.out, logs/46_corrupt50.err
+    jobid: 140
+    benchmark: benchmarks/46_corrupt50.tsv
+    reason: Missing output files: results/46/corrupt50/flipped_matrix.png
+    wildcards: seed=46, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:38 2025]
+Finished jobid: 47 (Rule: simulate)
+43 of 298 steps (14%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:38 2025]
+localrule simulate:
+    output: results/68/corrupt100/original_matrix.png, results/68/corrupt100/flipped_matrix.png
+    log: logs/68_corrupt100.out, logs/68_corrupt100.err
+    jobid: 207
+    benchmark: benchmarks/68_corrupt100.tsv
+    reason: Missing output files: results/68/corrupt100/flipped_matrix.png
+    wildcards: seed=68, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:42 2025]
+Finished jobid: 70 (Rule: simulate)
+44 of 298 steps (15%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:42 2025]
+localrule simulate:
+    output: results/78/corrupt0/original_matrix.png, results/78/corrupt0/flipped_matrix.png
+    log: logs/78_corrupt0.out, logs/78_corrupt0.err
+    jobid: 235
+    benchmark: benchmarks/78_corrupt0.tsv
+    reason: Missing output files: results/78/corrupt0/flipped_matrix.png
+    wildcards: seed=78, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:43 2025]
+Finished jobid: 124 (Rule: simulate)
+45 of 298 steps (15%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:43 2025]
+localrule simulate:
+    output: results/47/corrupt100/original_matrix.png, results/47/corrupt100/flipped_matrix.png
+    log: logs/47_corrupt100.out, logs/47_corrupt100.err
+    jobid: 144
+    benchmark: benchmarks/47_corrupt100.tsv
+    reason: Missing output files: results/47/corrupt100/flipped_matrix.png
+    wildcards: seed=47, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:45 2025]
+Finished jobid: 232 (Rule: simulate)
+46 of 298 steps (15%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:45 2025]
+localrule simulate:
+    output: results/42/corrupt0/original_matrix.png, results/42/corrupt0/flipped_matrix.png
+    log: logs/42_corrupt0.out, logs/42_corrupt0.err
+    jobid: 127
+    benchmark: benchmarks/42_corrupt0.tsv
+    reason: Missing output files: results/42/corrupt0/flipped_matrix.png
+    wildcards: seed=42, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:46 2025]
+Finished jobid: 60 (Rule: simulate)
+47 of 298 steps (16%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:46 2025]
+localrule simulate:
+    output: results/11/corrupt100/original_matrix.png, results/11/corrupt100/flipped_matrix.png
+    log: logs/11_corrupt100.out, logs/11_corrupt100.err
+    jobid: 36
+    benchmark: benchmarks/11_corrupt100.tsv
+    reason: Missing output files: results/11/corrupt100/flipped_matrix.png
+    wildcards: seed=11, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:19:47 2025]
+Finished jobid: 73 (Rule: simulate)
+48 of 298 steps (16%) done
+[Tue Sep  9 01:19:47 2025]
+Finished jobid: 246 (Rule: simulate)
+49 of 298 steps (16%) done
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Sep  9 01:19:47 2025]
+localrule simulate:
+    output: results/75/corrupt100/original_matrix.png, results/75/corrupt100/flipped_matrix.png
+    log: logs/75_corrupt100.out, logs/75_corrupt100.err
+    jobid: 228
+    benchmark: benchmarks/75_corrupt100.tsv
+    reason: Missing output files: results/75/corrupt100/flipped_matrix.png
+    wildcards: seed=75, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:19:47 2025]
+localrule simulate:
+    output: results/37/corrupt100/original_matrix.png, results/37/corrupt100/flipped_matrix.png
+    log: logs/37_corrupt100.out, logs/37_corrupt100.err
+    jobid: 114
+    benchmark: benchmarks/37_corrupt100.tsv
+    reason: Missing output files: results/37/corrupt100/flipped_matrix.png
+    wildcards: seed=37, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:47 2025]
+Finished jobid: 171 (Rule: simulate)
+50 of 298 steps (17%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:47 2025]
+localrule simulate:
+    output: results/9/corrupt50/original_matrix.png, results/9/corrupt50/flipped_matrix.png
+    log: logs/9_corrupt50.out, logs/9_corrupt50.err
+    jobid: 29
+    benchmark: benchmarks/9_corrupt50.tsv
+    reason: Missing output files: results/9/corrupt50/flipped_matrix.png
+    wildcards: seed=9, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:48 2025]
+Finished jobid: 192 (Rule: simulate)
+51 of 298 steps (17%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:48 2025]
+localrule simulate:
+    output: results/12/corrupt100/original_matrix.png, results/12/corrupt100/flipped_matrix.png
+    log: logs/12_corrupt100.out, logs/12_corrupt100.err
+    jobid: 39
+    benchmark: benchmarks/12_corrupt100.tsv
+    reason: Missing output files: results/12/corrupt100/flipped_matrix.png
+    wildcards: seed=12, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:51 2025]
+Finished jobid: 235 (Rule: simulate)
+52 of 298 steps (17%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:51 2025]
+localrule simulate:
+    output: results/55/corrupt100/original_matrix.png, results/55/corrupt100/flipped_matrix.png
+    log: logs/55_corrupt100.out, logs/55_corrupt100.err
+    jobid: 168
+    benchmark: benchmarks/55_corrupt100.tsv
+    reason: Missing output files: results/55/corrupt100/flipped_matrix.png
+    wildcards: seed=55, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:51 2025]
+Finished jobid: 207 (Rule: simulate)
+53 of 298 steps (18%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:51 2025]
+localrule simulate:
+    output: results/48/corrupt100/original_matrix.png, results/48/corrupt100/flipped_matrix.png
+    log: logs/48_corrupt100.out, logs/48_corrupt100.err
+    jobid: 147
+    benchmark: benchmarks/48_corrupt100.tsv
+    reason: Missing output files: results/48/corrupt100/flipped_matrix.png
+    wildcards: seed=48, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:52 2025]
+Finished jobid: 140 (Rule: simulate)
+54 of 298 steps (18%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:52 2025]
+localrule simulate:
+    output: results/71/corrupt0/original_matrix.png, results/71/corrupt0/flipped_matrix.png
+    log: logs/71_corrupt0.out, logs/71_corrupt0.err
+    jobid: 214
+    benchmark: benchmarks/71_corrupt0.tsv
+    reason: Missing output files: results/71/corrupt0/flipped_matrix.png
+    wildcards: seed=71, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:54 2025]
+Finished jobid: 127 (Rule: simulate)
+55 of 298 steps (18%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:54 2025]
+localrule simulate:
+    output: results/17/corrupt50/original_matrix.png, results/17/corrupt50/flipped_matrix.png
+    log: logs/17_corrupt50.out, logs/17_corrupt50.err
+    jobid: 53
+    benchmark: benchmarks/17_corrupt50.tsv
+    reason: Missing output files: results/17/corrupt50/flipped_matrix.png
+    wildcards: seed=17, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:56 2025]
+Finished jobid: 144 (Rule: simulate)
+56 of 298 steps (19%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:56 2025]
+localrule simulate:
+    output: results/68/corrupt0/original_matrix.png, results/68/corrupt0/flipped_matrix.png
+    log: logs/68_corrupt0.out, logs/68_corrupt0.err
+    jobid: 205
+    benchmark: benchmarks/68_corrupt0.tsv
+    reason: Missing output files: results/68/corrupt0/flipped_matrix.png
+    wildcards: seed=68, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:19:59 2025]
+Finished jobid: 29 (Rule: simulate)
+57 of 298 steps (19%) done
+Execute 1 jobs...
+[Tue Sep  9 01:19:59 2025]
+localrule simulate:
+    output: results/53/corrupt50/original_matrix.png, results/53/corrupt50/flipped_matrix.png
+    log: logs/53_corrupt50.out, logs/53_corrupt50.err
+    jobid: 161
+    benchmark: benchmarks/53_corrupt50.tsv
+    reason: Missing output files: results/53/corrupt50/flipped_matrix.png
+    wildcards: seed=53, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:00 2025]
+Finished jobid: 36 (Rule: simulate)
+58 of 298 steps (19%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:00 2025]
+localrule simulate:
+    output: results/4/corrupt0/original_matrix.png, results/4/corrupt0/flipped_matrix.png
+    log: logs/4_corrupt0.out, logs/4_corrupt0.err
+    jobid: 13
+    benchmark: benchmarks/4_corrupt0.tsv
+    reason: Missing output files: results/4/corrupt0/flipped_matrix.png
+    wildcards: seed=4, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:00 2025]
+Finished jobid: 228 (Rule: simulate)
+59 of 298 steps (20%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:00 2025]
+localrule simulate:
+    output: results/88/corrupt50/original_matrix.png, results/88/corrupt50/flipped_matrix.png
+    log: logs/88_corrupt50.out, logs/88_corrupt50.err
+    jobid: 266
+    benchmark: benchmarks/88_corrupt50.tsv
+    reason: Missing output files: results/88/corrupt50/flipped_matrix.png
+    wildcards: seed=88, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:01 2025]
+Finished jobid: 214 (Rule: simulate)
+60 of 298 steps (20%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:01 2025]
+localrule simulate:
+    output: results/14/corrupt0/original_matrix.png, results/14/corrupt0/flipped_matrix.png
+    log: logs/14_corrupt0.out, logs/14_corrupt0.err
+    jobid: 43
+    benchmark: benchmarks/14_corrupt0.tsv
+    reason: Missing output files: results/14/corrupt0/flipped_matrix.png
+    wildcards: seed=14, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:01 2025]
+Finished jobid: 39 (Rule: simulate)
+61 of 298 steps (20%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:01 2025]
+localrule simulate:
+    output: results/89/corrupt50/original_matrix.png, results/89/corrupt50/flipped_matrix.png
+    log: logs/89_corrupt50.out, logs/89_corrupt50.err
+    jobid: 269
+    benchmark: benchmarks/89_corrupt50.tsv
+    reason: Missing output files: results/89/corrupt50/flipped_matrix.png
+    wildcards: seed=89, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:02 2025]
+Finished jobid: 114 (Rule: simulate)
+62 of 298 steps (21%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:02 2025]
+localrule simulate:
+    output: results/85/corrupt0/original_matrix.png, results/85/corrupt0/flipped_matrix.png
+    log: logs/85_corrupt0.out, logs/85_corrupt0.err
+    jobid: 256
+    benchmark: benchmarks/85_corrupt0.tsv
+    reason: Missing output files: results/85/corrupt0/flipped_matrix.png
+    wildcards: seed=85, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:03 2025]
+Finished jobid: 147 (Rule: simulate)
+63 of 298 steps (21%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:03 2025]
+localrule simulate:
+    output: results/18/corrupt50/original_matrix.png, results/18/corrupt50/flipped_matrix.png
+    log: logs/18_corrupt50.out, logs/18_corrupt50.err
+    jobid: 56
+    benchmark: benchmarks/18_corrupt50.tsv
+    reason: Missing output files: results/18/corrupt50/flipped_matrix.png
+    wildcards: seed=18, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:04 2025]
+Finished jobid: 168 (Rule: simulate)
+64 of 298 steps (21%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:05 2025]
+localrule simulate:
+    output: results/55/corrupt50/original_matrix.png, results/55/corrupt50/flipped_matrix.png
+    log: logs/55_corrupt50.out, logs/55_corrupt50.err
+    jobid: 167
+    benchmark: benchmarks/55_corrupt50.tsv
+    reason: Missing output files: results/55/corrupt50/flipped_matrix.png
+    wildcards: seed=55, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:05 2025]
+Finished jobid: 205 (Rule: simulate)
+65 of 298 steps (22%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:05 2025]
+localrule simulate:
+    output: results/63/corrupt50/original_matrix.png, results/63/corrupt50/flipped_matrix.png
+    log: logs/63_corrupt50.out, logs/63_corrupt50.err
+    jobid: 191
+    benchmark: benchmarks/63_corrupt50.tsv
+    reason: Missing output files: results/63/corrupt50/flipped_matrix.png
+    wildcards: seed=63, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:09 2025]
+Finished jobid: 53 (Rule: simulate)
+66 of 298 steps (22%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:09 2025]
+localrule simulate:
+    output: results/76/corrupt100/original_matrix.png, results/76/corrupt100/flipped_matrix.png
+    log: logs/76_corrupt100.out, logs/76_corrupt100.err
+    jobid: 231
+    benchmark: benchmarks/76_corrupt100.tsv
+    reason: Missing output files: results/76/corrupt100/flipped_matrix.png
+    wildcards: seed=76, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:20:09 2025]
+Finished jobid: 13 (Rule: simulate)
+67 of 298 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:20:09 2025]
+localrule simulate:
+    output: results/22/corrupt100/original_matrix.png, results/22/corrupt100/flipped_matrix.png
+    log: logs/22_corrupt100.out, logs/22_corrupt100.err
+    jobid: 69
+    benchmark: benchmarks/22_corrupt100.tsv
+    reason: Missing output files: results/22/corrupt100/flipped_matrix.png
+    wildcards: seed=22, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:10 2025]
+Finished jobid: 43 (Rule: simulate)
+68 of 298 steps (23%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:10 2025]
+localrule simulate:
+    output: results/59/corrupt0/original_matrix.png, results/59/corrupt0/flipped_matrix.png
+    log: logs/59_corrupt0.out, logs/59_corrupt0.err
+    jobid: 178
+    benchmark: benchmarks/59_corrupt0.tsv
+    reason: Missing output files: results/59/corrupt0/flipped_matrix.png
+    wildcards: seed=59, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:11 2025]
+Finished jobid: 256 (Rule: simulate)
+69 of 298 steps (23%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:11 2025]
+localrule simulate:
+    output: results/95/corrupt0/original_matrix.png, results/95/corrupt0/flipped_matrix.png
+    log: logs/95_corrupt0.out, logs/95_corrupt0.err
+    jobid: 286
+    benchmark: benchmarks/95_corrupt0.tsv
+    reason: Missing output files: results/95/corrupt0/flipped_matrix.png
+    wildcards: seed=95, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:12 2025]
+Finished jobid: 266 (Rule: simulate)
+70 of 298 steps (23%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:12 2025]
+localrule simulate:
+    output: results/5/corrupt0/original_matrix.png, results/5/corrupt0/flipped_matrix.png
+    log: logs/5_corrupt0.out, logs/5_corrupt0.err
+    jobid: 16
+    benchmark: benchmarks/5_corrupt0.tsv
+    reason: Missing output files: results/5/corrupt0/flipped_matrix.png
+    wildcards: seed=5, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:13 2025]
+Finished jobid: 161 (Rule: simulate)
+71 of 298 steps (24%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:13 2025]
+localrule simulate:
+    output: results/6/corrupt0/original_matrix.png, results/6/corrupt0/flipped_matrix.png
+    log: logs/6_corrupt0.out, logs/6_corrupt0.err
+    jobid: 19
+    benchmark: benchmarks/6_corrupt0.tsv
+    reason: Missing output files: results/6/corrupt0/flipped_matrix.png
+    wildcards: seed=6, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:16 2025]
+Finished jobid: 269 (Rule: simulate)
+72 of 298 steps (24%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:16 2025]
+localrule simulate:
+    output: results/90/corrupt50/original_matrix.png, results/90/corrupt50/flipped_matrix.png
+    log: logs/90_corrupt50.out, logs/90_corrupt50.err
+    jobid: 272
+    benchmark: benchmarks/90_corrupt50.tsv
+    reason: Missing output files: results/90/corrupt50/flipped_matrix.png
+    wildcards: seed=90, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:17 2025]
+Finished jobid: 56 (Rule: simulate)
+73 of 298 steps (24%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:17 2025]
+localrule simulate:
+    output: results/60/corrupt0/original_matrix.png, results/60/corrupt0/flipped_matrix.png
+    log: logs/60_corrupt0.out, logs/60_corrupt0.err
+    jobid: 181
+    benchmark: benchmarks/60_corrupt0.tsv
+    reason: Missing output files: results/60/corrupt0/flipped_matrix.png
+    wildcards: seed=60, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:20:17 2025]
+Finished jobid: 191 (Rule: simulate)
+74 of 298 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:20:17 2025]
+localrule simulate:
+    output: results/54/corrupt50/original_matrix.png, results/54/corrupt50/flipped_matrix.png
+    log: logs/54_corrupt50.out, logs/54_corrupt50.err
+    jobid: 164
+    benchmark: benchmarks/54_corrupt50.tsv
+    reason: Missing output files: results/54/corrupt50/flipped_matrix.png
+    wildcards: seed=54, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:19 2025]
+Finished jobid: 167 (Rule: simulate)
+75 of 298 steps (25%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:19 2025]
+localrule simulate:
+    output: results/96/corrupt0/original_matrix.png, results/96/corrupt0/flipped_matrix.png
+    log: logs/96_corrupt0.out, logs/96_corrupt0.err
+    jobid: 289
+    benchmark: benchmarks/96_corrupt0.tsv
+    reason: Missing output files: results/96/corrupt0/flipped_matrix.png
+    wildcards: seed=96, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:19 2025]
+Finished jobid: 178 (Rule: simulate)
+76 of 298 steps (26%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:19 2025]
+localrule simulate:
+    output: results/67/corrupt0/original_matrix.png, results/67/corrupt0/flipped_matrix.png
+    log: logs/67_corrupt0.out, logs/67_corrupt0.err
+    jobid: 202
+    benchmark: benchmarks/67_corrupt0.tsv
+    reason: Missing output files: results/67/corrupt0/flipped_matrix.png
+    wildcards: seed=67, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:20 2025]
+Finished jobid: 286 (Rule: simulate)
+77 of 298 steps (26%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:20 2025]
+localrule simulate:
+    output: results/10/corrupt50/original_matrix.png, results/10/corrupt50/flipped_matrix.png
+    log: logs/10_corrupt50.out, logs/10_corrupt50.err
+    jobid: 32
+    benchmark: benchmarks/10_corrupt50.tsv
+    reason: Missing output files: results/10/corrupt50/flipped_matrix.png
+    wildcards: seed=10, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:21 2025]
+Finished jobid: 231 (Rule: simulate)
+78 of 298 steps (26%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:21 2025]
+localrule simulate:
+    output: results/52/corrupt50/original_matrix.png, results/52/corrupt50/flipped_matrix.png
+    log: logs/52_corrupt50.out, logs/52_corrupt50.err
+    jobid: 158
+    benchmark: benchmarks/52_corrupt50.tsv
+    reason: Missing output files: results/52/corrupt50/flipped_matrix.png
+    wildcards: seed=52, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:21 2025]
+Finished jobid: 16 (Rule: simulate)
+79 of 298 steps (27%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:21 2025]
+localrule simulate:
+    output: results/65/corrupt100/original_matrix.png, results/65/corrupt100/flipped_matrix.png
+    log: logs/65_corrupt100.out, logs/65_corrupt100.err
+    jobid: 198
+    benchmark: benchmarks/65_corrupt100.tsv
+    reason: Missing output files: results/65/corrupt100/flipped_matrix.png
+    wildcards: seed=65, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:22 2025]
+Finished jobid: 19 (Rule: simulate)
+80 of 298 steps (27%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:22 2025]
+localrule simulate:
+    output: results/34/corrupt50/original_matrix.png, results/34/corrupt50/flipped_matrix.png
+    log: logs/34_corrupt50.out, logs/34_corrupt50.err
+    jobid: 104
+    benchmark: benchmarks/34_corrupt50.tsv
+    reason: Missing output files: results/34/corrupt50/flipped_matrix.png
+    wildcards: seed=34, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:23 2025]
+Finished jobid: 69 (Rule: simulate)
+81 of 298 steps (27%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:23 2025]
+localrule simulate:
+    output: results/83/corrupt100/original_matrix.png, results/83/corrupt100/flipped_matrix.png
+    log: logs/83_corrupt100.out, logs/83_corrupt100.err
+    jobid: 252
+    benchmark: benchmarks/83_corrupt100.tsv
+    reason: Missing output files: results/83/corrupt100/flipped_matrix.png
+    wildcards: seed=83, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:26 2025]
+Finished jobid: 181 (Rule: simulate)
+82 of 298 steps (28%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:26 2025]
+localrule simulate:
+    output: results/13/corrupt0/original_matrix.png, results/13/corrupt0/flipped_matrix.png
+    log: logs/13_corrupt0.out, logs/13_corrupt0.err
+    jobid: 40
+    benchmark: benchmarks/13_corrupt0.tsv
+    reason: Missing output files: results/13/corrupt0/flipped_matrix.png
+    wildcards: seed=13, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:28 2025]
+Finished jobid: 289 (Rule: simulate)
+83 of 298 steps (28%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:28 2025]
+localrule simulate:
+    output: results/6/corrupt100/original_matrix.png, results/6/corrupt100/flipped_matrix.png
+    log: logs/6_corrupt100.out, logs/6_corrupt100.err
+    jobid: 21
+    benchmark: benchmarks/6_corrupt100.tsv
+    reason: Missing output files: results/6/corrupt100/flipped_matrix.png
+    wildcards: seed=6, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:28 2025]
+Finished jobid: 202 (Rule: simulate)
+84 of 298 steps (28%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:28 2025]
+localrule simulate:
+    output: results/60/corrupt100/original_matrix.png, results/60/corrupt100/flipped_matrix.png
+    log: logs/60_corrupt100.out, logs/60_corrupt100.err
+    jobid: 183
+    benchmark: benchmarks/60_corrupt100.tsv
+    reason: Missing output files: results/60/corrupt100/flipped_matrix.png
+    wildcards: seed=60, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:29 2025]
+Finished jobid: 272 (Rule: simulate)
+85 of 298 steps (29%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:29 2025]
+localrule simulate:
+    output: results/70/corrupt100/original_matrix.png, results/70/corrupt100/flipped_matrix.png
+    log: logs/70_corrupt100.out, logs/70_corrupt100.err
+    jobid: 213
+    benchmark: benchmarks/70_corrupt100.tsv
+    reason: Missing output files: results/70/corrupt100/flipped_matrix.png
+    wildcards: seed=70, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:31 2025]
+Finished jobid: 164 (Rule: simulate)
+86 of 298 steps (29%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:31 2025]
+localrule simulate:
+    output: results/24/corrupt100/original_matrix.png, results/24/corrupt100/flipped_matrix.png
+    log: logs/24_corrupt100.out, logs/24_corrupt100.err
+    jobid: 75
+    benchmark: benchmarks/24_corrupt100.tsv
+    reason: Missing output files: results/24/corrupt100/flipped_matrix.png
+    wildcards: seed=24, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:33 2025]
+Finished jobid: 158 (Rule: simulate)
+87 of 298 steps (29%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:33 2025]
+localrule simulate:
+    output: results/95/corrupt100/original_matrix.png, results/95/corrupt100/flipped_matrix.png
+    log: logs/95_corrupt100.out, logs/95_corrupt100.err
+    jobid: 288
+    benchmark: benchmarks/95_corrupt100.tsv
+    reason: Missing output files: results/95/corrupt100/flipped_matrix.png
+    wildcards: seed=95, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:33 2025]
+Finished jobid: 198 (Rule: simulate)
+88 of 298 steps (30%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:33 2025]
+localrule simulate:
+    output: results/97/corrupt0/original_matrix.png, results/97/corrupt0/flipped_matrix.png
+    log: logs/97_corrupt0.out, logs/97_corrupt0.err
+    jobid: 292
+    benchmark: benchmarks/97_corrupt0.tsv
+    reason: Missing output files: results/97/corrupt0/flipped_matrix.png
+    wildcards: seed=97, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:34 2025]
+Finished jobid: 32 (Rule: simulate)
+89 of 298 steps (30%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:34 2025]
+localrule simulate:
+    output: results/44/corrupt0/original_matrix.png, results/44/corrupt0/flipped_matrix.png
+    log: logs/44_corrupt0.out, logs/44_corrupt0.err
+    jobid: 133
+    benchmark: benchmarks/44_corrupt0.tsv
+    reason: Missing output files: results/44/corrupt0/flipped_matrix.png
+    wildcards: seed=44, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:35 2025]
+Finished jobid: 40 (Rule: simulate)
+90 of 298 steps (30%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:35 2025]
+localrule simulate:
+    output: results/40/corrupt100/original_matrix.png, results/40/corrupt100/flipped_matrix.png
+    log: logs/40_corrupt100.out, logs/40_corrupt100.err
+    jobid: 123
+    benchmark: benchmarks/40_corrupt100.tsv
+    reason: Missing output files: results/40/corrupt100/flipped_matrix.png
+    wildcards: seed=40, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:35 2025]
+Finished jobid: 252 (Rule: simulate)
+91 of 298 steps (31%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:35 2025]
+localrule simulate:
+    output: results/66/corrupt100/original_matrix.png, results/66/corrupt100/flipped_matrix.png
+    log: logs/66_corrupt100.out, logs/66_corrupt100.err
+    jobid: 201
+    benchmark: benchmarks/66_corrupt100.tsv
+    reason: Missing output files: results/66/corrupt100/flipped_matrix.png
+    wildcards: seed=66, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:36 2025]
+Finished jobid: 104 (Rule: simulate)
+92 of 298 steps (31%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:36 2025]
+localrule simulate:
+    output: results/25/corrupt100/original_matrix.png, results/25/corrupt100/flipped_matrix.png
+    log: logs/25_corrupt100.out, logs/25_corrupt100.err
+    jobid: 78
+    benchmark: benchmarks/25_corrupt100.tsv
+    reason: Missing output files: results/25/corrupt100/flipped_matrix.png
+    wildcards: seed=25, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:41 2025]
+Finished jobid: 21 (Rule: simulate)
+93 of 298 steps (31%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:42 2025]
+localrule simulate:
+    output: results/42/corrupt100/original_matrix.png, results/42/corrupt100/flipped_matrix.png
+    log: logs/42_corrupt100.out, logs/42_corrupt100.err
+    jobid: 129
+    benchmark: benchmarks/42_corrupt100.tsv
+    reason: Missing output files: results/42/corrupt100/flipped_matrix.png
+    wildcards: seed=42, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:43 2025]
+Finished jobid: 292 (Rule: simulate)
+94 of 298 steps (32%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:43 2025]
+localrule simulate:
+    output: results/51/corrupt100/original_matrix.png, results/51/corrupt100/flipped_matrix.png
+    log: logs/51_corrupt100.out, logs/51_corrupt100.err
+    jobid: 156
+    benchmark: benchmarks/51_corrupt100.tsv
+    reason: Missing output files: results/51/corrupt100/flipped_matrix.png
+    wildcards: seed=51, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:43 2025]
+Finished jobid: 183 (Rule: simulate)
+95 of 298 steps (32%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:43 2025]
+localrule simulate:
+    output: results/39/corrupt100/original_matrix.png, results/39/corrupt100/flipped_matrix.png
+    log: logs/39_corrupt100.out, logs/39_corrupt100.err
+    jobid: 120
+    benchmark: benchmarks/39_corrupt100.tsv
+    reason: Missing output files: results/39/corrupt100/flipped_matrix.png
+    wildcards: seed=39, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:43 2025]
+Finished jobid: 213 (Rule: simulate)
+96 of 298 steps (32%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:43 2025]
+localrule simulate:
+    output: results/96/corrupt100/original_matrix.png, results/96/corrupt100/flipped_matrix.png
+    log: logs/96_corrupt100.out, logs/96_corrupt100.err
+    jobid: 291
+    benchmark: benchmarks/96_corrupt100.tsv
+    reason: Missing output files: results/96/corrupt100/flipped_matrix.png
+    wildcards: seed=96, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:20:43 2025]
+Finished jobid: 133 (Rule: simulate)
+97 of 298 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:20:43 2025]
+localrule simulate:
+    output: results/3/corrupt100/original_matrix.png, results/3/corrupt100/flipped_matrix.png
+    log: logs/3_corrupt100.out, logs/3_corrupt100.err
+    jobid: 12
+    benchmark: benchmarks/3_corrupt100.tsv
+    reason: Missing output files: results/3/corrupt100/flipped_matrix.png
+    wildcards: seed=3, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:44 2025]
+Finished jobid: 75 (Rule: simulate)
+98 of 298 steps (33%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:44 2025]
+localrule simulate:
+    output: results/67/corrupt100/original_matrix.png, results/67/corrupt100/flipped_matrix.png
+    log: logs/67_corrupt100.out, logs/67_corrupt100.err
+    jobid: 204
+    benchmark: benchmarks/67_corrupt100.tsv
+    reason: Missing output files: results/67/corrupt100/flipped_matrix.png
+    wildcards: seed=67, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:46 2025]
+Finished jobid: 123 (Rule: simulate)
+99 of 298 steps (33%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:47 2025]
+localrule simulate:
+    output: results/13/corrupt100/original_matrix.png, results/13/corrupt100/flipped_matrix.png
+    log: logs/13_corrupt100.out, logs/13_corrupt100.err
+    jobid: 42
+    benchmark: benchmarks/13_corrupt100.tsv
+    reason: Missing output files: results/13/corrupt100/flipped_matrix.png
+    wildcards: seed=13, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:47 2025]
+Finished jobid: 288 (Rule: simulate)
+100 of 298 steps (34%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:47 2025]
+localrule simulate:
+    output: results/49/corrupt100/original_matrix.png, results/49/corrupt100/flipped_matrix.png
+    log: logs/49_corrupt100.out, logs/49_corrupt100.err
+    jobid: 150
+    benchmark: benchmarks/49_corrupt100.tsv
+    reason: Missing output files: results/49/corrupt100/flipped_matrix.png
+    wildcards: seed=49, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:48 2025]
+Finished jobid: 78 (Rule: simulate)
+101 of 298 steps (34%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:48 2025]
+localrule simulate:
+    output: results/9/corrupt100/original_matrix.png, results/9/corrupt100/flipped_matrix.png
+    log: logs/9_corrupt100.out, logs/9_corrupt100.err
+    jobid: 30
+    benchmark: benchmarks/9_corrupt100.tsv
+    reason: Missing output files: results/9/corrupt100/flipped_matrix.png
+    wildcards: seed=9, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:49 2025]
+Finished jobid: 201 (Rule: simulate)
+102 of 298 steps (34%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:49 2025]
+localrule simulate:
+    output: results/7/corrupt100/original_matrix.png, results/7/corrupt100/flipped_matrix.png
+    log: logs/7_corrupt100.out, logs/7_corrupt100.err
+    jobid: 24
+    benchmark: benchmarks/7_corrupt100.tsv
+    reason: Missing output files: results/7/corrupt100/flipped_matrix.png
+    wildcards: seed=7, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:55 2025]
+Finished jobid: 129 (Rule: simulate)
+103 of 298 steps (35%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:55 2025]
+localrule simulate:
+    output: results/43/corrupt100/original_matrix.png, results/43/corrupt100/flipped_matrix.png
+    log: logs/43_corrupt100.out, logs/43_corrupt100.err
+    jobid: 132
+    benchmark: benchmarks/43_corrupt100.tsv
+    reason: Missing output files: results/43/corrupt100/flipped_matrix.png
+    wildcards: seed=43, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:56 2025]
+Finished jobid: 156 (Rule: simulate)
+104 of 298 steps (35%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:56 2025]
+localrule simulate:
+    output: results/61/corrupt100/original_matrix.png, results/61/corrupt100/flipped_matrix.png
+    log: logs/61_corrupt100.out, logs/61_corrupt100.err
+    jobid: 186
+    benchmark: benchmarks/61_corrupt100.tsv
+    reason: Missing output files: results/61/corrupt100/flipped_matrix.png
+    wildcards: seed=61, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:57 2025]
+Finished jobid: 120 (Rule: simulate)
+105 of 298 steps (35%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:57 2025]
+localrule simulate:
+    output: results/71/corrupt50/original_matrix.png, results/71/corrupt50/flipped_matrix.png
+    log: logs/71_corrupt50.out, logs/71_corrupt50.err
+    jobid: 215
+    benchmark: benchmarks/71_corrupt50.tsv
+    reason: Missing output files: results/71/corrupt50/flipped_matrix.png
+    wildcards: seed=71, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:57 2025]
+Finished jobid: 12 (Rule: simulate)
+106 of 298 steps (36%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:57 2025]
+localrule simulate:
+    output: results/99/corrupt50/original_matrix.png, results/99/corrupt50/flipped_matrix.png
+    log: logs/99_corrupt50.out, logs/99_corrupt50.err
+    jobid: 299
+    benchmark: benchmarks/99_corrupt50.tsv
+    reason: Missing output files: results/99/corrupt50/flipped_matrix.png
+    wildcards: seed=99, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:58 2025]
+Finished jobid: 204 (Rule: simulate)
+107 of 298 steps (36%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:58 2025]
+localrule simulate:
+    output: results/56/corrupt50/original_matrix.png, results/56/corrupt50/flipped_matrix.png
+    log: logs/56_corrupt50.out, logs/56_corrupt50.err
+    jobid: 170
+    benchmark: benchmarks/56_corrupt50.tsv
+    reason: Missing output files: results/56/corrupt50/flipped_matrix.png; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 0.7,'50','56' now: 'results/56/corrupt50' 
+    wildcards: seed=56, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:20:59 2025]
+Finished jobid: 291 (Rule: simulate)
+108 of 298 steps (36%) done
+Execute 1 jobs...
+[Tue Sep  9 01:20:59 2025]
+localrule simulate:
+    output: results/82/corrupt50/original_matrix.png, results/82/corrupt50/flipped_matrix.png
+    log: logs/82_corrupt50.out, logs/82_corrupt50.err
+    jobid: 248
+    benchmark: benchmarks/82_corrupt50.tsv
+    reason: Missing output files: results/82/corrupt50/flipped_matrix.png
+    wildcards: seed=82, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:01 2025]
+Finished jobid: 30 (Rule: simulate)
+109 of 298 steps (37%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:01 2025]
+localrule simulate:
+    output: results/0/corrupt50/original_matrix.png, results/0/corrupt50/flipped_matrix.png
+    log: logs/0_corrupt50.out, logs/0_corrupt50.err
+    jobid: 2
+    benchmark: benchmarks/0_corrupt50.tsv
+    reason: Missing output files: results/0/corrupt50/flipped_matrix.png
+    wildcards: seed=0, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:01 2025]
+Finished jobid: 42 (Rule: simulate)
+110 of 298 steps (37%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:01 2025]
+localrule simulate:
+    output: results/28/corrupt50/original_matrix.png, results/28/corrupt50/flipped_matrix.png
+    log: logs/28_corrupt50.out, logs/28_corrupt50.err
+    jobid: 86
+    benchmark: benchmarks/28_corrupt50.tsv
+    reason: Missing output files: results/28/corrupt50/flipped_matrix.png
+    wildcards: seed=28, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:02 2025]
+Finished jobid: 24 (Rule: simulate)
+111 of 298 steps (37%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:03 2025]
+localrule simulate:
+    output: results/50/corrupt100/original_matrix.png, results/50/corrupt100/flipped_matrix.png
+    log: logs/50_corrupt100.out, logs/50_corrupt100.err
+    jobid: 153
+    benchmark: benchmarks/50_corrupt100.tsv
+    reason: Missing output files: results/50/corrupt100/flipped_matrix.png
+    wildcards: seed=50, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:03 2025]
+Finished jobid: 150 (Rule: simulate)
+112 of 298 steps (38%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:03 2025]
+localrule simulate:
+    output: results/94/corrupt100/original_matrix.png, results/94/corrupt100/flipped_matrix.png
+    log: logs/94_corrupt100.out, logs/94_corrupt100.err
+    jobid: 285
+    benchmark: benchmarks/94_corrupt100.tsv
+    reason: Missing output files: results/94/corrupt100/flipped_matrix.png
+    wildcards: seed=94, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:09 2025]
+Finished jobid: 186 (Rule: simulate)
+113 of 298 steps (38%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:09 2025]
+localrule simulate:
+    output: results/91/corrupt50/original_matrix.png, results/91/corrupt50/flipped_matrix.png
+    log: logs/91_corrupt50.out, logs/91_corrupt50.err
+    jobid: 275
+    benchmark: benchmarks/91_corrupt50.tsv
+    reason: Missing output files: results/91/corrupt50/flipped_matrix.png
+    wildcards: seed=91, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:09 2025]
+Finished jobid: 299 (Rule: simulate)
+114 of 298 steps (38%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:09 2025]
+localrule simulate:
+    output: results/1/corrupt50/original_matrix.png, results/1/corrupt50/flipped_matrix.png
+    log: logs/1_corrupt50.out, logs/1_corrupt50.err
+    jobid: 5
+    benchmark: benchmarks/1_corrupt50.tsv
+    reason: Missing output files: results/1/corrupt50/flipped_matrix.png
+    wildcards: seed=1, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:10 2025]
+Finished jobid: 215 (Rule: simulate)
+115 of 298 steps (39%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:10 2025]
+localrule simulate:
+    output: results/2/corrupt50/original_matrix.png, results/2/corrupt50/flipped_matrix.png
+    log: logs/2_corrupt50.out, logs/2_corrupt50.err
+    jobid: 8
+    benchmark: benchmarks/2_corrupt50.tsv
+    reason: Missing output files: results/2/corrupt50/flipped_matrix.png
+    wildcards: seed=2, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:11 2025]
+Finished jobid: 132 (Rule: simulate)
+116 of 298 steps (39%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:11 2025]
+localrule simulate:
+    output: results/30/corrupt50/original_matrix.png, results/30/corrupt50/flipped_matrix.png
+    log: logs/30_corrupt50.out, logs/30_corrupt50.err
+    jobid: 92
+    benchmark: benchmarks/30_corrupt50.tsv
+    reason: Missing output files: results/30/corrupt50/flipped_matrix.png
+    wildcards: seed=30, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:13 2025]
+Finished jobid: 248 (Rule: simulate)
+117 of 298 steps (39%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:13 2025]
+localrule simulate:
+    output: results/92/corrupt50/original_matrix.png, results/92/corrupt50/flipped_matrix.png
+    log: logs/92_corrupt50.out, logs/92_corrupt50.err
+    jobid: 278
+    benchmark: benchmarks/92_corrupt50.tsv
+    reason: Missing output files: results/92/corrupt50/flipped_matrix.png
+    wildcards: seed=92, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:21:13 2025]
+Finished jobid: 170 (Rule: simulate)
+118 of 298 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:21:13 2025]
+localrule simulate:
+    output: results/35/corrupt0/original_matrix.png, results/35/corrupt0/flipped_matrix.png
+    log: logs/35_corrupt0.out, logs/35_corrupt0.err
+    jobid: 106
+    benchmark: benchmarks/35_corrupt0.tsv
+    reason: Missing output files: results/35/corrupt0/flipped_matrix.png
+    wildcards: seed=35, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:14 2025]
+Finished jobid: 2 (Rule: simulate)
+119 of 298 steps (40%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:14 2025]
+localrule simulate:
+    output: results/72/corrupt50/original_matrix.png, results/72/corrupt50/flipped_matrix.png
+    log: logs/72_corrupt50.out, logs/72_corrupt50.err
+    jobid: 218
+    benchmark: benchmarks/72_corrupt50.tsv
+    reason: Missing output files: results/72/corrupt50/flipped_matrix.png
+    wildcards: seed=72, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:14 2025]
+Finished jobid: 86 (Rule: simulate)
+120 of 298 steps (40%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:14 2025]
+localrule simulate:
+    output: results/69/corrupt0/original_matrix.png, results/69/corrupt0/flipped_matrix.png
+    log: logs/69_corrupt0.out, logs/69_corrupt0.err
+    jobid: 208
+    benchmark: benchmarks/69_corrupt0.tsv
+    reason: Missing output files: results/69/corrupt0/flipped_matrix.png
+    wildcards: seed=69, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:17 2025]
+Finished jobid: 285 (Rule: simulate)
+121 of 298 steps (41%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:17 2025]
+localrule simulate:
+    output: results/77/corrupt100/original_matrix.png, results/77/corrupt100/flipped_matrix.png
+    log: logs/77_corrupt100.out, logs/77_corrupt100.err
+    jobid: 234
+    benchmark: benchmarks/77_corrupt100.tsv
+    reason: Missing output files: results/77/corrupt100/flipped_matrix.png
+    wildcards: seed=77, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:18 2025]
+Finished jobid: 153 (Rule: simulate)
+122 of 298 steps (41%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:18 2025]
+localrule simulate:
+    output: results/23/corrupt100/original_matrix.png, results/23/corrupt100/flipped_matrix.png
+    log: logs/23_corrupt100.out, logs/23_corrupt100.err
+    jobid: 72
+    benchmark: benchmarks/23_corrupt100.tsv
+    reason: Missing output files: results/23/corrupt100/flipped_matrix.png
+    wildcards: seed=23, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:23 2025]
+Finished jobid: 106 (Rule: simulate)
+123 of 298 steps (41%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:23 2025]
+localrule simulate:
+    output: results/11/corrupt50/original_matrix.png, results/11/corrupt50/flipped_matrix.png
+    log: logs/11_corrupt50.out, logs/11_corrupt50.err
+    jobid: 35
+    benchmark: benchmarks/11_corrupt50.tsv
+    reason: Missing output files: results/11/corrupt50/flipped_matrix.png
+    wildcards: seed=11, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:23 2025]
+Finished jobid: 275 (Rule: simulate)
+124 of 298 steps (42%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:23 2025]
+localrule simulate:
+    output: results/48/corrupt50/original_matrix.png, results/48/corrupt50/flipped_matrix.png
+    log: logs/48_corrupt50.out, logs/48_corrupt50.err
+    jobid: 146
+    benchmark: benchmarks/48_corrupt50.tsv
+    reason: Missing output files: results/48/corrupt50/flipped_matrix.png
+    wildcards: seed=48, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:23 2025]
+Finished jobid: 92 (Rule: simulate)
+125 of 298 steps (42%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:23 2025]
+localrule simulate:
+    output: results/18/corrupt0/original_matrix.png, results/18/corrupt0/flipped_matrix.png
+    log: logs/18_corrupt0.out, logs/18_corrupt0.err
+    jobid: 55
+    benchmark: benchmarks/18_corrupt0.tsv
+    reason: Missing output files: results/18/corrupt0/flipped_matrix.png
+    wildcards: seed=18, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:24 2025]
+Finished jobid: 208 (Rule: simulate)
+126 of 298 steps (42%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:24 2025]
+localrule simulate:
+    output: results/54/corrupt0/original_matrix.png, results/54/corrupt0/flipped_matrix.png
+    log: logs/54_corrupt0.out, logs/54_corrupt0.err
+    jobid: 163
+    benchmark: benchmarks/54_corrupt0.tsv
+    reason: Missing output files: results/54/corrupt0/flipped_matrix.png
+    wildcards: seed=54, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:24 2025]
+Finished jobid: 8 (Rule: simulate)
+127 of 298 steps (43%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:24 2025]
+localrule simulate:
+    output: results/5/corrupt100/original_matrix.png, results/5/corrupt100/flipped_matrix.png
+    log: logs/5_corrupt100.out, logs/5_corrupt100.err
+    jobid: 18
+    benchmark: benchmarks/5_corrupt100.tsv
+    reason: Missing output files: results/5/corrupt100/flipped_matrix.png
+    wildcards: seed=5, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:25 2025]
+Finished jobid: 5 (Rule: simulate)
+128 of 298 steps (43%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:25 2025]
+localrule simulate:
+    output: results/59/corrupt100/original_matrix.png, results/59/corrupt100/flipped_matrix.png
+    log: logs/59_corrupt100.out, logs/59_corrupt100.err
+    jobid: 180
+    benchmark: benchmarks/59_corrupt100.tsv
+    reason: Missing output files: results/59/corrupt100/flipped_matrix.png
+    wildcards: seed=59, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:27 2025]
+Finished jobid: 278 (Rule: simulate)
+129 of 298 steps (43%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:27 2025]
+localrule simulate:
+    output: results/84/corrupt50/original_matrix.png, results/84/corrupt50/flipped_matrix.png
+    log: logs/84_corrupt50.out, logs/84_corrupt50.err
+    jobid: 254
+    benchmark: benchmarks/84_corrupt50.tsv
+    reason: Missing output files: results/84/corrupt50/flipped_matrix.png
+    wildcards: seed=84, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:28 2025]
+Finished jobid: 218 (Rule: simulate)
+130 of 298 steps (44%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:28 2025]
+localrule simulate:
+    output: results/45/corrupt0/original_matrix.png, results/45/corrupt0/flipped_matrix.png
+    log: logs/45_corrupt0.out, logs/45_corrupt0.err
+    jobid: 136
+    benchmark: benchmarks/45_corrupt0.tsv
+    reason: Missing output files: results/45/corrupt0/flipped_matrix.png
+    wildcards: seed=45, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:29 2025]
+Finished jobid: 234 (Rule: simulate)
+131 of 298 steps (44%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:29 2025]
+localrule simulate:
+    output: results/33/corrupt0/original_matrix.png, results/33/corrupt0/flipped_matrix.png
+    log: logs/33_corrupt0.out, logs/33_corrupt0.err
+    jobid: 100
+    benchmark: benchmarks/33_corrupt0.tsv
+    reason: Missing output files: results/33/corrupt0/flipped_matrix.png
+    wildcards: seed=33, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:30 2025]
+Finished jobid: 72 (Rule: simulate)
+132 of 298 steps (44%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:30 2025]
+localrule simulate:
+    output: results/52/corrupt0/original_matrix.png, results/52/corrupt0/flipped_matrix.png
+    log: logs/52_corrupt0.out, logs/52_corrupt0.err
+    jobid: 157
+    benchmark: benchmarks/52_corrupt0.tsv
+    reason: Missing output files: results/52/corrupt0/flipped_matrix.png
+    wildcards: seed=52, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:32 2025]
+Finished jobid: 55 (Rule: simulate)
+133 of 298 steps (45%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:32 2025]
+localrule simulate:
+    output: results/74/corrupt0/original_matrix.png, results/74/corrupt0/flipped_matrix.png
+    log: logs/74_corrupt0.out, logs/74_corrupt0.err
+    jobid: 223
+    benchmark: benchmarks/74_corrupt0.tsv
+    reason: Missing output files: results/74/corrupt0/flipped_matrix.png
+    wildcards: seed=74, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:33 2025]
+Finished jobid: 163 (Rule: simulate)
+134 of 298 steps (45%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:33 2025]
+localrule simulate:
+    output: results/11/corrupt0/original_matrix.png, results/11/corrupt0/flipped_matrix.png
+    log: logs/11_corrupt0.out, logs/11_corrupt0.err
+    jobid: 34
+    benchmark: benchmarks/11_corrupt0.tsv
+    reason: Missing output files: results/11/corrupt0/flipped_matrix.png
+    wildcards: seed=11, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:35 2025]
+Finished jobid: 146 (Rule: simulate)
+135 of 298 steps (45%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:35 2025]
+localrule simulate:
+    output: results/72/corrupt0/original_matrix.png, results/72/corrupt0/flipped_matrix.png
+    log: logs/72_corrupt0.out, logs/72_corrupt0.err
+    jobid: 217
+    benchmark: benchmarks/72_corrupt0.tsv
+    reason: Missing output files: results/72/corrupt0/flipped_matrix.png
+    wildcards: seed=72, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:36 2025]
+Finished jobid: 35 (Rule: simulate)
+136 of 298 steps (46%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:36 2025]
+localrule simulate:
+    output: results/51/corrupt0/original_matrix.png, results/51/corrupt0/flipped_matrix.png
+    log: logs/51_corrupt0.out, logs/51_corrupt0.err
+    jobid: 154
+    benchmark: benchmarks/51_corrupt0.tsv
+    reason: Missing output files: results/51/corrupt0/flipped_matrix.png
+    wildcards: seed=51, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:36 2025]
+Finished jobid: 18 (Rule: simulate)
+137 of 298 steps (46%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:36 2025]
+localrule simulate:
+    output: results/53/corrupt0/original_matrix.png, results/53/corrupt0/flipped_matrix.png
+    log: logs/53_corrupt0.out, logs/53_corrupt0.err
+    jobid: 160
+    benchmark: benchmarks/53_corrupt0.tsv
+    reason: Missing output files: results/53/corrupt0/flipped_matrix.png
+    wildcards: seed=53, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:37 2025]
+Finished jobid: 136 (Rule: simulate)
+138 of 298 steps (46%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:37 2025]
+localrule simulate:
+    output: results/89/corrupt0/original_matrix.png, results/89/corrupt0/flipped_matrix.png
+    log: logs/89_corrupt0.out, logs/89_corrupt0.err
+    jobid: 268
+    benchmark: benchmarks/89_corrupt0.tsv
+    reason: Missing output files: results/89/corrupt0/flipped_matrix.png
+    wildcards: seed=89, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:38 2025]
+Finished jobid: 180 (Rule: simulate)
+139 of 298 steps (47%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:38 2025]
+localrule simulate:
+    output: results/61/corrupt0/original_matrix.png, results/61/corrupt0/flipped_matrix.png
+    log: logs/61_corrupt0.out, logs/61_corrupt0.err
+    jobid: 184
+    benchmark: benchmarks/61_corrupt0.tsv
+    reason: Missing output files: results/61/corrupt0/flipped_matrix.png
+    wildcards: seed=61, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:39 2025]
+Finished jobid: 100 (Rule: simulate)
+140 of 298 steps (47%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:39 2025]
+localrule simulate:
+    output: results/27/corrupt0/original_matrix.png, results/27/corrupt0/flipped_matrix.png
+    log: logs/27_corrupt0.out, logs/27_corrupt0.err
+    jobid: 82
+    benchmark: benchmarks/27_corrupt0.tsv
+    reason: Missing output files: results/27/corrupt0/flipped_matrix.png
+    wildcards: seed=27, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:39 2025]
+Finished jobid: 157 (Rule: simulate)
+141 of 298 steps (47%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:39 2025]
+localrule simulate:
+    output: results/63/corrupt0/original_matrix.png, results/63/corrupt0/flipped_matrix.png
+    log: logs/63_corrupt0.out, logs/63_corrupt0.err
+    jobid: 190
+    benchmark: benchmarks/63_corrupt0.tsv
+    reason: Missing output files: results/63/corrupt0/flipped_matrix.png
+    wildcards: seed=63, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:40 2025]
+Finished jobid: 254 (Rule: simulate)
+142 of 298 steps (48%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:40 2025]
+localrule simulate:
+    output: results/79/corrupt0/original_matrix.png, results/79/corrupt0/flipped_matrix.png
+    log: logs/79_corrupt0.out, logs/79_corrupt0.err
+    jobid: 238
+    benchmark: benchmarks/79_corrupt0.tsv
+    reason: Missing output files: results/79/corrupt0/flipped_matrix.png
+    wildcards: seed=79, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:41 2025]
+Finished jobid: 223 (Rule: simulate)
+143 of 298 steps (48%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:41 2025]
+localrule simulate:
+    output: results/10/corrupt0/original_matrix.png, results/10/corrupt0/flipped_matrix.png
+    log: logs/10_corrupt0.out, logs/10_corrupt0.err
+    jobid: 31
+    benchmark: benchmarks/10_corrupt0.tsv
+    reason: Missing output files: results/10/corrupt0/flipped_matrix.png
+    wildcards: seed=10, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:42 2025]
+Finished jobid: 34 (Rule: simulate)
+144 of 298 steps (48%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:42 2025]
+localrule simulate:
+    output: results/46/corrupt0/original_matrix.png, results/46/corrupt0/flipped_matrix.png
+    log: logs/46_corrupt0.out, logs/46_corrupt0.err
+    jobid: 139
+    benchmark: benchmarks/46_corrupt0.tsv
+    reason: Missing output files: results/46/corrupt0/flipped_matrix.png
+    wildcards: seed=46, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:44 2025]
+Finished jobid: 217 (Rule: simulate)
+145 of 298 steps (49%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:44 2025]
+localrule simulate:
+    output: results/22/corrupt50/original_matrix.png, results/22/corrupt50/flipped_matrix.png
+    log: logs/22_corrupt50.out, logs/22_corrupt50.err
+    jobid: 68
+    benchmark: benchmarks/22_corrupt50.tsv
+    reason: Missing output files: results/22/corrupt50/flipped_matrix.png
+    wildcards: seed=22, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:45 2025]
+Finished jobid: 154 (Rule: simulate)
+146 of 298 steps (49%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:45 2025]
+localrule simulate:
+    output: results/40/corrupt50/original_matrix.png, results/40/corrupt50/flipped_matrix.png
+    log: logs/40_corrupt50.out, logs/40_corrupt50.err
+    jobid: 122
+    benchmark: benchmarks/40_corrupt50.tsv
+    reason: Missing output files: results/40/corrupt50/flipped_matrix.png
+    wildcards: seed=40, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:45 2025]
+Finished jobid: 160 (Rule: simulate)
+147 of 298 steps (49%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:45 2025]
+localrule simulate:
+    output: results/0/corrupt0/original_matrix.png, results/0/corrupt0/flipped_matrix.png
+    log: logs/0_corrupt0.out, logs/0_corrupt0.err
+    jobid: 1
+    benchmark: benchmarks/0_corrupt0.tsv
+    reason: Missing output files: results/0/corrupt0/flipped_matrix.png
+    wildcards: seed=0, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:46 2025]
+Finished jobid: 268 (Rule: simulate)
+148 of 298 steps (50%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:46 2025]
+localrule simulate:
+    output: results/45/corrupt100/original_matrix.png, results/45/corrupt100/flipped_matrix.png
+    log: logs/45_corrupt100.out, logs/45_corrupt100.err
+    jobid: 138
+    benchmark: benchmarks/45_corrupt100.tsv
+    reason: Missing output files: results/45/corrupt100/flipped_matrix.png
+    wildcards: seed=45, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:47 2025]
+Finished jobid: 184 (Rule: simulate)
+149 of 298 steps (50%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:47 2025]
+localrule simulate:
+    output: results/26/corrupt100/original_matrix.png, results/26/corrupt100/flipped_matrix.png
+    log: logs/26_corrupt100.out, logs/26_corrupt100.err
+    jobid: 81
+    benchmark: benchmarks/26_corrupt100.tsv
+    reason: Missing output files: results/26/corrupt100/flipped_matrix.png
+    wildcards: seed=26, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:47 2025]
+Finished jobid: 82 (Rule: simulate)
+150 of 298 steps (50%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:48 2025]
+localrule simulate:
+    output: results/34/corrupt100/original_matrix.png, results/34/corrupt100/flipped_matrix.png
+    log: logs/34_corrupt100.out, logs/34_corrupt100.err
+    jobid: 105
+    benchmark: benchmarks/34_corrupt100.tsv
+    reason: Missing output files: results/34/corrupt100/flipped_matrix.png
+    wildcards: seed=34, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:48 2025]
+Finished jobid: 190 (Rule: simulate)
+151 of 298 steps (51%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:48 2025]
+localrule simulate:
+    output: results/14/corrupt50/original_matrix.png, results/14/corrupt50/flipped_matrix.png
+    log: logs/14_corrupt50.out, logs/14_corrupt50.err
+    jobid: 44
+    benchmark: benchmarks/14_corrupt50.tsv
+    reason: Missing output files: results/14/corrupt50/flipped_matrix.png
+    wildcards: seed=14, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:49 2025]
+Finished jobid: 238 (Rule: simulate)
+152 of 298 steps (51%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:50 2025]
+localrule simulate:
+    output: results/68/corrupt50/original_matrix.png, results/68/corrupt50/flipped_matrix.png
+    log: logs/68_corrupt50.out, logs/68_corrupt50.err
+    jobid: 206
+    benchmark: benchmarks/68_corrupt50.tsv
+    reason: Missing output files: results/68/corrupt50/flipped_matrix.png
+    wildcards: seed=68, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:51 2025]
+Finished jobid: 31 (Rule: simulate)
+153 of 298 steps (51%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:51 2025]
+localrule simulate:
+    output: results/8/corrupt0/original_matrix.png, results/8/corrupt0/flipped_matrix.png
+    log: logs/8_corrupt0.out, logs/8_corrupt0.err
+    jobid: 25
+    benchmark: benchmarks/8_corrupt0.tsv
+    reason: Missing output files: results/8/corrupt0/flipped_matrix.png
+    wildcards: seed=8, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:52 2025]
+Finished jobid: 139 (Rule: simulate)
+154 of 298 steps (52%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:52 2025]
+localrule simulate:
+    output: results/19/corrupt50/original_matrix.png, results/19/corrupt50/flipped_matrix.png
+    log: logs/19_corrupt50.out, logs/19_corrupt50.err
+    jobid: 59
+    benchmark: benchmarks/19_corrupt50.tsv
+    reason: Missing output files: results/19/corrupt50/flipped_matrix.png
+    wildcards: seed=19, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:55 2025]
+Finished jobid: 1 (Rule: simulate)
+155 of 298 steps (52%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:55 2025]
+localrule simulate:
+    output: results/55/corrupt0/original_matrix.png, results/55/corrupt0/flipped_matrix.png
+    log: logs/55_corrupt0.out, logs/55_corrupt0.err
+    jobid: 166
+    benchmark: benchmarks/55_corrupt0.tsv
+    reason: Missing output files: results/55/corrupt0/flipped_matrix.png
+    wildcards: seed=55, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:57 2025]
+Finished jobid: 122 (Rule: simulate)
+156 of 298 steps (52%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:57 2025]
+localrule simulate:
+    output: results/64/corrupt0/original_matrix.png, results/64/corrupt0/flipped_matrix.png
+    log: logs/64_corrupt0.out, logs/64_corrupt0.err
+    jobid: 193
+    benchmark: benchmarks/64_corrupt0.tsv
+    reason: Missing output files: results/64/corrupt0/flipped_matrix.png
+    wildcards: seed=64, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:58 2025]
+Finished jobid: 68 (Rule: simulate)
+157 of 298 steps (53%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:58 2025]
+localrule simulate:
+    output: results/15/corrupt100/original_matrix.png, results/15/corrupt100/flipped_matrix.png
+    log: logs/15_corrupt100.out, logs/15_corrupt100.err
+    jobid: 48
+    benchmark: benchmarks/15_corrupt100.tsv
+    reason: Missing output files: results/15/corrupt100/flipped_matrix.png
+    wildcards: seed=15, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:21:58 2025]
+Finished jobid: 138 (Rule: simulate)
+158 of 298 steps (53%) done
+Execute 1 jobs...
+[Tue Sep  9 01:21:58 2025]
+localrule simulate:
+    output: results/71/corrupt100/original_matrix.png, results/71/corrupt100/flipped_matrix.png
+    log: logs/71_corrupt100.out, logs/71_corrupt100.err
+    jobid: 216
+    benchmark: benchmarks/71_corrupt100.tsv
+    reason: Missing output files: results/71/corrupt100/flipped_matrix.png
+    wildcards: seed=71, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:00 2025]
+Finished jobid: 25 (Rule: simulate)
+159 of 298 steps (53%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:00 2025]
+localrule simulate:
+    output: results/98/corrupt0/original_matrix.png, results/98/corrupt0/flipped_matrix.png
+    log: logs/98_corrupt0.out, logs/98_corrupt0.err
+    jobid: 295
+    benchmark: benchmarks/98_corrupt0.tsv
+    reason: Missing output files: results/98/corrupt0/flipped_matrix.png
+    wildcards: seed=98, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:01 2025]
+Finished jobid: 81 (Rule: simulate)
+160 of 298 steps (54%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:01 2025]
+localrule simulate:
+    output: results/29/corrupt50/original_matrix.png, results/29/corrupt50/flipped_matrix.png
+    log: logs/29_corrupt50.out, logs/29_corrupt50.err
+    jobid: 89
+    benchmark: benchmarks/29_corrupt50.tsv
+    reason: Missing output files: results/29/corrupt50/flipped_matrix.png
+    wildcards: seed=29, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:01 2025]
+Finished jobid: 206 (Rule: simulate)
+161 of 298 steps (54%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:01 2025]
+localrule simulate:
+    output: results/73/corrupt50/original_matrix.png, results/73/corrupt50/flipped_matrix.png
+    log: logs/73_corrupt50.out, logs/73_corrupt50.err
+    jobid: 221
+    benchmark: benchmarks/73_corrupt50.tsv
+    reason: Missing output files: results/73/corrupt50/flipped_matrix.png
+    wildcards: seed=73, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:02 2025]
+Finished jobid: 105 (Rule: simulate)
+162 of 298 steps (54%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:02 2025]
+localrule simulate:
+    output: results/74/corrupt50/original_matrix.png, results/74/corrupt50/flipped_matrix.png
+    log: logs/74_corrupt50.out, logs/74_corrupt50.err
+    jobid: 224
+    benchmark: benchmarks/74_corrupt50.tsv
+    reason: Missing output files: results/74/corrupt50/flipped_matrix.png
+    wildcards: seed=74, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:03 2025]
+Finished jobid: 44 (Rule: simulate)
+163 of 298 steps (55%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:03 2025]
+localrule simulate:
+    output: results/36/corrupt0/original_matrix.png, results/36/corrupt0/flipped_matrix.png
+    log: logs/36_corrupt0.out, logs/36_corrupt0.err
+    jobid: 109
+    benchmark: benchmarks/36_corrupt0.tsv
+    reason: Missing output files: results/36/corrupt0/flipped_matrix.png
+    wildcards: seed=36, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:04 2025]
+Finished jobid: 166 (Rule: simulate)
+164 of 298 steps (55%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:04 2025]
+localrule simulate:
+    output: results/78/corrupt100/original_matrix.png, results/78/corrupt100/flipped_matrix.png
+    log: logs/78_corrupt100.out, logs/78_corrupt100.err
+    jobid: 237
+    benchmark: benchmarks/78_corrupt100.tsv
+    reason: Missing output files: results/78/corrupt100/flipped_matrix.png
+    wildcards: seed=78, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:05 2025]
+Finished jobid: 59 (Rule: simulate)
+165 of 298 steps (55%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:05 2025]
+localrule simulate:
+    output: results/80/corrupt0/original_matrix.png, results/80/corrupt0/flipped_matrix.png
+    log: logs/80_corrupt0.out, logs/80_corrupt0.err
+    jobid: 241
+    benchmark: benchmarks/80_corrupt0.tsv
+    reason: Missing output files: results/80/corrupt0/flipped_matrix.png
+    wildcards: seed=80, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:06 2025]
+Finished jobid: 193 (Rule: simulate)
+166 of 298 steps (56%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:06 2025]
+localrule simulate:
+    output: results/47/corrupt50/original_matrix.png, results/47/corrupt50/flipped_matrix.png
+    log: logs/47_corrupt50.out, logs/47_corrupt50.err
+    jobid: 143
+    benchmark: benchmarks/47_corrupt50.tsv
+    reason: Missing output files: results/47/corrupt50/flipped_matrix.png
+    wildcards: seed=47, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:09 2025]
+Finished jobid: 295 (Rule: simulate)
+167 of 298 steps (56%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:09 2025]
+localrule simulate:
+    output: results/12/corrupt50/original_matrix.png, results/12/corrupt50/flipped_matrix.png
+    log: logs/12_corrupt50.out, logs/12_corrupt50.err
+    jobid: 38
+    benchmark: benchmarks/12_corrupt50.tsv
+    reason: Missing output files: results/12/corrupt50/flipped_matrix.png
+    wildcards: seed=12, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:10 2025]
+Finished jobid: 216 (Rule: simulate)
+168 of 298 steps (56%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:10 2025]
+localrule simulate:
+    output: results/65/corrupt50/original_matrix.png, results/65/corrupt50/flipped_matrix.png
+    log: logs/65_corrupt50.out, logs/65_corrupt50.err
+    jobid: 197
+    benchmark: benchmarks/65_corrupt50.tsv
+    reason: Missing output files: results/65/corrupt50/flipped_matrix.png
+    wildcards: seed=65, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:12 2025]
+Finished jobid: 109 (Rule: simulate)
+169 of 298 steps (57%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:12 2025]
+localrule simulate:
+    output: results/83/corrupt50/original_matrix.png, results/83/corrupt50/flipped_matrix.png
+    log: logs/83_corrupt50.out, logs/83_corrupt50.err
+    jobid: 251
+    benchmark: benchmarks/83_corrupt50.tsv
+    reason: Missing output files: results/83/corrupt50/flipped_matrix.png
+    wildcards: seed=83, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:13 2025]
+Finished jobid: 48 (Rule: simulate)
+170 of 298 steps (57%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:13 2025]
+localrule simulate:
+    output: results/66/corrupt50/original_matrix.png, results/66/corrupt50/flipped_matrix.png
+    log: logs/66_corrupt50.out, logs/66_corrupt50.err
+    jobid: 200
+    benchmark: benchmarks/66_corrupt50.tsv
+    reason: Missing output files: results/66/corrupt50/flipped_matrix.png
+    wildcards: seed=66, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:14 2025]
+Finished jobid: 221 (Rule: simulate)
+171 of 298 steps (57%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:14 2025]
+localrule simulate:
+    output: results/9/corrupt0/original_matrix.png, results/9/corrupt0/flipped_matrix.png
+    log: logs/9_corrupt0.out, logs/9_corrupt0.err
+    jobid: 28
+    benchmark: benchmarks/9_corrupt0.tsv
+    reason: Missing output files: results/9/corrupt0/flipped_matrix.png
+    wildcards: seed=9, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:14 2025]
+Finished jobid: 241 (Rule: simulate)
+172 of 298 steps (58%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:14 2025]
+localrule simulate:
+    output: results/31/corrupt100/original_matrix.png, results/31/corrupt100/flipped_matrix.png
+    log: logs/31_corrupt100.out, logs/31_corrupt100.err
+    jobid: 96
+    benchmark: benchmarks/31_corrupt100.tsv
+    reason: Missing output files: results/31/corrupt100/flipped_matrix.png
+    wildcards: seed=31, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:15 2025]
+Finished jobid: 89 (Rule: simulate)
+173 of 298 steps (58%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:15 2025]
+localrule simulate:
+    output: results/41/corrupt100/original_matrix.png, results/41/corrupt100/flipped_matrix.png
+    log: logs/41_corrupt100.out, logs/41_corrupt100.err
+    jobid: 126
+    benchmark: benchmarks/41_corrupt100.tsv
+    reason: Missing output files: results/41/corrupt100/flipped_matrix.png
+    wildcards: seed=41, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:16 2025]
+Finished jobid: 224 (Rule: simulate)
+174 of 298 steps (58%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:16 2025]
+localrule simulate:
+    output: results/92/corrupt0/original_matrix.png, results/92/corrupt0/flipped_matrix.png
+    log: logs/92_corrupt0.out, logs/92_corrupt0.err
+    jobid: 277
+    benchmark: benchmarks/92_corrupt0.tsv
+    reason: Missing output files: results/92/corrupt0/flipped_matrix.png
+    wildcards: seed=92, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:18 2025]
+Finished jobid: 143 (Rule: simulate)
+175 of 298 steps (59%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:18 2025]
+localrule simulate:
+    output: results/70/corrupt0/original_matrix.png, results/70/corrupt0/flipped_matrix.png
+    log: logs/70_corrupt0.out, logs/70_corrupt0.err
+    jobid: 211
+    benchmark: benchmarks/70_corrupt0.tsv
+    reason: Missing output files: results/70/corrupt0/flipped_matrix.png
+    wildcards: seed=70, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:20 2025]
+Finished jobid: 237 (Rule: simulate)
+176 of 298 steps (59%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:20 2025]
+localrule simulate:
+    output: results/90/corrupt0/original_matrix.png, results/90/corrupt0/flipped_matrix.png
+    log: logs/90_corrupt0.out, logs/90_corrupt0.err
+    jobid: 271
+    benchmark: benchmarks/90_corrupt0.tsv
+    reason: Missing output files: results/90/corrupt0/flipped_matrix.png
+    wildcards: seed=90, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:20 2025]
+Finished jobid: 38 (Rule: simulate)
+177 of 298 steps (59%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:20 2025]
+localrule simulate:
+    output: results/30/corrupt0/original_matrix.png, results/30/corrupt0/flipped_matrix.png
+    log: logs/30_corrupt0.out, logs/30_corrupt0.err
+    jobid: 91
+    benchmark: benchmarks/30_corrupt0.tsv
+    reason: Missing output files: results/30/corrupt0/flipped_matrix.png
+    wildcards: seed=30, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:23 2025]
+Finished jobid: 197 (Rule: simulate)
+178 of 298 steps (60%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:23 2025]
+localrule simulate:
+    output: results/34/corrupt0/original_matrix.png, results/34/corrupt0/flipped_matrix.png
+    log: logs/34_corrupt0.out, logs/34_corrupt0.err
+    jobid: 103
+    benchmark: benchmarks/34_corrupt0.tsv
+    reason: Missing output files: results/34/corrupt0/flipped_matrix.png
+    wildcards: seed=34, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:23 2025]
+Finished jobid: 28 (Rule: simulate)
+179 of 298 steps (60%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:23 2025]
+localrule simulate:
+    output: results/56/corrupt0/original_matrix.png, results/56/corrupt0/flipped_matrix.png
+    log: logs/56_corrupt0.out, logs/56_corrupt0.err
+    jobid: 169
+    benchmark: benchmarks/56_corrupt0.tsv
+    reason: Missing output files: results/56/corrupt0/flipped_matrix.png; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: '0',0.7,'56' now: 'results/56/corrupt0' 
+    wildcards: seed=56, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:24 2025]
+Finished jobid: 251 (Rule: simulate)
+180 of 298 steps (60%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:24 2025]
+localrule simulate:
+    output: results/38/corrupt0/original_matrix.png, results/38/corrupt0/flipped_matrix.png
+    log: logs/38_corrupt0.out, logs/38_corrupt0.err
+    jobid: 115
+    benchmark: benchmarks/38_corrupt0.tsv
+    reason: Missing output files: results/38/corrupt0/flipped_matrix.png
+    wildcards: seed=38, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:25 2025]
+Finished jobid: 277 (Rule: simulate)
+181 of 298 steps (61%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:25 2025]
+localrule simulate:
+    output: results/91/corrupt0/original_matrix.png, results/91/corrupt0/flipped_matrix.png
+    log: logs/91_corrupt0.out, logs/91_corrupt0.err
+    jobid: 274
+    benchmark: benchmarks/91_corrupt0.tsv
+    reason: Missing output files: results/91/corrupt0/flipped_matrix.png
+    wildcards: seed=91, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:27 2025]
+Finished jobid: 200 (Rule: simulate)
+182 of 298 steps (61%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:27 2025]
+localrule simulate:
+    output: results/15/corrupt0/original_matrix.png, results/15/corrupt0/flipped_matrix.png
+    log: logs/15_corrupt0.out, logs/15_corrupt0.err
+    jobid: 46
+    benchmark: benchmarks/15_corrupt0.tsv
+    reason: Missing output files: results/15/corrupt0/flipped_matrix.png
+    wildcards: seed=15, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:27 2025]
+Finished jobid: 96 (Rule: simulate)
+183 of 298 steps (61%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:27 2025]
+localrule simulate:
+    output: results/2/corrupt0/original_matrix.png, results/2/corrupt0/flipped_matrix.png
+    log: logs/2_corrupt0.out, logs/2_corrupt0.err
+    jobid: 7
+    benchmark: benchmarks/2_corrupt0.tsv
+    reason: Missing output files: results/2/corrupt0/flipped_matrix.png
+    wildcards: seed=2, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:27 2025]
+Finished jobid: 211 (Rule: simulate)
+184 of 298 steps (62%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:27 2025]
+localrule simulate:
+    output: results/20/corrupt0/original_matrix.png, results/20/corrupt0/flipped_matrix.png
+    log: logs/20_corrupt0.out, logs/20_corrupt0.err
+    jobid: 61
+    benchmark: benchmarks/20_corrupt0.tsv
+    reason: Missing output files: results/20/corrupt0/flipped_matrix.png
+    wildcards: seed=20, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:28 2025]
+Finished jobid: 126 (Rule: simulate)
+185 of 298 steps (62%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:28 2025]
+localrule simulate:
+    output: results/88/corrupt0/original_matrix.png, results/88/corrupt0/flipped_matrix.png
+    log: logs/88_corrupt0.out, logs/88_corrupt0.err
+    jobid: 265
+    benchmark: benchmarks/88_corrupt0.tsv
+    reason: Missing output files: results/88/corrupt0/flipped_matrix.png
+    wildcards: seed=88, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:29 2025]
+Finished jobid: 271 (Rule: simulate)
+186 of 298 steps (62%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:29 2025]
+localrule simulate:
+    output: results/22/corrupt0/original_matrix.png, results/22/corrupt0/flipped_matrix.png
+    log: logs/22_corrupt0.out, logs/22_corrupt0.err
+    jobid: 67
+    benchmark: benchmarks/22_corrupt0.tsv
+    reason: Missing output files: results/22/corrupt0/flipped_matrix.png
+    wildcards: seed=22, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:29 2025]
+Finished jobid: 91 (Rule: simulate)
+187 of 298 steps (63%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:29 2025]
+localrule simulate:
+    output: results/40/corrupt0/original_matrix.png, results/40/corrupt0/flipped_matrix.png
+    log: logs/40_corrupt0.out, logs/40_corrupt0.err
+    jobid: 121
+    benchmark: benchmarks/40_corrupt0.tsv
+    reason: Missing output files: results/40/corrupt0/flipped_matrix.png
+    wildcards: seed=40, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:32 2025]
+Finished jobid: 103 (Rule: simulate)
+188 of 298 steps (63%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:32 2025]
+localrule simulate:
+    output: results/58/corrupt0/original_matrix.png, results/58/corrupt0/flipped_matrix.png
+    log: logs/58_corrupt0.out, logs/58_corrupt0.err
+    jobid: 175
+    benchmark: benchmarks/58_corrupt0.tsv
+    reason: Missing output files: results/58/corrupt0/flipped_matrix.png
+    wildcards: seed=58, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:32 2025]
+Finished jobid: 169 (Rule: simulate)
+189 of 298 steps (63%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:32 2025]
+localrule simulate:
+    output: results/26/corrupt0/original_matrix.png, results/26/corrupt0/flipped_matrix.png
+    log: logs/26_corrupt0.out, logs/26_corrupt0.err
+    jobid: 79
+    benchmark: benchmarks/26_corrupt0.tsv
+    reason: Missing output files: results/26/corrupt0/flipped_matrix.png
+    wildcards: seed=26, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:33 2025]
+Finished jobid: 115 (Rule: simulate)
+190 of 298 steps (64%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:33 2025]
+localrule simulate:
+    output: results/17/corrupt0/original_matrix.png, results/17/corrupt0/flipped_matrix.png
+    log: logs/17_corrupt0.out, logs/17_corrupt0.err
+    jobid: 52
+    benchmark: benchmarks/17_corrupt0.tsv
+    reason: Missing output files: results/17/corrupt0/flipped_matrix.png
+    wildcards: seed=17, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:34 2025]
+Finished jobid: 274 (Rule: simulate)
+191 of 298 steps (64%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:34 2025]
+localrule simulate:
+    output: results/43/corrupt0/original_matrix.png, results/43/corrupt0/flipped_matrix.png
+    log: logs/43_corrupt0.out, logs/43_corrupt0.err
+    jobid: 130
+    benchmark: benchmarks/43_corrupt0.tsv
+    reason: Missing output files: results/43/corrupt0/flipped_matrix.png
+    wildcards: seed=43, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:36 2025]
+Finished jobid: 46 (Rule: simulate)
+192 of 298 steps (64%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:36 2025]
+localrule simulate:
+    output: results/29/corrupt0/original_matrix.png, results/29/corrupt0/flipped_matrix.png
+    log: logs/29_corrupt0.out, logs/29_corrupt0.err
+    jobid: 88
+    benchmark: benchmarks/29_corrupt0.tsv
+    reason: Missing output files: results/29/corrupt0/flipped_matrix.png
+    wildcards: seed=29, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:36 2025]
+Finished jobid: 7 (Rule: simulate)
+193 of 298 steps (65%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:37 2025]
+localrule simulate:
+    output: results/47/corrupt0/original_matrix.png, results/47/corrupt0/flipped_matrix.png
+    log: logs/47_corrupt0.out, logs/47_corrupt0.err
+    jobid: 142
+    benchmark: benchmarks/47_corrupt0.tsv
+    reason: Missing output files: results/47/corrupt0/flipped_matrix.png
+    wildcards: seed=47, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:37 2025]
+Finished jobid: 61 (Rule: simulate)
+194 of 298 steps (65%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:37 2025]
+localrule simulate:
+    output: results/81/corrupt0/original_matrix.png, results/81/corrupt0/flipped_matrix.png
+    log: logs/81_corrupt0.out, logs/81_corrupt0.err
+    jobid: 244
+    benchmark: benchmarks/81_corrupt0.tsv
+    reason: Missing output files: results/81/corrupt0/flipped_matrix.png
+    wildcards: seed=81, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:37 2025]
+Finished jobid: 265 (Rule: simulate)
+195 of 298 steps (65%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:37 2025]
+localrule simulate:
+    output: results/83/corrupt0/original_matrix.png, results/83/corrupt0/flipped_matrix.png
+    log: logs/83_corrupt0.out, logs/83_corrupt0.err
+    jobid: 250
+    benchmark: benchmarks/83_corrupt0.tsv
+    reason: Missing output files: results/83/corrupt0/flipped_matrix.png
+    wildcards: seed=83, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:38 2025]
+Finished jobid: 121 (Rule: simulate)
+196 of 298 steps (66%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:38 2025]
+localrule simulate:
+    output: results/25/corrupt0/original_matrix.png, results/25/corrupt0/flipped_matrix.png
+    log: logs/25_corrupt0.out, logs/25_corrupt0.err
+    jobid: 76
+    benchmark: benchmarks/25_corrupt0.tsv
+    reason: Missing output files: results/25/corrupt0/flipped_matrix.png
+    wildcards: seed=25, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:38 2025]
+Finished jobid: 67 (Rule: simulate)
+197 of 298 steps (66%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:38 2025]
+localrule simulate:
+    output: results/7/corrupt0/original_matrix.png, results/7/corrupt0/flipped_matrix.png
+    log: logs/7_corrupt0.out, logs/7_corrupt0.err
+    jobid: 22
+    benchmark: benchmarks/7_corrupt0.tsv
+    reason: Missing output files: results/7/corrupt0/flipped_matrix.png
+    wildcards: seed=7, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:41 2025]
+Finished jobid: 175 (Rule: simulate)
+198 of 298 steps (66%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:41 2025]
+localrule simulate:
+    output: results/62/corrupt0/original_matrix.png, results/62/corrupt0/flipped_matrix.png
+    log: logs/62_corrupt0.out, logs/62_corrupt0.err
+    jobid: 187
+    benchmark: benchmarks/62_corrupt0.tsv
+    reason: Missing output files: results/62/corrupt0/flipped_matrix.png
+    wildcards: seed=62, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:41 2025]
+Finished jobid: 79 (Rule: simulate)
+199 of 298 steps (67%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:41 2025]
+localrule simulate:
+    output: results/28/corrupt0/original_matrix.png, results/28/corrupt0/flipped_matrix.png
+    log: logs/28_corrupt0.out, logs/28_corrupt0.err
+    jobid: 85
+    benchmark: benchmarks/28_corrupt0.tsv
+    reason: Missing output files: results/28/corrupt0/flipped_matrix.png
+    wildcards: seed=28, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:42 2025]
+Finished jobid: 52 (Rule: simulate)
+200 of 298 steps (67%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:42 2025]
+localrule simulate:
+    output: results/65/corrupt0/original_matrix.png, results/65/corrupt0/flipped_matrix.png
+    log: logs/65_corrupt0.out, logs/65_corrupt0.err
+    jobid: 196
+    benchmark: benchmarks/65_corrupt0.tsv
+    reason: Missing output files: results/65/corrupt0/flipped_matrix.png
+    wildcards: seed=65, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:43 2025]
+Finished jobid: 130 (Rule: simulate)
+201 of 298 steps (67%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:43 2025]
+localrule simulate:
+    output: results/19/corrupt0/original_matrix.png, results/19/corrupt0/flipped_matrix.png
+    log: logs/19_corrupt0.out, logs/19_corrupt0.err
+    jobid: 58
+    benchmark: benchmarks/19_corrupt0.tsv
+    reason: Missing output files: results/19/corrupt0/flipped_matrix.png
+    wildcards: seed=19, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:45 2025]
+Finished jobid: 88 (Rule: simulate)
+202 of 298 steps (68%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:45 2025]
+localrule simulate:
+    output: results/37/corrupt0/original_matrix.png, results/37/corrupt0/flipped_matrix.png
+    log: logs/37_corrupt0.out, logs/37_corrupt0.err
+    jobid: 112
+    benchmark: benchmarks/37_corrupt0.tsv
+    reason: Missing output files: results/37/corrupt0/flipped_matrix.png
+    wildcards: seed=37, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:46 2025]
+Finished jobid: 244 (Rule: simulate)
+203 of 298 steps (68%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:46 2025]
+localrule simulate:
+    output: results/82/corrupt0/original_matrix.png, results/82/corrupt0/flipped_matrix.png
+    log: logs/82_corrupt0.out, logs/82_corrupt0.err
+    jobid: 247
+    benchmark: benchmarks/82_corrupt0.tsv
+    reason: Missing output files: results/82/corrupt0/flipped_matrix.png
+    wildcards: seed=82, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:46 2025]
+Finished jobid: 142 (Rule: simulate)
+204 of 298 steps (68%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:46 2025]
+localrule simulate:
+    output: results/73/corrupt0/original_matrix.png, results/73/corrupt0/flipped_matrix.png
+    log: logs/73_corrupt0.out, logs/73_corrupt0.err
+    jobid: 220
+    benchmark: benchmarks/73_corrupt0.tsv
+    reason: Missing output files: results/73/corrupt0/flipped_matrix.png
+    wildcards: seed=73, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:22:46 2025]
+Finished jobid: 250 (Rule: simulate)
+205 of 298 steps (69%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:22:46 2025]
+localrule simulate:
+    output: results/12/corrupt0/original_matrix.png, results/12/corrupt0/flipped_matrix.png
+    log: logs/12_corrupt0.out, logs/12_corrupt0.err
+    jobid: 37
+    benchmark: benchmarks/12_corrupt0.tsv
+    reason: Missing output files: results/12/corrupt0/flipped_matrix.png
+    wildcards: seed=12, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:47 2025]
+Finished jobid: 76 (Rule: simulate)
+206 of 298 steps (69%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:47 2025]
+localrule simulate:
+    output: results/48/corrupt0/original_matrix.png, results/48/corrupt0/flipped_matrix.png
+    log: logs/48_corrupt0.out, logs/48_corrupt0.err
+    jobid: 145
+    benchmark: benchmarks/48_corrupt0.tsv
+    reason: Missing output files: results/48/corrupt0/flipped_matrix.png
+    wildcards: seed=48, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:47 2025]
+Finished jobid: 22 (Rule: simulate)
+207 of 298 steps (69%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:47 2025]
+localrule simulate:
+    output: results/66/corrupt0/original_matrix.png, results/66/corrupt0/flipped_matrix.png
+    log: logs/66_corrupt0.out, logs/66_corrupt0.err
+    jobid: 199
+    benchmark: benchmarks/66_corrupt0.tsv
+    reason: Missing output files: results/66/corrupt0/flipped_matrix.png
+    wildcards: seed=66, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:50 2025]
+Finished jobid: 85 (Rule: simulate)
+208 of 298 steps (70%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:50 2025]
+localrule simulate:
+    output: results/1/corrupt0/original_matrix.png, results/1/corrupt0/flipped_matrix.png
+    log: logs/1_corrupt0.out, logs/1_corrupt0.err
+    jobid: 4
+    benchmark: benchmarks/1_corrupt0.tsv
+    reason: Missing output files: results/1/corrupt0/flipped_matrix.png
+    wildcards: seed=1, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:50 2025]
+Finished jobid: 187 (Rule: simulate)
+209 of 298 steps (70%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:50 2025]
+localrule simulate:
+    output: results/84/corrupt0/original_matrix.png, results/84/corrupt0/flipped_matrix.png
+    log: logs/84_corrupt0.out, logs/84_corrupt0.err
+    jobid: 253
+    benchmark: benchmarks/84_corrupt0.tsv
+    reason: Missing output files: results/84/corrupt0/flipped_matrix.png
+    wildcards: seed=84, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:51 2025]
+Finished jobid: 196 (Rule: simulate)
+210 of 298 steps (70%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:51 2025]
+localrule simulate:
+    output: results/21/corrupt0/original_matrix.png, results/21/corrupt0/flipped_matrix.png
+    log: logs/21_corrupt0.out, logs/21_corrupt0.err
+    jobid: 64
+    benchmark: benchmarks/21_corrupt0.tsv
+    reason: Missing output files: results/21/corrupt0/flipped_matrix.png
+    wildcards: seed=21, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:53 2025]
+Finished jobid: 58 (Rule: simulate)
+211 of 298 steps (71%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:53 2025]
+localrule simulate:
+    output: results/39/corrupt0/original_matrix.png, results/39/corrupt0/flipped_matrix.png
+    log: logs/39_corrupt0.out, logs/39_corrupt0.err
+    jobid: 118
+    benchmark: benchmarks/39_corrupt0.tsv
+    reason: Missing output files: results/39/corrupt0/flipped_matrix.png
+    wildcards: seed=39, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:54 2025]
+Finished jobid: 112 (Rule: simulate)
+212 of 298 steps (71%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:54 2025]
+localrule simulate:
+    output: results/62/corrupt100/original_matrix.png, results/62/corrupt100/flipped_matrix.png
+    log: logs/62_corrupt100.out, logs/62_corrupt100.err
+    jobid: 189
+    benchmark: benchmarks/62_corrupt100.tsv
+    reason: Missing output files: results/62/corrupt100/flipped_matrix.png
+    wildcards: seed=62, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:55 2025]
+Finished jobid: 247 (Rule: simulate)
+213 of 298 steps (71%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:55 2025]
+localrule simulate:
+    output: results/76/corrupt0/original_matrix.png, results/76/corrupt0/flipped_matrix.png
+    log: logs/76_corrupt0.out, logs/76_corrupt0.err
+    jobid: 229
+    benchmark: benchmarks/76_corrupt0.tsv
+    reason: Missing output files: results/76/corrupt0/flipped_matrix.png
+    wildcards: seed=76, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:55 2025]
+Finished jobid: 220 (Rule: simulate)
+214 of 298 steps (72%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:55 2025]
+localrule simulate:
+    output: results/16/corrupt0/original_matrix.png, results/16/corrupt0/flipped_matrix.png
+    log: logs/16_corrupt0.out, logs/16_corrupt0.err
+    jobid: 49
+    benchmark: benchmarks/16_corrupt0.tsv
+    reason: Missing output files: results/16/corrupt0/flipped_matrix.png
+    wildcards: seed=16, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:55 2025]
+Finished jobid: 37 (Rule: simulate)
+215 of 298 steps (72%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:55 2025]
+localrule simulate:
+    output: results/57/corrupt0/original_matrix.png, results/57/corrupt0/flipped_matrix.png
+    log: logs/57_corrupt0.out, logs/57_corrupt0.err
+    jobid: 172
+    benchmark: benchmarks/57_corrupt0.tsv
+    reason: Missing output files: results/57/corrupt0/flipped_matrix.png
+    wildcards: seed=57, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:56 2025]
+Finished jobid: 145 (Rule: simulate)
+216 of 298 steps (72%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:56 2025]
+localrule simulate:
+    output: results/75/corrupt0/original_matrix.png, results/75/corrupt0/flipped_matrix.png
+    log: logs/75_corrupt0.out, logs/75_corrupt0.err
+    jobid: 226
+    benchmark: benchmarks/75_corrupt0.tsv
+    reason: Missing output files: results/75/corrupt0/flipped_matrix.png
+    wildcards: seed=75, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:57 2025]
+Finished jobid: 199 (Rule: simulate)
+217 of 298 steps (73%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:57 2025]
+localrule simulate:
+    output: results/3/corrupt0/original_matrix.png, results/3/corrupt0/flipped_matrix.png
+    log: logs/3_corrupt0.out, logs/3_corrupt0.err
+    jobid: 10
+    benchmark: benchmarks/3_corrupt0.tsv
+    reason: Missing output files: results/3/corrupt0/flipped_matrix.png
+    wildcards: seed=3, corrupt=0
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:59 2025]
+Finished jobid: 253 (Rule: simulate)
+218 of 298 steps (73%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:59 2025]
+localrule simulate:
+    output: results/99/corrupt100/original_matrix.png, results/99/corrupt100/flipped_matrix.png
+    log: logs/99_corrupt100.out, logs/99_corrupt100.err
+    jobid: 300
+    benchmark: benchmarks/99_corrupt100.tsv
+    reason: Missing output files: results/99/corrupt100/flipped_matrix.png
+    wildcards: seed=99, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:22:59 2025]
+Finished jobid: 4 (Rule: simulate)
+219 of 298 steps (73%) done
+Execute 1 jobs...
+[Tue Sep  9 01:22:59 2025]
+localrule simulate:
+    output: results/0/corrupt100/original_matrix.png, results/0/corrupt100/flipped_matrix.png
+    log: logs/0_corrupt100.out, logs/0_corrupt100.err
+    jobid: 3
+    benchmark: benchmarks/0_corrupt100.tsv
+    reason: Missing output files: results/0/corrupt100/flipped_matrix.png
+    wildcards: seed=0, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:00 2025]
+Finished jobid: 64 (Rule: simulate)
+220 of 298 steps (74%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:00 2025]
+localrule simulate:
+    output: results/54/corrupt100/original_matrix.png, results/54/corrupt100/flipped_matrix.png
+    log: logs/54_corrupt100.out, logs/54_corrupt100.err
+    jobid: 165
+    benchmark: benchmarks/54_corrupt100.tsv
+    reason: Missing output files: results/54/corrupt100/flipped_matrix.png
+    wildcards: seed=54, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:02 2025]
+Finished jobid: 118 (Rule: simulate)
+221 of 298 steps (74%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:02 2025]
+localrule simulate:
+    output: results/90/corrupt100/original_matrix.png, results/90/corrupt100/flipped_matrix.png
+    log: logs/90_corrupt100.out, logs/90_corrupt100.err
+    jobid: 273
+    benchmark: benchmarks/90_corrupt100.tsv
+    reason: Missing output files: results/90/corrupt100/flipped_matrix.png
+    wildcards: seed=90, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:03 2025]
+Finished jobid: 229 (Rule: simulate)
+222 of 298 steps (74%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:03 2025]
+localrule simulate:
+    output: results/18/corrupt100/original_matrix.png, results/18/corrupt100/flipped_matrix.png
+    log: logs/18_corrupt100.out, logs/18_corrupt100.err
+    jobid: 57
+    benchmark: benchmarks/18_corrupt100.tsv
+    reason: Missing output files: results/18/corrupt100/flipped_matrix.png
+    wildcards: seed=18, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:04 2025]
+Finished jobid: 49 (Rule: simulate)
+223 of 298 steps (75%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:04 2025]
+localrule simulate:
+    output: results/50/corrupt50/original_matrix.png, results/50/corrupt50/flipped_matrix.png
+    log: logs/50_corrupt50.out, logs/50_corrupt50.err
+    jobid: 152
+    benchmark: benchmarks/50_corrupt50.tsv
+    reason: Missing output files: results/50/corrupt50/flipped_matrix.png
+    wildcards: seed=50, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:05 2025]
+Finished jobid: 226 (Rule: simulate)
+224 of 298 steps (75%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:05 2025]
+localrule simulate:
+    output: results/57/corrupt50/original_matrix.png, results/57/corrupt50/flipped_matrix.png
+    log: logs/57_corrupt50.out, logs/57_corrupt50.err
+    jobid: 173
+    benchmark: benchmarks/57_corrupt50.tsv
+    reason: Missing output files: results/57/corrupt50/flipped_matrix.png
+    wildcards: seed=57, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:23:05 2025]
+Finished jobid: 172 (Rule: simulate)
+225 of 298 steps (76%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:23:05 2025]
+localrule simulate:
+    output: results/21/corrupt50/original_matrix.png, results/21/corrupt50/flipped_matrix.png
+    log: logs/21_corrupt50.out, logs/21_corrupt50.err
+    jobid: 65
+    benchmark: benchmarks/21_corrupt50.tsv
+    reason: Missing output files: results/21/corrupt50/flipped_matrix.png
+    wildcards: seed=21, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:06 2025]
+Finished jobid: 10 (Rule: simulate)
+226 of 298 steps (76%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:06 2025]
+localrule simulate:
+    output: results/37/corrupt50/original_matrix.png, results/37/corrupt50/flipped_matrix.png
+    log: logs/37_corrupt50.out, logs/37_corrupt50.err
+    jobid: 113
+    benchmark: benchmarks/37_corrupt50.tsv
+    reason: Missing output files: results/37/corrupt50/flipped_matrix.png
+    wildcards: seed=37, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:10 2025]
+Finished jobid: 189 (Rule: simulate)
+227 of 298 steps (76%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:10 2025]
+localrule simulate:
+    output: results/59/corrupt50/original_matrix.png, results/59/corrupt50/flipped_matrix.png
+    log: logs/59_corrupt50.out, logs/59_corrupt50.err
+    jobid: 179
+    benchmark: benchmarks/59_corrupt50.tsv
+    reason: Missing output files: results/59/corrupt50/flipped_matrix.png
+    wildcards: seed=59, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:11 2025]
+Finished jobid: 3 (Rule: simulate)
+228 of 298 steps (77%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:11 2025]
+localrule simulate:
+    output: results/95/corrupt50/original_matrix.png, results/95/corrupt50/flipped_matrix.png
+    log: logs/95_corrupt50.out, logs/95_corrupt50.err
+    jobid: 287
+    benchmark: benchmarks/95_corrupt50.tsv
+    reason: Missing output files: results/95/corrupt50/flipped_matrix.png
+    wildcards: seed=95, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:12 2025]
+Finished jobid: 300 (Rule: simulate)
+229 of 298 steps (77%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:12 2025]
+localrule simulate:
+    output: results/5/corrupt50/original_matrix.png, results/5/corrupt50/flipped_matrix.png
+    log: logs/5_corrupt50.out, logs/5_corrupt50.err
+    jobid: 17
+    benchmark: benchmarks/5_corrupt50.tsv
+    reason: Missing output files: results/5/corrupt50/flipped_matrix.png
+    wildcards: seed=5, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:13 2025]
+Finished jobid: 273 (Rule: simulate)
+230 of 298 steps (77%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:13 2025]
+localrule simulate:
+    output: results/16/corrupt100/original_matrix.png, results/16/corrupt100/flipped_matrix.png
+    log: logs/16_corrupt100.out, logs/16_corrupt100.err
+    jobid: 51
+    benchmark: benchmarks/16_corrupt100.tsv
+    reason: Missing output files: results/16/corrupt100/flipped_matrix.png
+    wildcards: seed=16, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:14 2025]
+Finished jobid: 165 (Rule: simulate)
+231 of 298 steps (78%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:14 2025]
+localrule simulate:
+    output: results/6/corrupt50/original_matrix.png, results/6/corrupt50/flipped_matrix.png
+    log: logs/6_corrupt50.out, logs/6_corrupt50.err
+    jobid: 20
+    benchmark: benchmarks/6_corrupt50.tsv
+    reason: Missing output files: results/6/corrupt50/flipped_matrix.png
+    wildcards: seed=6, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:16 2025]
+Finished jobid: 152 (Rule: simulate)
+232 of 298 steps (78%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:16 2025]
+localrule simulate:
+    output: results/96/corrupt50/original_matrix.png, results/96/corrupt50/flipped_matrix.png
+    log: logs/96_corrupt50.out, logs/96_corrupt50.err
+    jobid: 290
+    benchmark: benchmarks/96_corrupt50.tsv
+    reason: Missing output files: results/96/corrupt50/flipped_matrix.png
+    wildcards: seed=96, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:17 2025]
+Finished jobid: 57 (Rule: simulate)
+233 of 298 steps (78%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:17 2025]
+localrule simulate:
+    output: results/38/corrupt50/original_matrix.png, results/38/corrupt50/flipped_matrix.png
+    log: logs/38_corrupt50.out, logs/38_corrupt50.err
+    jobid: 116
+    benchmark: benchmarks/38_corrupt50.tsv
+    reason: Missing output files: results/38/corrupt50/flipped_matrix.png
+    wildcards: seed=38, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:19 2025]
+Finished jobid: 173 (Rule: simulate)
+234 of 298 steps (79%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:19 2025]
+localrule simulate:
+    output: results/64/corrupt50/original_matrix.png, results/64/corrupt50/flipped_matrix.png
+    log: logs/64_corrupt50.out, logs/64_corrupt50.err
+    jobid: 194
+    benchmark: benchmarks/64_corrupt50.tsv
+    reason: Missing output files: results/64/corrupt50/flipped_matrix.png
+    wildcards: seed=64, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:23:19 2025]
+Finished jobid: 65 (Rule: simulate)
+235 of 298 steps (79%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:23:19 2025]
+localrule simulate:
+    output: results/20/corrupt50/original_matrix.png, results/20/corrupt50/flipped_matrix.png
+    log: logs/20_corrupt50.out, logs/20_corrupt50.err
+    jobid: 62
+    benchmark: benchmarks/20_corrupt50.tsv
+    reason: Missing output files: results/20/corrupt50/flipped_matrix.png
+    wildcards: seed=20, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:23 2025]
+Finished jobid: 113 (Rule: simulate)
+236 of 298 steps (79%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:23 2025]
+localrule simulate:
+    output: results/58/corrupt50/original_matrix.png, results/58/corrupt50/flipped_matrix.png
+    log: logs/58_corrupt50.out, logs/58_corrupt50.err
+    jobid: 176
+    benchmark: benchmarks/58_corrupt50.tsv
+    reason: Missing output files: results/58/corrupt50/flipped_matrix.png
+    wildcards: seed=58, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:24 2025]
+Finished jobid: 17 (Rule: simulate)
+237 of 298 steps (80%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:24 2025]
+localrule simulate:
+    output: results/80/corrupt100/original_matrix.png, results/80/corrupt100/flipped_matrix.png
+    log: logs/80_corrupt100.out, logs/80_corrupt100.err
+    jobid: 243
+    benchmark: benchmarks/80_corrupt100.tsv
+    reason: Missing output files: results/80/corrupt100/flipped_matrix.png
+    wildcards: seed=80, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:24 2025]
+Finished jobid: 179 (Rule: simulate)
+238 of 298 steps (80%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:24 2025]
+localrule simulate:
+    output: results/84/corrupt100/original_matrix.png, results/84/corrupt100/flipped_matrix.png
+    log: logs/84_corrupt100.out, logs/84_corrupt100.err
+    jobid: 255
+    benchmark: benchmarks/84_corrupt100.tsv
+    reason: Missing output files: results/84/corrupt100/flipped_matrix.png
+    wildcards: seed=84, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:26 2025]
+Finished jobid: 287 (Rule: simulate)
+239 of 298 steps (80%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:26 2025]
+localrule simulate:
+    output: results/76/corrupt50/original_matrix.png, results/76/corrupt50/flipped_matrix.png
+    log: logs/76_corrupt50.out, logs/76_corrupt50.err
+    jobid: 230
+    benchmark: benchmarks/76_corrupt50.tsv
+    reason: Missing output files: results/76/corrupt50/flipped_matrix.png
+    wildcards: seed=76, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:27 2025]
+Finished jobid: 51 (Rule: simulate)
+240 of 298 steps (81%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:27 2025]
+localrule simulate:
+    output: results/24/corrupt50/original_matrix.png, results/24/corrupt50/flipped_matrix.png
+    log: logs/24_corrupt50.out, logs/24_corrupt50.err
+    jobid: 74
+    benchmark: benchmarks/24_corrupt50.tsv
+    reason: Missing output files: results/24/corrupt50/flipped_matrix.png
+    wildcards: seed=24, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:27 2025]
+Finished jobid: 20 (Rule: simulate)
+241 of 298 steps (81%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:27 2025]
+localrule simulate:
+    output: results/27/corrupt50/original_matrix.png, results/27/corrupt50/flipped_matrix.png
+    log: logs/27_corrupt50.out, logs/27_corrupt50.err
+    jobid: 83
+    benchmark: benchmarks/27_corrupt50.tsv
+    reason: Missing output files: results/27/corrupt50/flipped_matrix.png
+    wildcards: seed=27, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:29 2025]
+Finished jobid: 116 (Rule: simulate)
+242 of 298 steps (81%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:29 2025]
+localrule simulate:
+    output: results/81/corrupt50/original_matrix.png, results/81/corrupt50/flipped_matrix.png
+    log: logs/81_corrupt50.out, logs/81_corrupt50.err
+    jobid: 245
+    benchmark: benchmarks/81_corrupt50.tsv
+    reason: Missing output files: results/81/corrupt50/flipped_matrix.png
+    wildcards: seed=81, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:31 2025]
+Finished jobid: 194 (Rule: simulate)
+243 of 298 steps (82%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:31 2025]
+localrule simulate:
+    output: results/49/corrupt50/original_matrix.png, results/49/corrupt50/flipped_matrix.png
+    log: logs/49_corrupt50.out, logs/49_corrupt50.err
+    jobid: 149
+    benchmark: benchmarks/49_corrupt50.tsv
+    reason: Missing output files: results/49/corrupt50/flipped_matrix.png
+    wildcards: seed=49, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:32 2025]
+Finished jobid: 290 (Rule: simulate)
+244 of 298 steps (82%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:32 2025]
+localrule simulate:
+    output: results/94/corrupt50/original_matrix.png, results/94/corrupt50/flipped_matrix.png
+    log: logs/94_corrupt50.out, logs/94_corrupt50.err
+    jobid: 284
+    benchmark: benchmarks/94_corrupt50.tsv
+    reason: Missing output files: results/94/corrupt50/flipped_matrix.png
+    wildcards: seed=94, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:33 2025]
+Finished jobid: 62 (Rule: simulate)
+245 of 298 steps (82%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:33 2025]
+localrule simulate:
+    output: results/60/corrupt50/original_matrix.png, results/60/corrupt50/flipped_matrix.png
+    log: logs/60_corrupt50.out, logs/60_corrupt50.err
+    jobid: 182
+    benchmark: benchmarks/60_corrupt50.tsv
+    reason: Missing output files: results/60/corrupt50/flipped_matrix.png
+    wildcards: seed=60, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:37 2025]
+Finished jobid: 255 (Rule: simulate)
+246 of 298 steps (83%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:37 2025]
+localrule simulate:
+    output: results/45/corrupt50/original_matrix.png, results/45/corrupt50/flipped_matrix.png
+    log: logs/45_corrupt50.out, logs/45_corrupt50.err
+    jobid: 137
+    benchmark: benchmarks/45_corrupt50.tsv
+    reason: Missing output files: results/45/corrupt50/flipped_matrix.png
+    wildcards: seed=45, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:37 2025]
+Finished jobid: 243 (Rule: simulate)
+247 of 298 steps (83%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:37 2025]
+localrule simulate:
+    output: results/75/corrupt50/original_matrix.png, results/75/corrupt50/flipped_matrix.png
+    log: logs/75_corrupt50.out, logs/75_corrupt50.err
+    jobid: 227
+    benchmark: benchmarks/75_corrupt50.tsv
+    reason: Missing output files: results/75/corrupt50/flipped_matrix.png
+    wildcards: seed=75, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:38 2025]
+Finished jobid: 230 (Rule: simulate)
+248 of 298 steps (83%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:38 2025]
+localrule simulate:
+    output: results/69/corrupt50/original_matrix.png, results/69/corrupt50/flipped_matrix.png
+    log: logs/69_corrupt50.out, logs/69_corrupt50.err
+    jobid: 209
+    benchmark: benchmarks/69_corrupt50.tsv
+    reason: Missing output files: results/69/corrupt50/flipped_matrix.png
+    wildcards: seed=69, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:23:38 2025]
+Finished jobid: 176 (Rule: simulate)
+249 of 298 steps (84%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:23:39 2025]
+localrule simulate:
+    output: results/33/corrupt50/original_matrix.png, results/33/corrupt50/flipped_matrix.png
+    log: logs/33_corrupt50.out, logs/33_corrupt50.err
+    jobid: 101
+    benchmark: benchmarks/33_corrupt50.tsv
+    reason: Missing output files: results/33/corrupt50/flipped_matrix.png
+    wildcards: seed=33, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:40 2025]
+Finished jobid: 74 (Rule: simulate)
+250 of 298 steps (84%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:40 2025]
+localrule simulate:
+    output: results/87/corrupt50/original_matrix.png, results/87/corrupt50/flipped_matrix.png
+    log: logs/87_corrupt50.out, logs/87_corrupt50.err
+    jobid: 263
+    benchmark: benchmarks/87_corrupt50.tsv
+    reason: Missing output files: results/87/corrupt50/flipped_matrix.png
+    wildcards: seed=87, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:40 2025]
+Finished jobid: 83 (Rule: simulate)
+251 of 298 steps (84%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:40 2025]
+localrule simulate:
+    output: results/26/corrupt50/original_matrix.png, results/26/corrupt50/flipped_matrix.png
+    log: logs/26_corrupt50.out, logs/26_corrupt50.err
+    jobid: 80
+    benchmark: benchmarks/26_corrupt50.tsv
+    reason: Missing output files: results/26/corrupt50/flipped_matrix.png
+    wildcards: seed=26, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:41 2025]
+Finished jobid: 245 (Rule: simulate)
+252 of 298 steps (85%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:41 2025]
+localrule simulate:
+    output: results/93/corrupt50/original_matrix.png, results/93/corrupt50/flipped_matrix.png
+    log: logs/93_corrupt50.out, logs/93_corrupt50.err
+    jobid: 281
+    benchmark: benchmarks/93_corrupt50.tsv
+    reason: Missing output files: results/93/corrupt50/flipped_matrix.png
+    wildcards: seed=93, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:45 2025]
+Finished jobid: 182 (Rule: simulate)
+253 of 298 steps (85%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:45 2025]
+localrule simulate:
+    output: results/41/corrupt50/original_matrix.png, results/41/corrupt50/flipped_matrix.png
+    log: logs/41_corrupt50.out, logs/41_corrupt50.err
+    jobid: 125
+    benchmark: benchmarks/41_corrupt50.tsv
+    reason: Missing output files: results/41/corrupt50/flipped_matrix.png
+    wildcards: seed=41, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:46 2025]
+Finished jobid: 284 (Rule: simulate)
+254 of 298 steps (85%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:46 2025]
+localrule simulate:
+    output: results/77/corrupt50/original_matrix.png, results/77/corrupt50/flipped_matrix.png
+    log: logs/77_corrupt50.out, logs/77_corrupt50.err
+    jobid: 233
+    benchmark: benchmarks/77_corrupt50.tsv
+    reason: Missing output files: results/77/corrupt50/flipped_matrix.png
+    wildcards: seed=77, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:48 2025]
+Finished jobid: 149 (Rule: simulate)
+255 of 298 steps (86%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:48 2025]
+localrule simulate:
+    output: results/23/corrupt50/original_matrix.png, results/23/corrupt50/flipped_matrix.png
+    log: logs/23_corrupt50.out, logs/23_corrupt50.err
+    jobid: 71
+    benchmark: benchmarks/23_corrupt50.tsv
+    reason: Missing output files: results/23/corrupt50/flipped_matrix.png
+    wildcards: seed=23, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:49 2025]
+Finished jobid: 137 (Rule: simulate)
+256 of 298 steps (86%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:49 2025]
+localrule simulate:
+    output: results/70/corrupt50/original_matrix.png, results/70/corrupt50/flipped_matrix.png
+    log: logs/70_corrupt50.out, logs/70_corrupt50.err
+    jobid: 212
+    benchmark: benchmarks/70_corrupt50.tsv
+    reason: Missing output files: results/70/corrupt50/flipped_matrix.png
+    wildcards: seed=70, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:49 2025]
+Finished jobid: 227 (Rule: simulate)
+257 of 298 steps (86%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:49 2025]
+localrule simulate:
+    output: results/7/corrupt50/original_matrix.png, results/7/corrupt50/flipped_matrix.png
+    log: logs/7_corrupt50.out, logs/7_corrupt50.err
+    jobid: 23
+    benchmark: benchmarks/7_corrupt50.tsv
+    reason: Missing output files: results/7/corrupt50/flipped_matrix.png
+    wildcards: seed=7, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:52 2025]
+Finished jobid: 209 (Rule: simulate)
+258 of 298 steps (87%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:52 2025]
+localrule simulate:
+    output: results/25/corrupt50/original_matrix.png, results/25/corrupt50/flipped_matrix.png
+    log: logs/25_corrupt50.out, logs/25_corrupt50.err
+    jobid: 77
+    benchmark: benchmarks/25_corrupt50.tsv
+    reason: Missing output files: results/25/corrupt50/flipped_matrix.png
+    wildcards: seed=25, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:52 2025]
+Finished jobid: 263 (Rule: simulate)
+259 of 298 steps (87%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:52 2025]
+localrule simulate:
+    output: results/32/corrupt100/original_matrix.png, results/32/corrupt100/flipped_matrix.png
+    log: logs/32_corrupt100.out, logs/32_corrupt100.err
+    jobid: 99
+    benchmark: benchmarks/32_corrupt100.tsv
+    reason: Missing output files: results/32/corrupt100/flipped_matrix.png
+    wildcards: seed=32, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:53 2025]
+Finished jobid: 101 (Rule: simulate)
+260 of 298 steps (87%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:53 2025]
+localrule simulate:
+    output: results/72/corrupt100/original_matrix.png, results/72/corrupt100/flipped_matrix.png
+    log: logs/72_corrupt100.out, logs/72_corrupt100.err
+    jobid: 219
+    benchmark: benchmarks/72_corrupt100.tsv
+    reason: Missing output files: results/72/corrupt100/flipped_matrix.png
+    wildcards: seed=72, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:54 2025]
+Finished jobid: 281 (Rule: simulate)
+261 of 298 steps (88%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:54 2025]
+localrule simulate:
+    output: results/52/corrupt100/original_matrix.png, results/52/corrupt100/flipped_matrix.png
+    log: logs/52_corrupt100.out, logs/52_corrupt100.err
+    jobid: 159
+    benchmark: benchmarks/52_corrupt100.tsv
+    reason: Missing output files: results/52/corrupt100/flipped_matrix.png
+    wildcards: seed=52, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:55 2025]
+Finished jobid: 80 (Rule: simulate)
+262 of 298 steps (88%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:55 2025]
+localrule simulate:
+    output: results/98/corrupt100/original_matrix.png, results/98/corrupt100/flipped_matrix.png
+    log: logs/98_corrupt100.out, logs/98_corrupt100.err
+    jobid: 297
+    benchmark: benchmarks/98_corrupt100.tsv
+    reason: Missing output files: results/98/corrupt100/flipped_matrix.png
+    wildcards: seed=98, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:57 2025]
+Finished jobid: 125 (Rule: simulate)
+263 of 298 steps (88%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:57 2025]
+localrule simulate:
+    output: results/44/corrupt100/original_matrix.png, results/44/corrupt100/flipped_matrix.png
+    log: logs/44_corrupt100.out, logs/44_corrupt100.err
+    jobid: 135
+    benchmark: benchmarks/44_corrupt100.tsv
+    reason: Missing output files: results/44/corrupt100/flipped_matrix.png
+    wildcards: seed=44, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:23:58 2025]
+Finished jobid: 233 (Rule: simulate)
+264 of 298 steps (89%) done
+Execute 1 jobs...
+[Tue Sep  9 01:23:58 2025]
+localrule simulate:
+    output: results/58/corrupt100/original_matrix.png, results/58/corrupt100/flipped_matrix.png
+    log: logs/58_corrupt100.out, logs/58_corrupt100.err
+    jobid: 177
+    benchmark: benchmarks/58_corrupt100.tsv
+    reason: Missing output files: results/58/corrupt100/flipped_matrix.png
+    wildcards: seed=58, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:00 2025]
+Finished jobid: 71 (Rule: simulate)
+265 of 298 steps (89%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:00 2025]
+localrule simulate:
+    output: results/36/corrupt100/original_matrix.png, results/36/corrupt100/flipped_matrix.png
+    log: logs/36_corrupt100.out, logs/36_corrupt100.err
+    jobid: 111
+    benchmark: benchmarks/36_corrupt100.tsv
+    reason: Missing output files: results/36/corrupt100/flipped_matrix.png
+    wildcards: seed=36, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:01 2025]
+Finished jobid: 23 (Rule: simulate)
+266 of 298 steps (89%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:01 2025]
+localrule simulate:
+    output: results/27/corrupt100/original_matrix.png, results/27/corrupt100/flipped_matrix.png
+    log: logs/27_corrupt100.out, logs/27_corrupt100.err
+    jobid: 84
+    benchmark: benchmarks/27_corrupt100.tsv
+    reason: Missing output files: results/27/corrupt100/flipped_matrix.png
+    wildcards: seed=27, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:04 2025]
+Finished jobid: 77 (Rule: simulate)
+267 of 298 steps (90%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:04 2025]
+localrule simulate:
+    output: results/10/corrupt100/original_matrix.png, results/10/corrupt100/flipped_matrix.png
+    log: logs/10_corrupt100.out, logs/10_corrupt100.err
+    jobid: 33
+    benchmark: benchmarks/10_corrupt100.tsv
+    reason: Missing output files: results/10/corrupt100/flipped_matrix.png
+    wildcards: seed=10, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:05 2025]
+Finished jobid: 212 (Rule: simulate)
+268 of 298 steps (90%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:05 2025]
+localrule simulate:
+    output: results/28/corrupt100/original_matrix.png, results/28/corrupt100/flipped_matrix.png
+    log: logs/28_corrupt100.out, logs/28_corrupt100.err
+    jobid: 87
+    benchmark: benchmarks/28_corrupt100.tsv
+    reason: Missing output files: results/28/corrupt100/flipped_matrix.png
+    wildcards: seed=28, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:06 2025]
+Finished jobid: 159 (Rule: simulate)
+269 of 298 steps (90%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:06 2025]
+localrule simulate:
+    output: results/93/corrupt100/original_matrix.png, results/93/corrupt100/flipped_matrix.png
+    log: logs/93_corrupt100.out, logs/93_corrupt100.err
+    jobid: 282
+    benchmark: benchmarks/93_corrupt100.tsv
+    reason: Missing output files: results/93/corrupt100/flipped_matrix.png
+    wildcards: seed=93, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:07 2025]
+Finished jobid: 219 (Rule: simulate)
+270 of 298 steps (91%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:07 2025]
+localrule simulate:
+    output: results/53/corrupt100/original_matrix.png, results/53/corrupt100/flipped_matrix.png
+    log: logs/53_corrupt100.out, logs/53_corrupt100.err
+    jobid: 162
+    benchmark: benchmarks/53_corrupt100.tsv
+    reason: Missing output files: results/53/corrupt100/flipped_matrix.png
+    wildcards: seed=53, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:08 2025]
+Finished jobid: 99 (Rule: simulate)
+271 of 298 steps (91%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:08 2025]
+localrule simulate:
+    output: results/89/corrupt100/original_matrix.png, results/89/corrupt100/flipped_matrix.png
+    log: logs/89_corrupt100.out, logs/89_corrupt100.err
+    jobid: 270
+    benchmark: benchmarks/89_corrupt100.tsv
+    reason: Missing output files: results/89/corrupt100/flipped_matrix.png
+    wildcards: seed=89, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:09 2025]
+Finished jobid: 297 (Rule: simulate)
+272 of 298 steps (91%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:09 2025]
+localrule simulate:
+    output: results/17/corrupt100/original_matrix.png, results/17/corrupt100/flipped_matrix.png
+    log: logs/17_corrupt100.out, logs/17_corrupt100.err
+    jobid: 54
+    benchmark: benchmarks/17_corrupt100.tsv
+    reason: Missing output files: results/17/corrupt100/flipped_matrix.png
+    wildcards: seed=17, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:09 2025]
+Finished jobid: 135 (Rule: simulate)
+273 of 298 steps (92%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:09 2025]
+localrule simulate:
+    output: results/85/corrupt100/original_matrix.png, results/85/corrupt100/flipped_matrix.png
+    log: logs/85_corrupt100.out, logs/85_corrupt100.err
+    jobid: 258
+    benchmark: benchmarks/85_corrupt100.tsv
+    reason: Missing output files: results/85/corrupt100/flipped_matrix.png
+    wildcards: seed=85, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:13 2025]
+Finished jobid: 177 (Rule: simulate)
+274 of 298 steps (92%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:13 2025]
+localrule simulate:
+    output: results/69/corrupt100/original_matrix.png, results/69/corrupt100/flipped_matrix.png
+    log: logs/69_corrupt100.out, logs/69_corrupt100.err
+    jobid: 210
+    benchmark: benchmarks/69_corrupt100.tsv
+    reason: Missing output files: results/69/corrupt100/flipped_matrix.png
+    wildcards: seed=69, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:13 2025]
+Finished jobid: 111 (Rule: simulate)
+275 of 298 steps (92%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:13 2025]
+localrule simulate:
+    output: results/33/corrupt100/original_matrix.png, results/33/corrupt100/flipped_matrix.png
+    log: logs/33_corrupt100.out, logs/33_corrupt100.err
+    jobid: 102
+    benchmark: benchmarks/33_corrupt100.tsv
+    reason: Missing output files: results/33/corrupt100/flipped_matrix.png
+    wildcards: seed=33, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:14 2025]
+Finished jobid: 84 (Rule: simulate)
+276 of 298 steps (93%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:14 2025]
+localrule simulate:
+    output: results/87/corrupt100/original_matrix.png, results/87/corrupt100/flipped_matrix.png
+    log: logs/87_corrupt100.out, logs/87_corrupt100.err
+    jobid: 264
+    benchmark: benchmarks/87_corrupt100.tsv
+    reason: Missing output files: results/87/corrupt100/flipped_matrix.png
+    wildcards: seed=87, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:18 2025]
+Finished jobid: 33 (Rule: simulate)
+277 of 298 steps (93%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:18 2025]
+localrule simulate:
+    output: results/79/corrupt100/original_matrix.png, results/79/corrupt100/flipped_matrix.png
+    log: logs/79_corrupt100.out, logs/79_corrupt100.err
+    jobid: 240
+    benchmark: benchmarks/79_corrupt100.tsv
+    reason: Missing output files: results/79/corrupt100/flipped_matrix.png
+    wildcards: seed=79, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:19 2025]
+Finished jobid: 87 (Rule: simulate)
+278 of 298 steps (93%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:19 2025]
+localrule simulate:
+    output: results/97/corrupt100/original_matrix.png, results/97/corrupt100/flipped_matrix.png
+    log: logs/97_corrupt100.out, logs/97_corrupt100.err
+    jobid: 294
+    benchmark: benchmarks/97_corrupt100.tsv
+    reason: Missing output files: results/97/corrupt100/flipped_matrix.png
+    wildcards: seed=97, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:20 2025]
+Finished jobid: 282 (Rule: simulate)
+279 of 298 steps (94%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:20 2025]
+localrule simulate:
+    output: results/35/corrupt100/original_matrix.png, results/35/corrupt100/flipped_matrix.png
+    log: logs/35_corrupt100.out, logs/35_corrupt100.err
+    jobid: 108
+    benchmark: benchmarks/35_corrupt100.tsv
+    reason: Missing output files: results/35/corrupt100/flipped_matrix.png
+    wildcards: seed=35, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:20 2025]
+Finished jobid: 162 (Rule: simulate)
+280 of 298 steps (94%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:20 2025]
+localrule simulate:
+    output: results/46/corrupt100/original_matrix.png, results/46/corrupt100/flipped_matrix.png
+    log: logs/46_corrupt100.out, logs/46_corrupt100.err
+    jobid: 141
+    benchmark: benchmarks/46_corrupt100.tsv
+    reason: Missing output files: results/46/corrupt100/flipped_matrix.png
+    wildcards: seed=46, corrupt=100
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:22 2025]
+Finished jobid: 54 (Rule: simulate)
+281 of 298 steps (94%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:22 2025]
+localrule simulate:
+    output: results/32/corrupt50/original_matrix.png, results/32/corrupt50/flipped_matrix.png
+    log: logs/32_corrupt50.out, logs/32_corrupt50.err
+    jobid: 98
+    benchmark: benchmarks/32_corrupt50.tsv
+    reason: Missing output files: results/32/corrupt50/flipped_matrix.png
+    wildcards: seed=32, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:22 2025]
+Finished jobid: 270 (Rule: simulate)
+282 of 298 steps (95%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:22 2025]
+localrule simulate:
+    output: results/8/corrupt50/original_matrix.png, results/8/corrupt50/flipped_matrix.png
+    log: logs/8_corrupt50.out, logs/8_corrupt50.err
+    jobid: 26
+    benchmark: benchmarks/8_corrupt50.tsv
+    reason: Missing output files: results/8/corrupt50/flipped_matrix.png
+    wildcards: seed=8, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:24 2025]
+Finished jobid: 258 (Rule: simulate)
+283 of 298 steps (95%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:24 2025]
+localrule simulate:
+    output: results/51/corrupt50/original_matrix.png, results/51/corrupt50/flipped_matrix.png
+    log: logs/51_corrupt50.out, logs/51_corrupt50.err
+    jobid: 155
+    benchmark: benchmarks/51_corrupt50.tsv
+    reason: Missing output files: results/51/corrupt50/flipped_matrix.png
+    wildcards: seed=51, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:26 2025]
+Finished jobid: 264 (Rule: simulate)
+284 of 298 steps (95%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:26 2025]
+localrule simulate:
+    output: results/42/corrupt50/original_matrix.png, results/42/corrupt50/flipped_matrix.png
+    log: logs/42_corrupt50.out, logs/42_corrupt50.err
+    jobid: 128
+    benchmark: benchmarks/42_corrupt50.tsv
+    reason: Missing output files: results/42/corrupt50/flipped_matrix.png
+    wildcards: seed=42, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:27 2025]
+Finished jobid: 210 (Rule: simulate)
+285 of 298 steps (96%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:27 2025]
+localrule simulate:
+    output: results/78/corrupt50/original_matrix.png, results/78/corrupt50/flipped_matrix.png
+    log: logs/78_corrupt50.out, logs/78_corrupt50.err
+    jobid: 236
+    benchmark: benchmarks/78_corrupt50.tsv
+    reason: Missing output files: results/78/corrupt50/flipped_matrix.png
+    wildcards: seed=78, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:28 2025]
+Finished jobid: 102 (Rule: simulate)
+286 of 298 steps (96%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:28 2025]
+localrule simulate:
+    output: results/31/corrupt50/original_matrix.png, results/31/corrupt50/flipped_matrix.png
+    log: logs/31_corrupt50.out, logs/31_corrupt50.err
+    jobid: 95
+    benchmark: benchmarks/31_corrupt50.tsv
+    reason: Missing output files: results/31/corrupt50/flipped_matrix.png
+    wildcards: seed=31, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+[Tue Sep  9 01:24:31 2025]
+Finished jobid: 294 (Rule: simulate)
+287 of 298 steps (96%) done
+Execute 1 jobs...
+[Tue Sep  9 01:24:31 2025]
+localrule simulate:
+    output: results/39/corrupt50/original_matrix.png, results/39/corrupt50/flipped_matrix.png
+    log: logs/39_corrupt50.out, logs/39_corrupt50.err
+    jobid: 119
+    benchmark: benchmarks/39_corrupt50.tsv
+    reason: Missing output files: results/39/corrupt50/flipped_matrix.png
+    wildcards: seed=39, corrupt=50
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:24:32 2025]
+Finished jobid: 240 (Rule: simulate)
+288 of 298 steps (97%) done
+[Tue Sep  9 01:24:33 2025]
+Finished jobid: 141 (Rule: simulate)
+289 of 298 steps (97%) done
+[Tue Sep  9 01:24:35 2025]
+Finished jobid: 108 (Rule: simulate)
+290 of 298 steps (97%) done
+[Tue Sep  9 01:24:36 2025]
+Finished jobid: 98 (Rule: simulate)
+291 of 298 steps (98%) done
+[Tue Sep  9 01:24:37 2025]
+Finished jobid: 155 (Rule: simulate)
+292 of 298 steps (98%) done
+[Tue Sep  9 01:24:37 2025]
+Finished jobid: 26 (Rule: simulate)
+293 of 298 steps (98%) done
+[Tue Sep  9 01:24:38 2025]
+Finished jobid: 236 (Rule: simulate)
+294 of 298 steps (99%) done
+[Tue Sep  9 01:24:39 2025]
+Finished jobid: 128 (Rule: simulate)
+295 of 298 steps (99%) done
+[Tue Sep  9 01:24:39 2025]
+Finished jobid: 95 (Rule: simulate)
+296 of 298 steps (99%) done
+[Tue Sep  9 01:24:41 2025]
+Finished jobid: 119 (Rule: simulate)
+297 of 298 steps (99.7%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Sep  9 01:24:41 2025]
+localrule all:
+    input: results/0/corrupt0/flipped_matrix.png, results/0/corrupt50/flipped_matrix.png, results/0/corrupt100/flipped_matrix.png, results/1/corrupt0/flipped_matrix.png, results/1/corrupt50/flipped_matrix.png, results/1/corrupt100/flipped_matrix.png, results/2/corrupt0/flipped_matrix.png, results/2/corrupt50/flipped_matrix.png, results/2/corrupt100/flipped_matrix.png, results/3/corrupt0/flipped_matrix.png, results/3/corrupt50/flipped_matrix.png, results/3/corrupt100/flipped_matrix.png, results/4/corrupt0/flipped_matrix.png, results/4/corrupt50/flipped_matrix.png, results/4/corrupt100/flipped_matrix.png, results/5/corrupt0/flipped_matrix.png, results/5/corrupt50/flipped_matrix.png, results/5/corrupt100/flipped_matrix.png, results/6/corrupt0/flipped_matrix.png, results/6/corrupt50/flipped_matrix.png, results/6/corrupt100/flipped_matrix.png, results/7/corrupt0/flipped_matrix.png, results/7/corrupt50/flipped_matrix.png, results/7/corrupt100/flipped_matrix.png, results/8/corrupt0/flipped_matrix.png, results/8/corrupt50/flipped_matrix.png, results/8/corrupt100/flipped_matrix.png, results/9/corrupt0/flipped_matrix.png, results/9/corrupt50/flipped_matrix.png, results/9/corrupt100/flipped_matrix.png, results/10/corrupt0/flipped_matrix.png, results/10/corrupt50/flipped_matrix.png, results/10/corrupt100/flipped_matrix.png, results/11/corrupt0/flipped_matrix.png, results/11/corrupt50/flipped_matrix.png, results/11/corrupt100/flipped_matrix.png, results/12/corrupt0/flipped_matrix.png, results/12/corrupt50/flipped_matrix.png, results/12/corrupt100/flipped_matrix.png, results/13/corrupt0/flipped_matrix.png, results/13/corrupt50/flipped_matrix.png, results/13/corrupt100/flipped_matrix.png, results/14/corrupt0/flipped_matrix.png, results/14/corrupt50/flipped_matrix.png, results/14/corrupt100/flipped_matrix.png, results/15/corrupt0/flipped_matrix.png, results/15/corrupt50/flipped_matrix.png, results/15/corrupt100/flipped_matrix.png, results/16/corrupt0/flipped_matrix.png, results/16/corrupt50/flipped_matrix.png, results/16/corrupt100/flipped_matrix.png, results/17/corrupt0/flipped_matrix.png, results/17/corrupt50/flipped_matrix.png, results/17/corrupt100/flipped_matrix.png, results/18/corrupt0/flipped_matrix.png, results/18/corrupt50/flipped_matrix.png, results/18/corrupt100/flipped_matrix.png, results/19/corrupt0/flipped_matrix.png, results/19/corrupt50/flipped_matrix.png, results/19/corrupt100/flipped_matrix.png, results/20/corrupt0/flipped_matrix.png, results/20/corrupt50/flipped_matrix.png, results/20/corrupt100/flipped_matrix.png, results/21/corrupt0/flipped_matrix.png, results/21/corrupt50/flipped_matrix.png, results/21/corrupt100/flipped_matrix.png, results/22/corrupt0/flipped_matrix.png, results/22/corrupt50/flipped_matrix.png, results/22/corrupt100/flipped_matrix.png, results/23/corrupt0/flipped_matrix.png, results/23/corrupt50/flipped_matrix.png, results/23/corrupt100/flipped_matrix.png, results/24/corrupt0/flipped_matrix.png, results/24/corrupt50/flipped_matrix.png, results/24/corrupt100/flipped_matrix.png, results/25/corrupt0/flipped_matrix.png, results/25/corrupt50/flipped_matrix.png, results/25/corrupt100/flipped_matrix.png, results/26/corrupt0/flipped_matrix.png, results/26/corrupt50/flipped_matrix.png, results/26/corrupt100/flipped_matrix.png, results/27/corrupt0/flipped_matrix.png, results/27/corrupt50/flipped_matrix.png, results/27/corrupt100/flipped_matrix.png, results/28/corrupt0/flipped_matrix.png, results/28/corrupt50/flipped_matrix.png, results/28/corrupt100/flipped_matrix.png, results/29/corrupt0/flipped_matrix.png, results/29/corrupt50/flipped_matrix.png, results/29/corrupt100/flipped_matrix.png, results/30/corrupt0/flipped_matrix.png, results/30/corrupt50/flipped_matrix.png, results/30/corrupt100/flipped_matrix.png, results/31/corrupt0/flipped_matrix.png, results/31/corrupt50/flipped_matrix.png, results/31/corrupt100/flipped_matrix.png, results/32/corrupt0/flipped_matrix.png, results/32/corrupt50/flipped_matrix.png, results/32/corrupt100/flipped_matrix.png, results/33/corrupt0/flipped_matrix.png, results/33/corrupt50/flipped_matrix.png, results/33/corrupt100/flipped_matrix.png, results/34/corrupt0/flipped_matrix.png, results/34/corrupt50/flipped_matrix.png, results/34/corrupt100/flipped_matrix.png, results/35/corrupt0/flipped_matrix.png, results/35/corrupt50/flipped_matrix.png, results/35/corrupt100/flipped_matrix.png, results/36/corrupt0/flipped_matrix.png, results/36/corrupt50/flipped_matrix.png, results/36/corrupt100/flipped_matrix.png, results/37/corrupt0/flipped_matrix.png, results/37/corrupt50/flipped_matrix.png, results/37/corrupt100/flipped_matrix.png, results/38/corrupt0/flipped_matrix.png, results/38/corrupt50/flipped_matrix.png, results/38/corrupt100/flipped_matrix.png, results/39/corrupt0/flipped_matrix.png, results/39/corrupt50/flipped_matrix.png, results/39/corrupt100/flipped_matrix.png, results/40/corrupt0/flipped_matrix.png, results/40/corrupt50/flipped_matrix.png, results/40/corrupt100/flipped_matrix.png, results/41/corrupt0/flipped_matrix.png, results/41/corrupt50/flipped_matrix.png, results/41/corrupt100/flipped_matrix.png, results/42/corrupt0/flipped_matrix.png, results/42/corrupt50/flipped_matrix.png, results/42/corrupt100/flipped_matrix.png, results/43/corrupt0/flipped_matrix.png, results/43/corrupt50/flipped_matrix.png, results/43/corrupt100/flipped_matrix.png, results/44/corrupt0/flipped_matrix.png, results/44/corrupt50/flipped_matrix.png, results/44/corrupt100/flipped_matrix.png, results/45/corrupt0/flipped_matrix.png, results/45/corrupt50/flipped_matrix.png, results/45/corrupt100/flipped_matrix.png, results/46/corrupt0/flipped_matrix.png, results/46/corrupt50/flipped_matrix.png, results/46/corrupt100/flipped_matrix.png, results/47/corrupt0/flipped_matrix.png, results/47/corrupt50/flipped_matrix.png, results/47/corrupt100/flipped_matrix.png, results/48/corrupt0/flipped_matrix.png, results/48/corrupt50/flipped_matrix.png, results/48/corrupt100/flipped_matrix.png, results/49/corrupt0/flipped_matrix.png, results/49/corrupt50/flipped_matrix.png, results/49/corrupt100/flipped_matrix.png, results/50/corrupt0/flipped_matrix.png, results/50/corrupt50/flipped_matrix.png, results/50/corrupt100/flipped_matrix.png, results/51/corrupt0/flipped_matrix.png, results/51/corrupt50/flipped_matrix.png, results/51/corrupt100/flipped_matrix.png, results/52/corrupt0/flipped_matrix.png, results/52/corrupt50/flipped_matrix.png, results/52/corrupt100/flipped_matrix.png, results/53/corrupt0/flipped_matrix.png, results/53/corrupt50/flipped_matrix.png, results/53/corrupt100/flipped_matrix.png, results/54/corrupt0/flipped_matrix.png, results/54/corrupt50/flipped_matrix.png, results/54/corrupt100/flipped_matrix.png, results/55/corrupt0/flipped_matrix.png, results/55/corrupt50/flipped_matrix.png, results/55/corrupt100/flipped_matrix.png, results/56/corrupt0/flipped_matrix.png, results/56/corrupt50/flipped_matrix.png, results/56/corrupt100/flipped_matrix.png, results/57/corrupt0/flipped_matrix.png, results/57/corrupt50/flipped_matrix.png, results/57/corrupt100/flipped_matrix.png, results/58/corrupt0/flipped_matrix.png, results/58/corrupt50/flipped_matrix.png, results/58/corrupt100/flipped_matrix.png, results/59/corrupt0/flipped_matrix.png, results/59/corrupt50/flipped_matrix.png, results/59/corrupt100/flipped_matrix.png, results/60/corrupt0/flipped_matrix.png, results/60/corrupt50/flipped_matrix.png, results/60/corrupt100/flipped_matrix.png, results/61/corrupt0/flipped_matrix.png, results/61/corrupt50/flipped_matrix.png, results/61/corrupt100/flipped_matrix.png, results/62/corrupt0/flipped_matrix.png, results/62/corrupt50/flipped_matrix.png, results/62/corrupt100/flipped_matrix.png, results/63/corrupt0/flipped_matrix.png, results/63/corrupt50/flipped_matrix.png, results/63/corrupt100/flipped_matrix.png, results/64/corrupt0/flipped_matrix.png, results/64/corrupt50/flipped_matrix.png, results/64/corrupt100/flipped_matrix.png, results/65/corrupt0/flipped_matrix.png, results/65/corrupt50/flipped_matrix.png, results/65/corrupt100/flipped_matrix.png, results/66/corrupt0/flipped_matrix.png, results/66/corrupt50/flipped_matrix.png, results/66/corrupt100/flipped_matrix.png, results/67/corrupt0/flipped_matrix.png, results/67/corrupt50/flipped_matrix.png, results/67/corrupt100/flipped_matrix.png, results/68/corrupt0/flipped_matrix.png, results/68/corrupt50/flipped_matrix.png, results/68/corrupt100/flipped_matrix.png, results/69/corrupt0/flipped_matrix.png, results/69/corrupt50/flipped_matrix.png, results/69/corrupt100/flipped_matrix.png, results/70/corrupt0/flipped_matrix.png, results/70/corrupt50/flipped_matrix.png, results/70/corrupt100/flipped_matrix.png, results/71/corrupt0/flipped_matrix.png, results/71/corrupt50/flipped_matrix.png, results/71/corrupt100/flipped_matrix.png, results/72/corrupt0/flipped_matrix.png, results/72/corrupt50/flipped_matrix.png, results/72/corrupt100/flipped_matrix.png, results/73/corrupt0/flipped_matrix.png, results/73/corrupt50/flipped_matrix.png, results/73/corrupt100/flipped_matrix.png, results/74/corrupt0/flipped_matrix.png, results/74/corrupt50/flipped_matrix.png, results/74/corrupt100/flipped_matrix.png, results/75/corrupt0/flipped_matrix.png, results/75/corrupt50/flipped_matrix.png, results/75/corrupt100/flipped_matrix.png, results/76/corrupt0/flipped_matrix.png, results/76/corrupt50/flipped_matrix.png, results/76/corrupt100/flipped_matrix.png, results/77/corrupt0/flipped_matrix.png, results/77/corrupt50/flipped_matrix.png, results/77/corrupt100/flipped_matrix.png, results/78/corrupt0/flipped_matrix.png, results/78/corrupt50/flipped_matrix.png, results/78/corrupt100/flipped_matrix.png, results/79/corrupt0/flipped_matrix.png, results/79/corrupt50/flipped_matrix.png, results/79/corrupt100/flipped_matrix.png, results/80/corrupt0/flipped_matrix.png, results/80/corrupt50/flipped_matrix.png, results/80/corrupt100/flipped_matrix.png, results/81/corrupt0/flipped_matrix.png, results/81/corrupt50/flipped_matrix.png, results/81/corrupt100/flipped_matrix.png, results/82/corrupt0/flipped_matrix.png, results/82/corrupt50/flipped_matrix.png, results/82/corrupt100/flipped_matrix.png, results/83/corrupt0/flipped_matrix.png, results/83/corrupt50/flipped_matrix.png, results/83/corrupt100/flipped_matrix.png, results/84/corrupt0/flipped_matrix.png, results/84/corrupt50/flipped_matrix.png, results/84/corrupt100/flipped_matrix.png, results/85/corrupt0/flipped_matrix.png, results/85/corrupt50/flipped_matrix.png, results/85/corrupt100/flipped_matrix.png, results/86/corrupt0/flipped_matrix.png, results/86/corrupt50/flipped_matrix.png, results/86/corrupt100/flipped_matrix.png, results/87/corrupt0/flipped_matrix.png, results/87/corrupt50/flipped_matrix.png, results/87/corrupt100/flipped_matrix.png, results/88/corrupt0/flipped_matrix.png, results/88/corrupt50/flipped_matrix.png, results/88/corrupt100/flipped_matrix.png, results/89/corrupt0/flipped_matrix.png, results/89/corrupt50/flipped_matrix.png, results/89/corrupt100/flipped_matrix.png, results/90/corrupt0/flipped_matrix.png, results/90/corrupt50/flipped_matrix.png, results/90/corrupt100/flipped_matrix.png, results/91/corrupt0/flipped_matrix.png, results/91/corrupt50/flipped_matrix.png, results/91/corrupt100/flipped_matrix.png, results/92/corrupt0/flipped_matrix.png, results/92/corrupt50/flipped_matrix.png, results/92/corrupt100/flipped_matrix.png, results/93/corrupt0/flipped_matrix.png, results/93/corrupt50/flipped_matrix.png, results/93/corrupt100/flipped_matrix.png, results/94/corrupt0/flipped_matrix.png, results/94/corrupt50/flipped_matrix.png, results/94/corrupt100/flipped_matrix.png, results/95/corrupt0/flipped_matrix.png, results/95/corrupt50/flipped_matrix.png, results/95/corrupt100/flipped_matrix.png, results/96/corrupt0/flipped_matrix.png, results/96/corrupt50/flipped_matrix.png, results/96/corrupt100/flipped_matrix.png, results/97/corrupt0/flipped_matrix.png, results/97/corrupt50/flipped_matrix.png, results/97/corrupt100/flipped_matrix.png, results/98/corrupt0/flipped_matrix.png, results/98/corrupt50/flipped_matrix.png, results/98/corrupt100/flipped_matrix.png, results/99/corrupt0/flipped_matrix.png, results/99/corrupt50/flipped_matrix.png, results/99/corrupt100/flipped_matrix.png
+    jobid: 0
+    reason: Input files updated by another job: results/57/corrupt0/flipped_matrix.png, results/47/corrupt0/flipped_matrix.png, results/31/corrupt0/flipped_matrix.png, results/43/corrupt100/flipped_matrix.png, results/13/corrupt50/flipped_matrix.png, results/24/corrupt100/flipped_matrix.png, results/2/corrupt100/flipped_matrix.png, results/36/corrupt100/flipped_matrix.png, results/7/corrupt50/flipped_matrix.png, results/1/corrupt50/flipped_matrix.png, results/41/corrupt50/flipped_matrix.png, results/26/corrupt50/flipped_matrix.png, results/18/corrupt50/flipped_matrix.png, results/29/corrupt0/flipped_matrix.png, results/48/corrupt100/flipped_matrix.png, results/23/corrupt100/flipped_matrix.png, results/12/corrupt50/flipped_matrix.png, results/34/corrupt0/flipped_matrix.png, results/38/corrupt0/flipped_matrix.png, results/74/corrupt50/flipped_matrix.png, results/27/corrupt50/flipped_matrix.png, results/94/corrupt100/flipped_matrix.png, results/36/corrupt0/flipped_matrix.png, results/42/corrupt100/flipped_matrix.png, results/77/corrupt50/flipped_matrix.png, results/41/corrupt100/flipped_matrix.png, results/9/corrupt100/flipped_matrix.png, results/46/corrupt50/flipped_matrix.png, results/99/corrupt50/flipped_matrix.png, results/19/corrupt0/flipped_matrix.png, results/5/corrupt50/flipped_matrix.png, results/43/corrupt0/flipped_matrix.png, results/61/corrupt0/flipped_matrix.png, results/95/corrupt50/flipped_matrix.png, results/9/corrupt50/flipped_matrix.png, results/17/corrupt100/flipped_matrix.png, results/38/corrupt50/flipped_matrix.png, results/51/corrupt0/flipped_matrix.png, results/58/corrupt50/flipped_matrix.png, results/65/corrupt50/flipped_matrix.png, results/19/corrupt50/flipped_matrix.png, results/53/corrupt0/flipped_matrix.png, results/5/corrupt100/flipped_matrix.png, results/28/corrupt100/flipped_matrix.png, results/69/corrupt0/flipped_matrix.png, results/83/corrupt50/flipped_matrix.png, results/40/corrupt100/flipped_matrix.png, results/25/corrupt0/flipped_matrix.png, results/29/corrupt100/flipped_matrix.png, results/87/corrupt100/flipped_matrix.png, results/0/corrupt0/flipped_matrix.png, results/24/corrupt0/flipped_matrix.png, results/59/corrupt100/flipped_matrix.png, results/61/corrupt50/flipped_matrix.png, results/68/corrupt100/flipped_matrix.png, results/32/corrupt50/flipped_matrix.png, results/35/corrupt50/flipped_matrix.png, results/8/corrupt50/flipped_matrix.png, results/9/corrupt0/flipped_matrix.png, results/80/corrupt100/flipped_matrix.png, results/40/corrupt50/flipped_matrix.png, results/2/corrupt0/flipped_matrix.png, results/44/corrupt50/flipped_matrix.png, results/53/corrupt50/flipped_matrix.png, results/82/corrupt0/flipped_matrix.png, results/28/corrupt0/flipped_matrix.png, results/8/corrupt100/flipped_matrix.png, results/93/corrupt50/flipped_matrix.png, results/97/corrupt0/flipped_matrix.png, results/67/corrupt100/flipped_matrix.png, results/40/corrupt0/flipped_matrix.png, results/32/corrupt100/flipped_matrix.png, results/14/corrupt100/flipped_matrix.png, results/90/corrupt0/flipped_matrix.png, results/75/corrupt100/flipped_matrix.png, results/98/corrupt0/flipped_matrix.png, results/22/corrupt100/flipped_matrix.png, results/76/corrupt100/flipped_matrix.png, results/60/corrupt0/flipped_matrix.png, results/80/corrupt0/flipped_matrix.png, results/29/corrupt50/flipped_matrix.png, results/82/corrupt100/flipped_matrix.png, results/64/corrupt0/flipped_matrix.png, results/96/corrupt0/flipped_matrix.png, results/30/corrupt0/flipped_matrix.png, results/81/corrupt100/flipped_matrix.png, results/87/corrupt0/flipped_matrix.png, results/13/corrupt0/flipped_matrix.png, results/76/corrupt0/flipped_matrix.png, results/99/corrupt100/flipped_matrix.png, results/65/corrupt100/flipped_matrix.png, results/4/corrupt0/flipped_matrix.png, results/90/corrupt50/flipped_matrix.png, results/67/corrupt0/flipped_matrix.png, results/20/corrupt0/flipped_matrix.png, results/8/corrupt0/flipped_matrix.png, results/52/corrupt100/flipped_matrix.png, results/73/corrupt50/flipped_matrix.png, results/7/corrupt100/flipped_matrix.png, results/64/corrupt50/flipped_matrix.png, results/80/corrupt50/flipped_matrix.png, results/56/corrupt0/flipped_matrix.png, results/49/corrupt0/flipped_matrix.png, results/22/corrupt0/flipped_matrix.png, results/0/corrupt50/flipped_matrix.png, results/39/corrupt50/flipped_matrix.png, results/48/corrupt0/flipped_matrix.png, results/49/corrupt100/flipped_matrix.png, results/22/corrupt50/flipped_matrix.png, results/82/corrupt50/flipped_matrix.png, results/84/corrupt0/flipped_matrix.png, results/68/corrupt50/flipped_matrix.png, results/75/corrupt50/flipped_matrix.png, results/16/corrupt100/flipped_matrix.png, results/93/corrupt0/flipped_matrix.png, results/88/corrupt0/flipped_matrix.png, results/62/corrupt100/flipped_matrix.png, results/62/corrupt0/flipped_matrix.png, results/92/corrupt0/flipped_matrix.png, results/10/corrupt0/flipped_matrix.png, results/11/corrupt100/flipped_matrix.png, results/17/corrupt50/flipped_matrix.png, results/6/corrupt100/flipped_matrix.png, results/27/corrupt0/flipped_matrix.png, results/33/corrupt50/flipped_matrix.png, results/18/corrupt0/flipped_matrix.png, results/71/corrupt50/flipped_matrix.png, results/44/corrupt0/flipped_matrix.png, results/99/corrupt0/flipped_matrix.png, results/79/corrupt0/flipped_matrix.png, results/52/corrupt50/flipped_matrix.png, results/57/corrupt50/flipped_matrix.png, results/19/corrupt100/flipped_matrix.png, results/55/corrupt100/flipped_matrix.png, results/25/corrupt50/flipped_matrix.png, results/3/corrupt100/flipped_matrix.png, results/76/corrupt50/flipped_matrix.png, results/13/corrupt100/flipped_matrix.png, results/7/corrupt0/flipped_matrix.png, results/2/corrupt50/flipped_matrix.png, results/39/corrupt0/flipped_matrix.png, results/21/corrupt100/flipped_matrix.png, results/35/corrupt0/flipped_matrix.png, results/49/corrupt50/flipped_matrix.png, results/63/corrupt0/flipped_matrix.png, results/0/corrupt100/flipped_matrix.png, results/89/corrupt0/flipped_matrix.png, results/6/corrupt50/flipped_matrix.png, results/37/corrupt100/flipped_matrix.png, results/35/corrupt100/flipped_matrix.png, results/75/corrupt0/flipped_matrix.png, results/15/corrupt50/flipped_matrix.png, results/46/corrupt100/flipped_matrix.png, results/88/corrupt100/flipped_matrix.png, results/96/corrupt50/flipped_matrix.png, results/95/corrupt0/flipped_matrix.png, results/37/corrupt0/flipped_matrix.png, results/56/corrupt50/flipped_matrix.png, results/52/corrupt0/flipped_matrix.png, results/34/corrupt100/flipped_matrix.png, results/33/corrupt0/flipped_matrix.png, results/83/corrupt0/flipped_matrix.png, results/24/corrupt50/flipped_matrix.png, results/81/corrupt0/flipped_matrix.png, results/38/corrupt100/flipped_matrix.png, results/14/corrupt50/flipped_matrix.png, results/31/corrupt50/flipped_matrix.png, results/51/corrupt50/flipped_matrix.png, results/65/corrupt0/flipped_matrix.png, results/15/corrupt0/flipped_matrix.png, results/31/corrupt100/flipped_matrix.png, results/58/corrupt100/flipped_matrix.png, results/12/corrupt100/flipped_matrix.png, results/59/corrupt0/flipped_matrix.png, results/85/corrupt0/flipped_matrix.png, results/88/corrupt50/flipped_matrix.png, results/85/corrupt100/flipped_matrix.png, results/44/corrupt100/flipped_matrix.png, results/70/corrupt50/flipped_matrix.png, results/56/corrupt100/flipped_matrix.png, results/12/corrupt0/flipped_matrix.png, results/84/corrupt50/flipped_matrix.png, results/97/corrupt100/flipped_matrix.png, results/47/corrupt100/flipped_matrix.png, results/6/corrupt0/flipped_matrix.png, results/50/corrupt0/flipped_matrix.png, results/78/corrupt0/flipped_matrix.png, results/98/corrupt50/flipped_matrix.png, results/20/corrupt50/flipped_matrix.png, results/91/corrupt50/flipped_matrix.png, results/54/corrupt50/flipped_matrix.png, results/68/corrupt0/flipped_matrix.png, results/42/corrupt0/flipped_matrix.png, results/69/corrupt100/flipped_matrix.png, results/30/corrupt100/flipped_matrix.png, results/70/corrupt0/flipped_matrix.png, results/97/corrupt50/flipped_matrix.png, results/11/corrupt50/flipped_matrix.png, results/39/corrupt100/flipped_matrix.png, results/42/corrupt50/flipped_matrix.png, results/53/corrupt100/flipped_matrix.png, results/64/corrupt100/flipped_matrix.png, results/95/corrupt100/flipped_matrix.png, results/87/corrupt50/flipped_matrix.png, results/3/corrupt0/flipped_matrix.png, results/16/corrupt0/flipped_matrix.png, results/18/corrupt100/flipped_matrix.png, results/84/corrupt100/flipped_matrix.png, results/93/corrupt100/flipped_matrix.png, results/83/corrupt100/flipped_matrix.png, results/54/corrupt100/flipped_matrix.png, results/89/corrupt50/flipped_matrix.png, results/96/corrupt100/flipped_matrix.png, results/74/corrupt0/flipped_matrix.png, results/71/corrupt100/flipped_matrix.png, results/60/corrupt50/flipped_matrix.png, results/54/corrupt0/flipped_matrix.png, results/73/corrupt0/flipped_matrix.png, results/85/corrupt50/flipped_matrix.png, results/66/corrupt0/flipped_matrix.png, results/48/corrupt50/flipped_matrix.png, results/5/corrupt0/flipped_matrix.png, results/17/corrupt0/flipped_matrix.png, results/66/corrupt100/flipped_matrix.png, results/91/corrupt0/flipped_matrix.png, results/4/corrupt100/flipped_matrix.png, results/4/corrupt50/flipped_matrix.png, results/59/corrupt50/flipped_matrix.png, results/67/corrupt50/flipped_matrix.png, results/21/corrupt0/flipped_matrix.png, results/45/corrupt0/flipped_matrix.png, results/62/corrupt50/flipped_matrix.png, results/94/corrupt0/flipped_matrix.png, results/50/corrupt50/flipped_matrix.png, results/78/corrupt50/flipped_matrix.png, results/14/corrupt0/flipped_matrix.png, results/81/corrupt50/flipped_matrix.png, results/58/corrupt0/flipped_matrix.png, results/26/corrupt0/flipped_matrix.png, results/11/corrupt0/flipped_matrix.png, results/37/corrupt50/flipped_matrix.png, results/63/corrupt50/flipped_matrix.png, results/70/corrupt100/flipped_matrix.png, results/72/corrupt0/flipped_matrix.png, results/92/corrupt50/flipped_matrix.png, results/94/corrupt50/flipped_matrix.png, results/23/corrupt50/flipped_matrix.png, results/41/corrupt0/flipped_matrix.png, results/1/corrupt0/flipped_matrix.png, results/20/corrupt100/flipped_matrix.png, results/55/corrupt50/flipped_matrix.png, results/1/corrupt100/flipped_matrix.png, results/33/corrupt100/flipped_matrix.png, results/15/corrupt100/flipped_matrix.png, results/34/corrupt50/flipped_matrix.png, results/63/corrupt100/flipped_matrix.png, results/21/corrupt50/flipped_matrix.png, results/71/corrupt0/flipped_matrix.png, results/78/corrupt100/flipped_matrix.png, results/98/corrupt100/flipped_matrix.png, results/45/corrupt50/flipped_matrix.png, results/60/corrupt100/flipped_matrix.png, results/61/corrupt100/flipped_matrix.png, results/69/corrupt50/flipped_matrix.png, results/73/corrupt100/flipped_matrix.png, results/91/corrupt100/flipped_matrix.png, results/3/corrupt50/flipped_matrix.png, results/30/corrupt50/flipped_matrix.png, results/51/corrupt100/flipped_matrix.png, results/66/corrupt50/flipped_matrix.png, results/74/corrupt100/flipped_matrix.png, results/79/corrupt50/flipped_matrix.png, results/27/corrupt100/flipped_matrix.png, results/28/corrupt50/flipped_matrix.png, results/46/corrupt0/flipped_matrix.png, results/72/corrupt100/flipped_matrix.png, results/79/corrupt100/flipped_matrix.png, results/43/corrupt50/flipped_matrix.png, results/10/corrupt50/flipped_matrix.png, results/89/corrupt100/flipped_matrix.png, results/16/corrupt50/flipped_matrix.png, results/55/corrupt0/flipped_matrix.png, results/77/corrupt100/flipped_matrix.png, results/92/corrupt100/flipped_matrix.png, results/47/corrupt50/flipped_matrix.png, results/23/corrupt0/flipped_matrix.png, results/32/corrupt0/flipped_matrix.png, results/77/corrupt0/flipped_matrix.png, results/45/corrupt100/flipped_matrix.png, results/72/corrupt50/flipped_matrix.png, results/10/corrupt100/flipped_matrix.png, results/26/corrupt100/flipped_matrix.png, results/36/corrupt50/flipped_matrix.png, results/90/corrupt100/flipped_matrix.png, results/50/corrupt100/flipped_matrix.png, results/25/corrupt100/flipped_matrix.png, results/57/corrupt100/flipped_matrix.png
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep  9 01:24:41 2025]
+Finished jobid: 0 (Rule: all)
+298 of 298 steps (100%) done
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-09T011838.413507.snakemake.log

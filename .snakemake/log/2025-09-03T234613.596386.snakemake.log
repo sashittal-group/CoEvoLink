@@ -1,0 +1,39 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate        1
+total           2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep  3 23:46:13 2025]
+localrule simulate:
+    output: results/default_parsimony_matrices/seed646.done
+    jobid: 1
+    reason: Missing output files: results/default_parsimony_matrices/seed646.done; Code has changed since last execution
+    wildcards: mode=default, seed=646
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Touching output file results/default_parsimony_matrices/seed646.done.
+[Wed Sep  3 23:46:15 2025]
+Finished jobid: 1 (Rule: simulate)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep  3 23:46:15 2025]
+localrule all:
+    input: results/default_parsimony_matrices/seed646.done
+    jobid: 0
+    reason: Input files updated by another job: results/default_parsimony_matrices/seed646.done
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Sep  3 23:46:15 2025]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /Users/PSLabMonisha/Desktop/braga_data/.snakemake/log/2025-09-03T234613.596386.snakemake.log
