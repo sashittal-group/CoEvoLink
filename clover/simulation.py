@@ -166,6 +166,77 @@ def matrix_builder(out, r01_h, r10_h, r01_p, r10_p):
     flip_cost_matrix = build_flip_cost_matrix(len(out["par_leaves"]), len(out["host_leaves"]), cost=1.0)
     return host_W_matrices, par_W_matrices, flip_cost_matrix
 
+# def run_multiple_seeds(out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix,
+#                        seeds, corrupt=5, outdir="experiments"):
+#     """
+#     Run the network recovery pipeline for multiple seeds with given corruption,
+#     and return the result with the best F1 score.
+#     """
+#     best_metrics = {"f1": -1}
+#     best_result = None
+#     out_original = out.copy()  # Keep original for each run
+
+#     for seed in seeds:
+#         print(f"\n=== Running seed {seed} ===")
+#         out = out_original.copy()  # Reset to original each time
+
+#         mat, parasites, hosts = get_interaction_matrix(out)
+#         random_flips = min(corrupt, np.sum(mat) - 1)
+#         corrupt_mat, hidden = corrupt_matrix(mat, num_flips=random_flips, seed=seed)
+
+#         # Save hidden cells for metrics
+#         hidden_cells = [(parasites[i], hosts[j]) for i, j in hidden]
+
+#         highlight_corrupted = {"corrupted": hidden_cells}
+#         plot_matrix(corrupt_mat, parasites, hosts,
+#                     filename=os.path.join(outdir, "corrupted.png"),
+#                     highlight=highlight_corrupted)
+
+#         # Update out["cell_state"] with corrupted values
+#         corrupt_cell_state = {}
+#         for i, p in enumerate(parasites):
+#             for j, h in enumerate(hosts):
+#                 corrupt_cell_state[(p, h)] = int(corrupt_mat[i, j])
+#         out["cell_state"] = corrupt_cell_state
+        
+
+#         lambda_param, cut_result = binary_search_lambda(
+#             out, parasites, hosts, hidden_cells=hidden_cells,
+#             target_flips=len(hidden_cells),
+#             host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
+#             flip_cost_matrix=flip_cost_matrix,
+#             tol=0, max_iter=20
+#         )
+#         flips = cut_result["flips"]
+
+#         # Compute metrics
+#         metrics = compute_metrics(hidden_cells, flips)
+#         print(f"Metrics for seed {seed}: {metrics}")
+
+#         # Update best if F1 improved
+#         if metrics["f1"] > best_metrics.get("f1", -1):
+#             best_metrics = metrics
+#             best_result = {
+#                 "seed": seed,
+#                 "cut_result": cut_result,
+#                 "metrics": metrics,
+#                 "parasites": parasites,
+#                 "hosts": hosts
+#             }
+
+#     # Visualize best result
+#     if best_result:
+#         print(f"\nBest seed: {best_result['seed']} with metrics: {best_result['metrics']}")
+#         plot_matrix(
+#             best_result["cut_result"]["new_matrix"],
+#             best_result["parasites"],
+#             best_result["hosts"],
+#             filename=os.path.join(outdir, "best_flipped_matrix.png"),
+#             highlight={"flipped": [(p, h) for p, h, old, new in best_result["cut_result"]["flips"]]}
+#         )
+
+#     return best_result
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -224,7 +295,13 @@ def main():
     # ---------------------------
     # Step 1: Create corrupted matrix (random 1→0 flips)
     # ---------------------------
-
+#     best_result = run_multiple_seeds(
+#     out, parasites, hosts,
+#     host_W_matrices, par_W_matrices, flip_cost_matrix,
+#     seeds=range(100),  # example seeds
+#     corrupt=corrupt,
+#     outdir=args.outdir
+# )
 
     if corrupt > 0:
         random_flips = min(corrupt, np.sum(mat) - 1)
@@ -253,6 +330,10 @@ def main():
             flip_cost_matrix=flip_cost_matrix,
             tol=0, max_iter=20
         )
+        # cut_result = solve_network_cut(
+        #     out, host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
+        #     flip_cost_matrix=flip_cost_matrix,
+        #     lambda_param=args.lambda_param)
     else:
         hidden_cells = []
         cut_result = solve_network_cut(
@@ -312,6 +393,9 @@ def main():
 
     metrics_elbow = compute_metrics(hidden_cells, flips_elbow)
     print("Elbow Metrics:", metrics_elbow)
+
+
+    
 
     if args.original_metrics is not None:
         with open(args.original_metrics, "w") as f:
