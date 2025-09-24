@@ -1,0 +1,556 @@
+{
+  "resources": [
+    {
+      "name": "detection.csv",
+      "path": "detection.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "AssocID",
+            "type": "number",
+            "description": "Row number from current VIRION version"
+          },
+          {
+            "name": "DetectionMethod",
+            "type": "string",
+            "description": "Four harmonized categories in descending order of strength of evidence: “Isolation/Observation,” “PCR/Sequencing,” “Antibodies,” and “Not specified”. In some cases where detection method is not available via metadata, source information is used as DetectionOriginal (e.g., “NCBI Nucleotide”)."
+          },
+          {
+            "name": "DetectionOriginal",
+            "type": "string",
+            "description": "Method used for determing the presence of a virus as described in the original work"
+          },
+          {
+            "name": "HostFlagID",
+            "type": "boolean",
+            "description": "Denotes the presence of possible uncertainty in host identification, which users may want to check before proceeding any further."
+          },
+          {
+            "name": "NCBIAccession",
+            "type": "string",
+            "description": "A unique identifier assigned to a record in sequence databases such as GenBank"
+          }
+        ]
+      }
+    },
+    {
+      "name": "edgelist",
+      "path": "edgelist.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "HostTaxID",
+            "type": "number",
+            "description": "Taxonomic identification number from NCBI for host taxa."
+          },
+          {
+            "name": "VirusTaxID",
+            "type": "number",
+            "description": "Taxonomic identification number from NCBI for virus taxa."
+          },
+          {
+            "name": "AssocID",
+            "type": "string",
+            "description": "Row number from current VIRION version"
+          }
+        ]
+      }
+    },
+    {
+      "name": "provenance.csv",
+      "path": "provenance.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "AssocID",
+            "type": "number",
+            "description": "Row number from current VIRION version"
+          },
+          {
+            "name": "HostOriginal",
+            "type": "string",
+            "description": "Host name from original dataset"
+          },
+          {
+            "name": "VirusOriginal",
+            "type": "string",
+            "description": "Virus name from original dataset"
+          },
+          {
+            "name": "Database",
+            "type": "string",
+            "description": "Source for the record. One of EID2, Shaw, HP3, GMPD2, PREDICT, OR GenBank"
+          },
+          {
+            "name": "DatabaseVersion",
+            "type": "string",
+            "description": "For static data, a citation. For dynamic data (e.g. Genbank) the access URL and a time stamp"
+          },
+          {
+            "name": "ReferenceText",
+            "type": "string",
+            "description": "A text description of literature sources"
+          },
+          {
+            "name": "PMID",
+            "type": "number",
+            "description": "PubMed identifiers for literature sources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "taxonomy_host",
+      "path": "taxonomy_host.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "HostTaxID",
+            "type": "number",
+            "description": "Taxonomic identification number from NCBI for host taxa."
+          },
+          {
+            "name": "Host",
+            "type": "string",
+            "description": "Host species name"
+          },
+          {
+            "name": "HostGenus",
+            "type": "string",
+            "description": "Host genus name"
+          },
+          {
+            "name": "HostFamily",
+            "type": "string",
+            "description": "Host family name"
+          },
+          {
+            "name": "HostOrder",
+            "type": "string",
+            "description": "Host order name"
+          },
+          {
+            "name": "HostClass",
+            "type": "string",
+            "description": "Host class name"
+          },
+          {
+            "name": "HostNCBIResolved",
+            "type": "boolean",
+            "description": "Indicates whether or not the host taxa could harmonized with the NCBI taxonomy."
+          }
+        ]
+      }
+    },
+    {
+      "name": "taxonomy_virus",
+      "path": "taxonomy_virus.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "VirusTaxID",
+            "type": "number",
+            "description": "Taxonomic identification number from NCBI for virus taxa."
+          },
+          {
+            "name": "Virus",
+            "type": "string",
+            "description": "Virus species name"
+          },
+          {
+            "name": "VirusGenus",
+            "type": "string",
+            "description": "Virus genus name"
+          },
+          {
+            "name": "VirusFamily",
+            "type": "string",
+            "description": "Virus family name"
+          },
+          {
+            "name": "VirusOrder",
+            "type": "string",
+            "description": "Virus order name"
+          },
+          {
+            "name": "VirusClass",
+            "type": "string",
+            "description": "Virus class name"
+          },
+          {
+            "name": "VirusNCBIResolved",
+            "type": "boolean",
+            "description": "Indicates whether or not the virus taxa could harmonized with the NCBI taxonomy."
+          },
+          {
+            "name": "ICTVRatified",
+            "type": "boolean",
+            "description": "Indicates whether or not the virus taxa is ratified by the International Committee on Taxonomy of Viruses (ICTV)."
+          },
+          {
+            "name": "Database",
+            "type": "string",
+            "description": "Source for the record. One of EID2, Shaw, HP3, GMPD2, PREDICT, OR GenBank"
+          }
+        ]
+      }
+    },
+    {
+      "name": "temporal.csv",
+      "path": "temporal.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "AssocID",
+            "type": "number",
+            "description": "Row number from current VIRION version"
+          },
+          {
+            "name": "PublicationYear",
+            "type": "number",
+            "description": "For literature derived records. PublicationYear provides the year the literature source was published, accessed either from the original database’s reference description or from scraping the PubMed database."
+          },
+          {
+            "name": "ReleaseYear",
+            "type": "number",
+            "description": " The year a given association was “released” in public information (EID2 and PREDICT) or a publicly deposited sample on GenBank. For PREDICT, all values are given as 2021, given the release of a static file at that time even though some findings may have been published or deposited in GenBank earlier. (This redundancy should be captured in overlap with GenBank and EID2.)"
+          },
+          {
+            "name": "ReleaseMonth",
+            "type": "number",
+            "description": "The month a given association was “released” to the public"
+          },
+          {
+            "name": "ReleaseDay",
+            "type": "number",
+            "description": "The day a given association was “released” to the public"
+          },
+          {
+            "name": "CollectionYear",
+            "type": "number",
+            "description": "Reports the year of actual sample collection (GenBank and Predict)"
+          },
+          {
+            "name": "CollectionMonth",
+            "type": "number",
+            "description": "Reports the month of actual sample collection (GenBank and Predict)"
+          },
+          {
+            "name": "CollectionDay",
+            "type": "number",
+            "description": "Reports the day of actual sample collection (GenBank and Predict)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "virion.csv",
+      "path": "virion.csv.gz",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Host",
+            "type": "string",
+            "description": "Host species name"
+          },
+          {
+            "name": "Virus",
+            "type": "string",
+            "description": "Virus species name"
+          },
+          {
+            "name": "HostTaxID",
+            "type": "number",
+            "description": "Taxonomic identification number from NCBI for host taxa."
+          },
+          {
+            "name": "VirusTaxID",
+            "type": "number",
+            "description": "Taxonomic identification number from NCBI for virus taxa."
+          },
+          {
+            "name": "HostNCBIResolved",
+            "type": "boolean",
+            "description": "Indicates whether or not the host taxa could harmonized with the NCBI taxonomy."
+          },
+          {
+            "name": "VirusNCBIResolved",
+            "type": "boolean",
+            "description": "Indicates whether or not the virus taxa could harmonized with the NCBI taxonomy."
+          },
+          {
+            "name": "ICTVRatified",
+            "type": "boolean",
+            "description": "Indicates whether or not the virus taxa is ratified by the International Committee on Taxonomy of Viruses (ICTV)."
+          },
+          {
+            "name": "HostGenus",
+            "type": "string",
+            "description": "Host genus name"
+          },
+          {
+            "name": "HostFamily",
+            "type": "string",
+            "description": "Host family name"
+          },
+          {
+            "name": "HostOrder",
+            "type": "string",
+            "description": "Host order name"
+          },
+          {
+            "name": "HostClass",
+            "type": "string",
+            "description": "Host class name"
+          },
+          {
+            "name": "HostOriginal",
+            "type": "string",
+            "description": "Host name from original dataset"
+          },
+          {
+            "name": "VirusGenus",
+            "type": "string",
+            "description": "Virus genus name"
+          },
+          {
+            "name": "VirusFamily",
+            "type": "string",
+            "description": "Virus family name"
+          },
+          {
+            "name": "VirusOrder",
+            "type": "string",
+            "description": "Virus order name"
+          },
+          {
+            "name": "VirusClass",
+            "type": "string",
+            "description": "Virus class name"
+          },
+          {
+            "name": "VirusOriginal",
+            "type": "string",
+            "description": "Virus name from original dataset"
+          },
+          {
+            "name": "HostFlagID",
+            "type": "boolean",
+            "description": "Denotes the presence of possible uncertainty in host identification, which users may want to check before proceeding any further."
+          },
+          {
+            "name": "DetectionMethod",
+            "type": "string",
+            "description": "Four harmonized categories in descending order of strength of evidence: “Isolation/Observation,” “PCR/Sequencing,” “Antibodies,” and “Not specified”. In some cases where detection method is not available via metadata, source information is used as DetectionOriginal (e.g., “NCBI Nucleotide”)."
+          },
+          {
+            "name": "DetectionOriginal",
+            "type": "string",
+            "description": "Method used for determing the presence of a virus as described in the original work"
+          },
+          {
+            "name": "Database",
+            "type": "string",
+            "description": "Source for the record. One of EID2, Shaw, HP3, GMPD2, PREDICT, OR GenBank"
+          },
+          {
+            "name": "DatabaseVersion",
+            "type": "string",
+            "description": "For static data, a citation. For dynamic data (e.g. Genbank) the access URL and a time stamp"
+          },
+          {
+            "name": "PublicationYear",
+            "type": "number",
+            "description": "For literature derived records. PublicationYear provides the year the literature source was published, accessed either from the original database’s reference description or from scraping the PubMed database."
+          },
+          {
+            "name": "ReferenceText",
+            "type": "string",
+            "description": "A text description of literature sources"
+          },
+          {
+            "name": "PMID",
+            "type": "number",
+            "description": "PubMed identifiers for literature sources"
+          },
+          {
+            "name": "ReleaseYear",
+            "type": "number",
+            "description": " The year a given association was “released” in public information (EID2 and PREDICT) or a publicly deposited sample on GenBank. For PREDICT, all values are given as 2021, given the release of a static file at that time even though some findings may have been published or deposited in GenBank earlier. (This redundancy should be captured in overlap with GenBank and EID2.)"
+          },
+          {
+            "name": "ReleaseMonth",
+            "type": "number",
+            "description": "The month a given association was “released” to the public"
+          },
+          {
+            "name": "ReleaseDay",
+            "type": "number",
+            "description": "The day a given association was “released” to the public"
+          },
+          {
+            "name": "CollectionYear",
+            "type": "number",
+            "description": "Reports the year of actual sample collection (GenBank and Predict)"
+          },
+          {
+            "name": "CollectionMonth",
+            "type": "number",
+            "description": "Reports the month of actual sample collection (GenBank and Predict)"
+          },
+          {
+            "name": "CollectionDay",
+            "type": "number",
+            "description": "Reports the day of actual sample collection (GenBank and Predict)"
+          },
+          {
+            "name": "AssocID",
+            "type": "number",
+            "description": "Row number. Used as an id. Will be specific to a given version of the data"
+          },
+          {
+            "name": "DatabaseDOI",
+            "type": "string",
+            "description": "Persistent digital identifer for the database"
+          },
+          {
+            "name": "Release_Date",
+            "type": "date",
+            "description": "Date data were released"
+          },
+          {
+            "name": "Collection_Date",
+            "type": "string",
+            "description": "Date of actual sample collection"
+          },
+          {
+            "name": "NCBIAccession",
+            "type": "string",
+            "description": "A unique identifier assigned to a record in sequence databases such as GenBank"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "identifier": "10.5281/zenodo.17128513",
+    "title": "The Global Virome in One Network (VIRION): Data Package",
+    "description": "This deposit contains a dynamically maintained database of vertebrate-virus associations. \n The VIRION database has been assembled through both reconciliation \n of static data sets and integration of dynamically updated databases.\n These data sources are all harmonized against one taxonomic backbone,\n including metadata on host and virus taxonomic validity and higher \n classification; additional metadata on sampling methodology and \n evidence strength are also available in a harmonized format.\n \n Data Products:\n 1) virion.csv.gz - Virion dataset. All other data products are derived\n from Virion. \n 2) temporal.csv.gz - Publication and collection data from Virion.\n 3) provenance.csv.gz - Sources used to compile virion.\n 4) detection.csv.gz - Methods used to determine the presence of viruses in Virion.\n 5) edgelist.csv - Host Virus associations. Only contains taxa aligned to NCBI taxonomy.\n 6) taxonomy_host.csv - Host taxonomic data. Only contains taxa aligned to NCBI taxonomy.\n 7) taxonomy_virus.csv",
+    "creator": [
+      {
+        "name": "Collin Schwantes",
+        "orcid": "https://orcid.org/0000-0002-9882-941X"
+      },
+      {
+        "name": "Cole Brookson"
+      },
+      {
+        "name": "Timothée Poisot",
+        "orcid": "https://orcid.org/0000-0002-0735-5184"
+      },
+      {
+        "name": "Tad Dallas"
+      },
+      {
+        "name": "Greg Albery"
+      },
+      {
+        "name": "Colin J. Carlson",
+        "orcid": "https://orcid.org/0000-0001-6960-8434"
+      },
+      {
+        "name": "Cecilia A. Sanchez",
+        "orcid": "https://orcid.org/0000-0002-1141-6816"
+      },
+      {
+        "name": "Renata Muylaert",
+        "orcid": "https://orcid.org/0000-0002-6466-6210"
+      },
+      {
+        "name": "Evan Eskew"
+      },
+      {
+        "name": "Rory Gibb"
+      },
+      {
+        "name": "Maxwell J Farrell"
+      }
+    ],
+    "created": "2025-09-16T00:00:00",
+    "isPartOf": [
+      {
+        "identifier": "10.5281/zenodo.16614689",
+        "relation": "isDerivedFrom",
+        "resource_type": "software"
+      },
+      {
+        "identifier": "10.1128/mbio.02985-21",
+        "relation": "isDescribedBy",
+        "resource_type": "publication"
+      },
+      {
+        "identifier": "https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/ accessed on 2025-09-16",
+        "relation": "requires",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "10.5281/zenodo.5167655",
+        "relation": "requires",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "https://catalog.data.gov/dataset/predict-animals-sampled-c593d",
+        "relation": "requires",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "https://ictv.global/sites/default/files/MSL/ICTV_Master_Species_List_2024_MSL40.v2.xlsx",
+        "relation": "requires",
+        "resource_type": "dataset"
+      },
+      {
+        "identifier": "https://ictv.global/sites/default/files/VMR/VMR_MSL40.v1.20250307.xlsx",
+        "relation": "requires",
+        "resource_type": "dataset"
+      }
+    ],
+    "accessRights": "open",
+    "license": "ODbL-1.0",
+    "language": "eng",
+    "subject": {
+      "keywords": [
+        "global vertebrate virome",
+        "host-virus interactions",
+        "ecological networks"
+      ]
+    }
+  }
+}
