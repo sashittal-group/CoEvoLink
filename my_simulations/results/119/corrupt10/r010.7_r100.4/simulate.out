@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed119_ratio1.8388.png
 Matrix saved as results/119/corrupt10/r010.7_r100.4/original_matrix.png
 Matrix saved as results/119/corrupt10/r010.7_r100.4/corrupted.png
 [iter 0] λ=0.5000 → flips=19
@@ -26,5 +25,22 @@ Cell (Polygonia_oreas,Cannabaceae): 0 -> 1
 Cell (Polygonia_zephyrus,Fabaceae): 0 -> 1
 Matrix saved as results/119/corrupt10/r010.7_r100.4/flipped_matrix.png
 Metrics: {'precision': 0.7, 'recall': 0.7, 'f1': 0.7, 'TP': 7, 'FP': 3, 'FN': 3}
-[Elbow detection] λ ≈ 0.399 (cutoff=0.376)
-Elbow Metrics: {'precision': 0.47058823529411764, 'recall': 0.8, 'f1': 0.5925925925925927, 'TP': 8, 'FP': 9, 'FN': 2}
+[Elbow detection] flip ≈ 15, λ ≈ 0.3877551020408163
+Number of flips performed (elbow): 15
+Cell (Hypanartia_lethe,Amborellaceae): 0 -> 1
+Cell (Hypanartia_lethe,Schisandraceae): 0 -> 1
+Cell (Hypanartia_lethe,Ulmaceae): 0 -> 1
+Cell (Vanessa_cardui,Rhamnaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Smilacaceae): 0 -> 1
+Cell (Vanessa_abyssinica,Chloranthaceae): 0 -> 1
+Cell (Vanessa_tameamea,Plantaginaceae): 0 -> 1
+Cell (Aglais_io,Acoraceae): 0 -> 1
+Cell (Nymphalis_l_album,Nymphaeaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Schisandraceae): 0 -> 1
+Cell (Nymphalis_antiopa,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_c_aureum,Amborellaceae): 0 -> 1
+Cell (Polygonia_satyrus,Cannabaceae): 0 -> 1
+Cell (Polygonia_oreas,Cannabaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Fabaceae): 0 -> 1
+Matrix saved as results/119/corrupt10/r010.7_r100.4/flipped_matrix_elbow.png
+Elbow Metrics: {'precision': 0.5333333333333333, 'recall': 0.8, 'f1': 0.64, 'TP': 8, 'FP': 7, 'FN': 2}

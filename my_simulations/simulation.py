@@ -15,6 +15,94 @@ import math
 import json
 
 
+def smooth_scores(scores, window=5, poly=2):
+    if len(scores) < window:
+        return scores
+    return savgol_filter(scores, window_length=window, polyorder=poly)
+
+def parsimony_vs_flips(out, parasites, hosts, host_W_matrices, par_W_matrices,
+                       flip_cost_matrix, steps, lower, upper):
+    """
+    Compute total parsimony and number of flips across a range of λ values.
+    Returns arrays of flips, scores, and lambdas.
+    """
+    lambdas = np.linspace(lower, upper, steps)
+    scores = []
+    flips_counts = []
+
+    for lam in lambdas:
+        cut_result = solve_network_cut(
+            out, host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
+            flip_cost_matrix=flip_cost_matrix,
+            lambda_param=lam
+        )
+
+        # Count flips
+        flips_counts.append(len(cut_result["flips"]))
+
+        # total parsimony across parasite×host
+        total = 0
+        for p in parasites:
+            leaf_states = {h: cut_result["new_cell_state"][(p,h)] for h in hosts}
+            total += sankoff(out["host_trees"][0], leaf_states, np.array([[0,1],[1,0]]))
+        for h in hosts:
+            leaf_states = {p: cut_result["new_cell_state"][(p,h)] for p in parasites}
+            total += sankoff(out["par_trees"][0], leaf_states, np.array([[0,1],[1,0]]))
+
+        scores.append(total)
+
+    return np.array(flips_counts), np.array(scores), np.array(lambdas)
+
+
+def find_elbow_parsimony_flips(out, parasites, hosts, host_W_matrices,
+                               par_W_matrices, flip_cost_matrix,
+                               lower, upper, steps=50, outdir="experiments"):
+    # Run sweep
+    flips, scores, lambdas = parsimony_vs_flips(
+        out, parasites, hosts, host_W_matrices, par_W_matrices,
+        flip_cost_matrix, steps=steps, lower=lower, upper=upper
+    )
+
+    # Smooth scores
+    smooth = smooth_scores(scores, window=3, poly=2)
+
+    # Elbow detection in flip-space
+    kneedle = KneeLocator(
+        flips, smooth,
+        curve="convex", direction="decreasing"
+    )
+    elbow_flip = kneedle.knee
+    if elbow_flip is not None:
+        # Find closest λ to the elbow flip
+        idx = (np.abs(flips - elbow_flip)).argmin()
+        elbow_lambda = lambdas[idx]
+    else:
+        # take lambda with max second derivative
+        elbow_flip, elbow_lambda = None, lambdas[-1]
+
+
+    print(f"[Elbow detection] flip ≈ {elbow_flip}, λ ≈ {elbow_lambda}")
+
+    # Plot
+    plt.figure(figsize=(7,5))
+    plt.plot(flips, scores, "bo-", label="Parsimony vs flips")
+    if elbow_flip is not None:
+        plt.axvline(elbow_flip, color="red", linestyle="--",
+                    label=f"Elbow flip={elbow_flip}, λ≈{elbow_lambda:.3f}")
+    # Annotate points with λ
+    for f, s, lam in zip(flips, scores, lambdas):
+        plt.text(f, s, f"{lam:.2f}", fontsize=6, ha="right", va="bottom", rotation=45)
+
+    plt.xlabel("Number of flips")
+    plt.ylabel("Parsimony")
+    plt.title("Parsimony vs Flips (λ sweep)")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(outdir, "parsimony_vs_flips_elbow.png"))
+    plt.close()
+
+    return elbow_flip, elbow_lambda, flips, scores, lambdas
+
 
 
 def read_nexus_reorder(nexus_file, parasite_tree_file, host_names):
@@ -184,37 +272,37 @@ def main():
         )
         mat, parasites, hosts = get_interaction_matrix(out)
 
-        if mode == "ml":
-            max_ll = 0.0
-            for i, host_tree in enumerate(out["host_trees"]):
-                for p in par_leaves:
-                    leaf_states = {h: out["cell_state"][(p,h)] for h in host_leaves}
-                    max_ll += sankoff_ml_loglik(host_tree, leaf_states, r01_h, r10_h)
-            for j, par_tree in enumerate(out["par_trees"]):
-                for h in host_leaves:
-                    leaf_states = {p: out["cell_state"][(p,h)] for p in par_leaves}
-                    max_ll += sankoff_ml_loglik(par_tree, leaf_states, r01_p, r10_p )
+        # if mode == "ml":
+        #     max_ll = 0.0
+        #     for i, host_tree in enumerate(out["host_trees"]):
+        #         for p in par_leaves:
+        #             leaf_states = {h: out["cell_state"][(p,h)] for h in host_leaves}
+        #             max_ll += sankoff_ml_loglik(host_tree, leaf_states, r01_h, r10_h)
+        #     for j, par_tree in enumerate(out["par_trees"]):
+        #         for h in host_leaves:
+        #             leaf_states = {p: out["cell_state"][(p,h)] for p in par_leaves}
+        #             max_ll += sankoff_ml_loglik(par_tree, leaf_states, r01_p, r10_p )
 
-            current_ll = total_current_ll(
-                out["host_trees"], out["par_trees"], out["cell_state"], host_leaves, par_leaves
-            )
-            ratio = current_ll / max_ll
+        #     current_ll = total_current_ll(
+        #         out["host_trees"], out["par_trees"], out["cell_state"], host_leaves, par_leaves
+        #     )
+        #     ratio = current_ll / max_ll
 
-            if 1:
-                os.makedirs("ml_parsimony_matrices", exist_ok=True)
-                filename = os.path.join(
-                    "ml_parsimony_matrices", 
-                    f"seed{seed}_ratio{ratio:.4f}.png"
-                )
-                plot_matrix(mat, parasites, hosts, filename=filename)
+        #     if 1:
+        #         os.makedirs("ml_parsimony_matrices", exist_ok=True)
+        #         filename = os.path.join(
+        #             "ml_parsimony_matrices", 
+        #             f"seed{seed}_ratio{ratio:.4f}.png"
+        #         )
+        #         plot_matrix(mat, parasites, hosts, filename=filename)
 
-        else:
-            os.makedirs("default_parsimony_matrices", exist_ok=True)
-            filename = os.path.join(
-                "default_parsimony_matrices", 
-                f"seed{seed}_{score}.png"
-            )
-            plot_matrix(mat, parasites, hosts, filename=filename)
+        # else:
+        #     os.makedirs("default_parsimony_matrices", exist_ok=True)
+        #     filename = os.path.join(
+        #         "default_parsimony_matrices", 
+        #         f"seed{seed}_{score}.png"
+        #     )
+        #     plot_matrix(mat, parasites, hosts, filename=filename)
     
 
     # Save original and flipped matrices as images
@@ -295,7 +383,7 @@ def main():
             plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.png"),
             highlight=highlight_hidden)
             cut_result = solve_network_cut(out, host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
-                                            flip_cost_matrix=flip_cost_matrix)
+                                            flip_cost_matrix=flip_cost_matrix, lambda_param=lambda_param)
     # ---------------------------
     # Step 2: Run network cut recovery on corrupted input
     # ---------------------------
@@ -327,8 +415,8 @@ def main():
     print("Metrics:", metrics)
 
 
-    elbow_lambda, lambdas, scores = find_elbow_parsimony(
-        out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, lower=lambda_param-0.05, upper=lambda_param+0.05, outdir=outdir
+    elbow_flip, elbow_lambda, flips, scores, lambdas = find_elbow_parsimony_flips(
+        out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, lower=0, upper=1, steps=50, outdir=outdir
     )
 
     cut_result_elbow = solve_network_cut(

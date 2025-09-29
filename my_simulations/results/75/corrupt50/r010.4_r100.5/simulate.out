@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed75_ratio1.7505.png
 Matrix saved as results/75/corrupt50/r010.4_r100.5/original_matrix.png
 Matrix saved as results/75/corrupt50/r010.4_r100.5/corrupted.png
 [iter 0] λ=0.5000 → flips=85
@@ -67,5 +66,73 @@ Cell (Polygonia_zephyrus,Ceratophyllaceae): 0 -> 1
 Cell (Polygonia_zephyrus,Ericaceae): 0 -> 1
 Matrix saved as results/75/corrupt50/r010.4_r100.5/flipped_matrix.png
 Metrics: {'precision': 0.66, 'recall': 0.66, 'f1': 0.66, 'TP': 33, 'FP': 17, 'FN': 17}
-[Elbow detection] λ ≈ 0.379 (cutoff=0.368)
-Elbow Metrics: {'precision': 0.6557377049180327, 'recall': 0.8, 'f1': 0.7207207207207207, 'TP': 40, 'FP': 21, 'FN': 10}
+[Elbow detection] flip ≈ 66, λ ≈ 0.3877551020408163
+Number of flips performed (elbow): 66
+Cell (Hypanartia_bella,Aristolochiaceae): 0 -> 1
+Cell (Hypanartia_bella,Potamogetonaceae): 0 -> 1
+Cell (Hypanartia_bella,Grossulariaceae): 0 -> 1
+Cell (Vanessa_itea,Aristolochiaceae): 0 -> 1
+Cell (Vanessa_annabella,Betulaceae): 0 -> 1
+Cell (Vanessa_hippomene,Acoraceae): 0 -> 1
+Cell (Vanessa_hippomene,Asteraceae): 0 -> 1
+Cell (Vanessa_dimorphica,Betulaceae): 0 -> 1
+Cell (Vanessa_dimorphica,Ericaceae): 0 -> 1
+Cell (Vanessa_dimorphica,Plantaginaceae): 0 -> 1
+Cell (Vanessa_kershawi,Typhaceae): 0 -> 1
+Cell (Vanessa_cardui,Siparunaceae): 0 -> 1
+Cell (Vanessa_cardui,Potamogetonaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Rosaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Rhamnaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Cannabaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Asteraceae): 0 -> 1
+Cell (Vanessa_abyssinica,Asteraceae): 0 -> 1
+Cell (Vanessa_abyssinica,Boraginaceae): 0 -> 1
+Cell (Vanessa_atalanta,Boraginaceae): 0 -> 1
+Cell (Vanessa_tameamea,Cannabaceae): 0 -> 1
+Cell (Vanessa_tameamea,Plantaginaceae): 0 -> 1
+Cell (Vanessa_indica,Potamogetonaceae): 0 -> 1
+Cell (Antanartia_delius,Smilacaceae): 0 -> 1
+Cell (Antanartia_delius,Betulaceae): 0 -> 1
+Cell (Antanartia_delius,Asteraceae): 0 -> 1
+Cell (Aglais_io,Asteraceae): 0 -> 1
+Cell (Aglais_milberti,Amborellaceae): 0 -> 1
+Cell (Aglais_milberti,Ericaceae): 0 -> 1
+Cell (Aglais_urticae,Smilacaceae): 0 -> 1
+Cell (Aglais_urticae,Plantaginaceae): 0 -> 1
+Cell (Kaniska_canace,Nymphaeaceae): 0 -> 1
+Cell (Kaniska_canace,Typhaceae): 0 -> 1
+Cell (Kaniska_canace,Urticaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Betulaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Ericaceae): 0 -> 1
+Cell (Nymphalis_californica,Nymphaeaceae): 0 -> 1
+Cell (Nymphalis_californica,Schisandraceae): 0 -> 1
+Cell (Nymphalis_californica,Rosaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Amborellaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Smilacaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Fabaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Aristolochiaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Boraginaceae): 0 -> 1
+Cell (Polygonia_c_aureum,Potamogetonaceae): 0 -> 1
+Cell (Polygonia_c_aureum,Urticaceae): 0 -> 1
+Cell (Polygonia_egea,Betulaceae): 0 -> 1
+Cell (Polygonia_egea,Salicaceae): 0 -> 1
+Cell (Polygonia_faunus,Smilacaceae): 0 -> 1
+Cell (Polygonia_faunus,Grossulariaceae): 0 -> 1
+Cell (Polygonia_c_album,Chloranthaceae): 0 -> 1
+Cell (Polygonia_c_album,Ulmaceae): 0 -> 1
+Cell (Polygonia_satyrus,Boraginaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Rosaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Cannabaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Ericaceae): 0 -> 1
+Cell (Polygonia_comma,Schisandraceae): 0 -> 1
+Cell (Polygonia_comma,Chloranthaceae): 0 -> 1
+Cell (Polygonia_comma,Acoraceae): 0 -> 1
+Cell (Polygonia_comma,Salicaceae): 0 -> 1
+Cell (Polygonia_oreas,Ulmaceae): 0 -> 1
+Cell (Polygonia_oreas,Asteraceae): 0 -> 1
+Cell (Polygonia_progne,Typhaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Ericaceae): 0 -> 1
+Matrix saved as results/75/corrupt50/r010.4_r100.5/flipped_matrix_elbow.png
+Elbow Metrics: {'precision': 0.6363636363636364, 'recall': 0.84, 'f1': 0.7241379310344828, 'TP': 42, 'FP': 24, 'FN': 8}

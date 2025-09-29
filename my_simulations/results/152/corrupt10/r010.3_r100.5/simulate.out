@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed152_ratio1.5343.png
 Matrix saved as results/152/corrupt10/r010.3_r100.5/original_matrix.png
 Matrix saved as results/152/corrupt10/r010.3_r100.5/corrupted.png
 [iter 0] λ=0.5000 → flips=27
@@ -25,5 +24,34 @@ Cell (Polygonia_progne,Urticaceae): 0 -> 1
 Cell (Polygonia_gracilis,Acoraceae): 0 -> 1
 Matrix saved as results/152/corrupt10/r010.3_r100.5/flipped_matrix.png
 Metrics: {'precision': 0.6, 'recall': 0.6, 'f1': 0.6, 'TP': 6, 'FP': 4, 'FN': 4}
-[Elbow detection] λ ≈ 0.382 (cutoff=0.360)
-Elbow Metrics: {'precision': 0.4166666666666667, 'recall': 1.0, 'f1': 0.5882352941176471, 'TP': 10, 'FP': 14, 'FN': 0}
+[Elbow detection] flip ≈ None, λ ≈ 1.0
+Number of flips performed (elbow): 27
+Cell (Hypanartia_lethe,Betulaceae): 0 -> 1
+Cell (Vanessa_itea,Chloranthaceae): 0 -> 1
+Cell (Vanessa_itea,Typhaceae): 0 -> 1
+Cell (Vanessa_annabella,Smilacaceae): 0 -> 1
+Cell (Vanessa_annabella,Ulmaceae): 0 -> 1
+Cell (Vanessa_annabella,Betulaceae): 0 -> 1
+Cell (Vanessa_hippomene,Siparunaceae): 0 -> 1
+Cell (Vanessa_hippomene,Aristolochiaceae): 0 -> 1
+Cell (Vanessa_dimorphica,Malvaceae): 0 -> 1
+Cell (Vanessa_kershawi,Typhaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Fabaceae): 0 -> 1
+Cell (Vanessa_abyssinica,Potamogetonaceae): 0 -> 1
+Cell (Vanessa_atalanta,Ceratophyllaceae): 0 -> 1
+Cell (Vanessa_atalanta,Urticaceae): 0 -> 1
+Cell (Vanessa_tameamea,Cannabaceae): 0 -> 1
+Cell (Vanessa_indica,Siparunaceae): 0 -> 1
+Cell (Antanartia_delius,Siparunaceae): 0 -> 1
+Cell (Aglais_urticae,Nymphaeaceae): 0 -> 1
+Cell (Aglais_urticae,Chloranthaceae): 0 -> 1
+Cell (Aglais_urticae,Ulmaceae): 0 -> 1
+Cell (Nymphalis_californica,Amborellaceae): 0 -> 1
+Cell (Polygonia_c_aureum,Fabaceae): 0 -> 1
+Cell (Polygonia_egea,Nymphaeaceae): 0 -> 1
+Cell (Polygonia_c_album,Typhaceae): 0 -> 1
+Cell (Polygonia_c_album,Acoraceae): 0 -> 1
+Cell (Polygonia_progne,Urticaceae): 0 -> 1
+Cell (Polygonia_gracilis,Acoraceae): 0 -> 1
+Matrix saved as results/152/corrupt10/r010.3_r100.5/flipped_matrix_elbow.png
+Elbow Metrics: {'precision': 0.37037037037037035, 'recall': 1.0, 'f1': 0.5405405405405406, 'TP': 10, 'FP': 17, 'FN': 0}

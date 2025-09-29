@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed75_ratio2.0201.png
 Matrix saved as results/75/corrupt10/r010.6_r100.5/original_matrix.png
 Matrix saved as results/75/corrupt10/r010.6_r100.5/corrupted.png
 [iter 0] λ=0.5000 → flips=35
@@ -28,5 +27,34 @@ Cell (Polygonia_oreas,Ericaceae): 0 -> 1
 Cell (Polygonia_zephyrus,Fabaceae): 0 -> 1
 Matrix saved as results/75/corrupt10/r010.6_r100.5/flipped_matrix.png
 Metrics: {'precision': 0.5, 'recall': 0.5, 'f1': 0.5, 'TP': 5, 'FP': 5, 'FN': 5}
-[Elbow detection] λ ≈ 0.388 (cutoff=0.366)
+[Elbow detection] flip ≈ 27, λ ≈ 0.3877551020408163
+Number of flips performed (elbow): 27
+Cell (Hypanartia_bella,Potamogetonaceae): 0 -> 1
+Cell (Hypanartia_bella,Boraginaceae): 0 -> 1
+Cell (Vanessa_hippomene,Asteraceae): 0 -> 1
+Cell (Vanessa_dimorphica,Ericaceae): 0 -> 1
+Cell (Vanessa_cardui,Siparunaceae): 0 -> 1
+Cell (Vanessa_virginiensis,Rhamnaceae): 0 -> 1
+Cell (Vanessa_abyssinica,Boraginaceae): 0 -> 1
+Cell (Vanessa_atalanta,Boraginaceae): 0 -> 1
+Cell (Vanessa_tameamea,Plantaginaceae): 0 -> 1
+Cell (Vanessa_indica,Potamogetonaceae): 0 -> 1
+Cell (Aglais_milberti,Ericaceae): 0 -> 1
+Cell (Aglais_urticae,Plantaginaceae): 0 -> 1
+Cell (Kaniska_canace,Typhaceae): 0 -> 1
+Cell (Nymphalis_l_album,Cannabaceae): 0 -> 1
+Cell (Nymphalis_l_album,Asteraceae): 0 -> 1
+Cell (Nymphalis_l_album,Boraginaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Typhaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Ceratophyllaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Ericaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Asteraceae): 0 -> 1
+Cell (Polygonia_c_aureum,Urticaceae): 0 -> 1
+Cell (Polygonia_c_aureum,Plantaginaceae): 0 -> 1
+Cell (Polygonia_egea,Ericaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Fabaceae): 0 -> 1
+Cell (Polygonia_interrogationis,Ulmaceae): 0 -> 1
+Cell (Polygonia_oreas,Ericaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Fabaceae): 0 -> 1
+Matrix saved as results/75/corrupt10/r010.6_r100.5/flipped_matrix_elbow.png
 Elbow Metrics: {'precision': 0.3333333333333333, 'recall': 0.9, 'f1': 0.48648648648648646, 'TP': 9, 'FP': 18, 'FN': 1}

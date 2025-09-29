@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed86_ratio1.0656.png
 Matrix saved as results/86/corrupt10/r010.7_r100.4/original_matrix.png
 Matrix saved as results/86/corrupt10/r010.7_r100.4/corrupted.png
 [iter 0] λ=0.5000 → flips=16
@@ -26,5 +25,23 @@ Cell (Polygonia_progne,Plantaginaceae): 0 -> 1
 Cell (Polygonia_zephyrus,Cannabaceae): 0 -> 1
 Matrix saved as results/86/corrupt10/r010.7_r100.4/flipped_matrix.png
 Metrics: {'precision': 0.4, 'recall': 0.4, 'f1': 0.4000000000000001, 'TP': 4, 'FP': 6, 'FN': 6}
-[Elbow detection] λ ≈ 0.387 (cutoff=0.365)
-Elbow Metrics: {'precision': 0.35714285714285715, 'recall': 0.5, 'f1': 0.41666666666666663, 'TP': 5, 'FP': 9, 'FN': 5}
+[Elbow detection] flip ≈ 16, λ ≈ 0.4693877551020408
+Number of flips performed (elbow): 16
+Cell (Nymphalis_polychloros,Urticaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_californica,Amborellaceae): 0 -> 1
+Cell (Nymphalis_californica,Schisandraceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Betulaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Ulmaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Salicaceae): 0 -> 1
+Cell (Polygonia_oreas,Smilacaceae): 0 -> 1
+Cell (Polygonia_oreas,Asteraceae): 0 -> 1
+Cell (Polygonia_progne,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_progne,Urticaceae): 0 -> 1
+Cell (Polygonia_progne,Salicaceae): 0 -> 1
+Cell (Polygonia_progne,Grossulariaceae): 0 -> 1
+Cell (Polygonia_progne,Plantaginaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Ceratophyllaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Cannabaceae): 0 -> 1
+Matrix saved as results/86/corrupt10/r010.7_r100.4/flipped_matrix_elbow.png
+Elbow Metrics: {'precision': 0.4375, 'recall': 0.7, 'f1': 0.5384615384615384, 'TP': 7, 'FP': 9, 'FN': 3}

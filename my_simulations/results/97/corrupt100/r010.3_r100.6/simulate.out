@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed97_ratio1.7868.png
 Matrix saved as results/97/corrupt100/r010.3_r100.6/original_matrix.png
 Matrix saved as results/97/corrupt100/r010.3_r100.6/corrupted.png
 [iter 0] λ=0.5000 → flips=0
@@ -89,5 +88,7 @@ Cell (Nymphalis_antiopa,Plantaginaceae): 0 -> 1
 Cell (Nymphalis_antiopa,Boraginaceae): 0 -> 1
 Matrix saved as results/97/corrupt100/r010.3_r100.6/flipped_matrix.png
 Metrics: {'precision': 0.6666666666666666, 'recall': 0.42, 'f1': 0.5153374233128833, 'TP': 42, 'FP': 21, 'FN': 58}
-[Elbow detection] λ ≈ 0.965 (cutoff=0.954)
-Elbow Metrics: {'precision': 0.12048192771084337, 'recall': 1.0, 'f1': 0.21505376344086022, 'TP': 100, 'FP': 730, 'FN': 0}
+[Elbow detection] flip ≈ 0, λ ≈ 0.0
+Number of flips performed (elbow): 0
+Matrix saved as results/97/corrupt100/r010.3_r100.6/flipped_matrix_elbow.png
+Elbow Metrics: {'precision': 0, 'recall': 0.0, 'f1': 0, 'TP': 0, 'FP': 0, 'FN': 100}

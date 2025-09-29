@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed86_ratio1.0354.png
 Matrix saved as results/86/corrupt10/r010.7_r100.6/original_matrix.png
 Matrix saved as results/86/corrupt10/r010.7_r100.6/corrupted.png
 [iter 0] λ=0.5000 → flips=22
@@ -28,5 +27,37 @@ Cell (Polygonia_zephyrus,Betulaceae): 0 -> 1
 Cell (Polygonia_gracilis,Aristolochiaceae): 0 -> 1
 Matrix saved as results/86/corrupt10/r010.7_r100.6/flipped_matrix.png
 Metrics: {'precision': 0.4, 'recall': 0.4, 'f1': 0.4000000000000001, 'TP': 4, 'FP': 6, 'FN': 6}
-[Elbow detection] λ ≈ 0.386 (cutoff=0.375)
-Elbow Metrics: {'precision': 0.35714285714285715, 'recall': 0.5, 'f1': 0.41666666666666663, 'TP': 5, 'FP': 9, 'FN': 5}
+[Elbow detection] flip ≈ 30, λ ≈ 0.6326530612244897
+Number of flips performed (elbow): 30
+Cell (Nymphalis_l_album,Schisandraceae): 0 -> 1
+Cell (Nymphalis_l_album,Potamogetonaceae): 0 -> 1
+Cell (Nymphalis_l_album,Ulmaceae): 0 -> 1
+Cell (Nymphalis_l_album,Urticaceae): 0 -> 1
+Cell (Nymphalis_l_album,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Rosaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Urticaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Boraginaceae): 0 -> 1
+Cell (Nymphalis_californica,Amborellaceae): 0 -> 1
+Cell (Nymphalis_californica,Rosaceae): 0 -> 1
+Cell (Nymphalis_californica,Cannabaceae): 0 -> 1
+Cell (Nymphalis_californica,Urticaceae): 0 -> 1
+Cell (Nymphalis_californica,Betulaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Betulaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Salicaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Malvaceae): 0 -> 1
+Cell (Polygonia_oreas,Nymphaeaceae): 0 -> 1
+Cell (Polygonia_oreas,Smilacaceae): 0 -> 1
+Cell (Polygonia_oreas,Asteraceae): 0 -> 1
+Cell (Polygonia_progne,Salicaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Nymphaeaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Siparunaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Acoraceae): 0 -> 1
+Cell (Polygonia_zephyrus,Rosaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Cannabaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Urticaceae): 0 -> 1
+Cell (Polygonia_zephyrus,Betulaceae): 0 -> 1
+Cell (Polygonia_gracilis,Aristolochiaceae): 0 -> 1
+Cell (Polygonia_gracilis,Chloranthaceae): 0 -> 1
+Matrix saved as results/86/corrupt10/r010.7_r100.6/flipped_matrix_elbow.png
+Elbow Metrics: {'precision': 0.23333333333333334, 'recall': 0.7, 'f1': 0.35, 'TP': 7, 'FP': 23, 'FN': 3}

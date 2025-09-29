@@ -4,7 +4,7 @@
 
 iteration = 42
 beta = 1
-clock = 0.1
+clock = 0.5
 
 if (args.size() >= 1) iteration = args[1]
 if (args.size() >= 2) beta = (args[2])

@@ -1,0 +1,48 @@
+Matrix saved as ml_parsimony_matrices/seed141_ratio1.6358.png
+Matrix saved as results/141/corrupt50/r010.5_r100.5/original_matrix.png
+Matrix saved as results/141/corrupt50/r010.5_r100.5/corrupted.png
+[iter 0] λ=0.5000 → flips=0
+[iter 1] λ=0.7500 → flips=6
+[iter 2] λ=0.8750 → flips=18
+[iter 3] λ=0.9375 → flips=791
+[iter 4] λ=0.9062 → flips=282
+[iter 5] λ=0.8906 → flips=18
+[iter 6] λ=0.8984 → flips=18
+[iter 7] λ=0.9023 → flips=18
+[iter 8] λ=0.9043 → flips=282
+[iter 9] λ=0.9033 → flips=18
+[iter 10] λ=0.9038 → flips=282
+[iter 11] λ=0.9036 → flips=282
+[iter 12] λ=0.9034 → flips=282
+[iter 13] λ=0.9034 → flips=282
+[iter 14] λ=0.9034 → flips=18
+[iter 15] λ=0.9034 → flips=18
+[iter 16] λ=0.9034 → flips=282
+[iter 17] λ=0.9034 → flips=282
+[iter 18] λ=0.9034 → flips=18
+[iter 19] λ=0.9034 → flips=282
+
+Best λ=0.8750 → flips=18, correct=8/50
+Number of flips performed: 18
+Cell (Hypanartia_lethe,Potamogetonaceae): 0 -> 1
+Cell (Hypanartia_lethe,Acoraceae): 0 -> 1
+Cell (Hypanartia_lethe,Fabaceae): 0 -> 1
+Cell (Hypanartia_lethe,Rosaceae): 0 -> 1
+Cell (Hypanartia_lethe,Betulaceae): 0 -> 1
+Cell (Hypanartia_bella,Smilacaceae): 0 -> 1
+Cell (Hypanartia_bella,Fabaceae): 0 -> 1
+Cell (Hypanartia_bella,Rhamnaceae): 0 -> 1
+Cell (Hypanartia_bella,Ulmaceae): 0 -> 1
+Cell (Hypanartia_bella,Cannabaceae): 0 -> 1
+Cell (Hypanartia_bella,Urticaceae): 0 -> 1
+Cell (Hypanartia_bella,Betulaceae): 0 -> 1
+Cell (Hypanartia_bella,Salicaceae): 0 -> 1
+Cell (Hypanartia_bella,Malvaceae): 0 -> 1
+Cell (Hypanartia_bella,Grossulariaceae): 0 -> 1
+Cell (Hypanartia_bella,Plantaginaceae): 0 -> 1
+Cell (Vanessa_cardui,Rhamnaceae): 0 -> 1
+Cell (Vanessa_atalanta,Urticaceae): 0 -> 1
+Matrix saved as results/141/corrupt50/r010.5_r100.5/flipped_matrix.png
+Metrics: {'precision': 0.4444444444444444, 'recall': 0.16, 'f1': 0.23529411764705882, 'TP': 8, 'FP': 10, 'FN': 42}
+[Elbow detection] λ ≈ 0.903 (cutoff=0.903)
+Elbow Metrics: {'precision': 0.4444444444444444, 'recall': 0.16, 'f1': 0.23529411764705882, 'TP': 8, 'FP': 10, 'FN': 42}

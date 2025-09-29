@@ -1,0 +1,428 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+braga_pipeline             135
+braga_simulator            135
+plot_braga_simulation        1
+plot_my_simulation           1
+simulate                  1125
+total                     1398
+
+Select jobs to execute...
+Execute 10 jobs...
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/163/corrupt50/r010.4_r100.6/original_matrix.png, results/163/corrupt50/r010.4_r100.6/flipped_matrix.png, results/163/corrupt50/r010.4_r100.6/metrics.json, results/163/corrupt50/r010.4_r100.6/elbow_metrics.json, results/163/corrupt50/r010.4_r100.6/simulate.out, results/163/corrupt50/r010.4_r100.6/simulate.err
+    jobid: 1085
+    reason: Missing output files: results/163/corrupt50/r010.4_r100.6/elbow_metrics.json, results/163/corrupt50/r010.4_r100.6/metrics.json
+    wildcards: seed=163, corrupt=50, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 28 20:58:00 2025]
+localrule braga_simulator:
+    output: results/braga/53/sim53-b0-c0.5.nex, results/braga/53/sim53-b0-c0.5.settings.txt
+    jobid: 1202
+    reason: Missing output files: results/braga/53/sim53-b0-c0.5.settings.txt, results/braga/53/sim53-b0-c0.5.nex
+    wildcards: seed=53, beta=0, clock=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/9/corrupt10/r010.7_r100.5/original_matrix.png, results/9/corrupt10/r010.7_r100.5/flipped_matrix.png, results/9/corrupt10/r010.7_r100.5/metrics.json, results/9/corrupt10/r010.7_r100.5/elbow_metrics.json, results/9/corrupt10/r010.7_r100.5/simulate.out, results/9/corrupt10/r010.7_r100.5/simulate.err
+    jobid: 24
+    reason: Missing output files: results/9/corrupt10/r010.7_r100.5/metrics.json, results/9/corrupt10/r010.7_r100.5/elbow_metrics.json
+    wildcards: seed=9, corrupt=10, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/97/corrupt10/r010.3_r100.4/original_matrix.png, results/97/corrupt10/r010.3_r100.4/flipped_matrix.png, results/97/corrupt10/r010.3_r100.4/metrics.json, results/97/corrupt10/r010.3_r100.4/elbow_metrics.json, results/97/corrupt10/r010.3_r100.4/simulate.out, results/97/corrupt10/r010.3_r100.4/simulate.err
+    jobid: 603
+    reason: Missing output files: results/97/corrupt10/r010.3_r100.4/metrics.json, results/97/corrupt10/r010.3_r100.4/elbow_metrics.json
+    wildcards: seed=97, corrupt=10, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/163/corrupt50/r010.4_r100.6
+        {
+            python simulation.py                 --seed 163                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/163/corrupt50/r010.4_r100.6                 --original_metrics results/163/corrupt50/r010.4_r100.6/metrics.json                 --elbow_metrics results/163/corrupt50/r010.4_r100.6/elbow_metrics.json                 > results/163/corrupt50/r010.4_r100.6/simulate.out 2> results/163/corrupt50/r010.4_r100.6/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1085
+    output: results/163/corrupt50/r010.4_r100.6/original_matrix.png, results/163/corrupt50/r010.4_r100.6/flipped_matrix.png, results/163/corrupt50/r010.4_r100.6/metrics.json, results/163/corrupt50/r010.4_r100.6/elbow_metrics.json, results/163/corrupt50/r010.4_r100.6/simulate.out, results/163/corrupt50/r010.4_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/163/corrupt50/r010.4_r100.6
+        {
+            python simulation.py                 --seed 163                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/163/corrupt50/r010.4_r100.6                 --original_metrics results/163/corrupt50/r010.4_r100.6/metrics.json                 --elbow_metrics results/163/corrupt50/r010.4_r100.6/elbow_metrics.json                 > results/163/corrupt50/r010.4_r100.6/simulate.out 2> results/163/corrupt50/r010.4_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/97/corrupt10/r010.6_r100.4/original_matrix.png, results/97/corrupt10/r010.6_r100.4/flipped_matrix.png, results/97/corrupt10/r010.6_r100.4/metrics.json, results/97/corrupt10/r010.6_r100.4/elbow_metrics.json, results/97/corrupt10/r010.6_r100.4/simulate.out, results/97/corrupt10/r010.6_r100.4/simulate.err
+    jobid: 618
+    reason: Missing output files: results/97/corrupt10/r010.6_r100.4/elbow_metrics.json, results/97/corrupt10/r010.6_r100.4/metrics.json
+    wildcards: seed=97, corrupt=10, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/9/corrupt10/r010.7_r100.5
+        {
+            python simulation.py                 --seed 9                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.7                 --r10_p 0.5                 --r01_h 0.7                 --r10_h 0.5                 --outdir results/9/corrupt10/r010.7_r100.5                 --original_metrics results/9/corrupt10/r010.7_r100.5/metrics.json                 --elbow_metrics results/9/corrupt10/r010.7_r100.5/elbow_metrics.json                 > results/9/corrupt10/r010.7_r100.5/simulate.out 2> results/9/corrupt10/r010.7_r100.5/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 24
+    output: results/9/corrupt10/r010.7_r100.5/original_matrix.png, results/9/corrupt10/r010.7_r100.5/flipped_matrix.png, results/9/corrupt10/r010.7_r100.5/metrics.json, results/9/corrupt10/r010.7_r100.5/elbow_metrics.json, results/9/corrupt10/r010.7_r100.5/simulate.out, results/9/corrupt10/r010.7_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/9/corrupt10/r010.7_r100.5
+        {
+            python simulation.py                 --seed 9                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.7                 --r10_p 0.5                 --r01_h 0.7                 --r10_h 0.5                 --outdir results/9/corrupt10/r010.7_r100.5                 --original_metrics results/9/corrupt10/r010.7_r100.5/metrics.json                 --elbow_metrics results/9/corrupt10/r010.7_r100.5/elbow_metrics.json                 > results/9/corrupt10/r010.7_r100.5/simulate.out 2> results/9/corrupt10/r010.7_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/152/corrupt100/r010.7_r100.5/original_matrix.png, results/152/corrupt100/r010.7_r100.5/flipped_matrix.png, results/152/corrupt100/r010.7_r100.5/metrics.json, results/152/corrupt100/r010.7_r100.5/elbow_metrics.json, results/152/corrupt100/r010.7_r100.5/simulate.out, results/152/corrupt100/r010.7_r100.5/simulate.err
+    jobid: 1049
+    reason: Missing output files: results/152/corrupt100/r010.7_r100.5/metrics.json, results/152/corrupt100/r010.7_r100.5/elbow_metrics.json
+    wildcards: seed=152, corrupt=100, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/97/corrupt10/r010.3_r100.4
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.3                 --r10_p 0.4                 --r01_h 0.3                 --r10_h 0.4                 --outdir results/97/corrupt10/r010.3_r100.4                 --original_metrics results/97/corrupt10/r010.3_r100.4/metrics.json                 --elbow_metrics results/97/corrupt10/r010.3_r100.4/elbow_metrics.json                 > results/97/corrupt10/r010.3_r100.4/simulate.out 2> results/97/corrupt10/r010.3_r100.4/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 603
+    output: results/97/corrupt10/r010.3_r100.4/original_matrix.png, results/97/corrupt10/r010.3_r100.4/flipped_matrix.png, results/97/corrupt10/r010.3_r100.4/metrics.json, results/97/corrupt10/r010.3_r100.4/elbow_metrics.json, results/97/corrupt10/r010.3_r100.4/simulate.out, results/97/corrupt10/r010.3_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt10/r010.3_r100.4
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.3                 --r10_p 0.4                 --r01_h 0.3                 --r10_h 0.4                 --outdir results/97/corrupt10/r010.3_r100.4                 --original_metrics results/97/corrupt10/r010.3_r100.4/metrics.json                 --elbow_metrics results/97/corrupt10/r010.3_r100.4/elbow_metrics.json                 > results/97/corrupt10/r010.3_r100.4/simulate.out 2> results/97/corrupt10/r010.3_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/97/corrupt50/r010.3_r100.5/original_matrix.png, results/97/corrupt50/r010.3_r100.5/flipped_matrix.png, results/97/corrupt50/r010.3_r100.5/metrics.json, results/97/corrupt50/r010.3_r100.5/elbow_metrics.json, results/97/corrupt50/r010.3_r100.5/simulate.out, results/97/corrupt50/r010.3_r100.5/simulate.err
+    jobid: 629
+    reason: Missing output files: results/97/corrupt50/r010.3_r100.5/elbow_metrics.json, results/97/corrupt50/r010.3_r100.5/metrics.json
+    wildcards: seed=97, corrupt=50, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/97/corrupt10/r010.6_r100.4
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.6                 --r10_p 0.4                 --r01_h 0.6                 --r10_h 0.4                 --outdir results/97/corrupt10/r010.6_r100.4                 --original_metrics results/97/corrupt10/r010.6_r100.4/metrics.json                 --elbow_metrics results/97/corrupt10/r010.6_r100.4/elbow_metrics.json                 > results/97/corrupt10/r010.6_r100.4/simulate.out 2> results/97/corrupt10/r010.6_r100.4/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 618
+    output: results/97/corrupt10/r010.6_r100.4/original_matrix.png, results/97/corrupt10/r010.6_r100.4/flipped_matrix.png, results/97/corrupt10/r010.6_r100.4/metrics.json, results/97/corrupt10/r010.6_r100.4/elbow_metrics.json, results/97/corrupt10/r010.6_r100.4/simulate.out, results/97/corrupt10/r010.6_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt10/r010.6_r100.4
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.6                 --r10_p 0.4                 --r01_h 0.6                 --r10_h 0.4                 --outdir results/97/corrupt10/r010.6_r100.4                 --original_metrics results/97/corrupt10/r010.6_r100.4/metrics.json                 --elbow_metrics results/97/corrupt10/r010.6_r100.4/elbow_metrics.json                 > results/97/corrupt10/r010.6_r100.4/simulate.out 2> results/97/corrupt10/r010.6_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/31/corrupt10/r010.4_r100.6/original_matrix.png, results/31/corrupt10/r010.4_r100.6/flipped_matrix.png, results/31/corrupt10/r010.4_r100.6/metrics.json, results/31/corrupt10/r010.4_r100.6/elbow_metrics.json, results/31/corrupt10/r010.4_r100.6/simulate.out, results/31/corrupt10/r010.4_r100.6/simulate.err
+    jobid: 160
+    reason: Missing output files: results/31/corrupt10/r010.4_r100.6/metrics.json, results/31/corrupt10/r010.4_r100.6/elbow_metrics.json
+    wildcards: seed=31, corrupt=10, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/42/corrupt100/r010.3_r100.6/original_matrix.png, results/42/corrupt100/r010.3_r100.6/flipped_matrix.png, results/42/corrupt100/r010.3_r100.6/metrics.json, results/42/corrupt100/r010.3_r100.6/elbow_metrics.json, results/42/corrupt100/r010.3_r100.6/simulate.out, results/42/corrupt100/r010.3_r100.6/simulate.err
+    jobid: 280
+    reason: Missing output files: results/42/corrupt100/r010.3_r100.6/metrics.json, results/42/corrupt100/r010.3_r100.6/elbow_metrics.json
+    wildcards: seed=42, corrupt=100, r01=0.3, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/152/corrupt100/r010.7_r100.5
+        {
+            python simulation.py                 --seed 152                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --r01_p 0.7                 --r10_p 0.5                 --r01_h 0.7                 --r10_h 0.5                 --outdir results/152/corrupt100/r010.7_r100.5                 --original_metrics results/152/corrupt100/r010.7_r100.5/metrics.json                 --elbow_metrics results/152/corrupt100/r010.7_r100.5/elbow_metrics.json                 > results/152/corrupt100/r010.7_r100.5/simulate.out 2> results/152/corrupt100/r010.7_r100.5/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1049
+    output: results/152/corrupt100/r010.7_r100.5/original_matrix.png, results/152/corrupt100/r010.7_r100.5/flipped_matrix.png, results/152/corrupt100/r010.7_r100.5/metrics.json, results/152/corrupt100/r010.7_r100.5/elbow_metrics.json, results/152/corrupt100/r010.7_r100.5/simulate.out, results/152/corrupt100/r010.7_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/152/corrupt100/r010.7_r100.5
+        {
+            python simulation.py                 --seed 152                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --r01_p 0.7                 --r10_p 0.5                 --r01_h 0.7                 --r10_h 0.5                 --outdir results/152/corrupt100/r010.7_r100.5                 --original_metrics results/152/corrupt100/r010.7_r100.5/metrics.json                 --elbow_metrics results/152/corrupt100/r010.7_r100.5/elbow_metrics.json                 > results/152/corrupt100/r010.7_r100.5/simulate.out 2> results/152/corrupt100/r010.7_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/97/corrupt50/r010.3_r100.5
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --r01_p 0.3                 --r10_p 0.5                 --r01_h 0.3                 --r10_h 0.5                 --outdir results/97/corrupt50/r010.3_r100.5                 --original_metrics results/97/corrupt50/r010.3_r100.5/metrics.json                 --elbow_metrics results/97/corrupt50/r010.3_r100.5/elbow_metrics.json                 > results/97/corrupt50/r010.3_r100.5/simulate.out 2> results/97/corrupt50/r010.3_r100.5/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 629
+    output: results/97/corrupt50/r010.3_r100.5/original_matrix.png, results/97/corrupt50/r010.3_r100.5/flipped_matrix.png, results/97/corrupt50/r010.3_r100.5/metrics.json, results/97/corrupt50/r010.3_r100.5/elbow_metrics.json, results/97/corrupt50/r010.3_r100.5/simulate.out, results/97/corrupt50/r010.3_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt50/r010.3_r100.5
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --r01_p 0.3                 --r10_p 0.5                 --r01_h 0.3                 --r10_h 0.5                 --outdir results/97/corrupt50/r010.3_r100.5                 --original_metrics results/97/corrupt50/r010.3_r100.5/metrics.json                 --elbow_metrics results/97/corrupt50/r010.3_r100.5/elbow_metrics.json                 > results/97/corrupt50/r010.3_r100.5/simulate.out 2> results/97/corrupt50/r010.3_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:58:00 2025]
+localrule simulate:
+    output: results/163/corrupt10/r010.4_r100.6/original_matrix.png, results/163/corrupt10/r010.4_r100.6/flipped_matrix.png, results/163/corrupt10/r010.4_r100.6/metrics.json, results/163/corrupt10/r010.4_r100.6/elbow_metrics.json, results/163/corrupt10/r010.4_r100.6/simulate.out, results/163/corrupt10/r010.4_r100.6/simulate.err
+    jobid: 1060
+    reason: Missing output files: results/163/corrupt10/r010.4_r100.6/metrics.json, results/163/corrupt10/r010.4_r100.6/elbow_metrics.json
+    wildcards: seed=163, corrupt=10, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/31/corrupt10/r010.4_r100.6
+        {
+            python simulation.py                 --seed 31                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/31/corrupt10/r010.4_r100.6                 --original_metrics results/31/corrupt10/r010.4_r100.6/metrics.json                 --elbow_metrics results/31/corrupt10/r010.4_r100.6/elbow_metrics.json                 > results/31/corrupt10/r010.4_r100.6/simulate.out 2> results/31/corrupt10/r010.4_r100.6/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 160
+    output: results/31/corrupt10/r010.4_r100.6/original_matrix.png, results/31/corrupt10/r010.4_r100.6/flipped_matrix.png, results/31/corrupt10/r010.4_r100.6/metrics.json, results/31/corrupt10/r010.4_r100.6/elbow_metrics.json, results/31/corrupt10/r010.4_r100.6/simulate.out, results/31/corrupt10/r010.4_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/31/corrupt10/r010.4_r100.6
+        {
+            python simulation.py                 --seed 31                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/31/corrupt10/r010.4_r100.6                 --original_metrics results/31/corrupt10/r010.4_r100.6/metrics.json                 --elbow_metrics results/31/corrupt10/r010.4_r100.6/elbow_metrics.json                 > results/31/corrupt10/r010.4_r100.6/simulate.out 2> results/31/corrupt10/r010.4_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job simulate since they might be corrupted:
+results/163/corrupt50/r010.4_r100.6/simulate.out, results/163/corrupt50/r010.4_r100.6/simulate.err
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/42/corrupt100/r010.3_r100.6
+        {
+            python simulation.py                 --seed 42                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --r01_p 0.3                 --r10_p 0.6                 --r01_h 0.3                 --r10_h 0.6                 --outdir results/42/corrupt100/r010.3_r100.6                 --original_metrics results/42/corrupt100/r010.3_r100.6/metrics.json                 --elbow_metrics results/42/corrupt100/r010.3_r100.6/elbow_metrics.json                 > results/42/corrupt100/r010.3_r100.6/simulate.out 2> results/42/corrupt100/r010.3_r100.6/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 280
+    output: results/42/corrupt100/r010.3_r100.6/original_matrix.png, results/42/corrupt100/r010.3_r100.6/flipped_matrix.png, results/42/corrupt100/r010.3_r100.6/metrics.json, results/42/corrupt100/r010.3_r100.6/elbow_metrics.json, results/42/corrupt100/r010.3_r100.6/simulate.out, results/42/corrupt100/r010.3_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/42/corrupt100/r010.3_r100.6
+        {
+            python simulation.py                 --seed 42                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --r01_p 0.3                 --r10_p 0.6                 --r01_h 0.3                 --r10_h 0.6                 --outdir results/42/corrupt100/r010.3_r100.6                 --original_metrics results/42/corrupt100/r010.3_r100.6/metrics.json                 --elbow_metrics results/42/corrupt100/r010.3_r100.6/elbow_metrics.json                 > results/42/corrupt100/r010.3_r100.6/simulate.out 2> results/42/corrupt100/r010.3_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job simulate since they might be corrupted:
+results/9/corrupt10/r010.7_r100.5/simulate.out, results/9/corrupt10/r010.7_r100.5/simulate.err
+Removing output files of failed job simulate since they might be corrupted:
+results/97/corrupt10/r010.3_r100.4/simulate.out, results/97/corrupt10/r010.3_r100.4/simulate.err
+Removing output files of failed job simulate since they might be corrupted:
+results/97/corrupt10/r010.6_r100.4/simulate.out, results/97/corrupt10/r010.6_r100.4/simulate.err
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 45:
+Command 'set -euo pipefail;  
+        mkdir -p results/163/corrupt10/r010.4_r100.6
+        {
+            python simulation.py                 --seed 163                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/163/corrupt10/r010.4_r100.6                 --original_metrics results/163/corrupt10/r010.4_r100.6/metrics.json                 --elbow_metrics results/163/corrupt10/r010.4_r100.6/elbow_metrics.json                 > results/163/corrupt10/r010.4_r100.6/simulate.out 2> results/163/corrupt10/r010.4_r100.6/simulate.err
+        }' returned non-zero exit status 2.
+[Sun Sep 28 20:58:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1060
+    output: results/163/corrupt10/r010.4_r100.6/original_matrix.png, results/163/corrupt10/r010.4_r100.6/flipped_matrix.png, results/163/corrupt10/r010.4_r100.6/metrics.json, results/163/corrupt10/r010.4_r100.6/elbow_metrics.json, results/163/corrupt10/r010.4_r100.6/simulate.out, results/163/corrupt10/r010.4_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/163/corrupt10/r010.4_r100.6
+        {
+            python simulation.py                 --seed 163                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/163/corrupt10/r010.4_r100.6                 --original_metrics results/163/corrupt10/r010.4_r100.6/metrics.json                 --elbow_metrics results/163/corrupt10/r010.4_r100.6/elbow_metrics.json                 > results/163/corrupt10/r010.4_r100.6/simulate.out 2> results/163/corrupt10/r010.4_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job simulate since they might be corrupted:
+results/152/corrupt100/r010.7_r100.5/simulate.out, results/152/corrupt100/r010.7_r100.5/simulate.err
+Removing output files of failed job simulate since they might be corrupted:
+results/97/corrupt50/r010.3_r100.5/simulate.out, results/97/corrupt50/r010.3_r100.5/simulate.err
+Removing output files of failed job simulate since they might be corrupted:
+results/163/corrupt10/r010.4_r100.6/simulate.out, results/163/corrupt10/r010.4_r100.6/simulate.err
+Removing output files of failed job simulate since they might be corrupted:
+results/31/corrupt10/r010.4_r100.6/simulate.out, results/31/corrupt10/r010.4_r100.6/simulate.err
+Removing output files of failed job simulate since they might be corrupted:
+results/42/corrupt100/r010.3_r100.6/simulate.out, results/42/corrupt100/r010.3_r100.6/simulate.err
+Waiting at most 5 seconds for missing files:
+results/braga/53/sim53-b0-c0.5.nex (missing locally)
+results/braga/53/sim53-b0-c0.5.settings.txt (missing locally)
+MissingOutputException in rule braga_simulator in file "/Users/PSLabMonisha/Desktop/exps/Snakefile", line 65:
+Job 1202  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/braga/53/sim53-b0-c0.5.nex (missing locally, parent dir contents: braga_53_b0_c0.5.log)
+results/braga/53/sim53-b0-c0.5.settings.txt (missing locally, parent dir contents: braga_53_b0_c0.5.log)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1085
+    output: results/163/corrupt50/r010.4_r100.6/original_matrix.png, results/163/corrupt50/r010.4_r100.6/flipped_matrix.png, results/163/corrupt50/r010.4_r100.6/metrics.json, results/163/corrupt50/r010.4_r100.6/elbow_metrics.json, results/163/corrupt50/r010.4_r100.6/simulate.out, results/163/corrupt50/r010.4_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/163/corrupt50/r010.4_r100.6
+        {
+            python simulation.py                 --seed 163                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/163/corrupt50/r010.4_r100.6                 --original_metrics results/163/corrupt50/r010.4_r100.6/metrics.json                 --elbow_metrics results/163/corrupt50/r010.4_r100.6/elbow_metrics.json                 > results/163/corrupt50/r010.4_r100.6/simulate.out 2> results/163/corrupt50/r010.4_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 603
+    output: results/97/corrupt10/r010.3_r100.4/original_matrix.png, results/97/corrupt10/r010.3_r100.4/flipped_matrix.png, results/97/corrupt10/r010.3_r100.4/metrics.json, results/97/corrupt10/r010.3_r100.4/elbow_metrics.json, results/97/corrupt10/r010.3_r100.4/simulate.out, results/97/corrupt10/r010.3_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt10/r010.3_r100.4
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.3                 --r10_p 0.4                 --r01_h 0.3                 --r10_h 0.4                 --outdir results/97/corrupt10/r010.3_r100.4                 --original_metrics results/97/corrupt10/r010.3_r100.4/metrics.json                 --elbow_metrics results/97/corrupt10/r010.3_r100.4/elbow_metrics.json                 > results/97/corrupt10/r010.3_r100.4/simulate.out 2> results/97/corrupt10/r010.3_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 618
+    output: results/97/corrupt10/r010.6_r100.4/original_matrix.png, results/97/corrupt10/r010.6_r100.4/flipped_matrix.png, results/97/corrupt10/r010.6_r100.4/metrics.json, results/97/corrupt10/r010.6_r100.4/elbow_metrics.json, results/97/corrupt10/r010.6_r100.4/simulate.out, results/97/corrupt10/r010.6_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt10/r010.6_r100.4
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.6                 --r10_p 0.4                 --r01_h 0.6                 --r10_h 0.4                 --outdir results/97/corrupt10/r010.6_r100.4                 --original_metrics results/97/corrupt10/r010.6_r100.4/metrics.json                 --elbow_metrics results/97/corrupt10/r010.6_r100.4/elbow_metrics.json                 > results/97/corrupt10/r010.6_r100.4/simulate.out 2> results/97/corrupt10/r010.6_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1060
+    output: results/163/corrupt10/r010.4_r100.6/original_matrix.png, results/163/corrupt10/r010.4_r100.6/flipped_matrix.png, results/163/corrupt10/r010.4_r100.6/metrics.json, results/163/corrupt10/r010.4_r100.6/elbow_metrics.json, results/163/corrupt10/r010.4_r100.6/simulate.out, results/163/corrupt10/r010.4_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/163/corrupt10/r010.4_r100.6
+        {
+            python simulation.py                 --seed 163                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/163/corrupt10/r010.4_r100.6                 --original_metrics results/163/corrupt10/r010.4_r100.6/metrics.json                 --elbow_metrics results/163/corrupt10/r010.4_r100.6/elbow_metrics.json                 > results/163/corrupt10/r010.4_r100.6/simulate.out 2> results/163/corrupt10/r010.4_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 160
+    output: results/31/corrupt10/r010.4_r100.6/original_matrix.png, results/31/corrupt10/r010.4_r100.6/flipped_matrix.png, results/31/corrupt10/r010.4_r100.6/metrics.json, results/31/corrupt10/r010.4_r100.6/elbow_metrics.json, results/31/corrupt10/r010.4_r100.6/simulate.out, results/31/corrupt10/r010.4_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/31/corrupt10/r010.4_r100.6
+        {
+            python simulation.py                 --seed 31                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/31/corrupt10/r010.4_r100.6                 --original_metrics results/31/corrupt10/r010.4_r100.6/metrics.json                 --elbow_metrics results/31/corrupt10/r010.4_r100.6/elbow_metrics.json                 > results/31/corrupt10/r010.4_r100.6/simulate.out 2> results/31/corrupt10/r010.4_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 280
+    output: results/42/corrupt100/r010.3_r100.6/original_matrix.png, results/42/corrupt100/r010.3_r100.6/flipped_matrix.png, results/42/corrupt100/r010.3_r100.6/metrics.json, results/42/corrupt100/r010.3_r100.6/elbow_metrics.json, results/42/corrupt100/r010.3_r100.6/simulate.out, results/42/corrupt100/r010.3_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/42/corrupt100/r010.3_r100.6
+        {
+            python simulation.py                 --seed 42                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --r01_p 0.3                 --r10_p 0.6                 --r01_h 0.3                 --r10_h 0.6                 --outdir results/42/corrupt100/r010.3_r100.6                 --original_metrics results/42/corrupt100/r010.3_r100.6/metrics.json                 --elbow_metrics results/42/corrupt100/r010.3_r100.6/elbow_metrics.json                 > results/42/corrupt100/r010.3_r100.6/simulate.out 2> results/42/corrupt100/r010.3_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 24
+    output: results/9/corrupt10/r010.7_r100.5/original_matrix.png, results/9/corrupt10/r010.7_r100.5/flipped_matrix.png, results/9/corrupt10/r010.7_r100.5/metrics.json, results/9/corrupt10/r010.7_r100.5/elbow_metrics.json, results/9/corrupt10/r010.7_r100.5/simulate.out, results/9/corrupt10/r010.7_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/9/corrupt10/r010.7_r100.5
+        {
+            python simulation.py                 --seed 9                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 10                 --r01_p 0.7                 --r10_p 0.5                 --r01_h 0.7                 --r10_h 0.5                 --outdir results/9/corrupt10/r010.7_r100.5                 --original_metrics results/9/corrupt10/r010.7_r100.5/metrics.json                 --elbow_metrics results/9/corrupt10/r010.7_r100.5/elbow_metrics.json                 > results/9/corrupt10/r010.7_r100.5/simulate.out 2> results/9/corrupt10/r010.7_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule braga_simulator:
+    message: None
+    jobid: 1202
+    output: results/braga/53/sim53-b0-c0.5.nex, results/braga/53/sim53-b0-c0.5.settings.txt
+    shell:
+        
+        mkdir -p results/braga/53
+        rb Simulate.Rev             --args 53 0 0.5 results/braga/53             > results/braga/53/braga_53_b0_c0.5.log 2>&1
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1049
+    output: results/152/corrupt100/r010.7_r100.5/original_matrix.png, results/152/corrupt100/r010.7_r100.5/flipped_matrix.png, results/152/corrupt100/r010.7_r100.5/metrics.json, results/152/corrupt100/r010.7_r100.5/elbow_metrics.json, results/152/corrupt100/r010.7_r100.5/simulate.out, results/152/corrupt100/r010.7_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/152/corrupt100/r010.7_r100.5
+        {
+            python simulation.py                 --seed 152                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 100                 --r01_p 0.7                 --r10_p 0.5                 --r01_h 0.7                 --r10_h 0.5                 --outdir results/152/corrupt100/r010.7_r100.5                 --original_metrics results/152/corrupt100/r010.7_r100.5/metrics.json                 --elbow_metrics results/152/corrupt100/r010.7_r100.5/elbow_metrics.json                 > results/152/corrupt100/r010.7_r100.5/simulate.out 2> results/152/corrupt100/r010.7_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Sun Sep 28 20:59:00 2025]
+Error in rule simulate:
+    message: None
+    jobid: 629
+    output: results/97/corrupt50/r010.3_r100.5/original_matrix.png, results/97/corrupt50/r010.3_r100.5/flipped_matrix.png, results/97/corrupt50/r010.3_r100.5/metrics.json, results/97/corrupt50/r010.3_r100.5/elbow_metrics.json, results/97/corrupt50/r010.3_r100.5/simulate.out, results/97/corrupt50/r010.3_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt50/r010.3_r100.5
+        {
+            python simulation.py                 --seed 97                 --host_tree angio_25tips_origin.phy                 --virus_tree Nymphalini.phy                 --corrupt 50                 --r01_p 0.3                 --r10_p 0.5                 --r01_h 0.3                 --r10_h 0.5                 --outdir results/97/corrupt50/r010.3_r100.5                 --original_metrics results/97/corrupt50/r010.3_r100.5/metrics.json                 --elbow_metrics results/97/corrupt50/r010.3_r100.5/elbow_metrics.json                 > results/97/corrupt50/r010.3_r100.5/simulate.out 2> results/97/corrupt50/r010.3_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/exps/.snakemake/log/2025-09-28T205758.975132.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

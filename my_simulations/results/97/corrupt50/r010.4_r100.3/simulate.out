@@ -1,4 +1,3 @@
-Matrix saved as ml_parsimony_matrices/seed97_ratio1.8532.png
 Matrix saved as results/97/corrupt50/r010.4_r100.3/original_matrix.png
 Matrix saved as results/97/corrupt50/r010.4_r100.3/corrupted.png
 [iter 0] λ=0.5000 → flips=37
@@ -77,5 +76,60 @@ Cell (Nymphalis_antiopa,Asteraceae): 0 -> 1
 Cell (Nymphalis_antiopa,Plantaginaceae): 0 -> 1
 Matrix saved as results/97/corrupt50/r010.4_r100.3/flipped_matrix.png
 Metrics: {'precision': 0.7843137254901961, 'recall': 0.8, 'f1': 0.792079207920792, 'TP': 40, 'FP': 11, 'FN': 10}
-[Elbow detection] λ ≈ 0.619 (cutoff=0.608)
-Elbow Metrics: {'precision': 0.7843137254901961, 'recall': 0.8, 'f1': 0.792079207920792, 'TP': 40, 'FP': 11, 'FN': 10}
+[Elbow detection] flip ≈ 53, λ ≈ 0.673469387755102
+Number of flips performed (elbow): 53
+Cell (Kaniska_canace,Nymphaeaceae): 0 -> 1
+Cell (Kaniska_canace,Aristolochiaceae): 0 -> 1
+Cell (Kaniska_canace,Chloranthaceae): 0 -> 1
+Cell (Kaniska_canace,Typhaceae): 0 -> 1
+Cell (Kaniska_canace,Fabaceae): 0 -> 1
+Cell (Kaniska_canace,Cannabaceae): 0 -> 1
+Cell (Kaniska_canace,Urticaceae): 0 -> 1
+Cell (Kaniska_canace,Salicaceae): 0 -> 1
+Cell (Kaniska_canace,Ericaceae): 0 -> 1
+Cell (Kaniska_canace,Asteraceae): 0 -> 1
+Cell (Nymphalis_l_album,Amborellaceae): 0 -> 1
+Cell (Nymphalis_l_album,Ceratophyllaceae): 0 -> 1
+Cell (Nymphalis_l_album,Fabaceae): 0 -> 1
+Cell (Nymphalis_l_album,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_l_album,Ulmaceae): 0 -> 1
+Cell (Nymphalis_l_album,Ericaceae): 0 -> 1
+Cell (Nymphalis_l_album,Plantaginaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Siparunaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Chloranthaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Acoraceae): 0 -> 1
+Cell (Nymphalis_polychloros,Ceratophyllaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Malvaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_polychloros,Ericaceae): 0 -> 1
+Cell (Nymphalis_californica,Ceratophyllaceae): 0 -> 1
+Cell (Nymphalis_californica,Fabaceae): 0 -> 1
+Cell (Nymphalis_californica,Rosaceae): 0 -> 1
+Cell (Nymphalis_californica,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_californica,Urticaceae): 0 -> 1
+Cell (Nymphalis_californica,Salicaceae): 0 -> 1
+Cell (Nymphalis_californica,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_californica,Ericaceae): 0 -> 1
+Cell (Nymphalis_californica,Boraginaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Amborellaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Siparunaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Chloranthaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Potamogetonaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Rosaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Rhamnaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Cannabaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Salicaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Grossulariaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Ericaceae): 0 -> 1
+Cell (Nymphalis_xanthomelas,Plantaginaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Amborellaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Fabaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Urticaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Salicaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Malvaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Ericaceae): 0 -> 1
+Cell (Nymphalis_antiopa,Asteraceae): 0 -> 1
+Cell (Nymphalis_antiopa,Plantaginaceae): 0 -> 1
+Matrix saved as results/97/corrupt50/r010.4_r100.3/flipped_matrix_elbow.png
+Elbow Metrics: {'precision': 0.7924528301886793, 'recall': 0.84, 'f1': 0.8155339805825242, 'TP': 42, 'FP': 11, 'FN': 8}
