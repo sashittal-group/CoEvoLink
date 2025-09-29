@@ -18,14 +18,15 @@ def smooth_scores(scores, window=5, poly=2):
         return scores
     return savgol_filter(scores, window_length=window, polyorder=poly)
 
-def parsimony_vs_lambda(out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, steps, lower, upper):
+def parsimony_vs_flips(out, parasites, hosts, host_W_matrices, par_W_matrices,
+                       flip_cost_matrix, steps, lower, upper):
     """
-    Compute total parsimony for a range of λ values between 0 and 1.
-    Returns arrays of lambdas and parsimony scores.
+    Compute total parsimony and number of flips across a range of λ values.
+    Returns arrays of flips, scores, and lambdas.
     """
-    # filter lambda from 0.5 to 0.9
     lambdas = np.linspace(lower, upper, steps)
     scores = []
+    flips_counts = []
 
     for lam in lambdas:
         cut_result = solve_network_cut(
@@ -33,7 +34,9 @@ def parsimony_vs_lambda(out, parasites, hosts, host_W_matrices, par_W_matrices, 
             flip_cost_matrix=flip_cost_matrix,
             lambda_param=lam
         )
-        mat = cut_result["new_matrix"]
+
+        # Count flips
+        flips_counts.append(len(cut_result["flips"]))
 
         # total parsimony across parasite×host
         total = 0
@@ -46,64 +49,57 @@ def parsimony_vs_lambda(out, parasites, hosts, host_W_matrices, par_W_matrices, 
 
         scores.append(total)
 
-    return lambdas, scores
+    return np.array(flips_counts), np.array(scores), np.array(lambdas)
 
-def find_elbow_parsimony(out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, lower, upper, outdir="experiments"):
-    # Run your sweep
-    lambdas, scores = parsimony_vs_lambda(out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, steps=50, lower=lower, upper=upper)
 
-    # Use KneeLocator to detect elbow
-    # Smooth scores to reduce noise
-    # scores = smooth_scores(scores, window=5, poly=1)
-        # Smooth to reduce zig-zag
+def find_elbow_parsimony_flips(out, parasites, hosts, host_W_matrices,
+                               par_W_matrices, flip_cost_matrix,
+                               lower, upper, steps=50, outdir="experiments"):
+    # Run sweep
+    flips, scores, lambdas = parsimony_vs_flips(
+        out, parasites, hosts, host_W_matrices, par_W_matrices,
+        flip_cost_matrix, steps=steps, lower=lower, upper=upper
+    )
 
-    lambdas = np.array(lambdas)
-    scores = np.array(scores)
-
-    # Smooth to reduce zig-zag
+    # Smooth scores
     smooth = smooth_scores(scores, window=3, poly=2)
-    smooth_lambdas = lambdas[:len(smooth)]
 
-    # Compute slope
-    diffs = np.diff(smooth) / np.diff(smooth_lambdas)
-
-    # Step 1: find steepest slope
-    idx_steep = np.argmin(diffs)  # most negative slope
-    cutoff_lambda = smooth_lambdas[idx_steep]
-
-    # Step 2: run KneeLocator only on the part after cutoff
-    mask_after = lambdas >= cutoff_lambda
-    lambdas_after = lambdas[mask_after]
-    scores_after = scores[mask_after]
-
-    if len(lambdas_after) < 3:  # fallback if too short
-        elbow_lambda = cutoff_lambda
+    # Elbow detection in flip-space
+    kneedle = KneeLocator(
+        flips, smooth,
+        curve="convex", direction="decreasing"
+    )
+    elbow_flip = kneedle.knee
+    if elbow_flip is not None:
+        # Find closest λ to the elbow flip
+        idx = (np.abs(flips - elbow_flip)).argmin()
+        elbow_lambda = lambdas[idx]
     else:
-        kneedle = KneeLocator(
-            lambdas_after, scores_after,
-            curve="convex", direction="decreasing"
-        )
-        elbow_lambda = kneedle.elbow if kneedle.elbow else cutoff_lambda
+        # take lambda with max second derivative
+        elbow_flip, elbow_lambda = None, lambdas[-1]
 
-    print(f"[Elbow detection] λ ≈ {elbow_lambda:.3f} (cutoff={cutoff_lambda:.3f})")
+
+    print(f"[Elbow detection] flip ≈ {elbow_flip}, λ ≈ {elbow_lambda}")
 
     # Plot
     plt.figure(figsize=(7,5))
-    plt.plot(lambdas, scores, "bo-", label="Parsimony score")
-    plt.axvline(cutoff_lambda, color="orange", linestyle="--",
-                label=f"Steep cutoff λ={cutoff_lambda:.3f}")
-    if elbow_lambda is not None:
-        plt.axvline(elbow_lambda, color="red", linestyle="--",
-                    label=f"Elbow λ={elbow_lambda:.3f}")
-    plt.xlabel("λ")
+    plt.plot(flips, scores, "bo-", label="Parsimony vs flips")
+    if elbow_flip is not None:
+        plt.axvline(elbow_flip, color="red", linestyle="--",
+                    label=f"Elbow flip={elbow_flip}, λ≈{elbow_lambda:.3f}")
+    # Annotate points with λ
+    for f, s, lam in zip(flips, scores, lambdas):
+        plt.text(f, s, f"{lam:.2f}", fontsize=6, ha="right", va="bottom", rotation=45)
+
+    plt.xlabel("Number of flips")
     plt.ylabel("Parsimony")
-    plt.title("Parsimony vs λ (Steepness + Knee)")
+    plt.title("Parsimony vs Flips (λ sweep)")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(outdir, "parsimony_vs_lambda_elbow.png"))
+    plt.savefig(os.path.join(outdir, "parsimony_vs_flips_elbow.png"))
     plt.close()
 
-    return elbow_lambda, lambdas, scores
+    return elbow_flip, elbow_lambda, flips, scores, lambdas
 
 
 def read_interaction_matrix(csv_file, host_tree_file, virus_tree_file):
@@ -372,8 +368,8 @@ def main():
     print("Metrics:", metrics)
 
 
-    elbow_lambda, lambdas, scores = find_elbow_parsimony(
-        out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, lower=0, upper=1, outdir=outdir
+    elbow_flip, elbow_lambda, flips, scores, lambdas = find_elbow_parsimony_flips(
+        out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, lower=0, upper=1, steps=50, outdir=outdir
     )
 
     cut_result_elbow = solve_network_cut(
@@ -385,8 +381,8 @@ def main():
 
     highlight_flipped = {"flipped": [(p, h) for p, h, old, new in flips_elbow]}
     print(f"Number of flips performed (elbow): {len(flips_elbow)}")
-    # for p, h, old, new in flips_elbow:
-    #     print(f"Cell ({p},{h}): {old} -> {new}")
+    for p, h, old, new in flips_elbow:
+        print(f"Cell ({p},{h}): {old} -> {new}")
     plot_matrix(cut_result_elbow["new_matrix"], parasites, hosts,
                 filename=os.path.join(outdir, "flipped_matrix_elbow.png"),
                 highlight=highlight_flipped)
