@@ -1,0 +1,37 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+generate_summary        1
+raxml_analysis          2
+total                   4
+
+Select jobs to execute...
+Execute 2 jobs...
+[Wed Oct  1 02:04:20 2025]
+localrule raxml_analysis:
+    input: virion_bat_cov_output/alignments/viruses_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/viruses_raxml.raxml.bestTree, virion_bat_cov_output/trees/viruses_raxml.raxml.support, virion_bat_cov_output/trees/viruses_raxml.raxml.bestModel, virion_bat_cov_output/trees/viruses_raxml.raxml.log, virion_bat_cov_output/trees/viruses_raxml.raxml.bootstraps, virion_bat_cov_output/trees/viruses_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/viruses_raxml.raxml.rba, virion_bat_cov_output/trees/viruses_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+    jobid: 2
+    benchmark: virion_bat_cov_output/trees/viruses_raxml_benchmark.txt
+    reason: Missing output files: virion_bat_cov_output/trees/viruses_raxml.raxml.log, virion_bat_cov_output/trees/viruses_raxml.raxml.bestTree, virion_bat_cov_output/trees/viruses_raxml.raxml.support
+    wildcards: dataset=viruses
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Oct  1 02:04:20 2025]
+localrule raxml_analysis:
+    input: virion_bat_cov_output/alignments/hosts_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/hosts_raxml.raxml.bestTree, virion_bat_cov_output/trees/hosts_raxml.raxml.support, virion_bat_cov_output/trees/hosts_raxml.raxml.bestModel, virion_bat_cov_output/trees/hosts_raxml.raxml.log, virion_bat_cov_output/trees/hosts_raxml.raxml.bootstraps, virion_bat_cov_output/trees/hosts_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/hosts_raxml.raxml.rba, virion_bat_cov_output/trees/hosts_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+    jobid: 1
+    benchmark: virion_bat_cov_output/trees/hosts_raxml_benchmark.txt
+    reason: Missing output files: virion_bat_cov_output/trees/hosts_raxml.raxml.bestTree, virion_bat_cov_output/trees/hosts_raxml.raxml.log, virion_bat_cov_output/trees/hosts_raxml.raxml.support
+    wildcards: dataset=hosts
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T

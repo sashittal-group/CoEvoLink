@@ -1,0 +1,8 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+ChildIOException:
+File/directory is a child to another output:
+('/Users/PSLabMonisha/Desktop/exps/virion/virion_bat_cov_output/trees', create_output_dir)
+('/Users/PSLabMonisha/Desktop/exps/virion/virion_bat_cov_output/trees/hosts_raxml.raxml.bestModel', raxml_analysis)

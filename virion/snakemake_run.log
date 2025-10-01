@@ -1,0 +1,153 @@
+Assuming unrestricted shared filesystem usage.
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+generate_summary        1
+raxml_analysis          2
+total                   4
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Wed Oct  1 02:04:20 2025]
+localrule raxml_analysis:
+    input: virion_bat_cov_output/alignments/viruses_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/viruses_raxml.raxml.bestTree, virion_bat_cov_output/trees/viruses_raxml.raxml.support, virion_bat_cov_output/trees/viruses_raxml.raxml.bestModel, virion_bat_cov_output/trees/viruses_raxml.raxml.log, virion_bat_cov_output/trees/viruses_raxml.raxml.bootstraps, virion_bat_cov_output/trees/viruses_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/viruses_raxml.raxml.rba, virion_bat_cov_output/trees/viruses_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+    jobid: 2
+    benchmark: virion_bat_cov_output/trees/viruses_raxml_benchmark.txt
+    reason: Missing output files: virion_bat_cov_output/trees/viruses_raxml.raxml.log, virion_bat_cov_output/trees/viruses_raxml.raxml.bestTree, virion_bat_cov_output/trees/viruses_raxml.raxml.support
+    wildcards: dataset=viruses
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Apple M4, 10 cores, 24 GB RAM
+
+RAxML-NG was called at 01-Oct-2025 02:04:20 as follows:
+
+raxml-ng --all --msa virion_bat_cov_output/alignments/viruses_aligned.fasta --model PROTGTR+G --prefix virion_bat_cov_output/trees/viruses_raxml --bs-trees 100000 --threads 8 --seed 12345 --force
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (10) + parsimony (10)
+  bootstrap replicates: parsimony (100000)
+  random seed: 12345
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  logLH epsilon: general: 10.000000, brlen-triplet: 1000.000000
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  fast CLV updates: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: SSE3
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in FORCE mode: all safety checks are disabled!
+
+[00:00:00] Reading alignment from file: virion_bat_cov_output/alignments/viruses_aligned.fasta
+[00:00:00] Loaded alignment with 79 taxa and 8159 sites
+
+Alignment comprises 1 partitions and 4734 patterns
+
+Partition 0: noname
+Model: PROTGTR+FO+G4m
+Alignment sites / patterns: 8159 / 4734
+Gaps: 81.24 %
+Invariant sites: 29.06 %
+
+
+NOTE: Binary MSA file created: virion_bat_cov_output/trees/viruses_raxml.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 8 thread(s)
+
+[00:00:00] Generating 10 random starting tree(s) with 79 taxa
+[00:00:00] Generating 10 parsimony starting tree(s) with 79 taxa
+Parallel parsimony with 8 threads
+[Wed Oct  1 02:04:20 2025]
+localrule raxml_analysis:
+    input: virion_bat_cov_output/alignments/hosts_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/hosts_raxml.raxml.bestTree, virion_bat_cov_output/trees/hosts_raxml.raxml.support, virion_bat_cov_output/trees/hosts_raxml.raxml.bestModel, virion_bat_cov_output/trees/hosts_raxml.raxml.log, virion_bat_cov_output/trees/hosts_raxml.raxml.bootstraps, virion_bat_cov_output/trees/hosts_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/hosts_raxml.raxml.rba, virion_bat_cov_output/trees/hosts_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+    jobid: 1
+    benchmark: virion_bat_cov_output/trees/hosts_raxml_benchmark.txt
+    reason: Missing output files: virion_bat_cov_output/trees/hosts_raxml.raxml.bestTree, virion_bat_cov_output/trees/hosts_raxml.raxml.log, virion_bat_cov_output/trees/hosts_raxml.raxml.support
+    wildcards: dataset=hosts
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: Apple M4, 10 cores, 24 GB RAM
+
+RAxML-NG was called at 01-Oct-2025 02:04:20 as follows:
+
+raxml-ng --all --msa virion_bat_cov_output/alignments/hosts_aligned.fasta --model GTR+G --prefix virion_bat_cov_output/trees/hosts_raxml --bs-trees 100000 --threads 8 --seed 12345 --force
+
+Analysis options:
+  run mode: ML tree search + bootstrapping (Felsenstein Bootstrap)
+  start tree(s): random (10) + parsimony (10)
+  bootstrap replicates: parsimony (100000)
+  random seed: 12345
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  logLH epsilon: general: 10.000000, brlen-triplet: 1000.000000
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  fast CLV updates: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: SSE3
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in FORCE mode: all safety checks are disabled!
+
+[00:00:00] Reading alignment from file: virion_bat_cov_output/alignments/hosts_aligned.fasta
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 592 / 47360
+[00:00:00] Data distribution: max. searches per worker: 100020
+
+Starting ML tree search with 20 distinct starting trees
+
+[00:00:00] Loaded alignment with 231 taxa and 33809 sites
+
+Alignment comprises 1 partitions and 13424 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 33809 / 13424
+Gaps: 75.42 %
+Invariant sites: 50.55 %
+
+
+NOTE: Binary MSA file created: virion_bat_cov_output/trees/hosts_raxml.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 8 thread(s)
+
+[00:00:00] Generating 10 random starting tree(s) with 231 taxa
+[00:00:00] Generating 10 parsimony starting tree(s) with 231 taxa
+Parallel parsimony with 8 threads
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 1678 / 26848
+[00:00:00] Data distribution: max. searches per worker: 100020
+
+Starting ML tree search with 20 distinct starting trees
+

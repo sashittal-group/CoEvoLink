@@ -1,0 +1,161 @@
+# Snakemake workflow for RAxML-NG phylogenetic analysis
+# Author: Generated for virion project
+# Date: October 2025
+
+import os
+
+# Configuration
+ALIGNMENTS_DIR = "virion_bat_cov_output/alignments"
+TREES_DIR = "virion_bat_cov_output/trees"
+BOOTSTRAP_REPS = 100000
+THREADS = 8
+SEED = 12345
+
+# Define analysis datasets
+DATASETS = {
+    "hosts": {
+        "input": f"{ALIGNMENTS_DIR}/hosts_aligned.fasta",
+        "model": "GTR+G",
+        "type": "DNA"
+    },
+    "viruses": {
+        "input": f"{ALIGNMENTS_DIR}/viruses_aligned.fasta", 
+        "model": "PROTGTR+G",
+        "type": "protein"
+    }
+}
+
+# Target rule - what we want to produce
+rule all:
+    input:
+        # Main tree files
+        expand(f"{TREES_DIR}/{{dataset}}_raxml.raxml.bestTree", dataset=DATASETS.keys()),
+        expand(f"{TREES_DIR}/{{dataset}}_raxml.raxml.support", dataset=DATASETS.keys()),
+        # Summary report
+        f"{TREES_DIR}/raxml_analysis_summary.txt"
+
+
+# Rule to run RAxML-NG analysis
+rule raxml_analysis:
+    input:
+        alignment = lambda wildcards: DATASETS[wildcards.dataset]["input"],
+        tree_dir = TREES_DIR
+    output:
+        best_tree = f"{TREES_DIR}/{{dataset}}_raxml.raxml.bestTree",
+        support_tree = f"{TREES_DIR}/{{dataset}}_raxml.raxml.support",
+        best_model = f"{TREES_DIR}/{{dataset}}_raxml.raxml.bestModel",
+        log_file = f"{TREES_DIR}/{{dataset}}_raxml.raxml.log",
+        bootstraps = f"{TREES_DIR}/{{dataset}}_raxml.raxml.bootstraps",
+        ml_trees = f"{TREES_DIR}/{{dataset}}_raxml.raxml.raxml.mlTrees",
+        rba_file = f"{TREES_DIR}/{{dataset}}_raxml.raxml.rba",
+        start_tree = f"{TREES_DIR}/{{dataset}}_raxml.raxml.startTree"
+    params:
+        model = lambda wildcards: DATASETS[wildcards.dataset]["model"],
+        prefix = f"{TREES_DIR}/{{dataset}}_raxml",
+        bootstrap = BOOTSTRAP_REPS,
+        threads = THREADS,
+        seed = SEED
+    log:
+        f"{TREES_DIR}/{{dataset}}_raxml_snakemake.log"
+    benchmark:
+        f"{TREES_DIR}/{{dataset}}_raxml_benchmark.txt"
+    shell:
+        """
+        echo "Starting RAxML-NG analysis for {wildcards.dataset}" > {log}
+        echo "Input: {input.alignment}" >> {log}
+        echo "Model: {params.model}" >> {log}
+        echo "Bootstrap replicates: {params.bootstrap}" >> {log}
+        echo "Threads: {params.threads}" >> {log}
+        echo "Seed: {params.seed}" >> {log}
+        echo "Started at: $(date)" >> {log}
+        
+        raxml-ng --all \
+            --msa {input.alignment} \
+            --model {params.model} \
+            --prefix {params.prefix} \
+            --bs-trees {params.bootstrap} \
+            --threads {params.threads} \
+            --seed {params.seed} \
+            --force 2>> {log}
+        
+        echo "Completed at: $(date)" >> {log}
+        echo "RAxML-NG analysis completed for {wildcards.dataset}" >> {log}
+        """
+
+# Rule to generate summary report
+rule generate_summary:
+    input:
+        trees = expand(f"{TREES_DIR}/{{dataset}}_raxml.raxml.bestTree", dataset=DATASETS.keys()),
+        support_trees = expand(f"{TREES_DIR}/{{dataset}}_raxml.raxml.support", dataset=DATASETS.keys()),
+        logs = expand(f"{TREES_DIR}/{{dataset}}_raxml.raxml.log", dataset=DATASETS.keys())
+    output:
+        summary = f"{TREES_DIR}/raxml_analysis_summary.txt"
+    run:
+        with open(output.summary, 'w') as f:
+            f.write("RAxML-NG Phylogenetic Analysis Summary\n")
+            f.write("=" * 50 + "\n")
+            f.write(f"Bootstrap replicates: {BOOTSTRAP_REPS}\n")
+            f.write(f"Threads used: {THREADS}\n")
+            f.write(f"Random seed: {SEED}\n\n")
+            
+            for dataset in DATASETS.keys():
+                f.write(f"Dataset: {dataset.upper()}\n")
+                f.write("-" * 30 + "\n")
+                f.write(f"Input alignment: {DATASETS[dataset]['input']}\n")
+                f.write(f"Evolutionary model: {DATASETS[dataset]['model']}\n")
+                f.write(f"Sequence type: {DATASETS[dataset]['type']}\n")
+                
+                # Check if files exist and get file sizes
+                tree_file = f"{TREES_DIR}/{dataset}_raxml.raxml.bestTree"
+                support_file = f"{TREES_DIR}/{dataset}_raxml.raxml.support"
+                
+                if os.path.exists(tree_file):
+                    size = os.path.getsize(tree_file)
+                    f.write(f"Best tree file: {tree_file} ({size} bytes)\n")
+                if os.path.exists(support_file):
+                    size = os.path.getsize(support_file)
+                    f.write(f"Support tree file: {support_file} ({size} bytes)\n")
+                
+                f.write("\n")
+            
+            f.write("Analysis completed successfully!\n")
+            f.write("\nOutput files can be visualized using:\n")
+            f.write("- FigTree (http://tree.bio.ed.ac.uk/software/figtree/)\n")
+            f.write("- iTOL (https://itol.embl.de/)\n")
+            f.write("- R packages: ape, ggtree, phytools\n")
+
+# Rule to validate input files
+rule check_inputs:
+    output:
+        validation = f"{TREES_DIR}/input_validation.txt"
+    run:
+        with open(output.validation, 'w') as f:
+            f.write("Input File Validation Report\n")
+            f.write("=" * 40 + "\n\n")
+            
+            all_valid = True
+            for dataset, info in DATASETS.items():
+                f.write(f"Dataset: {dataset}\n")
+                input_file = info["input"]
+                
+                if os.path.exists(input_file):
+                    file_size = os.path.getsize(input_file)
+                    f.write(f"✓ File exists: {input_file}\n")
+                    f.write(f"  File size: {file_size} bytes\n")
+                    
+                    # Count sequences
+                    with open(input_file, 'r') as fasta:
+                        seq_count = sum(1 for line in fasta if line.startswith('>'))
+                    f.write(f"  Number of sequences: {seq_count}\n")
+                else:
+                    f.write(f"✗ File missing: {input_file}\n")
+                    all_valid = False
+                
+                f.write(f"  Model: {info['model']}\n")
+                f.write(f"  Type: {info['type']}\n\n")
+            
+            if all_valid:
+                f.write("All input files are valid and ready for analysis!\n")
+            else:
+                f.write("Some input files are missing. Please check your data.\n")
+

@@ -1,0 +1,15 @@
+# Configuration file for RAxML-NG Snakemake workflow
+# Modify these parameters as needed
+
+# Input/Output directories
+alignments_dir: "virion_bat_cov_output/alignments"
+trees_dir: "virion_bat_cov_output/trees/raxml"
+
+# Analysis parameters
+bootstrap_reps: 1000      # Number of bootstrap replicates
+threads: 8                # Number of CPU threads to use (or "auto")
+seed: 12345              # Random seed for reproducibility
+
+# Dataset-specific models (uncomment to override defaults)
+# hosts_model: "GTR+G"     # Model for host DNA sequences  
+# viruses_model: "PROTGTR+G"  # Model for virus protein sequences

@@ -1,0 +1,35 @@
+import os
+
+OUTDIR = "virion_bat_cov_output/trees"
+ALIGNDIR = "virion_bat_cov_output/alignments"
+
+rule all:
+    input:
+        os.path.join(OUTDIR, "viruses_tree.newick"),
+        os.path.join(OUTDIR, "hosts_tree.newick")
+
+rule iqtree_virus:
+    input:
+        os.path.join(ALIGNDIR, "viruses_aligned.fasta")
+    output:
+        tree=os.path.join(OUTDIR, "viruses_tree.newick"),
+        log=os.path.join(ALIGNDIR, "virion_viruses_aln.snake.log")
+    shell:
+        """
+        iqtree -s {input} -m MFP -bb 100000 -alrt 1000 -nt AUTO \
+            -pre {ALIGNDIR}/virion_viruses_aln > {output.log} 2>&1
+        cp {ALIGNDIR}/virion_viruses_aln.treefile {output.tree}
+        """
+
+rule iqtree_host:
+    input:
+        os.path.join(ALIGNDIR, "hosts_aligned.fasta")
+    output:
+        tree=os.path.join(OUTDIR, "hosts_tree.newick"),
+        log=os.path.join(ALIGNDIR, "virion_hosts_aln.snake.log")
+    shell:
+        """
+        iqtree -s {input} -m MFP -bb 100000 -alrt 1000 -nt AUTO \
+            -pre {ALIGNDIR}/virion_hosts_aln > {output.log} 2>&1
+        cp {ALIGNDIR}/virion_hosts_aln.treefile {output.tree}
+        """

@@ -1,0 +1,49 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+iqtree_host         1
+iqtree_virus        1
+total               3
+
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Sep 30 21:55:47 2025]
+localrule iqtree_host:
+    input: virion_bat_cov_output/alignments/hosts_aligned.fasta
+    output: virion_bat_cov_output/trees/hosts_tree.newick, virion_bat_cov_output/alignments/virion_hosts_aln.snake.log
+    jobid: 2
+    reason: Missing output files: virion_bat_cov_output/trees/hosts_tree.newick; Code has changed since last execution
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep 30 21:55:47 2025]
+localrule iqtree_virus:
+    input: virion_bat_cov_output/alignments/viruses_aligned.fasta
+    output: virion_bat_cov_output/trees/viruses_tree.newick, virion_bat_cov_output/alignments/virion_viruses_aln.snake.log
+    jobid: 1
+    reason: Missing output files: virion_bat_cov_output/trees/viruses_tree.newick; Code has changed since last execution
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep 30 23:16:10 2025]
+Finished jobid: 1 (Rule: iqtree_virus)
+1 of 3 steps (33%) done
+[Wed Oct  1 00:31:16 2025]
+Finished jobid: 2 (Rule: iqtree_host)
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Oct  1 00:31:16 2025]
+localrule all:
+    input: virion_bat_cov_output/trees/viruses_tree.newick, virion_bat_cov_output/trees/hosts_tree.newick
+    jobid: 0
+    reason: Input files updated by another job: virion_bat_cov_output/trees/hosts_tree.newick, virion_bat_cov_output/trees/viruses_tree.newick
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Wed Oct  1 00:31:16 2025]
+Finished jobid: 0 (Rule: all)
+3 of 3 steps (100%) done
+Complete log(s): /Users/PSLabMonisha/Desktop/exps/virion/.snakemake/log/2025-09-30T215547.965353.snakemake.log

@@ -1,0 +1,50 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+iqtree_host         1
+iqtree_virus        1
+total               3
+
+Select jobs to execute...
+Execute 2 jobs...
+[Tue Sep 30 21:50:38 2025]
+localrule iqtree_host:
+    input: virion_bat_cov_output/alignments/hosts_aligned.fasta
+    output: virion_bat_cov_output/trees/hosts_tree.newick, virion_bat_cov_output/alignments/virion_hosts_aln.snake.log
+    jobid: 2
+    reason: Missing output files: virion_bat_cov_output/trees/hosts_tree.newick; Code has changed since last execution
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Sep 30 21:50:38 2025]
+localrule iqtree_virus:
+    input: virion_bat_cov_output/alignments/viruses_aligned.fasta
+    output: virion_bat_cov_output/trees/viruses_tree.newick, virion_bat_cov_output/alignments/virion_viruses_aln.snake.log
+    jobid: 1
+    reason: Missing output files: virion_bat_cov_output/trees/viruses_tree.newick; Code has changed since last execution
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/virion/Snakefile", line 31:
+Command 'set -euo pipefail;  
+        iqtree -s virion_bat_cov_output/alignments/hosts_aligned.fasta -m MFP -bb 1000000 -alrt 1000 -nt AUTO             -pre virion_bat_cov_output/alignments/virion_hosts_aln > virion_bat_cov_output/alignments/virion_hosts_aln.snake.log 2>&1
+        cp virion_bat_cov_output/alignments/virion_hosts_aln.treefile virion_bat_cov_output/trees/hosts_tree.newick' returned non-zero exit status 2.
+[Tue Sep 30 21:51:31 2025]
+Error in rule iqtree_host:
+    message: None
+    jobid: 2
+    input: virion_bat_cov_output/alignments/hosts_aligned.fasta
+    output: virion_bat_cov_output/trees/hosts_tree.newick, virion_bat_cov_output/alignments/virion_hosts_aln.snake.log
+    shell:
+        
+        iqtree -s virion_bat_cov_output/alignments/hosts_aligned.fasta -m MFP -bb 1000000 -alrt 1000 -nt AUTO             -pre virion_bat_cov_output/alignments/virion_hosts_aln > virion_bat_cov_output/alignments/virion_hosts_aln.snake.log 2>&1
+        cp virion_bat_cov_output/alignments/virion_hosts_aln.treefile virion_bat_cov_output/trees/hosts_tree.newick
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job iqtree_host since they might be corrupted:
+virion_bat_cov_output/alignments/virion_hosts_aln.snake.log
