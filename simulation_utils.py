@@ -536,6 +536,26 @@ def sankoff(tree, leaf_states, cost_matrix):
     root_costs = recurse(tree.root)
     return min(root_costs)
 
+def find_state_of_root_using_sankoff(tree, leaf_states, cost_matrix):
+    k = cost_matrix.shape[0]
+    def recurse(clade):
+        if clade.is_terminal():
+            state = leaf_states[clade.name]
+            cost = np.full(k, np.inf)
+            cost[state] = 0
+            return cost
+        child_costs = [recurse(c) for c in clade.clades]
+        total_cost = np.zeros(k)
+        for s in range(k):
+            total_cost[s] = sum(
+                min(child[s2] + cost_matrix[s, s2] for s2 in range(k))
+                for child in child_costs
+            )
+        return total_cost
+    root_costs = recurse(tree.root)
+    root_state = np.argmin(root_costs)
+    return root_state
+
 def sankoff_ml_loglik(tree, leaf_states, r01=0.5, r10=0.5, eps=1e-300):
     k = 2
     def recurse(clade):
@@ -679,11 +699,19 @@ def solve_network_cut(
         for j, h in enumerate(hosts):
             new_matrix[i, j] = new_cell_state[(p, h)]
 
+
+    # 🟩 get parasite root state for each host
+    root_states = {}
+    for h_idx, (h, tree) in enumerate(zip(hosts, out["par_trees"])):
+        root_node = tree.root
+        root_states[h] = 0 if root_node in reachable else 1
+
     return {
         "cut_value": cut_value,
         "flips": flips,
         "new_matrix": new_matrix,
-        "new_cell_state": new_cell_state
+        "new_cell_state": new_cell_state,
+        "root_states": root_states
     }
 
 

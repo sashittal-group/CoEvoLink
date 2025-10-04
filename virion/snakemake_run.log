@@ -151,3 +151,137 @@ Parallel reduction/worker buffer size: 1 KB  / 0 KB
 
 Starting ML tree search with 20 distinct starting trees
 
+[14:48:55] ML tree search #1, logLikelihood: -171935.770105
+/bin/bash: line 9: 50237 Killed: 9               raxml-ng --all --msa virion_bat_cov_output/alignments/hosts_aligned.fasta --model GTR+G --prefix virion_bat_cov_output/trees/hosts_raxml --bs-trees 100000 --threads 8 --seed 12345 --force 2>> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/virion/Snakefile_raxml", line 63:
+Command 'set -euo pipefail;  
+        echo "Starting RAxML-NG analysis for hosts" > virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Input: virion_bat_cov_output/alignments/hosts_aligned.fasta" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Model: GTR+G" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Bootstrap replicates: 100000" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Threads: 8" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Seed: 12345" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Started at: $(date)" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        raxml-ng --all             --msa virion_bat_cov_output/alignments/hosts_aligned.fasta             --model GTR+G             --prefix virion_bat_cov_output/trees/hosts_raxml             --bs-trees 100000             --threads 8             --seed 12345             --force 2>> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        echo "Completed at: $(date)" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "RAxML-NG analysis completed for hosts" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log' returned non-zero exit status 137.
+[Wed Oct  1 20:31:03 2025]
+Error in rule raxml_analysis:
+    message: None
+    jobid: 1
+    input: virion_bat_cov_output/alignments/hosts_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/hosts_raxml.raxml.bestTree, virion_bat_cov_output/trees/hosts_raxml.raxml.support, virion_bat_cov_output/trees/hosts_raxml.raxml.bestModel, virion_bat_cov_output/trees/hosts_raxml.raxml.log, virion_bat_cov_output/trees/hosts_raxml.raxml.bootstraps, virion_bat_cov_output/trees/hosts_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/hosts_raxml.raxml.rba, virion_bat_cov_output/trees/hosts_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/hosts_raxml_snakemake.log (check log file(s) for error details)
+    shell:
+        
+        echo "Starting RAxML-NG analysis for hosts" > virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Input: virion_bat_cov_output/alignments/hosts_aligned.fasta" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Model: GTR+G" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Bootstrap replicates: 100000" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Threads: 8" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Seed: 12345" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Started at: $(date)" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        raxml-ng --all             --msa virion_bat_cov_output/alignments/hosts_aligned.fasta             --model GTR+G             --prefix virion_bat_cov_output/trees/hosts_raxml             --bs-trees 100000             --threads 8             --seed 12345             --force 2>> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        echo "Completed at: $(date)" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "RAxML-NG analysis completed for hosts" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job raxml_analysis since they might be corrupted:
+virion_bat_cov_output/trees/hosts_raxml.raxml.log, virion_bat_cov_output/trees/hosts_raxml.raxml.rba, virion_bat_cov_output/trees/hosts_raxml.raxml.startTree
+/bin/bash: line 9: 50233 Killed: 9               raxml-ng --all --msa virion_bat_cov_output/alignments/viruses_aligned.fasta --model PROTGTR+G --prefix virion_bat_cov_output/trees/viruses_raxml --bs-trees 100000 --threads 8 --seed 12345 --force 2>> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+RuleException:
+CalledProcessError in file "/Users/PSLabMonisha/Desktop/exps/virion/Snakefile_raxml", line 63:
+Command 'set -euo pipefail;  
+        echo "Starting RAxML-NG analysis for viruses" > virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Input: virion_bat_cov_output/alignments/viruses_aligned.fasta" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Model: PROTGTR+G" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Bootstrap replicates: 100000" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Threads: 8" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Seed: 12345" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Started at: $(date)" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        raxml-ng --all             --msa virion_bat_cov_output/alignments/viruses_aligned.fasta             --model PROTGTR+G             --prefix virion_bat_cov_output/trees/viruses_raxml             --bs-trees 100000             --threads 8             --seed 12345             --force 2>> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        echo "Completed at: $(date)" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "RAxML-NG analysis completed for viruses" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log' returned non-zero exit status 137.
+[Wed Oct  1 20:31:12 2025]
+Error in rule raxml_analysis:
+    message: None
+    jobid: 2
+    input: virion_bat_cov_output/alignments/viruses_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/viruses_raxml.raxml.bestTree, virion_bat_cov_output/trees/viruses_raxml.raxml.support, virion_bat_cov_output/trees/viruses_raxml.raxml.bestModel, virion_bat_cov_output/trees/viruses_raxml.raxml.log, virion_bat_cov_output/trees/viruses_raxml.raxml.bootstraps, virion_bat_cov_output/trees/viruses_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/viruses_raxml.raxml.rba, virion_bat_cov_output/trees/viruses_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/viruses_raxml_snakemake.log (check log file(s) for error details)
+    shell:
+        
+        echo "Starting RAxML-NG analysis for viruses" > virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Input: virion_bat_cov_output/alignments/viruses_aligned.fasta" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Model: PROTGTR+G" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Bootstrap replicates: 100000" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Threads: 8" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Seed: 12345" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Started at: $(date)" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        raxml-ng --all             --msa virion_bat_cov_output/alignments/viruses_aligned.fasta             --model PROTGTR+G             --prefix virion_bat_cov_output/trees/viruses_raxml             --bs-trees 100000             --threads 8             --seed 12345             --force 2>> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        echo "Completed at: $(date)" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "RAxML-NG analysis completed for viruses" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        (command exited with non-zero exit code)
+Removing output files of failed job raxml_analysis since they might be corrupted:
+virion_bat_cov_output/trees/viruses_raxml.raxml.log, virion_bat_cov_output/trees/viruses_raxml.raxml.rba, virion_bat_cov_output/trees/viruses_raxml.raxml.startTree
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Wed Oct  1 20:31:12 2025]
+Error in rule raxml_analysis:
+    message: None
+    jobid: 2
+    input: virion_bat_cov_output/alignments/viruses_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/viruses_raxml.raxml.bestTree, virion_bat_cov_output/trees/viruses_raxml.raxml.support, virion_bat_cov_output/trees/viruses_raxml.raxml.bestModel, virion_bat_cov_output/trees/viruses_raxml.raxml.log, virion_bat_cov_output/trees/viruses_raxml.raxml.bootstraps, virion_bat_cov_output/trees/viruses_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/viruses_raxml.raxml.rba, virion_bat_cov_output/trees/viruses_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/viruses_raxml_snakemake.log (check log file(s) for error details)
+    shell:
+        
+        echo "Starting RAxML-NG analysis for viruses" > virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Input: virion_bat_cov_output/alignments/viruses_aligned.fasta" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Model: PROTGTR+G" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Bootstrap replicates: 100000" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Threads: 8" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Seed: 12345" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "Started at: $(date)" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        raxml-ng --all             --msa virion_bat_cov_output/alignments/viruses_aligned.fasta             --model PROTGTR+G             --prefix virion_bat_cov_output/trees/viruses_raxml             --bs-trees 100000             --threads 8             --seed 12345             --force 2>> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        echo "Completed at: $(date)" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        echo "RAxML-NG analysis completed for viruses" >> virion_bat_cov_output/trees/viruses_raxml_snakemake.log
+        
+        (command exited with non-zero exit code)
+[Wed Oct  1 20:31:12 2025]
+Error in rule raxml_analysis:
+    message: None
+    jobid: 1
+    input: virion_bat_cov_output/alignments/hosts_aligned.fasta, virion_bat_cov_output/trees
+    output: virion_bat_cov_output/trees/hosts_raxml.raxml.bestTree, virion_bat_cov_output/trees/hosts_raxml.raxml.support, virion_bat_cov_output/trees/hosts_raxml.raxml.bestModel, virion_bat_cov_output/trees/hosts_raxml.raxml.log, virion_bat_cov_output/trees/hosts_raxml.raxml.bootstraps, virion_bat_cov_output/trees/hosts_raxml.raxml.raxml.mlTrees, virion_bat_cov_output/trees/hosts_raxml.raxml.rba, virion_bat_cov_output/trees/hosts_raxml.raxml.startTree
+    log: virion_bat_cov_output/trees/hosts_raxml_snakemake.log (check log file(s) for error details)
+    shell:
+        
+        echo "Starting RAxML-NG analysis for hosts" > virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Input: virion_bat_cov_output/alignments/hosts_aligned.fasta" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Model: GTR+G" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Bootstrap replicates: 100000" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Threads: 8" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Seed: 12345" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "Started at: $(date)" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        raxml-ng --all             --msa virion_bat_cov_output/alignments/hosts_aligned.fasta             --model GTR+G             --prefix virion_bat_cov_output/trees/hosts_raxml             --bs-trees 100000             --threads 8             --seed 12345             --force 2>> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        echo "Completed at: $(date)" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        echo "RAxML-NG analysis completed for hosts" >> virion_bat_cov_output/trees/hosts_raxml_snakemake.log
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/exps/virion/.snakemake/log/2025-10-01T020419.941785.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
