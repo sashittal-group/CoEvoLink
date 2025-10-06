@@ -138,7 +138,7 @@ def expQt_2state(t, r01=0.5, r10=0.5):
   # rows: from-state 0/1, cols: to-state 0/1
 
 
-def build_weight_matrix(tree, r01, r10):
+def build_weight_matrix(tree, r01, r10, scale=1.0):
     """
     Create a weight matrix for a tree.
     All edges use the same transition probability (avg_P_same).
@@ -153,7 +153,7 @@ def build_weight_matrix(tree, r01, r10):
     for parent in nodes:
         for child in parent.clades:
             i, j = nodes.index(parent), nodes.index(child)
-            W[i, j] = avg_P_same(child.branch_length or 0.0, r01, r10)
+            W[i, j] = avg_P_same(child.branch_length * scale if child.branch_length else 0.0, r01, r10)
             # W[i, j] = child.branch_length
             W[j, i] = W[i, j]  # symmetric
 
