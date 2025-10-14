@@ -9,6 +9,7 @@ from matplotlib.patches import Patch
 from Bio.Nexus.Nexus import Nexus
 from kneed import KneeLocator
 from scipy.signal import savgol_filter
+from scipy.stats import rankdata
 import os
 
 # ---------------------------
@@ -608,7 +609,42 @@ def total_parsimony(host_tree_file, parasite_tree_file, nexus_file=None, cell_st
         total_score += sankoff(parasite_tree, leaf_states, C)
     
     return total_score
+def make_unique_edge_weights(G, weight_attr="weight", epsilon=1e-9):
+    """
+    Make all edge weights in a networkx graph unique while preserving order.
 
+    Parameters
+    ----------
+    G : nx.Graph or nx.DiGraph
+        The input graph (modified in-place).
+    weight_attr : str
+        Edge attribute name to adjust (default 'weight').
+    epsilon : float
+        Small multiplier for uniqueness perturbation.
+
+    Returns
+    -------
+    G_unique : nx.Graph
+        A new graph with order-preserving unique weights.
+    """
+    # Copy to avoid modifying original graph directly
+    G_unique = G.copy()
+    
+    # Extract all weights and edge keys
+    edges = list(G_unique.edges(data=True))
+    weights = np.array([d.get(weight_attr, 0.0) for _, _, d in edges], dtype=float)
+
+    # Compute ranks (1 = smallest)
+    ranks = rankdata(weights, method="ordinal")
+    
+    # Apply small perturbation based on rank order
+    unique_weights = weights + ranks * epsilon
+    
+    # Update edges
+    for (u, v, d), new_w in zip(edges, unique_weights):
+        d[weight_attr] = new_w
+    
+    return G_unique
 
 def solve_network_cut(
     out,
@@ -673,10 +709,19 @@ def solve_network_cut(
             node = f"CELL_{p}_{h}"
             state = cell_state[(p, h)]
             if state == 0:
-                G.add_edge(source, node,
+                if flip_cost_matrix[p_idx, h_idx] == 100.0:
+                    G.add_edge(node, sink, capacity=flip_cost_matrix[p_idx, h_idx])
+                    G.add_edge(sink, node, capacity=flip_cost_matrix[p_idx, h_idx])
+                else:
+                    G.add_edge(source, node,
                            capacity=(1 - lambda_param) * flip_cost_matrix[p_idx, h_idx])
+                    # G.add_edge(node, source, capacity=(1 - lambda_param) * flip_cost_matrix[p_idx, h_idx])
             else:  # state == 1
                 G.add_edge(node, sink, capacity=float("inf"))
+                G.add_edge(sink, node, capacity=float("inf"))
+
+    # Make weights unique to ensure deterministic min-cut
+    # G = make_unique_edge_weights(G, weight_attr="capacity", epsilon=1e-5)
 
     # ---------------------------
     # Min-cut
