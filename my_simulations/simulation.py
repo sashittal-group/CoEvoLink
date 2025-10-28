@@ -309,7 +309,7 @@ def main():
     # os.makedirs("experiments", exist_ok=True)
 
     # Original
-    plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "original_matrix.png"))
+    plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "original_matrix.svg"))
 
     if corrupt == 0:
         lambda_param = args.lambda_param
@@ -332,7 +332,7 @@ def main():
 
         highlight_corrupted = {"corrupted": hidden_cells}
         plot_matrix(corrupt_mat, parasites, hosts,
-                    filename=os.path.join(outdir, "corrupted.png"),
+                    filename=os.path.join(outdir, "corrupted.svg"),
                     highlight=highlight_corrupted)
 
         # Update out["cell_state"] with corrupted values
@@ -371,7 +371,7 @@ def main():
 
 
             highlight_hidden = {"corrupted": hidden_cells}
-            plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.png"),
+            plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.svg"),
             highlight=highlight_hidden)
             lambda_param, cut_result = binary_search_lambda(out, parasites, hosts, hidden_cells=hidden_cells,
             target_flips=len(hidden_cells), host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
@@ -380,7 +380,7 @@ def main():
 
         else:
             highlight_hidden = {"corrupted": hidden_cells}
-            plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.png"),
+            plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.svg"),
             highlight=highlight_hidden)
             cut_result = solve_network_cut(out, host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
                                             flip_cost_matrix=flip_cost_matrix, lambda_param=lambda_param)
@@ -402,7 +402,7 @@ def main():
     # Step 3: Save recovered matrix with algorithm flips
     # ---------------------------
     plot_matrix(new_mat, parasites, hosts,
-                filename=os.path.join(outdir, "flipped_matrix.png"),
+                filename=os.path.join(outdir, "flipped_matrix.svg"),
                 highlight=highlight_flipped)
 
 

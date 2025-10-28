@@ -89,7 +89,7 @@ for metric in ["precision", "recall", "f1"]:
     plt.ylabel("Beta")
     plt.xlabel("Clock")
     plt.tight_layout()
-    fname = f"braga_{metric}.png"
+    fname = f"braga_{metric}.svg"
     plt.savefig(fname)
     plt.close()
     print(f"Wrote {fname}")
@@ -180,7 +180,8 @@ for metric in ["precision", "recall", "f1"]:
     plt.ylabel("Beta")
     plt.xlabel("Clock")
     plt.tight_layout()
-    fname = f"braga_{metric}_elbow.png"
+    fname = f"braga_{metric}_elbow.svg"
+
     plt.savefig(fname)
     plt.close()
     print(f"Wrote {fname}")

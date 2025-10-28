@@ -1,0 +1,31 @@
+Matrix saved as results/42/corrupt800/r010.6_r100.7/original_matrix.svg
+Matrix saved as results/42/corrupt800/r010.6_r100.7/corrupted.svg
+[iter 0] λ=0.5000 → flips=32
+[iter 1] λ=0.7500 → flips=345
+[iter 2] λ=0.8750 → flips=3848
+[iter 3] λ=0.8125 → flips=784
+[iter 4] λ=0.8438 → flips=1659
+[iter 5] λ=0.8281 → flips=1362
+[iter 6] λ=0.8203 → flips=920
+[iter 7] λ=0.8164 → flips=882
+[iter 8] λ=0.8145 → flips=882
+[iter 9] λ=0.8135 → flips=789
+[iter 10] λ=0.8140 → flips=789
+[iter 11] λ=0.8142 → flips=878
+[iter 12] λ=0.8141 → flips=789
+[iter 13] λ=0.8141 → flips=878
+[iter 14] λ=0.8141 → flips=878
+[iter 15] λ=0.8141 → flips=878
+[iter 16] λ=0.8141 → flips=879
+[iter 17] λ=0.8141 → flips=789
+[iter 18] λ=0.8141 → flips=789
+[iter 19] λ=0.8141 → flips=789
+
+Best λ=0.8135 → flips=789, correct=453/800
+Number of flips performed: 789
+Matrix saved as results/42/corrupt800/r010.6_r100.7/flipped_matrix.svg
+Metrics: {'precision': 0.5741444866920152, 'recall': 0.56625, 'f1': 0.5701699181875394, 'TP': 453, 'FP': 336, 'FN': 347}
+[Elbow detection] flip ≈ 882, λ ≈ 0.8163265306122448
+Number of flips performed (elbow): 882
+Matrix saved as results/42/corrupt800/r010.6_r100.7/flipped_matrix_elbow.svg
+Elbow Metrics: {'precision': 0.5340136054421769, 'recall': 0.58875, 'f1': 0.5600475624256838, 'TP': 471, 'FP': 411, 'FN': 329}

@@ -1,0 +1,87 @@
+Assuming unrestricted shared filesystem usage.
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate     1500
+total        1501
+
+Select jobs to execute...
+Execute 10 jobs...
+
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/20/corrupt1000/r010.5_r100.3/metrics.json, results/20/corrupt1000/r010.5_r100.3/elbow_metrics.json, results/20/corrupt1000/r010.5_r100.3/simulate.out, results/20/corrupt1000/r010.5_r100.3/simulate.err
+    jobid: 136
+    reason: Missing output files: results/20/corrupt1000/r010.5_r100.3/elbow_metrics.json, results/20/corrupt1000/r010.5_r100.3/metrics.json
+    wildcards: seed=20, corrupt=1000, r01=0.5, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/152/corrupt500/r010.7_r100.5/metrics.json, results/152/corrupt500/r010.7_r100.5/elbow_metrics.json, results/152/corrupt500/r010.7_r100.5/simulate.out, results/152/corrupt500/r010.7_r100.5/simulate.err
+    jobid: 1323
+    reason: Missing output files: results/152/corrupt500/r010.7_r100.5/metrics.json, results/152/corrupt500/r010.7_r100.5/elbow_metrics.json
+    wildcards: seed=152, corrupt=500, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/152/corrupt1000/r010.3_r100.3/metrics.json, results/152/corrupt1000/r010.3_r100.3/elbow_metrics.json, results/152/corrupt1000/r010.3_r100.3/simulate.out, results/152/corrupt1000/r010.3_r100.3/simulate.err
+    jobid: 1326
+    reason: Missing output files: results/152/corrupt1000/r010.3_r100.3/elbow_metrics.json, results/152/corrupt1000/r010.3_r100.3/metrics.json
+    wildcards: seed=152, corrupt=1000, r01=0.3, r10=0.3
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/163/corrupt1000/r010.5_r100.6/metrics.json, results/163/corrupt1000/r010.5_r100.6/elbow_metrics.json, results/163/corrupt1000/r010.5_r100.6/simulate.out, results/163/corrupt1000/r010.5_r100.6/simulate.err
+    jobid: 1439
+    reason: Missing output files: results/163/corrupt1000/r010.5_r100.6/elbow_metrics.json, results/163/corrupt1000/r010.5_r100.6/metrics.json
+    wildcards: seed=163, corrupt=1000, r01=0.5, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/75/corrupt1000/r010.5_r100.7/metrics.json, results/75/corrupt1000/r010.5_r100.7/elbow_metrics.json, results/75/corrupt1000/r010.5_r100.7/simulate.out, results/75/corrupt1000/r010.5_r100.7/simulate.err
+    jobid: 640
+    reason: Missing output files: results/75/corrupt1000/r010.5_r100.7/metrics.json, results/75/corrupt1000/r010.5_r100.7/elbow_metrics.json
+    wildcards: seed=75, corrupt=1000, r01=0.5, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/119/corrupt10000/r010.7_r100.7/metrics.json, results/119/corrupt10000/r010.7_r100.7/elbow_metrics.json, results/119/corrupt10000/r010.7_r100.7/simulate.out, results/119/corrupt10000/r010.7_r100.7/simulate.err
+    jobid: 1100
+    reason: Missing output files: results/119/corrupt10000/r010.7_r100.7/elbow_metrics.json, results/119/corrupt10000/r010.7_r100.7/metrics.json
+    wildcards: seed=119, corrupt=10000, r01=0.7, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/97/corrupt5000/r010.4_r100.7/metrics.json, results/97/corrupt5000/r010.4_r100.7/elbow_metrics.json, results/97/corrupt5000/r010.4_r100.7/simulate.out, results/97/corrupt5000/r010.4_r100.7/simulate.err
+    jobid: 860
+    reason: Missing output files: results/97/corrupt5000/r010.4_r100.7/metrics.json, results/97/corrupt5000/r010.4_r100.7/elbow_metrics.json
+    wildcards: seed=97, corrupt=5000, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/163/corrupt5000/r010.4_r100.7/metrics.json, results/163/corrupt5000/r010.4_r100.7/elbow_metrics.json, results/163/corrupt5000/r010.4_r100.7/simulate.out, results/163/corrupt5000/r010.4_r100.7/simulate.err
+    jobid: 1460
+    reason: Missing output files: results/163/corrupt5000/r010.4_r100.7/metrics.json, results/163/corrupt5000/r010.4_r100.7/elbow_metrics.json
+    wildcards: seed=163, corrupt=5000, r01=0.4, r10=0.7
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/64/corrupt5000/r010.6_r100.4/metrics.json, results/64/corrupt5000/r010.6_r100.4/elbow_metrics.json, results/64/corrupt5000/r010.6_r100.4/simulate.out, results/64/corrupt5000/r010.6_r100.4/simulate.err
+    jobid: 567
+    reason: Missing output files: results/64/corrupt5000/r010.6_r100.4/elbow_metrics.json, results/64/corrupt5000/r010.6_r100.4/metrics.json
+    wildcards: seed=64, corrupt=5000, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Tue Oct 28 00:16:03 2025]
+localrule simulate:
+    output: results/53/corrupt1000/r010.3_r100.4/metrics.json, results/53/corrupt1000/r010.3_r100.4/elbow_metrics.json, results/53/corrupt1000/r010.3_r100.4/simulate.out, results/53/corrupt1000/r010.3_r100.4/simulate.err
+    jobid: 427
+    reason: Missing output files: results/53/corrupt1000/r010.3_r100.4/elbow_metrics.json, results/53/corrupt1000/r010.3_r100.4/metrics.json
+    wildcards: seed=53, corrupt=1000, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...

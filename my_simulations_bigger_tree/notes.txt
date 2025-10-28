@@ -1,0 +1,2 @@
+python simulation.py --seed 86 --host_tree angio_25tips_origin.phy --virus_tree Nymphalini.phy --corrupt 100 --outdir experiments  --r01 0.60 --r10 0.40
+python simulation.py --seed 1 --host_tree angio_25tips_origin.phy --virus_tree Nymphalini.phy --corrupt 30 --outdir experiments  --r01 0.40 --r10 0.60

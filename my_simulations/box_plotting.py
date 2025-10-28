@@ -85,6 +85,31 @@ g.fig.suptitle("Precision / Recall / F1 across rates and flipping", fontsize=14)
 plt.savefig("metrics_boxplot.png", dpi=300, bbox_inches="tight")
 plt.close()
 
+# Filter for corrupt = 100
+df_long = df_long[df_long["corrupt"] == 100]
+
+# Single boxplot for corrupt = 100
+g = sns.catplot(
+    data=df_long,
+    x="r", y="score",
+    hue="metric",
+    kind="box",
+    dodge=0.8,
+    width=0.7,          # narrower boxes → spacing between them
+    showfliers=False,    # remove "o" outliers
+    height=7, aspect=1
+)
+
+# Formatting
+g.set_axis_labels("rate 01 = rate 10", "Score")
+g.set_titles("Random Flipping = 100")
+g.set(ylim=(0,1))
+g.fig.subplots_adjust(top=0.85)
+g.fig.suptitle("Precision / Recall / F1 across rates for flipping = 100", fontsize=14)
+
+plt.savefig("metrics_boxplot.svg", dpi=300, bbox_inches="tight")
+plt.close()
+
 base_dir = "results"
 records = []
 

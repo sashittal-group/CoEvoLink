@@ -1,0 +1,48 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+results/20/corrupt100/r010.4_r100.4/original_matrix.svg
+results/20/corrupt100/r010.4_r100.4/simulate.out
+results/20/corrupt100/r010.4_r100.4/simulate.err
+results/20/corrupt1000/r010.5_r100.7/original_matrix.svg
+results/20/corrupt1000/r010.5_r100.7/flipped_matrix.svg
+results/20/corrupt1000/r010.5_r100.7/simulate.out
+results/20/corrupt1000/r010.5_r100.7/simulate.err
+results/31/corrupt1000/r010.6_r100.5/original_matrix.svg
+results/31/corrupt1000/r010.6_r100.5/flipped_matrix.svg
+results/31/corrupt1000/r010.6_r100.5/simulate.out
+results/31/corrupt1000/r010.6_r100.5/simulate.err
+results/53/corrupt1000/r010.5_r100.7/original_matrix.svg
+results/53/corrupt1000/r010.5_r100.7/simulate.out
+results/53/corrupt1000/r010.5_r100.7/simulate.err
+results/64/corrupt500/r010.4_r100.5/original_matrix.svg
+results/64/corrupt500/r010.4_r100.5/flipped_matrix.svg
+results/64/corrupt500/r010.4_r100.5/simulate.out
+results/64/corrupt500/r010.4_r100.5/simulate.err
+results/86/corrupt800/r010.7_r100.5/original_matrix.svg
+results/86/corrupt800/r010.7_r100.5/flipped_matrix.svg
+results/86/corrupt800/r010.7_r100.5/simulate.out
+results/86/corrupt800/r010.7_r100.5/simulate.err
+results/97/corrupt500/r010.4_r100.5/original_matrix.svg
+results/97/corrupt500/r010.4_r100.5/simulate.out
+results/97/corrupt500/r010.4_r100.5/simulate.err
+results/108/corrupt800/r010.3_r100.5/original_matrix.svg
+results/108/corrupt800/r010.3_r100.5/flipped_matrix.svg
+results/108/corrupt800/r010.3_r100.5/simulate.out
+results/108/corrupt800/r010.3_r100.5/simulate.err
+results/119/corrupt500/r010.3_r100.7/original_matrix.svg
+results/119/corrupt500/r010.3_r100.7/flipped_matrix.svg
+results/119/corrupt500/r010.3_r100.7/simulate.out
+results/119/corrupt500/r010.3_r100.7/simulate.err
+results/152/corrupt500/r010.3_r100.7/original_matrix.svg
+results/152/corrupt500/r010.3_r100.7/flipped_matrix.svg
+results/152/corrupt500/r010.3_r100.7/simulate.out
+results/152/corrupt500/r010.3_r100.7/simulate.err

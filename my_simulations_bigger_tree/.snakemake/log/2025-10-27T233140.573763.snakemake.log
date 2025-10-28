@@ -1,0 +1,312 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+all             1
+simulate     1500
+total        1501
+
+Select jobs to execute...
+Execute 10 jobs...
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/53/corrupt1000/r010.6_r100.6/original_matrix.svg, results/53/corrupt1000/r010.6_r100.6/flipped_matrix.svg, results/53/corrupt1000/r010.6_r100.6/metrics.json, results/53/corrupt1000/r010.6_r100.6/elbow_metrics.json, results/53/corrupt1000/r010.6_r100.6/simulate.out, results/53/corrupt1000/r010.6_r100.6/simulate.err
+    jobid: 444
+    reason: Missing output files: results/53/corrupt1000/r010.6_r100.6/elbow_metrics.json, results/53/corrupt1000/r010.6_r100.6/metrics.json
+    wildcards: seed=53, corrupt=1000, r01=0.6, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/152/corrupt1000/r010.3_r100.5/original_matrix.svg, results/152/corrupt1000/r010.3_r100.5/flipped_matrix.svg, results/152/corrupt1000/r010.3_r100.5/metrics.json, results/152/corrupt1000/r010.3_r100.5/elbow_metrics.json, results/152/corrupt1000/r010.3_r100.5/simulate.out, results/152/corrupt1000/r010.3_r100.5/simulate.err
+    jobid: 1328
+    reason: Missing output files: results/152/corrupt1000/r010.3_r100.5/elbow_metrics.json, results/152/corrupt1000/r010.3_r100.5/metrics.json
+    wildcards: seed=152, corrupt=1000, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/64/corrupt5000/r010.7_r100.5/original_matrix.svg, results/64/corrupt5000/r010.7_r100.5/flipped_matrix.svg, results/64/corrupt5000/r010.7_r100.5/metrics.json, results/64/corrupt5000/r010.7_r100.5/elbow_metrics.json, results/64/corrupt5000/r010.7_r100.5/simulate.out, results/64/corrupt5000/r010.7_r100.5/simulate.err
+    jobid: 573
+    reason: Missing output files: results/64/corrupt5000/r010.7_r100.5/metrics.json, results/64/corrupt5000/r010.7_r100.5/elbow_metrics.json
+    wildcards: seed=64, corrupt=5000, r01=0.7, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/97/corrupt500/r010.4_r100.6/original_matrix.svg, results/97/corrupt500/r010.4_r100.6/flipped_matrix.svg, results/97/corrupt500/r010.4_r100.6/metrics.json, results/97/corrupt500/r010.4_r100.6/elbow_metrics.json, results/97/corrupt500/r010.4_r100.6/simulate.out, results/97/corrupt500/r010.4_r100.6/simulate.err
+    jobid: 809
+    reason: Missing output files: results/97/corrupt500/r010.4_r100.6/elbow_metrics.json, results/97/corrupt500/r010.4_r100.6/metrics.json
+    wildcards: seed=97, corrupt=500, r01=0.4, r10=0.6
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/9/corrupt1000/r010.6_r100.4/original_matrix.svg, results/9/corrupt1000/r010.6_r100.4/flipped_matrix.svg, results/9/corrupt1000/r010.6_r100.4/metrics.json, results/9/corrupt1000/r010.6_r100.4/elbow_metrics.json, results/9/corrupt1000/r010.6_r100.4/simulate.out, results/9/corrupt1000/r010.6_r100.4/simulate.err
+    jobid: 42
+    reason: Missing output files: results/9/corrupt1000/r010.6_r100.4/elbow_metrics.json, results/9/corrupt1000/r010.6_r100.4/metrics.json
+    wildcards: seed=9, corrupt=1000, r01=0.6, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/20/corrupt500/r010.3_r100.4/original_matrix.svg, results/20/corrupt500/r010.3_r100.4/flipped_matrix.svg, results/20/corrupt500/r010.3_r100.4/metrics.json, results/20/corrupt500/r010.3_r100.4/elbow_metrics.json, results/20/corrupt500/r010.3_r100.4/simulate.out, results/20/corrupt500/r010.3_r100.4/simulate.err
+    jobid: 102
+    reason: Missing output files: results/20/corrupt500/r010.3_r100.4/metrics.json, results/20/corrupt500/r010.3_r100.4/elbow_metrics.json
+    wildcards: seed=20, corrupt=500, r01=0.3, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/20/corrupt5000/r010.5_r100.4/original_matrix.svg, results/20/corrupt5000/r010.5_r100.4/flipped_matrix.svg, results/20/corrupt5000/r010.5_r100.4/metrics.json, results/20/corrupt5000/r010.5_r100.4/elbow_metrics.json, results/20/corrupt5000/r010.5_r100.4/simulate.out, results/20/corrupt5000/r010.5_r100.4/simulate.err
+    jobid: 162
+    reason: Missing output files: results/20/corrupt5000/r010.5_r100.4/metrics.json, results/20/corrupt5000/r010.5_r100.4/elbow_metrics.json
+    wildcards: seed=20, corrupt=5000, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/53/corrupt5000/r010.5_r100.4/original_matrix.svg, results/53/corrupt5000/r010.5_r100.4/flipped_matrix.svg, results/53/corrupt5000/r010.5_r100.4/metrics.json, results/53/corrupt5000/r010.5_r100.4/elbow_metrics.json, results/53/corrupt5000/r010.5_r100.4/simulate.out, results/53/corrupt5000/r010.5_r100.4/simulate.err
+    jobid: 462
+    reason: Missing output files: results/53/corrupt5000/r010.5_r100.4/elbow_metrics.json, results/53/corrupt5000/r010.5_r100.4/metrics.json
+    wildcards: seed=53, corrupt=5000, r01=0.5, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/97/corrupt10000/r010.4_r100.4/original_matrix.svg, results/97/corrupt10000/r010.4_r100.4/flipped_matrix.svg, results/97/corrupt10000/r010.4_r100.4/metrics.json, results/97/corrupt10000/r010.4_r100.4/elbow_metrics.json, results/97/corrupt10000/r010.4_r100.4/simulate.out, results/97/corrupt10000/r010.4_r100.4/simulate.err
+    jobid: 882
+    reason: Missing output files: results/97/corrupt10000/r010.4_r100.4/elbow_metrics.json, results/97/corrupt10000/r010.4_r100.4/metrics.json
+    wildcards: seed=97, corrupt=10000, r01=0.4, r10=0.4
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+[Mon Oct 27 23:31:41 2025]
+localrule simulate:
+    output: results/108/corrupt5000/r010.3_r100.5/original_matrix.svg, results/108/corrupt5000/r010.3_r100.5/flipped_matrix.svg, results/108/corrupt5000/r010.3_r100.5/metrics.json, results/108/corrupt5000/r010.3_r100.5/elbow_metrics.json, results/108/corrupt5000/r010.3_r100.5/simulate.out, results/108/corrupt5000/r010.3_r100.5/simulate.err
+    jobid: 953
+    reason: Missing output files: results/108/corrupt5000/r010.3_r100.5/elbow_metrics.json, results/108/corrupt5000/r010.3_r100.5/metrics.json
+    wildcards: seed=108, corrupt=5000, r01=0.3, r10=0.5
+    resources: tmpdir=/var/folders/81/_4qkc5w17kd767vqrndc8k440000gp/T
+Select jobs to execute...
+Waiting at most 5 seconds for missing files:
+results/20/corrupt500/r010.3_r100.4/original_matrix.svg (missing locally)
+results/20/corrupt500/r010.3_r100.4/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 102  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/20/corrupt500/r010.3_r100.4/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/20/corrupt500/r010.3_r100.4/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/20/corrupt500/r010.3_r100.4/metrics.json, results/20/corrupt500/r010.3_r100.4/elbow_metrics.json, results/20/corrupt500/r010.3_r100.4/simulate.out, results/20/corrupt500/r010.3_r100.4/simulate.err
+Waiting at most 5 seconds for missing files:
+results/9/corrupt1000/r010.6_r100.4/original_matrix.svg (missing locally)
+results/9/corrupt1000/r010.6_r100.4/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 42  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/9/corrupt1000/r010.6_r100.4/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/9/corrupt1000/r010.6_r100.4/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/9/corrupt1000/r010.6_r100.4/metrics.json, results/9/corrupt1000/r010.6_r100.4/elbow_metrics.json, results/9/corrupt1000/r010.6_r100.4/simulate.out, results/9/corrupt1000/r010.6_r100.4/simulate.err
+Waiting at most 5 seconds for missing files:
+results/97/corrupt500/r010.4_r100.6/original_matrix.svg (missing locally)
+results/97/corrupt500/r010.4_r100.6/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 809  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/97/corrupt500/r010.4_r100.6/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/97/corrupt500/r010.4_r100.6/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/97/corrupt500/r010.4_r100.6/metrics.json, results/97/corrupt500/r010.4_r100.6/elbow_metrics.json, results/97/corrupt500/r010.4_r100.6/simulate.out, results/97/corrupt500/r010.4_r100.6/simulate.err
+Waiting at most 5 seconds for missing files:
+results/53/corrupt1000/r010.6_r100.6/original_matrix.svg (missing locally)
+results/53/corrupt1000/r010.6_r100.6/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 444  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/53/corrupt1000/r010.6_r100.6/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/53/corrupt1000/r010.6_r100.6/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/53/corrupt1000/r010.6_r100.6/metrics.json, results/53/corrupt1000/r010.6_r100.6/elbow_metrics.json, results/53/corrupt1000/r010.6_r100.6/simulate.out, results/53/corrupt1000/r010.6_r100.6/simulate.err
+Waiting at most 5 seconds for missing files:
+results/152/corrupt1000/r010.3_r100.5/original_matrix.svg (missing locally)
+results/152/corrupt1000/r010.3_r100.5/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 1328  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/152/corrupt1000/r010.3_r100.5/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/152/corrupt1000/r010.3_r100.5/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/152/corrupt1000/r010.3_r100.5/metrics.json, results/152/corrupt1000/r010.3_r100.5/elbow_metrics.json, results/152/corrupt1000/r010.3_r100.5/simulate.out, results/152/corrupt1000/r010.3_r100.5/simulate.err
+Waiting at most 5 seconds for missing files:
+results/64/corrupt5000/r010.7_r100.5/original_matrix.svg (missing locally)
+results/64/corrupt5000/r010.7_r100.5/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 573  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/64/corrupt5000/r010.7_r100.5/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/64/corrupt5000/r010.7_r100.5/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/64/corrupt5000/r010.7_r100.5/metrics.json, results/64/corrupt5000/r010.7_r100.5/elbow_metrics.json, results/64/corrupt5000/r010.7_r100.5/simulate.out, results/64/corrupt5000/r010.7_r100.5/simulate.err
+Waiting at most 5 seconds for missing files:
+results/20/corrupt5000/r010.5_r100.4/original_matrix.svg (missing locally)
+results/20/corrupt5000/r010.5_r100.4/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 162  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/20/corrupt5000/r010.5_r100.4/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/20/corrupt5000/r010.5_r100.4/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/20/corrupt5000/r010.5_r100.4/metrics.json, results/20/corrupt5000/r010.5_r100.4/elbow_metrics.json, results/20/corrupt5000/r010.5_r100.4/simulate.out, results/20/corrupt5000/r010.5_r100.4/simulate.err
+Waiting at most 5 seconds for missing files:
+results/53/corrupt5000/r010.5_r100.4/original_matrix.svg (missing locally)
+results/53/corrupt5000/r010.5_r100.4/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 462  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/53/corrupt5000/r010.5_r100.4/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/53/corrupt5000/r010.5_r100.4/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/53/corrupt5000/r010.5_r100.4/metrics.json, results/53/corrupt5000/r010.5_r100.4/elbow_metrics.json, results/53/corrupt5000/r010.5_r100.4/simulate.out, results/53/corrupt5000/r010.5_r100.4/simulate.err
+Waiting at most 5 seconds for missing files:
+results/97/corrupt10000/r010.4_r100.4/original_matrix.svg (missing locally)
+results/97/corrupt10000/r010.4_r100.4/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 882  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/97/corrupt10000/r010.4_r100.4/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/97/corrupt10000/r010.4_r100.4/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/97/corrupt10000/r010.4_r100.4/metrics.json, results/97/corrupt10000/r010.4_r100.4/elbow_metrics.json, results/97/corrupt10000/r010.4_r100.4/simulate.out, results/97/corrupt10000/r010.4_r100.4/simulate.err
+Waiting at most 5 seconds for missing files:
+results/108/corrupt5000/r010.3_r100.5/original_matrix.svg (missing locally)
+results/108/corrupt5000/r010.3_r100.5/flipped_matrix.svg (missing locally)
+MissingOutputException in rule simulate in file "/Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/Snakefile", line 33:
+Job 953  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/108/corrupt5000/r010.3_r100.5/original_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+results/108/corrupt5000/r010.3_r100.5/flipped_matrix.svg (missing locally, parent dir contents: metrics.json, parsimony_vs_flips_elbow.svg, simulate.err, simulate.out, elbow_metrics.json)
+Removing output files of failed job simulate since they might be corrupted:
+results/108/corrupt5000/r010.3_r100.5/metrics.json, results/108/corrupt5000/r010.3_r100.5/elbow_metrics.json, results/108/corrupt5000/r010.3_r100.5/simulate.out, results/108/corrupt5000/r010.3_r100.5/simulate.err
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 882
+    output: results/97/corrupt10000/r010.4_r100.4/original_matrix.svg, results/97/corrupt10000/r010.4_r100.4/flipped_matrix.svg, results/97/corrupt10000/r010.4_r100.4/metrics.json, results/97/corrupt10000/r010.4_r100.4/elbow_metrics.json, results/97/corrupt10000/r010.4_r100.4/simulate.out, results/97/corrupt10000/r010.4_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt10000/r010.4_r100.4
+        {
+            python simulation.py                 --seed 97                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 10000                 --r01_p 0.4                 --r10_p 0.4                 --r01_h 0.4                 --r10_h 0.4                 --outdir results/97/corrupt10000/r010.4_r100.4                 --original_metrics results/97/corrupt10000/r010.4_r100.4/metrics.json                 --elbow_metrics results/97/corrupt10000/r010.4_r100.4/elbow_metrics.json                 > results/97/corrupt10000/r010.4_r100.4/simulate.out 2> results/97/corrupt10000/r010.4_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 444
+    output: results/53/corrupt1000/r010.6_r100.6/original_matrix.svg, results/53/corrupt1000/r010.6_r100.6/flipped_matrix.svg, results/53/corrupt1000/r010.6_r100.6/metrics.json, results/53/corrupt1000/r010.6_r100.6/elbow_metrics.json, results/53/corrupt1000/r010.6_r100.6/simulate.out, results/53/corrupt1000/r010.6_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/53/corrupt1000/r010.6_r100.6
+        {
+            python simulation.py                 --seed 53                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 1000                 --r01_p 0.6                 --r10_p 0.6                 --r01_h 0.6                 --r10_h 0.6                 --outdir results/53/corrupt1000/r010.6_r100.6                 --original_metrics results/53/corrupt1000/r010.6_r100.6/metrics.json                 --elbow_metrics results/53/corrupt1000/r010.6_r100.6/elbow_metrics.json                 > results/53/corrupt1000/r010.6_r100.6/simulate.out 2> results/53/corrupt1000/r010.6_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 162
+    output: results/20/corrupt5000/r010.5_r100.4/original_matrix.svg, results/20/corrupt5000/r010.5_r100.4/flipped_matrix.svg, results/20/corrupt5000/r010.5_r100.4/metrics.json, results/20/corrupt5000/r010.5_r100.4/elbow_metrics.json, results/20/corrupt5000/r010.5_r100.4/simulate.out, results/20/corrupt5000/r010.5_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/20/corrupt5000/r010.5_r100.4
+        {
+            python simulation.py                 --seed 20                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 5000                 --r01_p 0.5                 --r10_p 0.4                 --r01_h 0.5                 --r10_h 0.4                 --outdir results/20/corrupt5000/r010.5_r100.4                 --original_metrics results/20/corrupt5000/r010.5_r100.4/metrics.json                 --elbow_metrics results/20/corrupt5000/r010.5_r100.4/elbow_metrics.json                 > results/20/corrupt5000/r010.5_r100.4/simulate.out 2> results/20/corrupt5000/r010.5_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 953
+    output: results/108/corrupt5000/r010.3_r100.5/original_matrix.svg, results/108/corrupt5000/r010.3_r100.5/flipped_matrix.svg, results/108/corrupt5000/r010.3_r100.5/metrics.json, results/108/corrupt5000/r010.3_r100.5/elbow_metrics.json, results/108/corrupt5000/r010.3_r100.5/simulate.out, results/108/corrupt5000/r010.3_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/108/corrupt5000/r010.3_r100.5
+        {
+            python simulation.py                 --seed 108                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 5000                 --r01_p 0.3                 --r10_p 0.5                 --r01_h 0.3                 --r10_h 0.5                 --outdir results/108/corrupt5000/r010.3_r100.5                 --original_metrics results/108/corrupt5000/r010.3_r100.5/metrics.json                 --elbow_metrics results/108/corrupt5000/r010.3_r100.5/elbow_metrics.json                 > results/108/corrupt5000/r010.3_r100.5/simulate.out 2> results/108/corrupt5000/r010.3_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 1328
+    output: results/152/corrupt1000/r010.3_r100.5/original_matrix.svg, results/152/corrupt1000/r010.3_r100.5/flipped_matrix.svg, results/152/corrupt1000/r010.3_r100.5/metrics.json, results/152/corrupt1000/r010.3_r100.5/elbow_metrics.json, results/152/corrupt1000/r010.3_r100.5/simulate.out, results/152/corrupt1000/r010.3_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/152/corrupt1000/r010.3_r100.5
+        {
+            python simulation.py                 --seed 152                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 1000                 --r01_p 0.3                 --r10_p 0.5                 --r01_h 0.3                 --r10_h 0.5                 --outdir results/152/corrupt1000/r010.3_r100.5                 --original_metrics results/152/corrupt1000/r010.3_r100.5/metrics.json                 --elbow_metrics results/152/corrupt1000/r010.3_r100.5/elbow_metrics.json                 > results/152/corrupt1000/r010.3_r100.5/simulate.out 2> results/152/corrupt1000/r010.3_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 809
+    output: results/97/corrupt500/r010.4_r100.6/original_matrix.svg, results/97/corrupt500/r010.4_r100.6/flipped_matrix.svg, results/97/corrupt500/r010.4_r100.6/metrics.json, results/97/corrupt500/r010.4_r100.6/elbow_metrics.json, results/97/corrupt500/r010.4_r100.6/simulate.out, results/97/corrupt500/r010.4_r100.6/simulate.err
+    shell:
+        
+        mkdir -p results/97/corrupt500/r010.4_r100.6
+        {
+            python simulation.py                 --seed 97                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 500                 --r01_p 0.4                 --r10_p 0.6                 --r01_h 0.4                 --r10_h 0.6                 --outdir results/97/corrupt500/r010.4_r100.6                 --original_metrics results/97/corrupt500/r010.4_r100.6/metrics.json                 --elbow_metrics results/97/corrupt500/r010.4_r100.6/elbow_metrics.json                 > results/97/corrupt500/r010.4_r100.6/simulate.out 2> results/97/corrupt500/r010.4_r100.6/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 42
+    output: results/9/corrupt1000/r010.6_r100.4/original_matrix.svg, results/9/corrupt1000/r010.6_r100.4/flipped_matrix.svg, results/9/corrupt1000/r010.6_r100.4/metrics.json, results/9/corrupt1000/r010.6_r100.4/elbow_metrics.json, results/9/corrupt1000/r010.6_r100.4/simulate.out, results/9/corrupt1000/r010.6_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/9/corrupt1000/r010.6_r100.4
+        {
+            python simulation.py                 --seed 9                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 1000                 --r01_p 0.6                 --r10_p 0.4                 --r01_h 0.6                 --r10_h 0.4                 --outdir results/9/corrupt1000/r010.6_r100.4                 --original_metrics results/9/corrupt1000/r010.6_r100.4/metrics.json                 --elbow_metrics results/9/corrupt1000/r010.6_r100.4/elbow_metrics.json                 > results/9/corrupt1000/r010.6_r100.4/simulate.out 2> results/9/corrupt1000/r010.6_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 462
+    output: results/53/corrupt5000/r010.5_r100.4/original_matrix.svg, results/53/corrupt5000/r010.5_r100.4/flipped_matrix.svg, results/53/corrupt5000/r010.5_r100.4/metrics.json, results/53/corrupt5000/r010.5_r100.4/elbow_metrics.json, results/53/corrupt5000/r010.5_r100.4/simulate.out, results/53/corrupt5000/r010.5_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/53/corrupt5000/r010.5_r100.4
+        {
+            python simulation.py                 --seed 53                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 5000                 --r01_p 0.5                 --r10_p 0.4                 --r01_h 0.5                 --r10_h 0.4                 --outdir results/53/corrupt5000/r010.5_r100.4                 --original_metrics results/53/corrupt5000/r010.5_r100.4/metrics.json                 --elbow_metrics results/53/corrupt5000/r010.5_r100.4/elbow_metrics.json                 > results/53/corrupt5000/r010.5_r100.4/simulate.out 2> results/53/corrupt5000/r010.5_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 573
+    output: results/64/corrupt5000/r010.7_r100.5/original_matrix.svg, results/64/corrupt5000/r010.7_r100.5/flipped_matrix.svg, results/64/corrupt5000/r010.7_r100.5/metrics.json, results/64/corrupt5000/r010.7_r100.5/elbow_metrics.json, results/64/corrupt5000/r010.7_r100.5/simulate.out, results/64/corrupt5000/r010.7_r100.5/simulate.err
+    shell:
+        
+        mkdir -p results/64/corrupt5000/r010.7_r100.5
+        {
+            python simulation.py                 --seed 64                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 5000                 --r01_p 0.7                 --r10_p 0.5                 --r01_h 0.7                 --r10_h 0.5                 --outdir results/64/corrupt5000/r010.7_r100.5                 --original_metrics results/64/corrupt5000/r010.7_r100.5/metrics.json                 --elbow_metrics results/64/corrupt5000/r010.7_r100.5/elbow_metrics.json                 > results/64/corrupt5000/r010.7_r100.5/simulate.out 2> results/64/corrupt5000/r010.7_r100.5/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+[Mon Oct 27 23:42:02 2025]
+Error in rule simulate:
+    message: None
+    jobid: 102
+    output: results/20/corrupt500/r010.3_r100.4/original_matrix.svg, results/20/corrupt500/r010.3_r100.4/flipped_matrix.svg, results/20/corrupt500/r010.3_r100.4/metrics.json, results/20/corrupt500/r010.3_r100.4/elbow_metrics.json, results/20/corrupt500/r010.3_r100.4/simulate.out, results/20/corrupt500/r010.3_r100.4/simulate.err
+    shell:
+        
+        mkdir -p results/20/corrupt500/r010.3_r100.4
+        {
+            python simulation.py                 --seed 20                 --host_tree hosts_tree_big.newick                 --virus_tree viruses_tree_big.newick                 --corrupt 500                 --r01_p 0.3                 --r10_p 0.4                 --r01_h 0.3                 --r10_h 0.4                 --outdir results/20/corrupt500/r010.3_r100.4                 --original_metrics results/20/corrupt500/r010.3_r100.4/metrics.json                 --elbow_metrics results/20/corrupt500/r010.3_r100.4/elbow_metrics.json                 > results/20/corrupt500/r010.3_r100.4/simulate.out 2> results/20/corrupt500/r010.3_r100.4/simulate.err
+        }
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/PSLabMonisha/Desktop/exps/my_simulations_bigger_tree/.snakemake/log/2025-10-27T233140.573763.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

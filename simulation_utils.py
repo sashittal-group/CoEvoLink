@@ -172,7 +172,7 @@ def build_flip_cost_matrix(n_parasites, n_hosts, cost=1.0):
 # ---------------------------
 # Simulate states along a single tree
 # ---------------------------
-def simulate_internal_states(tree, r01=0.5, r10=0.5, seed=None):
+def simulate_internal_states(tree, r01=0.5, r10=0.5, seed=None, scale=1.0):
     if seed is not None:
         random.seed(seed)
         np.random.seed(seed)
@@ -185,7 +185,7 @@ def simulate_internal_states(tree, r01=0.5, r10=0.5, seed=None):
         parent_state = states[parent]
         for child in parent.clades:
             t = child.branch_length if child.branch_length else 0.0
-            P = expQt_2state(t, r01=r01, r10=r10)
+            P = expQt_2state(t * scale, r01=r01, r10=r10)
             probs = P[parent_state] / P[parent_state].sum()
             states[child] = int(np.random.choice([0,1], p=probs))
             recurse(child)
@@ -223,7 +223,7 @@ def rescale_tree(tree):
 # ---------------------------
 # Simulate network of m+n trees
 # ---------------------------
-def simulate_network(host_tree_file, parasite_tree_file, r01_p=0.5, r10_p=0.5, r01_h=0.5, r10_h=0.5, seed=None):
+def simulate_network(host_tree_file, parasite_tree_file, r01_p=0.5, r10_p=0.5, r01_h=0.5, r10_h=0.5, seed=None, scale=1.0):
     base_host_tree = Phylo.read(host_tree_file, "newick")
     base_par_tree = Phylo.read(parasite_tree_file, "newick")
     
@@ -241,7 +241,7 @@ def simulate_network(host_tree_file, parasite_tree_file, r01_p=0.5, r10_p=0.5, r
     host_parent_list = []
     for i in range(n):
         t = copy.deepcopy(base_host_tree)
-        states = simulate_internal_states(t, r01_h, r10_h, seed=seed)
+        states = simulate_internal_states(t, r01_h, r10_h, seed=seed, scale=scale)
         host_trees.append(t)
         host_states_list.append(states)
         host_parent_list.append(build_parent_map(t))
@@ -251,7 +251,7 @@ def simulate_network(host_tree_file, parasite_tree_file, r01_p=0.5, r10_p=0.5, r
     par_parent_list = []
     for i in range(m):
         t = copy.deepcopy(base_par_tree)
-        states = simulate_internal_states(t, r01_p, r10_p, seed=seed)
+        states = simulate_internal_states(t, r01_p, r10_p, seed=seed, scale=scale)
         par_trees.append(t)
         par_states_list.append(states)
         par_parent_list.append(build_parent_map(t))
@@ -709,10 +709,10 @@ def solve_network_cut(
             node = f"CELL_{p}_{h}"
             state = cell_state[(p, h)]
             if state == 0:
-                if flip_cost_matrix[p_idx, h_idx] == 100.0:
-                    G.add_edge(node, sink, capacity=flip_cost_matrix[p_idx, h_idx])
-                    G.add_edge(sink, node, capacity=flip_cost_matrix[p_idx, h_idx])
-                else:
+                # if flip_cost_matrix[p_idx, h_idx] == 100.0:
+                #     G.add_edge(node, sink, capacity=flip_cost_matrix[p_idx, h_idx])
+                #     G.add_edge(sink, node, capacity=flip_cost_matrix[p_idx, h_idx])
+                # else:
                     G.add_edge(source, node,
                            capacity=(1 - lambda_param) * flip_cost_matrix[p_idx, h_idx])
                     # G.add_edge(node, source, capacity=(1 - lambda_param) * flip_cost_matrix[p_idx, h_idx])
