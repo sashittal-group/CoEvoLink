@@ -1,12 +1,69 @@
-wastewater dataset
-5 flipping 63/101
-3 flipping 44/101
-1 flipping 10/101
+phist accuracy - (1 hit)
+cow - 0.61
+gut - 0.43
+water - 0.45
 
-cow dataset
-5 flipping 32/66
-3 flipping 24/66
-1 flipping 2/66
+phist accuracy - (2/3 hit)
+cow - 0.71 (47/66)
+gut - 0.62 (52/84)
+water - 0.57 (58/101)
+
+using phist weight - 1 flip
+cow - 0.61  (40/66)
+gut - 0.43 (35/84)
+water - 0.495 (50/101)
+
+using phist weight - 2/3 flip
+cow - 0.73 (48/66)
+gut - 0.63 (53/84)
+water - 0.61 (62/101)
+
+--------------------------
+
+pblks accuracy - (1 hit)
+cow - 0.015
+gut - 0.0119
+water - 0.0099
+
+pblks accuracy - (2/3 hit)
+cow - 0.106 (7/66) 
+gut - 0.13 (11/84) 
+water - 0.139 (14/101)
+
+using pblks weight - 1 flip
+cow - 0.06  (4/66)
+gut - 0.024 (2/84)
+water - 0.03 (3/101)
+
+using pblks weight - 2/3 flip
+cow - 0.106 (7/66)
+gut - 0.19 (16/84)
+water - 0.178 (18/101)
+
+--------------------------
 
 
-gut dataset
+wish accuracy - (1 hit)
+cow - 0.576 (38/66)
+gut - 0.381 (32/84)
+water - 0.554 (56/101)
+
+wish accuracy - (2/3 hit)
+cow - 0.652 (43/66)
+gut - 0.500  (42/84)
+water - 0.752 (76/101)
+
+using wish weight - 1 flip
+cow - 0.576  (38/66)
+gut - 0.381 (32/84)
+water - 0.554 (56/101)
+
+using wish weight - 2/3 flip
+cow - 0.71 (47/66)
+gut - 0.56 (47/84)
+water - 0.79 (80/101)
+
+
+
+
+

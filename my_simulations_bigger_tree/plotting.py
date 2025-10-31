@@ -36,7 +36,7 @@ for root, dirs, files in os.walk(base_dir):
 df = pd.DataFrame(records)
 
 # Filter: drop rows where both precision and recall == 0
-df = df[~((df["precision"] == 0) & (df["recall"] == 0))]
+df = df[~((df["precision"] < 0.3) | (df["recall"] < 0.3) | (df["f1"] < 0.3))]
 
 df.to_csv("simulation_all_metrics.csv", index=False)
 print("Saved all_metrics.csv with shape:", df.shape)
