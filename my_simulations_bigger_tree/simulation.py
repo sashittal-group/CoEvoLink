@@ -74,10 +74,12 @@ def find_elbow_parsimony_flips(out, parasites, hosts, host_W_matrices,
     elbow_flip = kneedle.knee
     if elbow_flip is not None:
         # Find closest λ to the elbow flip
+        # print(f"[Elbow detection] Detected elbow at flip={elbow_flip}")
         idx = (np.abs(flips - elbow_flip)).argmin()
         elbow_lambda = lambdas[idx]
     else:
         # take lambda with max second derivative
+        # print ("[Elbow detection] No elbow detected, using max second derivative")
         elbow_flip, elbow_lambda = None, lambdas[-1]
 
 

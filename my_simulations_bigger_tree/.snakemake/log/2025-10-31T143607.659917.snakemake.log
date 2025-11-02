@@ -1,0 +1,61 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+results/9/corrupt500/r010.2_r100.7
+results/9/corrupt500/r010.2_r100.7/metrics.json
+results/9/corrupt500/r010.2_r100.7/elbow_metrics.json
+results/9/corrupt500/r010.2_r100.7/simulate.out
+results/9/corrupt500/r010.2_r100.7/simulate.err
+results/20/corrupt1000/r010.4_r100.2
+results/20/corrupt1000/r010.4_r100.2/metrics.json
+results/20/corrupt1000/r010.4_r100.2/elbow_metrics.json
+results/20/corrupt1000/r010.4_r100.2/simulate.out
+results/20/corrupt1000/r010.4_r100.2/simulate.err
+results/31/corrupt5000/r010.4_r100.1
+results/31/corrupt5000/r010.4_r100.1/metrics.json
+results/31/corrupt5000/r010.4_r100.1/elbow_metrics.json
+results/31/corrupt5000/r010.4_r100.1/simulate.out
+results/31/corrupt5000/r010.4_r100.1/simulate.err
+results/53/corrupt10000/r010.3_r100.2
+results/53/corrupt10000/r010.3_r100.2/metrics.json
+results/53/corrupt10000/r010.3_r100.2/elbow_metrics.json
+results/53/corrupt10000/r010.3_r100.2/simulate.out
+results/53/corrupt10000/r010.3_r100.2/simulate.err
+results/97/corrupt500/r010.1_r100.6
+results/97/corrupt500/r010.1_r100.6/metrics.json
+results/97/corrupt500/r010.1_r100.6/elbow_metrics.json
+results/97/corrupt500/r010.1_r100.6/simulate.out
+results/97/corrupt500/r010.1_r100.6/simulate.err
+results/108/corrupt500/r010.2_r100.2
+results/108/corrupt500/r010.2_r100.2/metrics.json
+results/108/corrupt500/r010.2_r100.2/elbow_metrics.json
+results/108/corrupt500/r010.2_r100.2/simulate.out
+results/108/corrupt500/r010.2_r100.2/simulate.err
+results/108/corrupt10000/r010.1_r100.3
+results/108/corrupt10000/r010.1_r100.3/metrics.json
+results/108/corrupt10000/r010.1_r100.3/elbow_metrics.json
+results/108/corrupt10000/r010.1_r100.3/simulate.out
+results/108/corrupt10000/r010.1_r100.3/simulate.err
+results/119/corrupt500/r010.7_r100.1
+results/119/corrupt500/r010.7_r100.1/metrics.json
+results/119/corrupt500/r010.7_r100.1/elbow_metrics.json
+results/119/corrupt500/r010.7_r100.1/simulate.out
+results/119/corrupt500/r010.7_r100.1/simulate.err
+results/130/corrupt2000/r010.2_r100.6
+results/130/corrupt2000/r010.2_r100.6/metrics.json
+results/130/corrupt2000/r010.2_r100.6/elbow_metrics.json
+results/130/corrupt2000/r010.2_r100.6/simulate.out
+results/130/corrupt2000/r010.2_r100.6/simulate.err
+results/141/corrupt10000/r010.1_r100.7
+results/141/corrupt10000/r010.1_r100.7/metrics.json
+results/141/corrupt10000/r010.1_r100.7/elbow_metrics.json
+results/141/corrupt10000/r010.1_r100.7/simulate.out
+results/141/corrupt10000/r010.1_r100.7/simulate.err

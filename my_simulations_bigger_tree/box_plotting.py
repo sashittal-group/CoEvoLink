@@ -70,8 +70,8 @@ for root, dirs, files in os.walk(base_dir):
 df = pd.DataFrame(records)
 
 # Filter: drop rows where both precision and recall == 0
-# df = df[~((df["precision"] < 0.2 ) | (df["f1"] < 0.2) | (df["recall"] < 0.2))]
-df = df[~((df["precision"] < 0.3 ))]
+df = df[~((df["precision"] < 0.3 ) | (df["f1"] < 0.3) | (df["recall"] < 0.3))]
+# df = df[~((df["precision"] < 0.3 ))]
 
 df.to_csv("simulation_all_metrics_elbow.csv", index=False)
 print("Saved all_metrics.csv with shape:", df.shape)
@@ -170,6 +170,8 @@ for method in ["Normal", "Elbow"]:
             percentage = 2
         elif corrupt == 1000:
             percentage = 5
+        elif corrupt == 2000:
+            percentage = 10
         elif corrupt == 5000:
             percentage = 20
         elif corrupt == 10000:
