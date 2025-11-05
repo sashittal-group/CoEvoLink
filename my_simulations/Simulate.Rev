@@ -18,8 +18,11 @@ out_fp = fp
 if (args.size() >= 4) out_fp = out_fp+(args[4])+"/"
 
 # read trees
-phy_plant_fn = data_fp + "angio_25tips_origin.phy"
-phy_insect_fn = data_fp + "Nymphalini.phy"
+# phy_plant_fn = data_fp + "angio_25tips_origin.phy"
+# phy_insect_fn = data_fp + "Nymphalini.phy"
+
+phy_plant_fn = data_fp + "hosts_tree_big.newick"
+phy_insect_fn = data_fp + "viruses_tree_big.newick"
 
 phy_plant <- readTrees(phy_plant_fn)[1]
 phy_insect <- readTrees(phy_insect_fn)[1]

@@ -1,0 +1,122 @@
+
+🔬 Running dataset=cow, target_flips=1
+Number of hosts in tree: 66
+Number of viruses in tree: 66
+[iter 0] λ=0.5000 → flips=20
+[iter 1] λ=0.2500 → flips=19
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=44
+[iter 1] λ=0.2500 → flips=3
+[iter 2] λ=0.1250 → flips=3
+[iter 3] λ=0.0625 → flips=1
+
+Best λ=0.0625 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=21
+[iter 1] λ=0.2500 → flips=19
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=0/1
+[iter 0] λ=0.5000 → flips=60
+[iter 1] λ=0.2500 → flips=2
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=39
+[iter 1] λ=0.2500 → flips=10
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=0/1
+[iter 0] λ=0.5000 → flips=56
+[iter 1] λ=0.2500 → flips=6
+[iter 2] λ=0.1250 → flips=3
+[iter 3] λ=0.0625 → flips=1
+
+Best λ=0.0625 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=25
+[iter 1] λ=0.2500 → flips=3
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=49
+[iter 1] λ=0.2500 → flips=4
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=0/1
+[iter 0] λ=0.5000 → flips=64
+[iter 1] λ=0.2500 → flips=3
+[iter 2] λ=0.1250 → flips=3
+[iter 3] λ=0.0625 → flips=1
+
+Best λ=0.0625 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=27
+[iter 1] λ=0.2500 → flips=3
+[iter 2] λ=0.1250 → flips=3
+[iter 3] λ=0.0625 → flips=3
+[iter 4] λ=0.0312 → flips=1
+
+Best λ=0.0312 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=29
+[iter 1] λ=0.2500 → flips=4
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=0/1
+[iter 0] λ=0.5000 → flips=22
+[iter 1] λ=0.2500 → flips=19
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=0/1
+[iter 0] λ=0.5000 → flips=34
+[iter 1] λ=0.2500 → flips=6
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=0/1
+[iter 0] λ=0.5000 → flips=58
+[iter 1] λ=0.2500 → flips=3
+[iter 2] λ=0.1250 → flips=3
+[iter 3] λ=0.0625 → flips=1
+
+Best λ=0.0625 → flips=1, correct=1/1
+[iter 0] λ=0.5000 → flips=49
+[iter 1] λ=0.2500 → flips=2
+[iter 2] λ=0.1250 → flips=1
+
+Best λ=0.1250 → flips=1, correct=0/1
+[iter 0] λ=0.5000 → flips=54
+[iter 1] λ=0.2500 → flips=2
+[iter 2] λ=0.1250 → flips=2
+Traceback (most recent call last):
+  File "/Users/PSLabMonisha/Desktop/exps/HostPredictionReview/simulation_wish.py", line 490, in <module>
+    acc, num, den = run_experiment(ds["name"], ds["host_tree"], ds["virus_tree"], ds["interaction_tsv"], n)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PSLabMonisha/Desktop/exps/HostPredictionReview/simulation_wish.py", line 460, in run_experiment
+    lambda_param, cut_result = binary_search_lambda(
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PSLabMonisha/Desktop/exps/simulation_utils.py", line 775, in binary_search_lambda
+    cut_result = solve_network_cut(
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/PSLabMonisha/Desktop/exps/simulation_utils.py", line 729, in solve_network_cut
+    cut_value, partition = nx.minimum_cut(G, source, sink)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<class 'networkx.utils.decorators.argmap'> compilation 4", line 3, in argmap_minimum_cut_1
+  File "/Users/PSLabMonisha/miniforge3/envs/snakemake-tutorial/lib/python3.12/site-packages/networkx/utils/backends.py", line 535, in _call_if_no_backends_installed
+    return self.orig_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PSLabMonisha/miniforge3/envs/snakemake-tutorial/lib/python3.12/site-packages/networkx/algorithms/flow/maxflow.py", line 458, in minimum_cut
+    R = flow_func(flowG, _s, _t, capacity=capacity, value_only=True, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<class 'networkx.utils.decorators.argmap'> compilation 8", line 3, in argmap_preflow_push_5
+  File "/Users/PSLabMonisha/miniforge3/envs/snakemake-tutorial/lib/python3.12/site-packages/networkx/utils/backends.py", line 535, in _call_if_no_backends_installed
+    return self.orig_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PSLabMonisha/miniforge3/envs/snakemake-tutorial/lib/python3.12/site-packages/networkx/algorithms/flow/preflowpush.py", line 422, in preflow_push
+    R = preflow_push_impl(G, s, t, capacity, residual, global_relabel_freq, value_only)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/PSLabMonisha/miniforge3/envs/snakemake-tutorial/lib/python3.12/site-packages/networkx/algorithms/flow/preflowpush.py", line 88, in preflow_push_impl
+    R_nodes[u]["curr_edge"] = CurrentEdge(R_succ[u])
+                                          ~~~~~~^^^
+  File "/Users/PSLabMonisha/miniforge3/envs/snakemake-tutorial/lib/python3.12/site-packages/networkx/classes/coreviews.py", line 82, in __getitem__
+    return AtlasView(self._atlas[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

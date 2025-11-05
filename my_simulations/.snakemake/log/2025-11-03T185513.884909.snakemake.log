@@ -1,0 +1,16 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: CS-5095.local
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules braga_simulator and braga_pipeline are ambiguous for the file results/braga/9/b0_c0.1/metrics.json.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	braga_simulator: beta=0,clock=0.1/metrics.json,seed=9
+	braga_pipeline: beta=0,clock=0.1,seed=9
+Expected input files:
+	braga_simulator: 
+	braga_pipeline: results/braga/9/b0_c0.1 results/braga/9/b0_c0.1/sim9-b0-c0.1.nex results/braga/9/b0_c0.1/sim9-b0-c0.1.settings.txt
+Expected output files:
+	braga_simulator: results/braga/9/b0_c0.1/metrics.json results/braga/9/b0_c0.1/metrics.json/sim9-b0-c0.1/metrics.json.nex results/braga/9/b0_c0.1/metrics.json/sim9-b0-c0.1/metrics.json.settings.txt
+	braga_pipeline: results/braga/9/b0_c0.1/metrics.json results/braga/9/b0_c0.1/elbow_metrics.json results/braga/9/b0_c0.1/simulate.out results/braga/9/b0_c0.1/simulate.err

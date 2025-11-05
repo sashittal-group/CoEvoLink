@@ -98,7 +98,7 @@ def find_elbow_parsimony_flips(out, parasites, hosts, host_W_matrices,
     plt.title("Parsimony vs Flips (λ sweep)")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(outdir, "parsimony_vs_flips_elbow.png"))
+    plt.savefig(os.path.join(outdir, "parsimony_vs_flips_elbow.svg"))
     plt.close()
 
     return elbow_flip, elbow_lambda, flips, scores, lambdas
@@ -309,7 +309,7 @@ def main():
     # os.makedirs("experiments", exist_ok=True)
 
     # Original
-    plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "original_matrix.svg"))
+    # plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "original_matrix.svg"))
 
     if corrupt == 0:
         lambda_param = args.lambda_param
@@ -331,9 +331,9 @@ def main():
         hidden_cells = [(parasites[i], hosts[j]) for i, j in hidden]
 
         highlight_corrupted = {"corrupted": hidden_cells}
-        plot_matrix(corrupt_mat, parasites, hosts,
-                    filename=os.path.join(outdir, "corrupted.svg"),
-                    highlight=highlight_corrupted)
+        # plot_matrix(corrupt_mat, parasites, hosts,
+        #             filename=os.path.join(outdir, "corrupted.svg"),
+        #             highlight=highlight_corrupted)
 
         # Update out["cell_state"] with corrupted values
         corrupt_cell_state = {}
@@ -371,8 +371,8 @@ def main():
 
 
             highlight_hidden = {"corrupted": hidden_cells}
-            plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.svg"),
-            highlight=highlight_hidden)
+            # plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.svg"),
+            # highlight=highlight_hidden)
             lambda_param, cut_result = binary_search_lambda(out, parasites, hosts, hidden_cells=hidden_cells,
             target_flips=len(hidden_cells), host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
             flip_cost_matrix=flip_cost_matrix, tol=0, max_iter=20)
@@ -380,8 +380,8 @@ def main():
 
         else:
             highlight_hidden = {"corrupted": hidden_cells}
-            plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.svg"),
-            highlight=highlight_hidden)
+            # plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "corrupted.svg"),
+            # highlight=highlight_hidden)
             cut_result = solve_network_cut(out, host_W_matrices=host_W_matrices, par_W_matrices=par_W_matrices,
                                             flip_cost_matrix=flip_cost_matrix, lambda_param=lambda_param)
     # ---------------------------
@@ -401,9 +401,9 @@ def main():
     # ---------------------------
     # Step 3: Save recovered matrix with algorithm flips
     # ---------------------------
-    plot_matrix(new_mat, parasites, hosts,
-                filename=os.path.join(outdir, "flipped_matrix.svg"),
-                highlight=highlight_flipped)
+    # plot_matrix(new_mat, parasites, hosts,
+    #             filename=os.path.join(outdir, "flipped_matrix.svg"),
+    #             highlight=highlight_flipped)
 
 
 
@@ -430,9 +430,9 @@ def main():
     print(f"Number of flips performed (elbow): {len(flips_elbow)}")
     for p, h, old, new in flips_elbow:
         print(f"Cell ({p},{h}): {old} -> {new}")
-    plot_matrix(cut_result_elbow["new_matrix"], parasites, hosts,
-                filename=os.path.join(outdir, "flipped_matrix_elbow.png"),
-                highlight=highlight_flipped)
+    # plot_matrix(cut_result_elbow["new_matrix"], parasites, hosts,
+    #             filename=os.path.join(outdir, "flipped_matrix_elbow.png"),
+    #             highlight=highlight_flipped)
 
     metrics_elbow = compute_metrics(hidden_cells, flips_elbow)
     print("Elbow Metrics:", metrics_elbow)
