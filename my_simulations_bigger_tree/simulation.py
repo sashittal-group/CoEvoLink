@@ -74,31 +74,39 @@ def find_elbow_parsimony_flips(out, parasites, hosts, host_W_matrices,
     elbow_flip = kneedle.knee
     if elbow_flip is not None:
         # Find closest λ to the elbow flip
-        # print(f"[Elbow detection] Detected elbow at flip={elbow_flip}")
         idx = (np.abs(flips - elbow_flip)).argmin()
         elbow_lambda = lambdas[idx]
     else:
         # take lambda with max second derivative
-        # print ("[Elbow detection] No elbow detected, using max second derivative")
         elbow_flip, elbow_lambda = None, lambdas[-1]
-
 
     print(f"[Elbow detection] flip ≈ {elbow_flip}, λ ≈ {elbow_lambda}")
 
     # Plot
-    plt.figure(figsize=(7,5))
-    plt.plot(flips, scores, "bo-", label="Parsimony vs flips")
-    if elbow_flip is not None:
-        plt.axvline(elbow_flip, color="red", linestyle="--",
-                    label=f"Elbow flip={elbow_flip}, λ≈{elbow_lambda:.3f}")
-    # Annotate points with λ
-    for f, s, lam in zip(flips, scores, lambdas):
-        plt.text(f, s, f"{lam:.2f}", fontsize=6, ha="right", va="bottom", rotation=45)
+    plt.figure(figsize=(10, 10))
+    plt.plot(flips, scores, "bo-", label="Pareto Front")
 
-    plt.xlabel("Number of flips")
-    plt.ylabel("Parsimony")
-    plt.title("Parsimony vs Flips (λ sweep)")
-    plt.legend()
+    if elbow_flip is not None:
+        # Find the corresponding y value for the elbow point
+        idx = int(np.argmin(np.abs(np.array(flips) - elbow_flip)))
+        elbow_y = scores[idx]
+        # Mark the elbow with a red five-point star
+        plt.plot(elbow_flip, elbow_y,
+                 marker='*', markersize=22,
+                 markerfacecolor='red', markeredgecolor='k',
+                 label="CoEvoLink Solution")
+
+    # Annotate points with λ
+    # for f, s, lam in zip(flips, scores, lambdas):
+    #     plt.text(f, s, f"{lam:.2f}", fontsize=11,
+    #              ha="right", va="bottom", rotation=45)
+
+    plt.xlabel("Prediction Cost", fontsize=24)
+    plt.ylabel("Parsimony Score", fontsize=24)
+    # incresae tick font size
+    plt.xticks(fontsize=18)
+    plt.yticks(fontsize=18)
+    plt.legend(fontsize=24)
     plt.tight_layout()
     plt.savefig(os.path.join(outdir, "parsimony_vs_flips_elbow.svg"))
     plt.close()
@@ -404,7 +412,7 @@ def main():
     # Step 3: Save recovered matrix with algorithm flips
     # ---------------------------
     # plot_matrix(new_mat, parasites, hosts,
-    #             filename=os.path.join(outdir, "flipped_matrix.png"),
+    #             filename=os.path.join(outdir, "flipped_matrix.svg"),
     #             highlight=highlight_flipped)
 
 
@@ -418,7 +426,7 @@ def main():
 
 
     elbow_flip, elbow_lambda, flips, scores, lambdas = find_elbow_parsimony_flips(
-        out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, lower=0, upper=1, steps=50, outdir=outdir
+        out, parasites, hosts, host_W_matrices, par_W_matrices, flip_cost_matrix, lower=0.0, upper=1.0, steps=50, outdir=outdir
     )
 
     cut_result_elbow = solve_network_cut(
@@ -448,3 +456,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# for paper simulation figure I did seed 31 r 0.1, 0.8 corrupt 200

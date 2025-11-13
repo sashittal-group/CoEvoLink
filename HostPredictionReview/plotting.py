@@ -1,93 +1,117 @@
-import matplotlib.pyplot as plt
+import json
 import numpy as np
+import matplotlib.pyplot as plt
 
-# ==============================
-# Data setup
-# ==============================
+# -----------------------------
+#  Load data
+# -----------------------------
+methods = ["pblks", "phist", "wish"]
+datasets = ["cow feces", "human gut", "wastewater"]
 
-datasets = ["cow", "gut", "water"]
-methods = ["PHIST", "PBLKS", "WISH"]
-
-# Their accuracies (1-hit)
-their_1 = {
-    "cow": [0.61, 0.015, 0.576],
-    "gut": [0.43, 0.0119, 0.381],
-    "water": [0.45, 0.0099, 0.554],
-}
-
-# Our accuracies (1-hit)
-our_1 = {
-    "cow": [0.61, 0.06, 0.576],
-    "gut": [0.43, 0.024, 0.381],
-    "water": [0.495, 0.03, 0.554],
-}
-
-# Their accuracies (2/3-hit)
-their_23 = {
-    "cow": [0.71, 0.106, 0.652],
-    "gut": [0.63, 0.13, 0.50],
-    "water": [0.61, 0.139, 0.752],
-}
-
-# Our accuracies (2/3-hit)
-our_23 = {
-    "cow": [0.73, 0.106, 0.71],
-    "gut": [0.63, 0.19, 0.56],
-    "water": [0.61, 0.178, 0.79],
-}
-
-# ==============================
-# Plot styling
-# ==============================
-
-# Two distinct color schemes: one for 1-hit, one for 2/3-hit
+# your colors
 colors = {
-    "their_1": "#8da0cb",  # blue tone
-    "our_1": "#4daf4a",    # green tone
-    "their_23": "#fc8d62", # orange tone
-    "our_23": "#e41a1c",   # red tone
+    "pblks": "#ff9999",   # light red (PB-LKS)
+    "wish": "#d66ce7f6",  # light pink (WISH)
+    "phist": "#5aca83",   # light green (PHIST)
+    "coevo": "#1f77b4",   # dark blue (CoEvoLink)
 }
 
-# ==============================
-# Plotting loop
-# ==============================
+data = {}
+for method in methods:
+    with open(f"{method}_top1.json") as f:
+        data[f"{method}_top1"] = json.load(f)
+    with open(f"{method}_top3.json") as f:
+        data[f"{method}_top3"] = json.load(f)
+    with open(f"coevo_top1_{method}.json") as f:
+        data[f"coevo_top1_{method}"] = json.load(f)
+    with open(f"coevo_top3_{method}.json") as f:
+        data[f"coevo_top3_{method}"] = json.load(f)
 
-for dataset in datasets:
-    x = np.arange(len(methods))  # positions for PHIST, PBLKS, WISH
-    bar_width = 0.18
+# -----------------------------
+#  Plot settings
+# -----------------------------
+bar_width = 0.18
+x = np.arange(len(datasets)) * 1.2
 
-    fig, ax = plt.subplots(figsize=(8, 5))
+plt.rcParams.update({"font.size": 22})
 
-    # offsets for 1-hit and 2/3-hit groups
-    offset_1 = -bar_width * 1.2
-    offset_23 = bar_width * 1.2
+# ↓ shorter figure: reduce height from 8 → 5
+fig, axes = plt.subplots(1, 3, figsize=(20, 6), sharey=True)
 
-    # --- 1-hit bars ---
-    ax.bar(x + offset_1 - bar_width/2, their_1[dataset], width=bar_width,
-           color=colors["their_1"], label="Other Method (1-hit)")
-    ax.bar(x + offset_1 + bar_width/2, our_1[dataset], width=bar_width,
-           color=colors["our_1"], label="CoEvoLink (1-hit)")
+offset_1 = -bar_width * 1.4
+offset_3 = bar_width * 1.4
 
-    # --- 2/3-hit bars ---
-    ax.bar(x + offset_23 - bar_width/2, their_23[dataset], width=bar_width,
-           color=colors["their_23"], label="Other Method (2/3-hit)")
-    ax.bar(x + offset_23 + bar_width/2, our_23[dataset], width=bar_width,
-           color=colors["our_23"], label="CoEvoLink (2/3-hit)")
+titles = {
+    "pblks": "PB-LKS",
+    "wish": "WISH",
+    "phist": "PHIST"
+}
 
-    # Axis formatting
+# -----------------------------
+#  Loop over methods
+# -----------------------------
+for ax, method in zip(axes, methods):
+    top1_ours = data[f"{method}_top1"]
+    top3_ours = data[f"{method}_top3"]
+    top1_coevo = data["coevo_top1_" + method]
+    top3_coevo = data["coevo_top3_" + method]
+
+    # Bars
+    bars1_ours = ax.bar(x + offset_1 - bar_width / 2, top1_ours, width=bar_width,
+                        color=colors[method], label=titles[method])
+    bars1_coevo = ax.bar(x + offset_1 + bar_width / 2, top1_coevo, width=bar_width,
+                         color=colors["coevo"], label="CoEvoLink")
+
+    bars3_ours = ax.bar(x + offset_3 - bar_width / 2, top3_ours, width=bar_width,
+                        color=colors[method])
+    bars3_coevo = ax.bar(x + offset_3 + bar_width / 2, top3_coevo, width=bar_width,
+                         color=colors["coevo"])
+
+    # -----------------------------
+    # Add accuracy labels on top
+    # -----------------------------
+    def add_labels(bars):
+        for bar in bars:
+            height = bar.get_height()
+            ax.text(
+                bar.get_x() + bar.get_width() / 2,
+                height + 0.02,
+                f"{height:.2f}",
+                ha="center", va="bottom",
+                rotation=90,           # vertical orientation
+                fontsize=18,
+                # fontweight="bold"      # optional: makes it clearer
+            )
+
+
+    for group in [bars1_ours, bars1_coevo, bars3_ours, bars3_coevo]:
+        add_labels(group)
+
+    # Labels and formatting
     ax.set_xticks(x)
-    ax.set_xticklabels(methods, fontsize=11)
-    ax.set_ylabel("Accuracy", fontsize=11)
-    ax.set_ylim(0, 1)
-    ax.set_title(f"{dataset.upper()} dataset", fontsize=14, fontweight="bold")
+    ax.set_ylim(0, 1.1)
     ax.grid(axis="y", linestyle="--", alpha=0.4)
+    ax.legend(fontsize=18, ncol=2, loc="upper center")
 
-    # Legend at upper right
-    ax.legend(loc="upper right", fontsize=9, frameon=True)
+    # Dataset + top1/top3 labels
+    for i, dataset in enumerate(datasets):
+        x1 = x[i] + offset_1
+        x3 = x[i] + offset_3
+        y_offset = -0.08
+        ax.text(x[i], y_offset-0.03, dataset.capitalize(), ha="center", va="top", fontsize=22)
+        ax.text(x1, y_offset - 0.01, "top-1", ha="center", va="bottom", fontsize=21)
+        ax.text(x3, y_offset - 0.01, "top-3", ha="center", va="bottom", fontsize=21)
 
-    plt.tight_layout()
+    ax.set_xticklabels([])
+    if ax is axes[0]:
+        ax.set_ylabel("Accuracy", fontsize=22)
+    else:
+        ax.set_ylabel("")
 
-    # Save the figure
-    plt.savefig(f"{dataset}_accuracy_comparison.svg", dpi=300)
-    plt.savefig(f"{dataset}_accuracy_comparison.png", dpi=300)
-    plt.close()
+# Layout
+plt.subplots_adjust(wspace=0.1, top=0.85, bottom=0.25)
+plt.tight_layout(rect=[0, 0, 1, 0.9])
+
+plt.savefig("combined_methods_top1_top3_accuracy.pdf", dpi=300)
+plt.close()
+print("✅ Figure saved with compact height and clean spacing.")

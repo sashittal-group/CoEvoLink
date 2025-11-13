@@ -339,7 +339,7 @@ def get_interaction_matrix(out):
 
 
 def plot_matrix(mat, row_names, col_names, filename="matrix.png",
-                xlabel="Hosts", ylabel="Parasites",
+                xlabel="Hosts", ylabel="Viruses",
                 highlight=None):
     """
     Plot binary matrix with optional highlighted cells.
@@ -368,8 +368,8 @@ def plot_matrix(mat, row_names, col_names, filename="matrix.png",
                 j = col_names.index(h)
                 color_mat[i, j] = code_map[category]
 
-    # Custom colormap: 0=blue, 1=red, 2=orange (corrupted), 3=green (flipped)
-    cmap = mcolors.ListedColormap(['blue', 'red', 'orange', 'green'])
+    # Custom colormap: 0=grey, 1=green, 2=orange (corrupted), 3=red (flipped)
+    cmap = mcolors.ListedColormap(['lightgrey', 'darkgreen', 'lightgrey', 'orange'])
     bounds = [-0.5, 0.5, 1.5, 2.5, 3.5]
     norm = mcolors.BoundaryNorm(bounds, cmap.N)
 
@@ -382,13 +382,16 @@ def plot_matrix(mat, row_names, col_names, filename="matrix.png",
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
 
-    ax.set_title(f"{ylabel} x {xlabel} Matrix")
+    # ax.set_title(f"{ylabel} x {xlabel} Matrix")
 
     # Grid lines
     ax.set_xticks(np.arange(-0.5, len(col_names), 1), minor=True)
     ax.set_yticks(np.arange(-0.5, len(row_names), 1), minor=True)
-    ax.grid(which="minor", color="gray", linestyle="-", linewidth=0.5)
-    ax.tick_params(which="minor", bottom=False, left=False)
+    ax.grid(which="minor", color="darkgray", linestyle="-", linewidth=0.5)
+
+    # ax.set_xticks([])
+    # ax.set_yticks([])
+    ax.tick_params(which="minor", bottom=False, left=False, labelbottom=False, labelleft=False)
 
     # legend_elements = [
     #     Patch(facecolor='blue', label='0'),
@@ -709,10 +712,10 @@ def solve_network_cut(
             node = f"CELL_{p}_{h}"
             state = cell_state[(p, h)]
             if state == 0:
-                # if flip_cost_matrix[p_idx, h_idx] == 100.0:
-                #     G.add_edge(node, sink, capacity=flip_cost_matrix[p_idx, h_idx])
-                #     G.add_edge(sink, node, capacity=flip_cost_matrix[p_idx, h_idx])
-                # else:
+                if flip_cost_matrix[p_idx, h_idx] == 100.0:
+                    G.add_edge(node, sink, capacity=flip_cost_matrix[p_idx, h_idx])
+                    G.add_edge(sink, node, capacity=flip_cost_matrix[p_idx, h_idx])
+                else:
                     G.add_edge(source, node,
                            capacity=(1 - lambda_param) * flip_cost_matrix[p_idx, h_idx])
                     # G.add_edge(node, source, capacity=(1 - lambda_param) * flip_cost_matrix[p_idx, h_idx])

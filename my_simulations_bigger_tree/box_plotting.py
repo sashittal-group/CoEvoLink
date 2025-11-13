@@ -19,7 +19,8 @@ sns.set_style("ticks")
 df_norm = pd.read_csv("simulation_all_metrics.csv")
 df_elbow = pd.read_csv("simulation_all_metrics_elbow.csv")
 
-df_elbow = df_elbow[~((df_elbow["precision"] < 0.5) | (df_elbow["f1"]  < 0.5))].copy()
+df_elbow = df_elbow[~(df_elbow["precision"] <= 0.0) | (df_elbow["recall"] <= 0.0) | (df_elbow["f1"] <= 0.0)].copy()
+df_norm = df_norm[~((df_norm["precision"] <= 0.0) | (df_norm["recall"] <= 0.0) | (df_norm["f1"] <= 0.0))].copy()
 
 df_norm["method"] = "Normal"
 df_elbow["method"] = "Elbow"
@@ -58,7 +59,7 @@ for method in ["Normal", "Elbow"]:
     df_method = df_eq[df_eq["method"] == method]
 
     for metric in ["precision", "recall", "f1"]:
-        fig, ax = plt.subplots(figsize=(9, 6))
+        fig, ax = plt.subplots(figsize=(10, 10))
 
         # Use hue for side-by-side grouping
         sns.boxplot(
@@ -83,18 +84,27 @@ for method in ["Normal", "Elbow"]:
         ax.yaxis.grid(True, linestyle="--", linewidth=0.7, alpha=0.6)
         ax.xaxis.grid(False)
         ax.set_ylim(0, 1.05)
-        ax.set_xlabel(r"Transition rate $\rho$", fontsize=24)
-        ax.set_ylabel("Score", fontsize=24)
+        ax.set_xlabel(r"Transition rate $r$", fontsize=24)
+        if metric == "f1":
+            ax.set_ylabel("F1 Score", fontsize=24)
+        elif metric == "precision":
+            ax.set_ylabel("Precision", fontsize=24)
+        else:
+            ax.set_ylabel("Recall", fontsize=24)
 
         # Remove duplicate legend (stripplot adds one more)
         handles, labels = ax.get_legend_handles_labels()
         n = len(flip_levels)
-        ax.legend(
-            handles[:n], flip_levels,
-            title="Flip level",
-            loc="upper center", bbox_to_anchor=(0.5, -0.12),
-            ncol=3, fontsize=18, frameon=False, title_fontsize=20
-        )
+
+        # remove the legends for flip levels
+
+        # ax.legend(
+        #     handles[:n], flip_levels,
+        #     title="Missing Rate",
+        #     loc="upper center", bbox_to_anchor=(0.5, -0.18),
+        #     ncol=3, fontsize=18, frameon=False, title_fontsize=20
+        # )
+        ax.legend_.remove()
 
         sns.despine()
         plt.tight_layout(rect=[0, 0.05, 1, 1])
@@ -103,8 +113,17 @@ for method in ["Normal", "Elbow"]:
         # Save figures
         fname_svg = f"figures_boxplots_final/{method.lower()}_{metric}.svg"
         fname_png = f"figures_boxplots_final/{method.lower()}_{metric}.png"
+        fname_pdf = f"figures_boxplots_final/{method.lower()}_{metric}.pdf"
         plt.savefig(fname_svg, bbox_inches="tight")
         plt.savefig(fname_png, bbox_inches="tight", dpi=300)
+        plt.savefig(fname_pdf, bbox_inches="tight", dpi=300)
         plt.close(fig)
 
-        print(f"✅ Saved: {fname_svg} and {fname_png}")
+        print(f"✅ Saved: {fname_svg}, {fname_png}, and {fname_pdf}")
+print("\n📊 Median values by method:")
+metrics = ["precision", "recall", "f1"]
+for method in df_eq["method"].unique():
+    print(f"--- {method} ---")
+    for metric in metrics:
+        median_val = df_eq[df_eq["method"] == method][metric].median()
+        print(f"  {metric.capitalize():<10}: {median_val:.3f}")
