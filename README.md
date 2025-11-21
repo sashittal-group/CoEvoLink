@@ -18,9 +18,11 @@ CoEvoLink implements novel algorithms for inferring host-virus interaction patte
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.8+ (tested with Python 3.8-3.12)
 - Snakemake (for pipeline execution)
 - RevBayes (for Bayesian phylogenetic simulations)
+
+**Note**: This software has been primarily developed and tested with Python 3.8-3.12. While newer versions should work, they have not been extensively tested.
 
 ### Python Dependencies
 
@@ -36,6 +38,8 @@ Key dependencies:
 - `numpy`, `scipy`: Numerical computations
 - `matplotlib`: Visualization
 - `kneed`: Elbow detection for parameter optimization
+
+**Note**: For reproducible installations, consider creating a virtual environment. A `requirements.txt` file may be added in future releases for version-pinned dependencies.
 
 ## Repository Structure
 
@@ -186,7 +190,13 @@ The framework evaluates inference quality using:
 If you use CoEvoLink in your research, please cite:
 
 ```
-[Citation information to be added upon publication]
+[Citation information will be added upon publication. Preprint/manuscript in preparation.]
+```
+
+For now, you can reference this repository:
+```
+CoEvoLink: Phylogenetic Network Analysis for Host-Parasite Coevolution
+https://github.com/sashittal-group/CoEvoLink
 ```
 
 ## Comparison with Other Methods
@@ -242,7 +252,9 @@ Contributions are welcome! Please:
 
 ## License
 
-[License information to be added]
+This project is currently under development. License information will be specified by the Sashittal Lab. 
+
+For usage inquiries, please contact the repository maintainers or open an issue on GitHub.
 
 ## Contact
 
