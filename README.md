@@ -61,6 +61,7 @@ Key dependencies:
 #### Basic Simulation
 
 ```bash
+cd my_simulations
 python simulation.py \
     --seed 42 \
     --host_tree angio_25tips_origin.phy \
@@ -111,11 +112,11 @@ Analyzes virus-host associations from the Virion database.
 #### CLOVER Database Analysis
 
 ```bash
-cd clover/
+cd clover
 python simulation.py --input CLOVER_0.1_MammalViruses_AssociationsFlatFile.csv
 ```
 
-Processes mammal-virus associations from the CLOVER database.
+Processes mammal-virus associations from the CLOVER database (runs simulation.py in the clover directory).
 
 ## Methodology
 
