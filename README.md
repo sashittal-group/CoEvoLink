@@ -1,5 +1,5 @@
 # CoEvoLink : A Cophylogenetic Approach for Viral-Host Interaction Prediction
-![CoEvoLink Overview](overview_new_cropped.pdf)
+![CoEvoLink Overview](overview_new_cropped-1.png)
 
 
 ## Overview
