@@ -1,11 +1,9 @@
-# CoEvoLink
+# CoEvoLink : A Cophylogenetic Approach for Viral-Host Interaction Prediction
 
-A computational framework for analyzing host-parasite/virus coevolutionary relationships using phylogenetic networks and graph-theoretic optimization.
+
 
 ## Overview
-
-CoEvoLink implements novel algorithms for inferring host-virus interaction patterns by combining phylogenetic information from both host and parasite/virus lineages. The framework uses network cut algorithms to identify and recover missing or uncertain interactions in host-parasite association matrices.
-
+We propose a novel framework to predict virus-host interactions that integrates sequence-based information with cophylogenetic signal by explicitly modeling their coevolutionary histories. We formulate the problem of inferring likely but currently unknown interactions between viruses and hosts while minimizing the number of evolutionary events needed to explain them, thereby yielding the most parsimonious interactions under a given coevolutionary model. Our formulation generalizes the traditional notion of maximum parsimony which is usually defined on a single phylogeny by maximizing parsimony across thehost and the virus phylogenies simultaneously. We incorporate sequence-based information by assigning a cost to each potential interaction which reflects the likelihood inferred from genomic features — higher cost indicating lower sequence-based support. Our approach yields a natural trade-off between the number of predicted interactions (or the total cost of the predictions) and parsimony score of the interactions. We derive a polynomial time algorithm to balance this trade-off by drawing connections to a maximum parsimony problem on phylogenetic networks. The resulting method, CoEvoLink, is computationally efficient, interpretable, and readily integrable with existing sequence-based approaches.
 ### Key Features
 
 - **Phylogenetic Network Analysis**: Integrates phylogenetic trees from both hosts and parasites/viruses
