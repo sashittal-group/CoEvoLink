@@ -113,10 +113,19 @@ Analyzes virus-host associations from the Virion database.
 
 ```bash
 cd clover
-python simulation.py --input CLOVER_0.1_MammalViruses_AssociationsFlatFile.csv
+python simulation.py \
+    --seed 42 \
+    --host_tree <host_tree_file.nwk> \
+    --virus_tree <virus_tree_file.nwk> \
+    --association_csv CLOVER_0.1_MammalViruses_AssociationsFlatFile.csv \
+    --outdir clover_bat_cov_output
 ```
 
-Processes mammal-virus associations from the CLOVER database (runs simulation.py in the clover directory).
+Processes mammal-virus associations from the CLOVER database. The script requires:
+- Host phylogenetic tree in Newick format
+- Virus phylogenetic tree in Newick format
+- CSV file with Host-Virus associations
+
 
 ## Methodology
 
