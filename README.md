@@ -15,9 +15,7 @@ We propose a novel framework to predict virus-host interactions that integrates 
 - Python 3.8+ (tested with Python 3.8-3.12)
 - Snakemake (for pipeline execution)
 - RevBayes (for Bayesian phylogenetic simulations)
-
-**Note**: This software has been primarily developed and tested with Python 3.8-3.12. While newer versions should work, they have not been extensively tested.
-
+  
 ### Python Dependencies
 
 The project requires the following Python packages:
@@ -55,9 +53,12 @@ Parameters:
 - `--r01_p`, `--r10_p`: Transition rates (0→1, 1→0) for parasites
 - `--r01_h`, `--r10_h`: Transition rates for hosts
 
+#### Simulation on Host-Repertoire Model
+Please see the `Snakefile` under `my_simulations` folder for details. You first have to run `RevBayes` to simulate the interaction matrix using Braga et al. host repertoire model. Then you can run CoEvoLink pipeline.
+
 #### Using Snakemake Pipeline
 
-Run the complete analysis pipeline:
+Run the complete simulation analysis pipeline:
 
 ```bash
 snakemake --cores all
@@ -69,3 +70,10 @@ This will:
 3. Recover interactions using the network cut algorithm
 4. Evaluate performance metrics (precision, recall, F1)
 5. Generate visualization plots
+
+### Running on Virion
+Please see `virion/simulation_notebook.ipynb` for details.
+
+### Running on Bacteriophages
+Run `HostPredictionReview/simulation_wish.py`, `HostPredictionReview/simulation_phist.py` and `HostPredictionReview/simulation_pblks.py`.
+
