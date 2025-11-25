@@ -76,5 +76,5 @@ Please see `virion/simulation_notebook.ipynb` for details.
 
 ### Running on Bacteriophages
 Run `HostPredictionReview/plotting.py` to generate the *top-1/3 accuracy* comparison graph.  
-Run `HostPredictionReview/simulation_wish.py`, `HostPredictionReview/simulation_phist.py` and `HostPredictionReview/simulation_pblks.py`.
+Run `HostPredictionReview/simulation_wish.py`, `HostPredictionReview/simulation_phist.py` and `HostPredictionReview/simulation_pblks.py` to observe the `top-k` result of integrating CoEvoLink with different methods.
 
