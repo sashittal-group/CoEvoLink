@@ -72,9 +72,10 @@ This will:
 5. Generate visualization plots
 
 ### Running on Virion
-Please see `virion/simulation_notebook.ipynb` for details.
+- Run `virion/virion_matrix.ipynb` for reproducing the interaction matrix predicted by CoEvoLink that are missing in the VIRION database.
+- Please see `virion/simulation_notebook.ipynb` for details.
 
 ### Running on Bacteriophages
-Run `HostPredictionReview/plotting.py` to generate the *top-1/3 accuracy* comparison graph.  
-Run `HostPredictionReview/simulation_wish.py`, `HostPredictionReview/simulation_phist.py` and `HostPredictionReview/simulation_pblks.py` to observe the `top-k` result of integrating CoEvoLink with different methods.
+- Run `HostPredictionReview/plotting.py` to generate the *top-1/3 accuracy* comparison graph.  
+- Run `HostPredictionReview/simulation_wish.py`, `HostPredictionReview/simulation_phist.py` and `HostPredictionReview/simulation_pblks.py` to observe the `top-k` result of integrating CoEvoLink with different methods.
 
