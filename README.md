@@ -54,7 +54,26 @@ Parameters:
 - `--r01_h`, `--r10_h`: Transition rates for hosts
 
 #### Simulation on Host-Repertoire Model
-Please see the `Snakefile` under `my_simulations` folder for details. You first have to run `RevBayes` to simulate the interaction matrix using Braga et al. host repertoire model. Then you can run CoEvoLink pipeline.
+
+```bash
+cd my_simulations
+```
+- You first have to run `RevBayes` to simulate the interaction matrix using Braga et al. host repertoire model.
+```bash
+rb Simulate.Rev --args <seed> <beta> <mu> <outdir>
+```
+For example,
+```bash
+rb Simulate.Rev --args 86 1 1 experiments
+```
+will generate `sim86-b1-c1.nex` (interaction matrix) and `sim86-b1-c1.settings.txt` (parameter values) under `experiments` folder.
+
+Then run CoEvoLink
+```bash
+python simulation.py --seed 86 --host_tree hosts_tree_big.newick --virus_tree viruses_tree_big.newick --nexus_file experiments/sim86-b1-c1.nex --braga experiments/sim86-b1-c1.settings.txt
+```
+
+- Please see the `Snakefile` under `my_simulations` and `my_simulations_bigger_tree` folder for details.
 
 #### Using Snakemake Pipeline
 
