@@ -35,7 +35,7 @@ Key dependencies:
 
 
 ## Usage
-
+- `simulation_utils.py` contains the necessary functionalities for CoEvoLink.
 ### Running Simulations
 
 #### Basic Simulation
