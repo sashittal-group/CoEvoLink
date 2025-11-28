@@ -33,6 +33,39 @@ Key dependencies:
 
 **Note**: For reproducible installations, consider creating a virtual environment. A `requirements.txt` file may be added in future releases for version-pinned dependencies.
 
+## CoEvoLink Docker Image
+
+The **CoEvoLink** environment is available as a container on GitHub Container Registry (GHCR).  
+This lets you run the full environment without installing Conda, Snakemake, or other dependencies locally.
+
+
+### Pull the Container
+
+- Make sure Docker is installed on your system.  
+- Pull the image with:
+
+```bash
+docker pull ghcr.io/princezarzees/myimage:latest
+```
+### Run the Container Interactively
+
+- Start an interactive terminal session inside the container:
+```bash
+docker run -it ghcr.io/princezarzees/myimage:latest bash
+```
+You will drop into a shell with all tools pre-installed.
+
+### Mount Your Project Directory
+
+To give the container access to your local files:
+
+```bash
+docker run -it -v $PWD:/workspace ghcr.io/princezarzees/myimage:latest bash
+```
+
+Inside the container, your current directory will appear as `/workspace`.
+You can now run your workflow or scripts inside the container.
+
 
 ## Usage
 - `simulation_utils.py` contains the necessary functionalities for CoEvoLink.
