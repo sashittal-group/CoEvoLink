@@ -219,3 +219,14 @@ StressTest/virusTree256.nh
 StressTest/virusTree32.nh
 StressTest/virusTree524288.nh
 virion/filtered_human_virion.csv
+
+# Machine-specific files and local run logs (may contain license details)
+.DS_Store
+__pycache__/
+gurobi.log
+/snakemake.log
+/snakemake.out
+my_simulations_bigger_tree/snakemake.out
+my_simulations_bigger_tree/baseline_prod_run.log
+# Default output folder of parametric_pareto.py
+parametric_out/

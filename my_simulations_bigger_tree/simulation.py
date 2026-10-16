@@ -211,7 +211,7 @@ def matrix_builder(out, r01_h, r10_h, r01_p, r10_p, scale=1.0):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--seed", type=int, required=True)
-    parser.add_argument("--mode", choices=["ml", "default"], default="ml")
+    parser.add_argument("--mode", choices=["ml", "default", "CG"], default="ml")
     parser.add_argument("--r01_p", type=float, default=0.5)
     parser.add_argument("--r10_p", type=float, default=0.5)
     parser.add_argument("--r01_h", type=float, default=0.5)
@@ -336,9 +336,21 @@ def main():
     if corrupt > 0:
         random_flips = min(corrupt, np.sum(mat) - 1)
         corrupt_mat, hidden = corrupt_matrix(mat, num_flips=random_flips, seed=seed)
+        
 
+        
         # Save hidden cells for metrics
         hidden_cells = [(parasites[i], hosts[j]) for i, j in hidden]
+        if mode == "CG":
+            flip_cost_matrix = build_flip_cost_matrix_considering_genomic(
+                parasites, hosts, hidden_cells,
+                base_cost=1.0,
+                hidden_mean=0.2,   # lower than 1
+                hidden_std=0.05,
+                clip_min=0.01,
+                clip_max=1.0,
+                seed=seed
+            )
 
         highlight_corrupted = {"corrupted": hidden_cells}
         # plot_matrix(corrupt_mat, parasites, hosts,

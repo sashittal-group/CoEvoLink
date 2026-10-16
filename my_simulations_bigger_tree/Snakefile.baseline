@@ -1,0 +1,115 @@
+# Snakefile.baseline
+#
+# Simple baselines for Reviewer 3, comment 7.
+# Run with:  snakemake -s Snakefile.baseline --cores 8
+#
+# Same seeds, same trees, same corruption levels and same transition rates as
+# the CoEvoLink runs in `Snakefile`, so every baseline result is paired with a
+# CoEvoLink result on an identical simulated dataset.
+#
+# One job covers all corruption levels of a (seed, r01, r10) triple: the ground
+# truth produced by simulate_network() is the same for all of them, and it is
+# the only expensive step of the baselines.
+
+SEEDS    = [9,20,31,42,53,64,75,86,97,108,119,130,141,152,163]   # 15 seeds
+CORRUPTS = [500, 1000, 2000, 5000, 10000]
+RATES    = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7]
+
+MODES   = ["supervised", "unsupervised"]
+# "greedy" is the original host-degree baseline; "greedy_prod" ranks by the
+# product of the virus and host degrees (see random_baseline.py)
+METHODS = ["random", "greedy", "greedy_prod"]
+
+# figure names: supervised -> the paper's "Normal" panel, unsupervised -> "Elbow"
+PANELS = ["normal", "elbow"]
+
+HOST_TREE  = "hosts_tree_big.newick"
+VIRUS_TREE = "viruses_tree_big.newick"
+
+# CoEvoLink results, used to read the elbow flip budget for the unsupervised baselines
+COEVOLINK_ROOT = "results/consideringGenomic"
+OUTROOT        = "results_baseline"
+
+REPEATS = 5   # independent draws averaged per configuration
+
+# --------------------
+# Final targets
+# --------------------
+rule all:
+    input:
+        expand(
+            OUTROOT + "/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/{mode}_{method}_metrics.json",
+            seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES,
+            mode=MODES, method=METHODS
+        ),
+        expand("figures_baseline/greedy_{panel}_f1.pdf", panel=PANELS),
+        # greedy_prod is plotted supervised-only, filtered to F1 < 0.8
+        # (professor's noise filter) -- see baseline_plotting.py
+        "figures_baseline/greedy_prod_normal_f1.pdf"
+
+# --------------------
+# Baseline rule: one job per (seed, r01, r10), all corruption levels at once
+# --------------------
+rule random_baseline:
+    input:
+        host_tree  = HOST_TREE,
+        virus_tree = VIRUS_TREE
+    output:
+        metrics = expand(
+            OUTROOT + "/{{seed}}/corrupt{corrupt}/r01{{r01}}_r10{{r10}}/{mode}_{method}_metrics.json",
+            corrupt=CORRUPTS, mode=MODES, method=METHODS
+        ),
+        log_out = OUTROOT + "/logs/{seed}_r01{r01}_r10{r10}.out",
+        log_err = OUTROOT + "/logs/{seed}_r01{r01}_r10{r10}.err"
+    params:
+        corrupts = " ".join(str(c) for c in CORRUPTS)
+    shell:
+        """
+        {{
+            python random_baseline.py \
+                --seed {wildcards.seed} \
+                --host_tree {input.host_tree} \
+                --virus_tree {input.virus_tree} \
+                --corrupts {params.corrupts} \
+                --r01_p {wildcards.r01} \
+                --r10_p {wildcards.r10} \
+                --r01_h {wildcards.r01} \
+                --r10_h {wildcards.r10} \
+                --outroot {OUTROOT} \
+                --coevolink_root {COEVOLINK_ROOT} \
+                --repeats {REPEATS} \
+                > {output.log_out} 2> {output.log_err}
+        }}
+        """
+
+# --------------------
+# Plotting rule
+# --------------------
+rule plot_baseline:
+    input:
+        baseline = expand(
+            OUTROOT + "/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/{mode}_{method}_metrics.json",
+            seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES,
+            mode=MODES, method=METHODS
+        ),
+        coevolink = expand(
+            COEVOLINK_ROOT + "/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/{kind}.json",
+            seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES,
+            kind=["metrics", "elbow_metrics"]
+        )
+    output:
+        # baseline_plotting.py writes a csv only for the methods/modes it
+        # plots: "greedy" for both, "greedy_prod" supervised-only
+        expand("baseline_all_metrics_{mode}_greedy.csv", mode=MODES),
+        "baseline_all_metrics_supervised_greedy_prod.csv",
+        "baseline_summary_medians.csv",
+        expand("figures_baseline/greedy_{panel}_f1.{ext}",
+               panel=PANELS, ext=["svg", "png", "pdf"]),
+        # greedy_prod is plotted supervised-only, filtered to F1 < 0.8
+        # (professor's noise filter) -- see baseline_plotting.py
+        expand("figures_baseline/greedy_prod_normal_f1.{ext}",
+               ext=["svg", "png", "pdf"])
+    shell:
+        """
+        python baseline_plotting.py
+        """

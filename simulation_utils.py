@@ -12,6 +12,9 @@ from scipy.signal import savgol_filter
 from scipy.stats import rankdata
 import os
 
+# Allow custom shorthand color names used in plotting code.
+mcolors.get_named_colors_mapping().setdefault("lightred", "#ff7f7f")
+
 # ---------------------------
 # Compute log-likelihood of a simulation using assigned internal states
 # ---------------------------
@@ -167,7 +170,47 @@ def build_flip_cost_matrix(n_parasites, n_hosts, cost=1.0):
     """
     return np.full((n_parasites, n_hosts), cost)
 
+def build_flip_cost_matrix_considering_genomic(
+    parasites,
+    hosts,
+    hidden_cells,
+    base_cost=1.0,
+    hidden_mean=0.25,
+    hidden_std=0.08,
+    other_mean=1.0,
+    other_std=0.0,
+    seed=0,
+    clip_min=1e-3,
+    clip_max=10.0,
+):
+    """
+    Build a flip-cost matrix where randomly corrupted 1->0 cells get lower cost
+    drawn from a Gaussian distribution.
 
+    hidden_cells: list of (parasite, host) tuples that were randomly flipped from 1 to 0.
+    """
+    rng = np.random.default_rng(seed)
+    P, H = len(parasites), len(hosts)
+
+    # Start with baseline costs
+    flip_cost_matrix = np.full((P, H), base_cost, dtype=float)
+
+    # Optional: add mild noise to all cells
+    if other_std > 0:
+        flip_cost_matrix = rng.normal(other_mean, other_std, size=(P, H))
+
+    # Lower costs for hidden cells
+    p_to_i = {p: i for i, p in enumerate(parasites)}
+    h_to_j = {h: j for j, h in enumerate(hosts)}
+
+    for p, h in hidden_cells:
+        i = p_to_i[p]
+        j = h_to_j[h]
+        flip_cost_matrix[i, j] = rng.normal(hidden_mean, hidden_std)
+
+    # Keep costs positive and bounded
+    flip_cost_matrix = np.clip(flip_cost_matrix, clip_min, clip_max)
+    return flip_cost_matrix
 
 # ---------------------------
 # Simulate states along a single tree
@@ -369,7 +412,7 @@ def plot_matrix(mat, row_names, col_names, filename="matrix.png",
                 color_mat[i, j] = code_map[category]
 
     # Custom colormap: 0=grey, 1=green, 2=orange (corrupted), 3=red (flipped)
-    cmap = mcolors.ListedColormap(['lightgrey', 'darkgreen', 'lightgrey', 'orange'])
+    cmap = mcolors.ListedColormap(['lightgrey', 'darkgreen', 'lightred', 'orange'])
     bounds = [-0.5, 0.5, 1.5, 2.5, 3.5]
     norm = mcolors.BoundaryNorm(bounds, cmap.N)
 

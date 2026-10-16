@@ -1,0 +1,27 @@
+[iter 0] λ=0.5000 → flips=1781
+[iter 1] λ=0.7500 → flips=3215
+[iter 2] λ=0.6250 → flips=2002
+[iter 3] λ=0.5625 → flips=1880
+[iter 4] λ=0.5938 → flips=1933
+[iter 5] λ=0.6094 → flips=1977
+[iter 6] λ=0.6172 → flips=1991
+[iter 7] λ=0.6211 → flips=1998
+[iter 8] λ=0.6230 → flips=2002
+[iter 9] λ=0.6221 → flips=1999
+[iter 10] λ=0.6226 → flips=2005
+[iter 11] λ=0.6223 → flips=1999
+[iter 12] λ=0.6224 → flips=2002
+[iter 13] λ=0.6224 → flips=1999
+[iter 14] λ=0.6224 → flips=1999
+[iter 15] λ=0.6224 → flips=1999
+[iter 16] λ=0.6224 → flips=2002
+[iter 17] λ=0.6224 → flips=1999
+[iter 18] λ=0.6224 → flips=2002
+[iter 19] λ=0.6224 → flips=1999
+
+Best λ=0.6221 → flips=1999, correct=1724/2000
+Number of flips performed: 1999
+Metrics: {'precision': 0.8624312156078039, 'recall': 0.862, 'f1': 0.8622155538884722, 'TP': 1724, 'FP': 275, 'FN': 276}
+[Elbow detection] flip ≈ 5930, λ ≈ 0.8571428571428571
+Number of flips performed (elbow): 5930
+Elbow Metrics: {'precision': 0.31652613827993253, 'recall': 0.9385, 'f1': 0.4733921815889029, 'TP': 1877, 'FP': 4053, 'FN': 123}

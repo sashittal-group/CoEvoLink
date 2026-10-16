@@ -1,0 +1,20 @@
+{
+  "precision": 0.23065405831363278,
+  "recall": 0.23065405831363278,
+  "f1": 0.23065405831363278,
+  "TP": 1170.8,
+  "FP": 3905.2,
+  "FN": 3905.2,
+  "seed": 53,
+  "corrupt": 10000,
+  "r01": 0.2,
+  "r10": 0.5,
+  "n_ones": 5077,
+  "n_hidden": 5076,
+  "n_zeros": 21901,
+  "missing_rate": 0.9998030332873744,
+  "repeats": 5,
+  "budget": 5076,
+  "budget_source": "n_hidden",
+  "method": "greedy_prod"
+}

@@ -16,8 +16,8 @@ sns.set_style("ticks")
 # ==============================
 # Load and merge
 # ==============================
-df_norm = pd.read_csv("simulation_all_metrics.csv")
-df_elbow = pd.read_csv("simulation_all_metrics_elbow.csv")
+df_norm = pd.read_csv("simulation_all_metrics_genomic.csv")
+df_elbow = pd.read_csv("simulation_all_metrics_elbow_genomic.csv")
 
 df_elbow = df_elbow[~(df_elbow["precision"] <= 0.0) | (df_elbow["recall"] <= 0.0) | (df_elbow["f1"] <= 0.0)].copy()
 df_norm = df_norm[~((df_norm["precision"] <= 0.0) | (df_norm["recall"] <= 0.0) | (df_norm["f1"] <= 0.0))].copy()
@@ -111,9 +111,9 @@ for method in ["Normal", "Elbow"]:
         fig.patch.set_facecolor("white")
 
         # Save figures
-        fname_svg = f"figures_boxplots_final/{method.lower()}_{metric}.svg"
-        fname_png = f"figures_boxplots_final/{method.lower()}_{metric}.png"
-        fname_pdf = f"figures_boxplots_final/{method.lower()}_{metric}.pdf"
+        fname_svg = f"figures_boxplots_final/{method.lower()}_{metric}_genomic.svg"
+        fname_png = f"figures_boxplots_final/{method.lower()}_{metric}_genomic.png"
+        fname_pdf = f"figures_boxplots_final/{method.lower()}_{metric}_genomic.pdf"
         plt.savefig(fname_svg, bbox_inches="tight")
         plt.savefig(fname_png, bbox_inches="tight", dpi=300)
         plt.savefig(fname_pdf, bbox_inches="tight", dpi=300)

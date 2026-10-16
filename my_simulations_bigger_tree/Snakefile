@@ -8,6 +8,11 @@ HOST_TREE  = "hosts_tree_big.newick"
 VIRUS_TREE = "viruses_tree_big.newick"
 
 # --------------------
+# Rule order
+# --------------------
+# ruleorder: simulate_considering_genomic > simulate
+
+# --------------------
 # Final targets
 # --------------------
 rule all:
@@ -18,29 +23,68 @@ rule all:
         # "precision_by_corrupt_elbow.svg",
         # "recall_by_corrupt_elbow.svg",
         # "f1_by_corrupt_elbow.svg",
+        # expand(
+        #     "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
+        #     seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
+        # ),
+        # expand(
+        #     "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
+        #     seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
+        # ),
         expand(
-            "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
-            seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
+    "results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
+    seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
         ),
         expand(
-            "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
-            seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
+    "results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
+    seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
         )
 
 # --------------------
 # Simulation rule
 # --------------------
-rule simulate:
+# rule simulate:
+#     output:
+#         # original  = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/original_matrix.svg",
+#         # flipped   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/flipped_matrix.svg",
+#         outdir = directory("results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}"),
+#         metrics   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
+#         elbow_metrics = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
+#         log_out   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/simulate.out",
+#         log_err   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/simulate.err"
+#     params:
+#         outdir = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}"
+#     shell:
+#         """
+#         {{
+#             python simulation.py \
+#                 --seed {wildcards.seed} \
+#                 --host_tree {HOST_TREE} \
+#                 --virus_tree {VIRUS_TREE} \
+#                 --corrupt {wildcards.corrupt} \
+#                 --r01_p {wildcards.r01} \
+#                 --r10_p {wildcards.r10} \
+#                 --r01_h {wildcards.r01} \
+#                 --r10_h {wildcards.r10} \
+#                 --outdir {params.outdir} \
+#                 --original_metrics {output.metrics} \
+#                 --elbow_metrics {output.elbow_metrics} \
+#                 > {output.log_out} 2> {output.log_err}
+#         }}
+#         """
+
+# --------------------
+# Simulation rule (considering_genomic mode)
+# --------------------
+rule simulate_considering_genomic:
     output:
-        # original  = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/original_matrix.svg",
-        # flipped   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/flipped_matrix.svg",
-        outdir = directory("results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}"),
-        metrics   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
-        elbow_metrics = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
-        log_out   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/simulate.out",
-        log_err   = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/simulate.err"
+        outdir = directory("results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}"),
+        metrics = "results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
+        elbow_metrics = "results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
+        log_out = "results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/simulate.out",
+        log_err = "results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/simulate.err"
     params:
-        outdir = "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}"
+        outdir = "results/consideringGenomic/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}"
     shell:
         """
         {{
@@ -53,6 +97,7 @@ rule simulate:
                 --r10_p {wildcards.r10} \
                 --r01_h {wildcards.r01} \
                 --r10_h {wildcards.r10} \
+                --mode CG \
                 --outdir {params.outdir} \
                 --original_metrics {output.metrics} \
                 --elbow_metrics {output.elbow_metrics} \
@@ -60,29 +105,27 @@ rule simulate:
         }}
         """
 
-
-
 # --------------------
 # Plotting rule
 # --------------------
-rule plot_my_simulation:
-    input:
-        expand(
-            "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
-            seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
-        ),
-        expand(
-            "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
-            seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
-        )
-    output:
-        "precision_by_corrupt.svg",
-        "recall_by_corrupt.svg",
-        "f1_by_corrupt.svg",
-        "precision_by_corrupt_elbow.svg",
-        "recall_by_corrupt_elbow.svg",
-        "f1_by_corrupt_elbow.svg"
-    shell:
-        """
-        python plotting.py
-        """
+# rule plot_my_simulation:
+#     input:
+#         expand(
+#             "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/metrics.json",
+#             seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
+#         ),
+#         expand(
+#             "results/{seed}/corrupt{corrupt}/r01{r01}_r10{r10}/elbow_metrics.json",
+#             seed=SEEDS, corrupt=CORRUPTS, r01=RATES, r10=RATES
+#         )
+#     output:
+#         "precision_by_corrupt.svg",
+#         "recall_by_corrupt.svg",
+#         "f1_by_corrupt.svg",
+#         "precision_by_corrupt_elbow.svg",
+#         "recall_by_corrupt_elbow.svg",
+#         "f1_by_corrupt_elbow.svg"
+#     shell:
+#         """
+#         python plotting.py
+#         """

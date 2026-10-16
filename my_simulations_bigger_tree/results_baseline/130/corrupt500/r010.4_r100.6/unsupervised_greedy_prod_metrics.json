@@ -1,0 +1,20 @@
+{
+  "precision": 0.1104349785891368,
+  "recall": 0.9800000000000001,
+  "f1": 0.1985011140368645,
+  "TP": 490.0,
+  "FP": 3947.0,
+  "FN": 10.0,
+  "seed": 130,
+  "corrupt": 500,
+  "r01": 0.4,
+  "r10": 0.6,
+  "n_ones": 9041,
+  "n_hidden": 500,
+  "n_zeros": 13361,
+  "missing_rate": 0.05530361685654242,
+  "repeats": 5,
+  "budget": 4437,
+  "budget_source": "coevolink_elbow_flips",
+  "method": "greedy_prod"
+}

@@ -69,6 +69,43 @@ You can now run your workflow or scripts inside the container.
 
 ## Usage
 - `simulation_utils.py` contains the necessary functionalities for CoEvoLink.
+- `parametric_pareto.py` enumerates the Pareto front by parametric maximum flow (see below).
+
+### Enumerating the Pareto front by parametric maximum flow
+
+`parametric_pareto.py` implements Module 1 of CoEvoLink as described in the paper (Theorem 2 and Algorithm 2 of the Supplemental Material). Instead of solving Balanced PIP on a grid of λ values, it finds every Pareto optimal interaction matrix on the lower convex hull of the front, together with the interval of λ on which each one is optimal. It uses the parametric minimum cut of Gallo, Grigoriadis and Tarjan (1989). Writing μ = (1 − λ)/λ, the value of each cut is a line S + μ·c, and between two known solutions the only candidate breakpoint is the point where their lines intersect. The network is monotone in μ, so its minimum cuts are nested, and each step only solves the vertices that lie between the two known cuts.
+
+The script builds exactly the graph that `solve_network_cut` builds, including the special handling of cells with flip cost `100.0`. For any λ inside an interval it reports the same matrix `solve_network_cut` returns at that λ (`--check_grid N` verifies this at N values of λ). When λ falls exactly on a breakpoint, the two neighbouring matrices are both optimal, and `--check_grid` reports a tie. No result in the paper needs to be recomputed: the enumerated front contains every matrix found by the λ sweeps in the experiment scripts.
+
+The elbow (Module 2) is chosen with kneedle, as in the experiment scripts. Kneedle depends on which points of the front it receives, so by default (`--elbow_grid 50`) the script applies it to the solutions at the 50 evenly spaced values of λ used for the results in the paper, which reproduces those elbows. `--elbow_grid 0` applies kneedle to every matrix on the front instead, and can select a different elbow.
+
+This reference implementation computes each minimum cut with networkx and does not warm-start it from the parent flow, so it does not reach the single-maximum-flow running time of Theorem 2. The output is the same.
+
+On your own data (rows = viruses, columns = hosts; cost matrix optional, default all 1):
+
+```bash
+python parametric_pareto.py --matrix A.csv --costs C.csv \
+    --host_tree hosts.newick --virus_tree viruses.newick \
+    --r01_h 0.5 --r10_h 0.5 --r01_p 0.5 --r10_p 0.5 --outdir out
+```
+
+On one instance of the Mk-model simulation, regenerated with the same inputs as `my_simulations_bigger_tree/simulation.py` (add `--genomic_costs` for the genomic-informed costs, `--mode CG`):
+
+```bash
+python parametric_pareto.py --simulate --seed 42 --corrupt 1000 --r01 0.1 --r10 0.4 \
+    --host_tree my_simulations_bigger_tree/hosts_tree_big.newick \
+    --virus_tree my_simulations_bigger_tree/viruses_tree_big.newick \
+    --check_grid 50 --outdir parametric_out/seed42
+```
+
+Outputs in `--outdir`:
+- `pareto_front.csv`: one row per Pareto optimal matrix, with its λ (and μ) interval, number of predicted interactions, prediction cost, weighted parsimony score (the objective) and unweighted parsimony score (as plotted in the paper)
+- `elbow_matrix.csv`, `elbow_predictions.csv`: the matrix at the elbow and its predicted interactions
+- `pareto_front.svg`: the front with the elbow marked
+- `summary.json`: the elbow and, for `--simulate`, its precision, recall and F1-score
+
+From Python, `enumerate_pareto_parametric(out, host_W_matrices, par_W_matrices, flip_cost_matrix)` takes the same arguments as `solve_network_cut` and returns the list of solutions, so it can be used directly in the existing scripts.
+
 ### Running Simulations
 
 #### Basic Simulation

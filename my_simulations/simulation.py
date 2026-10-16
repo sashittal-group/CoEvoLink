@@ -309,7 +309,7 @@ def main():
     # os.makedirs("experiments", exist_ok=True)
 
     # Original
-    # plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "original_matrix.svg"))
+    plot_matrix(mat, parasites, hosts,filename=os.path.join(outdir, "original_matrix.svg"))
 
     if corrupt == 0:
         lambda_param = args.lambda_param
@@ -331,9 +331,9 @@ def main():
         hidden_cells = [(parasites[i], hosts[j]) for i, j in hidden]
 
         highlight_corrupted = {"corrupted": hidden_cells}
-        # plot_matrix(corrupt_mat, parasites, hosts,
-        #             filename=os.path.join(outdir, "corrupted.svg"),
-        #             highlight=highlight_corrupted)
+        plot_matrix(corrupt_mat, parasites, hosts,
+                    filename=os.path.join(outdir, "corrupted.svg"),
+                    highlight=highlight_corrupted)
 
         # Update out["cell_state"] with corrupted values
         corrupt_cell_state = {}
@@ -401,9 +401,9 @@ def main():
     # ---------------------------
     # Step 3: Save recovered matrix with algorithm flips
     # ---------------------------
-    # plot_matrix(new_mat, parasites, hosts,
-    #             filename=os.path.join(outdir, "flipped_matrix.svg"),
-    #             highlight=highlight_flipped)
+    plot_matrix(new_mat, parasites, hosts,
+                filename=os.path.join(outdir, "flipped_matrix.svg"),
+                highlight=highlight_flipped)
 
 
 
